@@ -1,0 +1,22 @@
+SPARSE_VARIABLE_MAILBOX magic=0x53525652 version=2 result=0
+SPARSE_FRAME_DEBUG result=0 naive_packet=338868 naive_accepted=15 naive_issued=15 naive_coalesced=0 naive_commits=15 naive_input=233244 naive_output=783360 naive_halo=0 naive_checksum=0x8711ad76 compact_packet=335304 compact_accepted=15 compact_issued=6 compact_coalesced=9 compact_commits=6 compact_input=222552 compact_output=783360 compact_halo=10692 compact_checksum=0x3d789c57
+SPARSE_FRAME_FAILURE service_index=0 expected=0x00000000 actual=0x00000000 active_words=0x00000000,0x00000000,0x00000000,0x00000000
+SPARSE_VARIABLE_NAIVE compute_cycles=2358612 scheduler_cycles=256 service_ms=24.359033 packet_words=79920 accepted=4 issued=4 coalesced=0 commits=4 lr_input_bytes=55440 output_bytes=184320 halo_bytes_saved=0 checksums=0x1e3af69d,0x42aef0f6,0x1e3af69d,0x42aef0f6
+SPARSE_VARIABLE_COMPACT compute_cycles=1371271 scheduler_cycles=73 service_ms=16.814400 packet_words=78732 accepted=4 issued=1 coalesced=3 commits=1 lr_input_bytes=51876 output_bytes=184320 halo_bytes_saved=3564 checksum=0x2afa84a5
+SPARSE_VARIABLE_SAVINGS compute_percent=41.861103 service_percent=30.972632 lr_input_percent=6.428571 packet_percent=1.486486
+SPARSE_VARIABLE_NAIVE_DISTRIBUTION repetitions=30 average_ms=24.358961 median_ms=24.359000 p95_ms=24.359252 p99_ms=24.359441 min_ms=24.358433 max_ms=24.359441 average_compute_cycles=2358602
+SPARSE_VARIABLE_COMPACT_DISTRIBUTION repetitions=30 average_ms=16.814343 median_ms=16.814349 p95_ms=16.814574 p99_ms=16.814682 min_ms=16.813992 max_ms=16.814682 average_compute_cycles=1371270
+SPARSE_VARIABLE_DISTRIBUTION_SAVINGS average_service_percent=30.972662 p95_service_percent=30.972538 average_compute_percent=41.860899
+SPARSE_FRAME_NAIVE compute_cycles=9697980 scheduler_cycles=960 service_ms=98.538234 packet_words=338868 accepted=15 issued=15 coalesced=0 commits=15 lr_input_bytes=233244 output_bytes=783360 halo_bytes_saved=0 checksum=0x8711ad76
+SPARSE_FRAME_COMPACT compute_cycles=7432159 scheduler_cycles=498 service_ms=76.855867 packet_words=335304 accepted=15 issued=6 coalesced=9 commits=6 lr_input_bytes=222552 output_bytes=783360 halo_bytes_saved=10692 checksum=0x3d789c57
+SPARSE_FRAME_SAVINGS compute_percent=23.363845 service_percent=22.004015 lr_input_percent=4.584041 packet_percent=1.051737 job_percent=60.000000
+SPARSE_FRAME_NAIVE_DISTRIBUTION repetitions=10 average_ms=100.135596 median_ms=98.526399 p95_ms=104.135436 p99_ms=104.135436 min_ms=98.524110 max_ms=104.135436 average_compute_cycles=9857730
+SPARSE_FRAME_COMPACT_DISTRIBUTION repetitions=10 average_ms=75.872104 median_ms=75.871954 p95_ms=75.873088 p99_ms=75.873088 min_ms=75.871600 max_ms=75.873088 average_compute_cycles=7432075
+SPARSE_FRAME_DISTRIBUTION_SAVINGS average_service_percent=24.230636 p95_service_percent=27.139991 average_compute_percent=24.606629
+SPARSE_FULL_NAIVE compute_cycles=36510072 scheduler_cycles=3840 service_ms=366.042331 packet_words=1192260 accepted=60 issued=60 coalesced=0 commits=60 lr_input_bytes=811980 output_bytes=2764800 halo_bytes_saved=0 checksum=0x2dd9a7be
+SPARSE_FULL_COMPACT compute_cycles=25540944 scheduler_cycles=2772 service_ms=257.213306 packet_words=1175880 accepted=60 issued=18 coalesced=42 commits=18 lr_input_bytes=762840 output_bytes=2764800 halo_bytes_saved=49140 checksum=0x5e1101ea
+SPARSE_FULL_SAVINGS compute_percent=30.044115 service_percent=29.731268 lr_input_percent=6.051873 packet_percent=1.373861 job_percent=70.000000
+SPARSE_FULL_NAIVE_DISTRIBUTION repetitions=3 average_ms=367.152316 median_ms=367.324801 p95_ms=368.102842 p99_ms=368.102842 min_ms=366.029311 max_ms=368.102842 average_compute_cycles=36621079
+SPARSE_FULL_COMPACT_DISTRIBUTION repetitions=3 average_ms=259.283500 median_ms=257.213708 p95_ms=263.423755 p99_ms=263.423755 min_ms=257.213045 max_ms=263.423755 average_compute_cycles=25747962
+SPARSE_FULL_DISTRIBUTION_SAVINGS average_service_percent=29.379854 p95_service_percent=28.437457 average_compute_percent=29.690870
+SPARSE_VARIABLE_BOARD_COMPLETE PASS model=student_npu_w24_int8 fabric_clock_hz=100000000

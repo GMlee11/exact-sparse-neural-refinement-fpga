@@ -1,0 +1,239 @@
+{
+  "schema_version": 2,
+  "artifact": "sparse_architecture_ablation_v1",
+  "decision": "accept_descriptive_organization_operating_points_for_arc_draft",
+  "canonical_mask_hex": "0x0000C03F0FE03000",
+  "organizations": [
+    {
+      "organization": "independent_jobs",
+      "dependency_scope": "exact_per_job_halo",
+      "cross_region_reuse": "none",
+      "private_atomic_commit": false,
+      "cycles": 9857730,
+      "clock_mhz": 100.0,
+      "cycle_derived_compute_ms": 98.5773,
+      "axis_bytes": 2399952,
+      "luts": 38274,
+      "registers": 28681,
+      "bram_tiles": 52.0,
+      "dsps": 193,
+      "evidence": "physical_balanced_independent_job_engine"
+    },
+    {
+      "organization": "rectangle_compaction",
+      "dependency_scope": "exact_per_compacted_rectangle",
+      "cross_region_reuse": "inside_each_rectangle",
+      "private_atomic_commit": false,
+      "cycles": 7432075,
+      "clock_mhz": 100.0,
+      "cycle_derived_compute_ms": 74.32075,
+      "axis_bytes": 2385696,
+      "luts": 38274,
+      "registers": 28681,
+      "bram_tiles": 52.0,
+      "dsps": 193,
+      "evidence": "physical_balanced_region_engine"
+    },
+    {
+      "organization": "global_closure_persistent",
+      "dependency_scope": "exact_global_layer_closure",
+      "cross_region_reuse": "persistent_full_traversal",
+      "private_atomic_commit": false,
+      "cycles": 4922897,
+      "clock_mhz": 50.0,
+      "cycle_derived_compute_ms": 98.45794,
+      "axis_bytes": 1322256,
+      "luts": 44408,
+      "registers": 26056,
+      "bram_tiles": 3.5,
+      "dsps": 180,
+      "evidence": "physical_proposed_engine"
+    },
+    {
+      "organization": "complete_commit_safe",
+      "dependency_scope": "exact_global_layer_closure",
+      "cross_region_reuse": "persistent_full_traversal",
+      "private_atomic_commit": true,
+      "cycles": 5133822,
+      "clock_mhz": 50.0,
+      "cycle_derived_compute_ms": 102.67644,
+      "axis_bytes": 1322256,
+      "luts": 45046,
+      "registers": 26648,
+      "bram_tiles": 3.5,
+      "dsps": 180,
+      "evidence": "physical_same_clock_commit_engine",
+      "cycle_counter_scope": "includes_commit_terminal_boundary"
+    }
+  ],
+  "headline_operating_point_comparison": {
+    "baseline": "independent_jobs",
+    "candidate": "global_closure_persistent",
+    "independent_cycles": 9857730,
+    "independent_clock_mhz": 100.0,
+    "independent_cycle_derived_compute_ms": 98.5773,
+    "independent_axis_bytes": 2399952,
+    "independent_resources": {
+      "luts": 38274,
+      "registers": 28681,
+      "bram_tiles": 52.0,
+      "dsps": 193
+    },
+    "persistent_cycles": 4922897,
+    "persistent_clock_mhz": 50.0,
+    "persistent_cycle_derived_compute_ms": 98.45794,
+    "persistent_axis_bytes": 1322256,
+    "persistent_resources": {
+      "luts": 44408,
+      "registers": 26056,
+      "bram_tiles": 3.5,
+      "dsps": 180
+    },
+    "cycle_reduction_percent": 50.06054132137927,
+    "axis_reduction_percent": 44.904898097961954,
+    "cycle_derived_elapsed_delta_ms": -0.11936000000000035,
+    "wall_time_speedup_claimed": false,
+    "clock_normalized_acceleration_claimed": false,
+    "causal_mechanism_isolated": false,
+    "boundary": "These are coupled routed operating points with different clocks, resource footprints, routing, and memory organizations. Their counter reduction is not an observed elapsed-time speedup or an isolated mechanism effect."
+  },
+  "mechanism_effects": {
+    "rectangle_coalescing": {
+      "cycle_reduction_percent": 24.60662850372246,
+      "axis_reduction_percent": 0.5940118802375993
+    },
+    "global_closure_and_persistent_reuse": {
+      "cycle_reduction_percent": 33.761473074477856,
+      "axis_reduction_percent": 44.57567099915496
+    },
+    "exact_union_geometry": {
+      "independent_active_layer_positions": 208828,
+      "persistent_active_layer_positions": 199988,
+      "duplicate_dependency_reduction_percent": 4.233148811462062,
+      "measurement_class": "exact_geometry_not_cycle_projection"
+    },
+    "private_atomic_commit": {
+      "mask_only_service_ms_50mhz": 102.67709702236418,
+      "commit_safe_service_ms_50mhz": 102.67709702236418,
+      "service_overhead_percent": 0.0,
+      "logic_lut_delta": 638,
+      "register_delta": 592,
+      "bram_delta": 0.0,
+      "dsp_delta": 0,
+      "all_four_outcomes_exact": true,
+      "cycle_counter_directly_comparable": false,
+      "timer_scope": "input_dma_trigger_to_dma_and_core_completion",
+      "isolated_publication_overhead_claimed": false,
+      "counter_note": "The commit-safe cycle counter includes the terminal commit boundary; host intervals cover input DMA trigger through DMA/core completion, excluding output clearing, setup, input construction and later validation. Separate same-clock builds do not isolate publication overhead. Legacy service field names are retained for schema compatibility."
+    }
+  },
+  "resources": {
+    "independent_and_rectangle_engine": {
+      "clock_mhz": 100.0,
+      "luts": 38274,
+      "registers": 28681,
+      "bram_tiles": 52.0,
+      "dsps": 193,
+      "timing_closed": true
+    },
+    "persistent_mask_only": {
+      "clock_mhz": 50.0,
+      "luts": 44408,
+      "registers": 26056,
+      "bram_tiles": 3.5,
+      "dsps": 180,
+      "timing_closed": true
+    },
+    "complete_commit_safe": {
+      "clock_mhz": 50.0,
+      "luts": 45046,
+      "registers": 26648,
+      "bram_tiles": 3.5,
+      "dsps": 180,
+      "timing_closed": true,
+      "wns_ns": 3.573
+    }
+  },
+  "controlled_geometry_summary": {
+    "pattern_count": 16,
+    "minimum_cycle_reduction_percent": 39.50853034281276,
+    "maximum_cycle_reduction_percent": 82.16681790922766,
+    "minimum_axis_byte_reduction_percent": 47.14739583333334,
+    "maximum_axis_byte_reduction_percent": 91.50104166666667,
+    "cycles_vs_active_positions_r_squared": 0.9983887364813138,
+    "control_service_fps": 4.1712035970923775,
+    "control_input_stall_percent": 97.51952035981098,
+    "dominant_measured_boundary": "convolution_input_acceptance",
+    "control_stage_wait_percent": null,
+    "control_stage_wait_profile_valid": false,
+    "dominant_stage_boundary": null
+  },
+  "controlled_geometry_families": [
+    {
+      "family": "adversarial_checkerboard",
+      "pattern_count": 3,
+      "minimum_selected_tiles": 8,
+      "maximum_selected_tiles": 30,
+      "minimum_cycle_reduction_percent": 39.74356674278551,
+      "maximum_cycle_reduction_percent": 76.6908846225494,
+      "minimum_axis_reduction_percent": 48.393229166666664,
+      "maximum_axis_reduction_percent": 86.19609375,
+      "all_exact": true
+    },
+    {
+      "family": "clustered_rectangles",
+      "pattern_count": 3,
+      "minimum_selected_tiles": 6,
+      "maximum_selected_tiles": 30,
+      "minimum_cycle_reduction_percent": 44.43301271139537,
+      "maximum_cycle_reduction_percent": 80.66916554313192,
+      "minimum_axis_reduction_percent": 49.66666666666667,
+      "maximum_axis_reduction_percent": 89.834375,
+      "all_exact": true
+    },
+    {
+      "family": "deadline_truncated_prefix",
+      "pattern_count": 3,
+      "minimum_selected_tiles": 5,
+      "maximum_selected_tiles": 24,
+      "minimum_cycle_reduction_percent": 53.00127903199466,
+      "maximum_cycle_reduction_percent": 82.16681790922766,
+      "minimum_axis_reduction_percent": 59.67916666666666,
+      "maximum_axis_reduction_percent": 91.50104166666667,
+      "all_exact": true
+    },
+    {
+      "family": "moving_disocclusion_band",
+      "pattern_count": 3,
+      "minimum_selected_tiles": 8,
+      "maximum_selected_tiles": 28,
+      "minimum_cycle_reduction_percent": 47.284381138061214,
+      "maximum_cycle_reduction_percent": 77.35248957404909,
+      "minimum_axis_reduction_percent": 52.96875,
+      "maximum_axis_reduction_percent": 86.365625,
+      "all_exact": true
+    },
+    {
+      "family": "scattered_random",
+      "pattern_count": 3,
+      "minimum_selected_tiles": 7,
+      "maximum_selected_tiles": 31,
+      "minimum_cycle_reduction_percent": 39.50853034281276,
+      "maximum_cycle_reduction_percent": 78.26111498091308,
+      "minimum_axis_reduction_percent": 47.14739583333334,
+      "maximum_axis_reduction_percent": 87.93046875,
+      "all_exact": true
+    }
+  ],
+  "gates": {
+    "all_canonical_organizations_physical": true,
+    "all_canonical_outputs_exact": true,
+    "global_mechanism_reduces_cycles": true,
+    "global_mechanism_reduces_traffic": true,
+    "commit_outcomes_exact": true,
+    "commit_adds_no_dsp_or_bram": true,
+    "controlled_geometry_suite_exact": true,
+    "all_pass": true
+  },
+  "attribution_boundary": "Exact union geometry isolates duplicate dependency positions. The routed global-closure engine necessarily couples closure with persistent traversal, clock, resources, routing, and memory organization, so its physical counters describe combined operating points rather than elapsed-time acceleration or an isolated marginal mechanism effect."
+}

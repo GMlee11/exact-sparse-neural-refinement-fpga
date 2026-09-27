@@ -1,0 +1,27 @@
+{
+  "engineering_only": true,
+  "fabric_hz": 50000000,
+  "strategy": "Vivado defaults; post-route AggressiveExplore fixed, inherited from accepted harness",
+  "root": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign",
+  "source_hashes": {
+    "fpga/generated/sparse_refinement_accelerator_v1/student_npu_w24/espcn_fpga_student_weights_pkg.sv": "cc1a67ee659447a80252c97064ed7bc50826b40649ebf3c8399ef189ba692029",
+    "fpga/rtl/relu_clamp_pipelined.sv": "3091738ee18582c50854388cbffa58acefb741442c85d5011b9a169eabece1cb",
+    "fpga/rtl/mac_array_3x3_pipelined.sv": "0cd16c1016ab366630420a4b055fbeee6161c477ea0378f171bef79c84f30f9c",
+    "fpga/rtl/conv2d_3x3_multi_channel.sv": "73ab31e9e00f33b01fe6ef451b10fcf29137749894a133c2cf3cbb21b0353ef6",
+    "fpga/rtl/line_buffer_3x3_stallable.sv": "c1a0dbaadc21330ee694cae5fb61d6f42c6efbdf9cdf26c41c8e63b20ac3c6cf",
+    "fpga/rtl/espcn_streaming_feature_window_buffer.sv": "f9d64be2aa148c3c84380d905dc22d5348ed31e78ac662b727a07be1226ac2b1",
+    "fpga/rtl/espcn_streaming_grouped_conv_layer.sv": "6b8c323b0dd558d80ea285f35a853b560dea8955c6c1b78469ed4bf71bfd416a",
+    "fpga/rtl/espcn_streaming_grouped_conv_layer_multicontext.sv": "75d7d0c7c6ebb39bb09c22c26bd7007b472ca0dc54ece94de988891145bbc4c6",
+    "fpga/rtl/espcn_streaming_grouped_conv_layer_selectable.sv": "27519c47194c4df0d766f1674a70e1392a43a96b05ac3975a46b02a3b7792c0e",
+    "fpga/rtl/espcn_streaming_pixel_shuffle_rgb.sv": "b7ae2e961fd1f4546c31a861c3f94fcfd2dd405fd8a5888614b4a6787e690438",
+    "fpga/rtl/sparse_hierarchical_mask_lookup.sv": "2a20d0923456ddff8c9b8a8f637d820a5cea2b2441d000c78ff2c3ab45e0b025",
+    "fpga/rtl/espcn_streaming_linebuffer_core.sv": "864a3c2106e08617833db6d34bad6758ca0571779abadfaba8f09fef7ff30842",
+    "fpga/rtl/sparse_hierarchical_commit_controller.sv": "71bfc954591410f1462a0c79a819e04610eddd5cfc30c170af0466d5f519b808",
+    "src/experiments/paper2_conventional_comparison_v1/roi_request_guard.sv": "0398355e122c8958726b0f6dcc4116e2384c673e1e2cc50fc527d5907a54dd71",
+    "src/experiments/paper2_conventional_comparison_v1/roi_stream.sv": "bbe161647a3373ad4f4598c7285506a0e676bb2b4cbd8dfa9e7ea0f9056df9f3",
+    "src/experiments/paper2_conventional_comparison_v1/roi_board_wrapper.sv": "f6891ffee861e44a9496fefceb2ecf96538056f9bc520e16d2a14582da09a59c",
+    "sources\\paper2_origin_core.sv": "01f93b0e554a4edc6fde471b4b234242568ef2737054983c621bf5553a5160d9",
+    "synthesize.tcl": "e28bf1b25b3e0a18b6c629e1a006d5a13b325182e96cf85196e3cd6d3ea96ccb",
+    "route.tcl": "a2d8ca10cb37b3a9aaaca89feab8dc5d8300e1b14e5157ebd5fe16fdcea739b0"
+  }
+}

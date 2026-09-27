@@ -1,0 +1,70 @@
+
+****** xsim v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/fullgeometry/xsim_script.tcl
+# xsim {fullgeometry} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+FULL_PROGRESS case=0 cycles=100000 outputs=23166/23166
+FULL_PROGRESS case=0 cycles=200000 outputs=50452/50452
+FULL_PROGRESS case=0 cycles=300000 outputs=76880/76880
+FULL_PROGRESS case=0 cycles=400000 outputs=103684/103684
+FULL_PROGRESS case=0 cycles=500000 outputs=130596/130596
+FULL_PROGRESS case=0 cycles=600000 outputs=159662/159662
+FULL_PROGRESS case=0 cycles=700000 outputs=200708/200708
+FULL_PROGRESS case=0 cycles=800000 outputs=241754/241754
+FULL_PROGRESS case=0 cycles=900000 outputs=282804/282804
+FULL_PROGRESS case=0 cycles=1000000 outputs=323845/323845
+FULL_PROGRESS case=0 cycles=1100000 outputs=364896/364896
+FULL_PROGRESS case=0 cycles=1200000 outputs=405937/405937
+FULL_PROGRESS case=0 cycles=1300000 outputs=446988/446988
+FULL_PROGRESS case=0 cycles=1400000 outputs=488029/488029
+FULL_PROGRESS case=0 cycles=1500000 outputs=529080/529080
+FULL_PROGRESS case=0 cycles=1600000 outputs=570122/570122
+FULL_PROGRESS case=0 cycles=1700000 outputs=611171/611171
+FULL_PROGRESS case=0 cycles=1800000 outputs=652218/652218
+FULL_PROGRESS case=0 cycles=1900000 outputs=693263/693263
+FULL_PROGRESS case=0 cycles=2000000 outputs=734313/734313
+FULL_PROGRESS case=0 cycles=2100000 outputs=775354/775354
+FULL_PROGRESS case=0 cycles=2200000 outputs=816406/816406
+FULL_PROGRESS case=0 cycles=2300000 outputs=857446/857446
+FULL_PROGRESS case=0 cycles=2400000 outputs=898497/898497
+PAPER2_INTEGRATED_MASK_PASS mask=0 baseline_cycles=2456290 candidate_cycles=2456290
+PAPER2_STALLS mask=0 baseline_raw=2204020 candidate_raw=2204014 baseline_c3wait=2193796 candidate_c3wait=2195602
+FULL_PROGRESS case=1 cycles=100000 outputs=23166/23166
+FULL_PROGRESS case=1 cycles=200000 outputs=50452/50452
+FULL_PROGRESS case=1 cycles=300000 outputs=76880/76880
+FULL_PROGRESS case=1 cycles=400000 outputs=103684/103684
+FULL_PROGRESS case=1 cycles=500000 outputs=130596/130596
+FULL_PROGRESS case=1 cycles=600000 outputs=159662/159662
+FULL_PROGRESS case=1 cycles=700000 outputs=200708/200708
+FULL_PROGRESS case=1 cycles=800000 outputs=241754/241754
+FULL_PROGRESS case=1 cycles=900000 outputs=282804/282804
+FULL_PROGRESS case=1 cycles=1000000 outputs=323845/323845
+FULL_PROGRESS case=1 cycles=1100000 outputs=364896/364896
+FULL_PROGRESS case=1 cycles=1200000 outputs=405937/405937
+FULL_PROGRESS case=1 cycles=1300000 outputs=446988/446988
+FULL_PROGRESS case=1 cycles=1400000 outputs=488029/488029
+FULL_PROGRESS case=1 cycles=1500000 outputs=529080/529080
+FULL_PROGRESS case=1 cycles=1600000 outputs=570122/570122
+FULL_PROGRESS case=1 cycles=1700000 outputs=611171/611171
+FULL_PROGRESS case=1 cycles=1800000 outputs=652218/652218
+FULL_PROGRESS case=1 cycles=1900000 outputs=693263/693263
+FULL_PROGRESS case=1 cycles=2000000 outputs=734313/734313
+FULL_PROGRESS case=1 cycles=2100000 outputs=769230/769232
+FULL_PROGRESS case=1 cycles=2200000 outputs=794862/794866
+FULL_PROGRESS case=1 cycles=2300000 outputs=820654/820704
+FULL_PROGRESS case=1 cycles=2400000 outputs=846625/846697
+FULL_PROGRESS case=1 cycles=2500000 outputs=872595/872687
+FULL_PROGRESS case=1 cycles=2600000 outputs=898576/898682
+PAPER2_INTEGRATED_MASK_PASS mask=1 baseline_cycles=2688760 candidate_cycles=2688478
+PAPER2_STALLS mask=1 baseline_raw=2425435 candidate_raw=2425146 baseline_c3wait=2187158 candidate_c3wait=2189084
+PAPER2_INTEGRATED_PASS 2 FULL-SIZE development masks byte/order/coordinates/counters/backpressure/reset-abort
+$finish called at time : 51652680 ns : File "C:/Research/Thesis/Visual_Upscaling/neural-upscaling-hw-sw-codesign/output/paper2_service_successor_v1/E010/tb_fullgeometry.sv" Line 69
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:07:14 . Memory (MB): peak = 923.121 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Sep 20 22:04:36 2026...

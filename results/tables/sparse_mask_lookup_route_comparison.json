@@ -1,0 +1,43 @@
+{
+  "artifact": "sparse_mask_lookup_route_comparison",
+  "baseline": {
+    "bram_tiles": 1,
+    "dsps": 180,
+    "logic_luts": 25817,
+    "lutram_luts": 16328,
+    "registers": 21554,
+    "slice_luts": 42145,
+    "target_mhz": 100.0,
+    "wns_ns": 0.003
+  },
+  "candidate": {
+    "bram_tiles": 1,
+    "dsps": 180,
+    "logic_luts": 25393,
+    "lutram_luts": 16328,
+    "registers": 21621,
+    "slice_luts": 41721,
+    "target_mhz": 100.0,
+    "wns_ns": 0.005
+  },
+  "candidate_minus_baseline": {
+    "logic_luts": -424,
+    "registers": 67,
+    "slice_luts": -424,
+    "wns_ns": 0.002
+  },
+  "candidate_reduction": {
+    "logic_luts_percent": 1.642328698144635,
+    "slice_luts_percent": 1.0060505398030606
+  },
+  "claim_boundary": "The bounded decoder is a modest control-cost refinement. Sparse frame cycle and traffic savings come from the persistent hierarchical dataflow.",
+  "gates": {
+    "accepted": true,
+    "candidate_meets_100mhz": true,
+    "dsp_count_unchanged": true,
+    "logic_luts_reduced": true,
+    "lutram_count_unchanged": true,
+    "total_luts_reduced": true
+  },
+  "schema_version": 1
+}

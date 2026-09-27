@@ -1,0 +1,2276 @@
+{
+  "schema_version": 1,
+  "record_type": "E134_B030_EXECUTION_FACTORIAL_ANALYSIS",
+  "study_identity": "E134-B030",
+  "scientific_identity": "Experiment 134 controlled same-bitstream companion",
+  "clock_mhz": 10.0,
+  "mode_mapping": {
+    "A": {
+      "mode": 0,
+      "coverage": "conservative_rectangle",
+      "retention": "flushed"
+    },
+    "B": {
+      "mode": 1,
+      "coverage": "exact_reverse_closure",
+      "retention": "flushed"
+    },
+    "C": {
+      "mode": 2,
+      "coverage": "conservative_rectangle",
+      "retention": "retained"
+    },
+    "D": {
+      "mode": 3,
+      "coverage": "exact_reverse_closure",
+      "retention": "retained"
+    }
+  },
+  "aggregation": "contrasts per repetition; median across 10 repetitions per mask; median across 12 mask medians",
+  "contrast_signs": {
+    "coverage": "positive means rectangle costs more than exact",
+    "retention": "positive means flushing costs more than retention",
+    "interaction": "(A-B)-(C-D)"
+  },
+  "source_capture": {
+    "path": "fpga/docs/captures/paper2/experiment134/E134-B030/physical/uart_b030_raw.bin",
+    "bytes": 94371,
+    "sha256": "ee6da3a171ea6f01f55732fbbe571f78ebe48aa156c39dfb994ab25006c724b8",
+    "retained_uart_label": "E134_B029 because the B029 ELF was reused byte-for-byte by design"
+  },
+  "validation": {
+    "rows": 480,
+    "masks": 12,
+    "modes": 4,
+    "repetitions_per_cell": 10,
+    "checksum_mismatches": 0,
+    "nonzero_adapter_errors": 0,
+    "incomplete_status_rows": 0,
+    "word_count_invariant_failures": 0,
+    "publication_safety_rows_run": 0
+  },
+  "per_mask": [
+    {
+      "mask_hex": "0x000000",
+      "selected_tiles": 0,
+      "cells": {
+        "A": {
+          "cycles": 66482.0,
+          "conv1_active_positions": 0.0,
+          "conv2_active_positions": 0.0,
+          "conv3_active_positions": 0.0,
+          "trained_layer_work": 0.0,
+          "output_words": 0.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 63720.0,
+          "segment_launches": 3.0
+        },
+        "B": {
+          "cycles": 66482.0,
+          "conv1_active_positions": 0.0,
+          "conv2_active_positions": 0.0,
+          "conv3_active_positions": 0.0,
+          "trained_layer_work": 0.0,
+          "output_words": 0.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 63720.0,
+          "segment_launches": 3.0
+        },
+        "C": {
+          "cycles": 66482.0,
+          "conv1_active_positions": 0.0,
+          "conv2_active_positions": 0.0,
+          "conv3_active_positions": 0.0,
+          "trained_layer_work": 0.0,
+          "output_words": 0.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 63720.0,
+          "segment_launches": 3.0
+        },
+        "D": {
+          "cycles": 66482.0,
+          "conv1_active_positions": 0.0,
+          "conv2_active_positions": 0.0,
+          "conv3_active_positions": 0.0,
+          "trained_layer_work": 0.0,
+          "output_words": 0.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 63720.0,
+          "segment_launches": 3.0
+        }
+      },
+      "outcomes": {
+        "cycles": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv1_active_positions": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": null,
+          "fractional_valid_repetitions": 0,
+          "fractional_invalid_repetitions": 10
+        },
+        "conv2_active_positions": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": null,
+          "fractional_valid_repetitions": 0,
+          "fractional_invalid_repetitions": 10
+        },
+        "conv3_active_positions": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": null,
+          "fractional_valid_repetitions": 0,
+          "fractional_invalid_repetitions": 10
+        },
+        "trained_layer_work": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": null,
+          "fractional_valid_repetitions": 0,
+          "fractional_invalid_repetitions": 10
+        },
+        "output_words": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": null,
+          "fractional_valid_repetitions": 0,
+          "fractional_invalid_repetitions": 10
+        },
+        "reused_activations": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": null,
+          "fractional_valid_repetitions": 0,
+          "fractional_invalid_repetitions": 10
+        },
+        "stall_cycles": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "segment_launches": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        }
+      }
+    },
+    {
+      "mask_hex": "0xFFFFFF",
+      "selected_tiles": 24,
+      "cells": {
+        "A": {
+          "cycles": 1124563.0,
+          "conv1_active_positions": 10240.0,
+          "conv2_active_positions": 9728.0,
+          "conv3_active_positions": 9216.0,
+          "trained_layer_work": 29184.0,
+          "output_words": 36864.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 1121572.0,
+          "segment_launches": 3.0
+        },
+        "B": {
+          "cycles": 1124563.0,
+          "conv1_active_positions": 10240.0,
+          "conv2_active_positions": 9728.0,
+          "conv3_active_positions": 9216.0,
+          "trained_layer_work": 29184.0,
+          "output_words": 36864.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 1121572.0,
+          "segment_launches": 3.0
+        },
+        "C": {
+          "cycles": 1032755.0,
+          "conv1_active_positions": 9216.0,
+          "conv2_active_positions": 9216.0,
+          "conv3_active_positions": 9216.0,
+          "trained_layer_work": 27648.0,
+          "output_words": 36864.0,
+          "reused_activations": 36864.0,
+          "stall_cycles": 1029764.0,
+          "segment_launches": 3.0
+        },
+        "D": {
+          "cycles": 1032755.0,
+          "conv1_active_positions": 9216.0,
+          "conv2_active_positions": 9216.0,
+          "conv3_active_positions": 9216.0,
+          "trained_layer_work": 27648.0,
+          "output_words": 36864.0,
+          "reused_activations": 36864.0,
+          "stall_cycles": 1029764.0,
+          "segment_launches": 3.0
+        }
+      },
+      "outcomes": {
+        "cycles": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 91808.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.08511308949352854,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv1_active_positions": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 1024.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.10526315789473684,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv2_active_positions": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 512.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.05405405405405406,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv3_active_positions": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "trained_layer_work": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 1536.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.05405405405405406,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "output_words": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "reused_activations": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": -36864.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": -2.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "stall_cycles": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 91808.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.085349754757044,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "segment_launches": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        }
+      }
+    },
+    {
+      "mask_hex": "0x000001",
+      "selected_tiles": 1,
+      "cells": {
+        "A": {
+          "cycles": 109217.0,
+          "conv1_active_positions": 468.0,
+          "conv2_active_positions": 425.0,
+          "conv3_active_positions": 384.0,
+          "trained_layer_work": 1277.0,
+          "output_words": 1536.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 106538.0,
+          "segment_launches": 3.0
+        },
+        "B": {
+          "cycles": 109217.0,
+          "conv1_active_positions": 468.0,
+          "conv2_active_positions": 425.0,
+          "conv3_active_positions": 384.0,
+          "trained_layer_work": 1277.0,
+          "output_words": 1536.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 106538.0,
+          "segment_launches": 3.0
+        },
+        "C": {
+          "cycles": 109217.0,
+          "conv1_active_positions": 468.0,
+          "conv2_active_positions": 425.0,
+          "conv3_active_positions": 384.0,
+          "trained_layer_work": 1277.0,
+          "output_words": 1536.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 106538.0,
+          "segment_launches": 3.0
+        },
+        "D": {
+          "cycles": 109217.0,
+          "conv1_active_positions": 468.0,
+          "conv2_active_positions": 425.0,
+          "conv3_active_positions": 384.0,
+          "trained_layer_work": 1277.0,
+          "output_words": 1536.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 106538.0,
+          "segment_launches": 3.0
+        }
+      },
+      "outcomes": {
+        "cycles": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv1_active_positions": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv2_active_positions": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv3_active_positions": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "trained_layer_work": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "output_words": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "reused_activations": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": null,
+          "fractional_valid_repetitions": 0,
+          "fractional_invalid_repetitions": 10
+        },
+        "stall_cycles": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "segment_launches": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        }
+      }
+    },
+    {
+      "mask_hex": "0x000800",
+      "selected_tiles": 1,
+      "cells": {
+        "A": {
+          "cycles": 126388.0,
+          "conv1_active_positions": 560.0,
+          "conv2_active_positions": 468.0,
+          "conv3_active_positions": 384.0,
+          "trained_layer_work": 1412.0,
+          "output_words": 1536.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 123526.0,
+          "segment_launches": 3.0
+        },
+        "B": {
+          "cycles": 126388.0,
+          "conv1_active_positions": 560.0,
+          "conv2_active_positions": 468.0,
+          "conv3_active_positions": 384.0,
+          "trained_layer_work": 1412.0,
+          "output_words": 1536.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 123526.0,
+          "segment_launches": 3.0
+        },
+        "C": {
+          "cycles": 126388.0,
+          "conv1_active_positions": 560.0,
+          "conv2_active_positions": 468.0,
+          "conv3_active_positions": 384.0,
+          "trained_layer_work": 1412.0,
+          "output_words": 1536.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 123526.0,
+          "segment_launches": 3.0
+        },
+        "D": {
+          "cycles": 126388.0,
+          "conv1_active_positions": 560.0,
+          "conv2_active_positions": 468.0,
+          "conv3_active_positions": 384.0,
+          "trained_layer_work": 1412.0,
+          "output_words": 1536.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 123526.0,
+          "segment_launches": 3.0
+        }
+      },
+      "outcomes": {
+        "cycles": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv1_active_positions": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv2_active_positions": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv3_active_positions": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "trained_layer_work": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "output_words": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "reused_activations": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": null,
+          "fractional_valid_repetitions": 0,
+          "fractional_invalid_repetitions": 10
+        },
+        "stall_cycles": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "segment_launches": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        }
+      }
+    },
+    {
+      "mask_hex": "0x800000",
+      "selected_tiles": 1,
+      "cells": {
+        "A": {
+          "cycles": 125087.0,
+          "conv1_active_positions": 468.0,
+          "conv2_active_positions": 425.0,
+          "conv3_active_positions": 384.0,
+          "trained_layer_work": 1277.0,
+          "output_words": 1536.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 121983.0,
+          "segment_launches": 3.0
+        },
+        "B": {
+          "cycles": 125087.0,
+          "conv1_active_positions": 468.0,
+          "conv2_active_positions": 425.0,
+          "conv3_active_positions": 384.0,
+          "trained_layer_work": 1277.0,
+          "output_words": 1536.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 121983.0,
+          "segment_launches": 3.0
+        },
+        "C": {
+          "cycles": 125087.0,
+          "conv1_active_positions": 468.0,
+          "conv2_active_positions": 425.0,
+          "conv3_active_positions": 384.0,
+          "trained_layer_work": 1277.0,
+          "output_words": 1536.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 121983.0,
+          "segment_launches": 3.0
+        },
+        "D": {
+          "cycles": 125087.0,
+          "conv1_active_positions": 468.0,
+          "conv2_active_positions": 425.0,
+          "conv3_active_positions": 384.0,
+          "trained_layer_work": 1277.0,
+          "output_words": 1536.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 121983.0,
+          "segment_launches": 3.0
+        }
+      },
+      "outcomes": {
+        "cycles": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv1_active_positions": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv2_active_positions": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv3_active_positions": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "trained_layer_work": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "output_words": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "reused_activations": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": null,
+          "fractional_valid_repetitions": 0,
+          "fractional_invalid_repetitions": 10
+        },
+        "stall_cycles": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "segment_launches": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        }
+      }
+    },
+    {
+      "mask_hex": "0x000081",
+      "selected_tiles": 2,
+      "cells": {
+        "A": {
+          "cycles": 404449.0,
+          "conv1_active_positions": 3328.0,
+          "conv2_active_positions": 3200.0,
+          "conv3_active_positions": 3072.0,
+          "trained_layer_work": 9600.0,
+          "output_words": 3072.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 401817.0,
+          "segment_launches": 3.0
+        },
+        "B": {
+          "cycles": 163248.0,
+          "conv1_active_positions": 936.0,
+          "conv2_active_positions": 850.0,
+          "conv3_active_positions": 768.0,
+          "trained_layer_work": 2554.0,
+          "output_words": 3072.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 160518.0,
+          "segment_launches": 3.0
+        },
+        "C": {
+          "cycles": 404449.0,
+          "conv1_active_positions": 3328.0,
+          "conv2_active_positions": 3200.0,
+          "conv3_active_positions": 3072.0,
+          "trained_layer_work": 9600.0,
+          "output_words": 3072.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 401817.0,
+          "segment_launches": 3.0
+        },
+        "D": {
+          "cycles": 163248.0,
+          "conv1_active_positions": 936.0,
+          "conv2_active_positions": 850.0,
+          "conv3_active_positions": 768.0,
+          "trained_layer_work": 2554.0,
+          "output_words": 3072.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 160518.0,
+          "segment_launches": 3.0
+        }
+      },
+      "outcomes": {
+        "cycles": {
+          "raw": {
+            "coverage": 241201.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.8497525968958793,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv1_active_positions": {
+          "raw": {
+            "coverage": 2392.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 1.1219512195121952,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv2_active_positions": {
+          "raw": {
+            "coverage": 2350.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 1.1604938271604939,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv3_active_positions": {
+          "raw": {
+            "coverage": 2304.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 1.2,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "trained_layer_work": {
+          "raw": {
+            "coverage": 7046.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 1.1594536778015467,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "output_words": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "reused_activations": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": null,
+          "fractional_valid_repetitions": 0,
+          "fractional_invalid_repetitions": 10
+        },
+        "stall_cycles": {
+          "raw": {
+            "coverage": 241299.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.858203739763664,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "segment_launches": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        }
+      }
+    },
+    {
+      "mask_hex": "0x555555",
+      "selected_tiles": 12,
+      "cells": {
+        "A": {
+          "cycles": 998499.0,
+          "conv1_active_positions": 9120.0,
+          "conv2_active_positions": 8588.0,
+          "conv3_active_positions": 8064.0,
+          "trained_layer_work": 25772.0,
+          "output_words": 18432.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 995498.0,
+          "segment_launches": 3.0
+        },
+        "B": {
+          "cycles": 724737.0,
+          "conv1_active_positions": 6240.0,
+          "conv2_active_positions": 5396.0,
+          "conv3_active_positions": 4608.0,
+          "trained_layer_work": 16244.0,
+          "output_words": 18432.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 721067.0,
+          "segment_launches": 3.0
+        },
+        "C": {
+          "cycles": 916843.0,
+          "conv1_active_positions": 8208.0,
+          "conv2_active_positions": 8136.0,
+          "conv3_active_positions": 8064.0,
+          "trained_layer_work": 24408.0,
+          "output_words": 18432.0,
+          "reused_activations": 32736.0,
+          "stall_cycles": 913850.0,
+          "segment_launches": 3.0
+        },
+        "D": {
+          "cycles": 669013.0,
+          "conv1_active_positions": 5616.0,
+          "conv2_active_positions": 5112.0,
+          "conv3_active_positions": 4608.0,
+          "trained_layer_work": 15336.0,
+          "output_words": 18432.0,
+          "reused_activations": 21792.0,
+          "stall_cycles": 665519.0,
+          "segment_launches": 3.0
+        }
+      },
+      "outcomes": {
+        "cycles": {
+          "raw": {
+            "coverage": 260796.0,
+            "retention": 68690.0,
+            "interaction": 25932.0
+          },
+          "fractional": {
+            "coverage": 0.31524780816006326,
+            "retention": 0.08303184075873382,
+            "interaction": 0.031346363292407704
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv1_active_positions": {
+          "raw": {
+            "coverage": 2736.0,
+            "retention": 768.0,
+            "interaction": 288.0
+          },
+          "fractional": {
+            "coverage": 0.375,
+            "retention": 0.10526315789473684,
+            "interaction": 0.039473684210526314
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv2_active_positions": {
+          "raw": {
+            "coverage": 3108.0,
+            "retention": 368.0,
+            "interaction": 168.0
+          },
+          "fractional": {
+            "coverage": 0.45652173913043476,
+            "retention": 0.05405405405405406,
+            "interaction": 0.024676850763807285
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv3_active_positions": {
+          "raw": {
+            "coverage": 3456.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.5454545454545454,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "trained_layer_work": {
+          "raw": {
+            "coverage": 9300.0,
+            "retention": 1136.0,
+            "interaction": 456.0
+          },
+          "fractional": {
+            "coverage": 0.45499021526418787,
+            "retention": 0.05557729941291585,
+            "interaction": 0.022309197651663407
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "output_words": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "reused_activations": {
+          "raw": {
+            "coverage": 5472.0,
+            "retention": -27264.0,
+            "interaction": -10944.0
+          },
+          "fractional": {
+            "coverage": 0.4014084507042254,
+            "retention": -2.0,
+            "interaction": -0.8028169014084507
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "stall_cycles": {
+          "raw": {
+            "coverage": 261381.0,
+            "retention": 68598.0,
+            "interaction": 26100.0
+          },
+          "fractional": {
+            "coverage": 0.3172163034818052,
+            "retention": 0.08325166705401262,
+            "interaction": 0.031675391558204744
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "segment_launches": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        }
+      }
+    },
+    {
+      "mask_hex": "0x080808",
+      "selected_tiles": 3,
+      "cells": {
+        "A": {
+          "cycles": 241789.0,
+          "conv1_active_positions": 1600.0,
+          "conv2_active_positions": 1368.0,
+          "conv3_active_positions": 1152.0,
+          "trained_layer_work": 4120.0,
+          "output_words": 4608.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 238822.0,
+          "segment_launches": 3.0
+        },
+        "B": {
+          "cycles": 241789.0,
+          "conv1_active_positions": 1600.0,
+          "conv2_active_positions": 1368.0,
+          "conv3_active_positions": 1152.0,
+          "trained_layer_work": 4120.0,
+          "output_words": 4608.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 238822.0,
+          "segment_launches": 3.0
+        },
+        "C": {
+          "cycles": 227137.0,
+          "conv1_active_positions": 1440.0,
+          "conv2_active_positions": 1296.0,
+          "conv3_active_positions": 1152.0,
+          "trained_layer_work": 3888.0,
+          "output_words": 4608.0,
+          "reused_activations": 5568.0,
+          "stall_cycles": 224226.0,
+          "segment_launches": 3.0
+        },
+        "D": {
+          "cycles": 227137.0,
+          "conv1_active_positions": 1440.0,
+          "conv2_active_positions": 1296.0,
+          "conv3_active_positions": 1152.0,
+          "trained_layer_work": 3888.0,
+          "output_words": 4608.0,
+          "reused_activations": 5568.0,
+          "stall_cycles": 224226.0,
+          "segment_launches": 3.0
+        }
+      },
+      "outcomes": {
+        "cycles": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 14652.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.06249173643602615,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv1_active_positions": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 160.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.10526315789473684,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv2_active_positions": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 72.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.05405405405405406,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv3_active_positions": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "trained_layer_work": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 232.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.057942057942057944,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "output_words": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "reused_activations": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": -5568.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": -2.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "stall_cycles": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 14596.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.06304314023600145,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "segment_launches": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        }
+      }
+    },
+    {
+      "mask_hex": "0x00FF00",
+      "selected_tiles": 8,
+      "cells": {
+        "A": {
+          "cycles": 426539.0,
+          "conv1_active_positions": 3584.0,
+          "conv2_active_positions": 3328.0,
+          "conv3_active_positions": 3072.0,
+          "trained_layer_work": 9984.0,
+          "output_words": 12288.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 423649.0,
+          "segment_launches": 3.0
+        },
+        "B": {
+          "cycles": 426539.0,
+          "conv1_active_positions": 3584.0,
+          "conv2_active_positions": 3328.0,
+          "conv3_active_positions": 3072.0,
+          "trained_layer_work": 9984.0,
+          "output_words": 12288.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 423649.0,
+          "segment_launches": 3.0
+        },
+        "C": {
+          "cycles": 426539.0,
+          "conv1_active_positions": 3584.0,
+          "conv2_active_positions": 3328.0,
+          "conv3_active_positions": 3072.0,
+          "trained_layer_work": 9984.0,
+          "output_words": 12288.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 423649.0,
+          "segment_launches": 3.0
+        },
+        "D": {
+          "cycles": 426539.0,
+          "conv1_active_positions": 3584.0,
+          "conv2_active_positions": 3328.0,
+          "conv3_active_positions": 3072.0,
+          "trained_layer_work": 9984.0,
+          "output_words": 12288.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 423649.0,
+          "segment_launches": 3.0
+        }
+      },
+      "outcomes": {
+        "cycles": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv1_active_positions": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv2_active_positions": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv3_active_positions": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "trained_layer_work": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "output_words": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "reused_activations": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": null,
+          "fractional_valid_repetitions": 0,
+          "fractional_invalid_repetitions": 10
+        },
+        "stall_cycles": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "segment_launches": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        }
+      }
+    },
+    {
+      "mask_hex": "0x810081",
+      "selected_tiles": 4,
+      "cells": {
+        "A": {
+          "cycles": 764506.0,
+          "conv1_active_positions": 6656.0,
+          "conv2_active_positions": 6400.0,
+          "conv3_active_positions": 6144.0,
+          "trained_layer_work": 19200.0,
+          "output_words": 6144.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 761643.0,
+          "segment_launches": 3.0
+        },
+        "B": {
+          "cycles": 264690.0,
+          "conv1_active_positions": 1872.0,
+          "conv2_active_positions": 1700.0,
+          "conv3_active_positions": 1536.0,
+          "trained_layer_work": 5108.0,
+          "output_words": 6144.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 261601.0,
+          "segment_launches": 3.0
+        },
+        "C": {
+          "cycles": 764506.0,
+          "conv1_active_positions": 6656.0,
+          "conv2_active_positions": 6400.0,
+          "conv3_active_positions": 6144.0,
+          "trained_layer_work": 19200.0,
+          "output_words": 6144.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 761643.0,
+          "segment_launches": 3.0
+        },
+        "D": {
+          "cycles": 264690.0,
+          "conv1_active_positions": 1872.0,
+          "conv2_active_positions": 1700.0,
+          "conv3_active_positions": 1536.0,
+          "trained_layer_work": 5108.0,
+          "output_words": 6144.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 261601.0,
+          "segment_launches": 3.0
+        }
+      },
+      "outcomes": {
+        "cycles": {
+          "raw": {
+            "coverage": 499816.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.9712746648840455,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv1_active_positions": {
+          "raw": {
+            "coverage": 4784.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 1.1219512195121952,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv2_active_positions": {
+          "raw": {
+            "coverage": 4700.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 1.1604938271604939,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv3_active_positions": {
+          "raw": {
+            "coverage": 4608.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 1.2,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "trained_layer_work": {
+          "raw": {
+            "coverage": 14092.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 1.1594536778015467,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "output_words": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "reused_activations": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": null,
+          "fractional_valid_repetitions": 0,
+          "fractional_invalid_repetitions": 10
+        },
+        "stall_cycles": {
+          "raw": {
+            "coverage": 500042.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.9773661023177268,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "segment_launches": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        }
+      }
+    },
+    {
+      "mask_hex": "0x181800",
+      "selected_tiles": 4,
+      "cells": {
+        "A": {
+          "cycles": 276301.0,
+          "conv1_active_positions": 1944.0,
+          "conv2_active_positions": 1734.0,
+          "conv3_active_positions": 1536.0,
+          "trained_layer_work": 5214.0,
+          "output_words": 6144.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 273279.0,
+          "segment_launches": 3.0
+        },
+        "B": {
+          "cycles": 276301.0,
+          "conv1_active_positions": 1944.0,
+          "conv2_active_positions": 1734.0,
+          "conv3_active_positions": 1536.0,
+          "trained_layer_work": 5214.0,
+          "output_words": 6144.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 273279.0,
+          "segment_launches": 3.0
+        },
+        "C": {
+          "cycles": 263151.0,
+          "conv1_active_positions": 1800.0,
+          "conv2_active_positions": 1666.0,
+          "conv3_active_positions": 1536.0,
+          "trained_layer_work": 5002.0,
+          "output_words": 6144.0,
+          "reused_activations": 5088.0,
+          "stall_cycles": 260173.0,
+          "segment_launches": 3.0
+        },
+        "D": {
+          "cycles": 263151.0,
+          "conv1_active_positions": 1800.0,
+          "conv2_active_positions": 1666.0,
+          "conv3_active_positions": 1536.0,
+          "trained_layer_work": 5002.0,
+          "output_words": 6144.0,
+          "reused_activations": 5088.0,
+          "stall_cycles": 260173.0,
+          "segment_launches": 3.0
+        }
+      },
+      "outcomes": {
+        "cycles": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 13150.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.048753179152176654,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv1_active_positions": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 144.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.07692307692307693,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv2_active_positions": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 68.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.04,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv3_active_positions": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "trained_layer_work": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 212.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.04150352388410337,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "output_words": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "reused_activations": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": -5088.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": -2.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "stall_cycles": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 13106.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.04913656711381718,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "segment_launches": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        }
+      }
+    },
+    {
+      "mask_hex": "0xA55AA5",
+      "selected_tiles": 12,
+      "cells": {
+        "A": {
+          "cycles": 1051372.0,
+          "conv1_active_positions": 9456.0,
+          "conv2_active_positions": 8948.0,
+          "conv3_active_positions": 8448.0,
+          "trained_layer_work": 26852.0,
+          "output_words": 18432.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 1048329.0,
+          "segment_launches": 3.0
+        },
+        "B": {
+          "cycles": 720600.0,
+          "conv1_active_positions": 6080.0,
+          "conv2_active_positions": 5320.0,
+          "conv3_active_positions": 4608.0,
+          "trained_layer_work": 16008.0,
+          "output_words": 18432.0,
+          "reused_activations": 0.0,
+          "stall_cycles": 716821.0,
+          "segment_launches": 3.0
+        },
+        "C": {
+          "cycles": 979092.0,
+          "conv1_active_positions": 8656.0,
+          "conv2_active_positions": 8556.0,
+          "conv3_active_positions": 8448.0,
+          "trained_layer_work": 25660.0,
+          "output_words": 18432.0,
+          "reused_activations": 28608.0,
+          "stall_cycles": 976155.0,
+          "segment_launches": 3.0
+        },
+        "D": {
+          "cycles": 706176.0,
+          "conv1_active_positions": 5888.0,
+          "conv2_active_positions": 5272.0,
+          "conv3_active_positions": 4608.0,
+          "trained_layer_work": 15768.0,
+          "output_words": 18432.0,
+          "reused_activations": 5760.0,
+          "stall_cycles": 702445.0,
+          "segment_launches": 3.0
+        }
+      },
+      "outcomes": {
+        "cycles": {
+          "raw": {
+            "coverage": 301844.0,
+            "retention": 43352.0,
+            "interaction": 57856.0
+          },
+          "fractional": {
+            "coverage": 0.34923117862803854,
+            "retention": 0.05015792944661059,
+            "interaction": 0.0669389455172334
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv1_active_positions": {
+          "raw": {
+            "coverage": 3072.0,
+            "retention": 496.0,
+            "interaction": 608.0
+          },
+          "fractional": {
+            "coverage": 0.4085106382978723,
+            "retention": 0.06595744680851064,
+            "interaction": 0.08085106382978724
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv2_active_positions": {
+          "raw": {
+            "coverage": 3456.0,
+            "retention": 220.0,
+            "interaction": 344.0
+          },
+          "fractional": {
+            "coverage": 0.4920273348519362,
+            "retention": 0.03132118451025057,
+            "interaction": 0.0489749430523918
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "conv3_active_positions": {
+          "raw": {
+            "coverage": 3840.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.5882352941176471,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "trained_layer_work": {
+          "raw": {
+            "coverage": 10368.0,
+            "retention": 716.0,
+            "interaction": 952.0
+          },
+          "fractional": {
+            "coverage": 0.4920273348519362,
+            "retention": 0.03397873955960516,
+            "interaction": 0.04517843583902809
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "output_words": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "reused_activations": {
+          "raw": {
+            "coverage": 11424.0,
+            "retention": -17184.0,
+            "interaction": -22848.0
+          },
+          "fractional": {
+            "coverage": 1.329608938547486,
+            "retention": -2.0,
+            "interaction": -2.659217877094972
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "stall_cycles": {
+          "raw": {
+            "coverage": 302609.0,
+            "retention": 43275.0,
+            "interaction": 57798.0
+          },
+          "fractional": {
+            "coverage": 0.3514877676950998,
+            "retention": 0.05026497277676951,
+            "interaction": 0.06713379310344827
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        },
+        "segment_launches": {
+          "raw": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional": {
+            "coverage": 0.0,
+            "retention": 0.0,
+            "interaction": 0.0
+          },
+          "fractional_valid_repetitions": 10,
+          "fractional_invalid_repetitions": 0
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "cycles": {
+      "raw": {
+        "coverage": 0.0,
+        "retention": 0.0,
+        "interaction": 0.0
+      },
+      "raw_valid_masks": 12,
+      "fractional": {
+        "coverage": 0.0,
+        "retention": 0.0,
+        "interaction": 0.0
+      },
+      "fractional_valid_masks": 12
+    },
+    "conv1_active_positions": {
+      "raw": {
+        "coverage": 0.0,
+        "retention": 0.0,
+        "interaction": 0.0
+      },
+      "raw_valid_masks": 12,
+      "fractional": {
+        "coverage": 0.0,
+        "retention": 0.0,
+        "interaction": 0.0
+      },
+      "fractional_valid_masks": 11
+    },
+    "conv2_active_positions": {
+      "raw": {
+        "coverage": 0.0,
+        "retention": 0.0,
+        "interaction": 0.0
+      },
+      "raw_valid_masks": 12,
+      "fractional": {
+        "coverage": 0.0,
+        "retention": 0.0,
+        "interaction": 0.0
+      },
+      "fractional_valid_masks": 11
+    },
+    "conv3_active_positions": {
+      "raw": {
+        "coverage": 0.0,
+        "retention": 0.0,
+        "interaction": 0.0
+      },
+      "raw_valid_masks": 12,
+      "fractional": {
+        "coverage": 0.0,
+        "retention": 0.0,
+        "interaction": 0.0
+      },
+      "fractional_valid_masks": 11
+    },
+    "trained_layer_work": {
+      "raw": {
+        "coverage": 0.0,
+        "retention": 0.0,
+        "interaction": 0.0
+      },
+      "raw_valid_masks": 12,
+      "fractional": {
+        "coverage": 0.0,
+        "retention": 0.0,
+        "interaction": 0.0
+      },
+      "fractional_valid_masks": 11
+    },
+    "output_words": {
+      "raw": {
+        "coverage": 0.0,
+        "retention": 0.0,
+        "interaction": 0.0
+      },
+      "raw_valid_masks": 12,
+      "fractional": {
+        "coverage": 0.0,
+        "retention": 0.0,
+        "interaction": 0.0
+      },
+      "fractional_valid_masks": 11
+    },
+    "reused_activations": {
+      "raw": {
+        "coverage": 0.0,
+        "retention": 0.0,
+        "interaction": 0.0
+      },
+      "raw_valid_masks": 12,
+      "fractional": {
+        "coverage": 0.0,
+        "retention": -2.0,
+        "interaction": 0.0
+      },
+      "fractional_valid_masks": 5
+    },
+    "stall_cycles": {
+      "raw": {
+        "coverage": 0.0,
+        "retention": 0.0,
+        "interaction": 0.0
+      },
+      "raw_valid_masks": 12,
+      "fractional": {
+        "coverage": 0.0,
+        "retention": 0.0,
+        "interaction": 0.0
+      },
+      "fractional_valid_masks": 12
+    },
+    "segment_launches": {
+      "raw": {
+        "coverage": 0.0,
+        "retention": 0.0,
+        "interaction": 0.0
+      },
+      "raw_valid_masks": 12,
+      "fractional": {
+        "coverage": 0.0,
+        "retention": 0.0,
+        "interaction": 0.0
+      },
+      "fractional_valid_masks": 12
+    }
+  },
+  "claim_firewall": [
+    "same routed bitstream and 10 MHz clock support within-build cycle/work/reuse comparisons",
+    "10 MHz companion does not replace the separate full-scale operating point",
+    "no throughput, area, energy, or broad-workload claim",
+    "publication-safety truth table was not rerun physically in this 480-row execution capture"
+  ]
+}

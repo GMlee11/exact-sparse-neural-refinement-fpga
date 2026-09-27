@@ -1,0 +1,57 @@
+{
+  "artifact": "sparse_same_clock_organization_control_126c_terminal_manifest",
+  "authorization_head": "08728931e0b2d5221662eea3292a9338342e1350",
+  "board_authorized": false,
+  "disposition": "terminal_shared_preflight_stop_no_matched_result",
+  "evidence_preservation": {
+    "bytes_must_not_be_altered": true,
+    "force_add_completed_in_sealed_evidence_commit": true,
+    "force_add_paths": [
+      "fpga/build/sparse_same_clock_organization_control_126c_v1/independent_halo_tiles/ps7_init.tcl",
+      "fpga/build/sparse_same_clock_organization_control_126c_v1/independent_halo_tiles/zybo_sparse_same_clock_independent_halo_tiles_126c.bit",
+      "fpga/build/sparse_same_clock_organization_control_126c_v1/independent_halo_tiles/zybo_sparse_same_clock_independent_halo_tiles_126c.xsa",
+      "fpga/build/sparse_same_clock_organization_control_126c_v1/independent_halo_tiles/zybo_sparse_same_clock_independent_halo_tiles_126c_app_ocm.elf",
+      "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/dsp48e1_post_synthesis.txt",
+      "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/dsp48e1_routed.txt",
+      "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/evidence_inventory.json",
+      "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/software_package_inventory.json",
+      "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/timing_summary.txt",
+      "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/utilization.txt",
+      "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/utilization_hierarchical.txt",
+      "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/vivado.jou",
+      "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/vivado.log",
+      "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/xsct.log"
+    ],
+    "force_add_was_required_for_ignored_build_and_log_extensions": true
+  },
+  "experiment_id": "sparse_same_clock_organization_control_126c_v1",
+  "generated_outputs_sha256": {
+    "results/tables/sparse_same_clock_organization_control_126c_board_ready.json": "d025e4ff622797f1ebb9f231a1916e2e278287168604f0b7045d17c5352abe75",
+    "results/tables/sparse_same_clock_organization_control_126c_terminal_v1.json": "4ed3d4d6d9be4e1e2046cee0371cc2bedfb845025bd10f05729076920758e777",
+    "results/tables/sparse_same_clock_organization_control_126c_terminal_v1.md": "e4c72ac1c4c2f148711ef178fbb29e3dc66737115950516ace5b6b2ef60fb937"
+  },
+  "organization_status": {
+    "global_closure_persistent": "not_attempted",
+    "independent_halo_tiles": "route_and_same_xsa_package_success",
+    "rectangle_compaction": "not_attempted"
+  },
+  "performance_gates_evaluated": false,
+  "schema_version": 1,
+  "sealed_evidence_commit": "1845727a76bd475ed0b51a04fed40f8e88916439",
+  "sealed_independent_success_sha256": {
+    "fpga/build/sparse_same_clock_organization_control_126c_v1/independent_halo_tiles/ps7_init.tcl": "49af037f2b6bbe883c2499969da844119dc1cb85a26f404be7ca85d87c54284e",
+    "fpga/build/sparse_same_clock_organization_control_126c_v1/independent_halo_tiles/zybo_sparse_same_clock_independent_halo_tiles_126c.bit": "ddfe8f9b7c40cf3f34eed3b1cd2e2d7de54c1ace4b43b359b798eba21fc7b755",
+    "fpga/build/sparse_same_clock_organization_control_126c_v1/independent_halo_tiles/zybo_sparse_same_clock_independent_halo_tiles_126c.xsa": "47531766111e4e834f8352c144a787bf6624866380662ad64d5dd3125dd6d9b4",
+    "fpga/build/sparse_same_clock_organization_control_126c_v1/independent_halo_tiles/zybo_sparse_same_clock_independent_halo_tiles_126c_app_ocm.elf": "1ece333fb66027747d48c4320d2ce75c1d19414689aa02ffbe6356f3f87075f8",
+    "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/dsp48e1_post_synthesis.txt": "d7ec4a282ab29a2bef4804ee03927ef1cff5a4a9744a6942873792bdc633411e",
+    "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/dsp48e1_routed.txt": "d7ec4a282ab29a2bef4804ee03927ef1cff5a4a9744a6942873792bdc633411e",
+    "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/evidence_inventory.json": "7706bdc216b30cc028b90d0bb936ccac56437bd4fa52fc08abfa07e699efb6d5",
+    "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/software_package_inventory.json": "02bdd2b220094f6d9d387b89c89340dcbdb9e1d07a3c52a2f8408cd957a05262",
+    "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/timing_summary.txt": "59e67e7189cbdbf4a636dbcc857005c04dea8062f1668324d4255ee5c074c03e",
+    "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/utilization.txt": "39571dc7d2818246583fdc4b133f08780f59d5f618f952c78fab6745712a7602",
+    "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/utilization_hierarchical.txt": "fb6186a86acdbedc98c7db52d4e59fa896b5b414a46ad85c08b6049c6c1791d5",
+    "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/vivado.jou": "ad9196b6ed08f67ac0082856ac999ba82d7e8f31bce908a74704d1b6d157f8ae",
+    "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/vivado.log": "4d86dab94a579dcca4b6f30add320f067bd4c8932b2604ff0d1366e23c065836",
+    "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/xsct.log": "8e761e249064dcda8254472f3abbd88a7c09981213e97eb79722acde2a06b51d"
+  }
+}

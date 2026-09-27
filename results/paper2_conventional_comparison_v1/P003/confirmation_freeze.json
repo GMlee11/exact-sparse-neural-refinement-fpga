@@ -1,0 +1,123 @@
+{
+  "frozen_utc": "2026-09-25T16:39:55.334464+00:00",
+  "physical_run": "P003",
+  "expected_measured_records": 306,
+  "expected_warmups": 51,
+  "expected_first_sample_byte_archives": 51,
+  "repeats": 6,
+  "image": {
+    "path": "D:\\Research\\Paper2_Engineering\\roi_v1_B002\\paper2_roi_v1.bit",
+    "bytes": 4045678,
+    "sha256": "0fcecb85149b1d0432eaa3adeff645cb8d9614ea07534accd98a69ce11b2e608"
+  },
+  "xsa": {
+    "path": "D:\\Research\\Paper2_Engineering\\roi_v1_B002\\paper2_roi_v1.xsa",
+    "bytes": 1635314,
+    "sha256": "12f2a974e0ea443dc40cd0bb32194fc5f559772754f1872822936ec4e0a4ac6c"
+  },
+  "firmware": {
+    "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\results\\paper2_conventional_comparison_v1\\F006\\campaign.elf",
+    "bytes": 238252,
+    "sha256": "64932d2cd0266b69aefef0c939c998f26053af850c5925b989cb84d6bef34f8d"
+  },
+  "pins": [
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\results\\paper2_conventional_comparison_v1\\P003\\launch_manifest.json",
+      "bytes": 109752,
+      "sha256": "78a3d33b75f2529a986c8386e00cd2c3405f4ce9a77fcbad2787609cee1cb5a3"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\results\\paper2_conventional_comparison_v1\\P002\\analysis.json",
+      "bytes": 54051,
+      "sha256": "861f81bd607ddb4a0bc040a0b0a0299091e3c93c1ee97ea52dc88e4c53e991ed"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\results\\paper2_conventional_comparison_v1\\F006\\result.json",
+      "bytes": 27095,
+      "sha256": "c8adef94f19f5ab2d9d4fa266eee69a98e59a89382d7f187dbec5f8a3d3c375e"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\results\\paper2_conventional_comparison_v1\\F006\\board_campaign.c",
+      "bytes": 10385,
+      "sha256": "f5083595f81e2a0a9627fcb63ab4883d2037464460b9fe7aa847577f46467059"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\results\\paper2_conventional_comparison_v1\\F006\\roi_campaign_masks.h",
+      "bytes": 387,
+      "sha256": "e08da373ce91ae3853c56f5fe88dc123ad62bc776b70f9ebf752f066eded4db1"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\results\\paper2_conventional_comparison_v1\\F006\\campaign.elf",
+      "bytes": 238252,
+      "sha256": "64932d2cd0266b69aefef0c939c998f26053af850c5925b989cb84d6bef34f8d"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\results\\paper2_conventional_comparison_v1\\B002_route\\route_timing.rpt",
+      "bytes": 37105,
+      "sha256": "a41278076385a88e60d44e30ce4535efa623500e29de12b47b5041e17f6f9e67"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\results\\paper2_conventional_comparison_v1\\B002_route\\route_utilization.rpt",
+      "bytes": 10187,
+      "sha256": "35097d8f805a80242411afc4dc0a3f67273e98363bcfc4d4eb2c0efce0ea1aeb"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\results\\paper2_conventional_comparison_v1\\P003\\confirmation_protocol.md",
+      "bytes": 7595,
+      "sha256": "c53ddebd0cc64825420087ee1677e2eba834c1a42bd02b0d8d4f41241f4ac9bf"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\scripts\\paper2_conventional_comparison_v1\\capture_board.ps1",
+      "bytes": 3656,
+      "sha256": "6175588f6ed0f0f49dd76444401082478b555bd9cc7aa7c54a1d39bea4eb6056"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\results\\paper2_conventional_comparison_v1\\P003\\capture_board.ps1",
+      "bytes": 3656,
+      "sha256": "6175588f6ed0f0f49dd76444401082478b555bd9cc7aa7c54a1d39bea4eb6056"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\scripts\\paper2_conventional_comparison_v1\\prepare_launch.py",
+      "bytes": 5145,
+      "sha256": "0f6a92a2d7bd20a1cae11bcde3322432a0016b53587bc7b934b438a20a6817ba"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\results\\paper2_conventional_comparison_v1\\P003\\prepare_launch.py",
+      "bytes": 5145,
+      "sha256": "0f6a92a2d7bd20a1cae11bcde3322432a0016b53587bc7b934b438a20a6817ba"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\scripts\\paper2_conventional_comparison_v1\\analyze_board.py",
+      "bytes": 6257,
+      "sha256": "62af15f609ea93693293fa154de4dfdcbf68905181b74d4d04ffe94251245b15"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\results\\paper2_conventional_comparison_v1\\P003\\analyze_board.py",
+      "bytes": 6257,
+      "sha256": "62af15f609ea93693293fa154de4dfdcbf68905181b74d4d04ffe94251245b15"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\scripts\\paper2_conventional_comparison_v1\\freeze_confirmation.py",
+      "bytes": 2886,
+      "sha256": "f08a739c6a39af9fb28ef11883b6ad9845ff03503e7c9fd0f3b1039165c7c0e6"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\results\\paper2_conventional_comparison_v1\\P003\\freeze_confirmation.py",
+      "bytes": 2886,
+      "sha256": "f08a739c6a39af9fb28ef11883b6ad9845ff03503e7c9fd0f3b1039165c7c0e6"
+    }
+  ],
+  "no_confirmation_data_seen": true,
+  "engineering_qualification": "P002",
+  "engineering_capture_recovery_disclosed": true,
+  "firmware_change_since_byte_qualification": "compile-time repeat count 1 to 6 only; source and cache policy unchanged",
+  "stopping": "fixed 306 measured rows or first retained failure",
+  "mask_status": "existing inspected masks, not held-out generalization",
+  "primary": "Equal-mask arithmetic mean complete request-to-selected-residual-publication time across all 15 nonempty sparse masks, each fixed mode; dense and empty separate",
+  "comparisons": [
+    "full/outer",
+    "full/merged",
+    "outer/merged"
+  ],
+  "all_regressions_retained": true
+}

@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "artifact": "sparse_postroute_power_estimate_v1",
+  "decision": "report_as_provisional_design_estimate_only",
+  "vivado_report": {
+    "sha256": "31b9caefe6450a4bcc21be3d781ac47e67cd71c7ebffe17517407ecb9f738cc0",
+    "tool_version": "Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020",
+    "design_state": "routed",
+    "total_onchip_w": 1.63,
+    "dynamic_w": 1.49,
+    "static_w": 0.14,
+    "accelerator_hierarchy_w": 0.08,
+    "confidence": "Medium",
+    "simulation_activity_file": "none"
+  },
+  "activity_model": {
+    "fixed_onchip_w": 1.5499999999999998,
+    "scalable_accelerator_hierarchy_w": 0.08,
+    "duty_source": "physical_58p824mhz_service_cycles_relative_to_dense",
+    "internal_net_activity_coverage": "less_than_25_percent_in_source_report",
+    "representative_controller_saif": {
+      "sha256": "70d765ed926acba54a7f50e43426c2678e534733f3b15065f8ba028470e08489",
+      "duration": 336000,
+      "timescale": "1 ps",
+      "annotated_signal_count": 717,
+      "total_toggle_count": 457,
+      "scope": "sparse_hierarchical_commit_controller_only",
+      "full_routed_datapath_annotated": false
+    }
+  },
+  "workloads": [
+    {
+      "pattern_id": 0,
+      "label": "all_neural_control",
+      "selected_tiles": 60,
+      "accelerator_cycle_duty": 1.0,
+      "estimated_onchip_w": 1.63,
+      "estimated_onchip_j_per_service": 0.39077449998753944,
+      "measurement_class": "provisional_postroute_duty_estimate"
+    },
+    {
+      "pattern_id": 1,
+      "label": "v7_holdout_godot_fences_d_seed20260805__scene_19_fences_d__q10",
+      "selected_tiles": 23,
+      "accelerator_cycle_duty": 0.45917319519948524,
+      "estimated_onchip_w": 1.5867338556159587,
+      "estimated_onchip_j_per_service": 0.17466892714789034,
+      "measurement_class": "provisional_postroute_duty_estimate"
+    },
+    {
+      "pattern_id": 2,
+      "label": "v7_holdout_godot_fences_d_seed20260805__scene_19_fences_d__q50",
+      "selected_tiles": 33,
+      "accelerator_cycle_duty": 0.6027633813501577,
+      "estimated_onchip_w": 1.5982210705080124,
+      "estimated_onchip_j_per_service": 0.23095040967435054,
+      "measurement_class": "provisional_postroute_duty_estimate"
+    },
+    {
+      "pattern_id": 3,
+      "label": "v7_holdout_godot_fences_d_seed20260805__scene_19_fences_d__q90",
+      "selected_tiles": 49,
+      "accelerator_cycle_duty": 0.8427090602507958,
+      "estimated_onchip_w": 1.6174167248200635,
+      "estimated_onchip_j_per_service": 0.32676491875048436,
+      "measurement_class": "provisional_postroute_duty_estimate"
+    },
+    {
+      "pattern_id": 4,
+      "label": "v7_holdout_godot_foliage_d_seed20260805__scene_04_foliage_d__q10",
+      "selected_tiles": 1,
+      "accelerator_cycle_duty": 0.11538326533741038,
+      "estimated_onchip_w": 1.5592306612269926,
+      "estimated_onchip_j_per_service": 0.04313173823155828,
+      "measurement_class": "provisional_postroute_duty_estimate"
+    },
+    {
+      "pattern_id": 5,
+      "label": "v7_holdout_godot_foliage_d_seed20260805__scene_04_foliage_d__q50",
+      "selected_tiles": 5,
+      "accelerator_cycle_duty": 0.18176252268195217,
+      "estimated_onchip_w": 1.564541001814556,
+      "estimated_onchip_j_per_service": 0.06817680594962015,
+      "measurement_class": "provisional_postroute_duty_estimate"
+    },
+    {
+      "pattern_id": 6,
+      "label": "v7_holdout_godot_foliage_d_seed20260805__scene_04_foliage_d__q90",
+      "selected_tiles": 18,
+      "accelerator_cycle_duty": 0.38555124279263664,
+      "estimated_onchip_w": 1.5808440994234108,
+      "estimated_onchip_j_per_service": 0.14611863944559825,
+      "measurement_class": "provisional_postroute_duty_estimate"
+    },
+    {
+      "pattern_id": 7,
+      "label": "v7_holdout_godot_hud_text_d_seed20260805__scene_09_hud_text_d__q10",
+      "selected_tiles": 11,
+      "accelerator_cycle_duty": 0.27755370115495803,
+      "estimated_onchip_w": 1.5722042960923965,
+      "estimated_onchip_j_per_service": 0.10461453214413419,
+      "measurement_class": "provisional_postroute_duty_estimate"
+    },
+    {
+      "pattern_id": 8,
+      "label": "v7_holdout_godot_hud_text_d_seed20260805__scene_09_hud_text_d__q50",
+      "selected_tiles": 16,
+      "accelerator_cycle_duty": 0.3529304312820436,
+      "estimated_onchip_w": 1.5782344345025634,
+      "estimated_onchip_j_per_service": 0.1364044640095985,
+      "measurement_class": "provisional_postroute_duty_estimate"
+    },
+    {
+      "pattern_id": 9,
+      "label": "v7_holdout_godot_hud_text_d_seed20260805__scene_09_hud_text_d__q90",
+      "selected_tiles": 21,
+      "accelerator_cycle_duty": 0.425864399633217,
+      "estimated_onchip_w": 1.5840691519706571,
+      "estimated_onchip_j_per_service": 0.1617271051928878,
+      "measurement_class": "provisional_postroute_duty_estimate"
+    },
+    {
+      "pattern_id": 10,
+      "label": "v7_holdout_godot_particles_d_seed20260805__scene_14_particles_d__q10",
+      "selected_tiles": 9,
+      "accelerator_cycle_duty": 0.24176278789122535,
+      "estimated_onchip_w": 1.5693410230312979,
+      "estimated_onchip_j_per_service": 0.09340261761581604,
+      "measurement_class": "provisional_postroute_duty_estimate"
+    },
+    {
+      "pattern_id": 11,
+      "label": "v7_holdout_godot_particles_d_seed20260805__scene_14_particles_d__q50",
+      "selected_tiles": 17,
+      "accelerator_cycle_duty": 0.36663990700373017,
+      "estimated_onchip_w": 1.5793311925602982,
+      "estimated_onchip_j_per_service": 0.13881888675015963,
+      "measurement_class": "provisional_postroute_duty_estimate"
+    },
+    {
+      "pattern_id": 12,
+      "label": "v7_holdout_godot_particles_d_seed20260805__scene_14_particles_d__q90",
+      "selected_tiles": 23,
+      "accelerator_cycle_duty": 0.4567004378293089,
+      "estimated_onchip_w": 1.5865360350263444,
+      "estimated_onchip_j_per_service": 0.1737064477023289,
+      "measurement_class": "provisional_postroute_duty_estimate"
+    },
+    {
+      "pattern_id": 13,
+      "label": "v7_holdout_godot_reflective_d_seed20260805__scene_24_reflective_d__q10",
+      "selected_tiles": 21,
+      "accelerator_cycle_duty": 0.4261677593312358,
+      "estimated_onchip_w": 1.5840934207464987,
+      "estimated_onchip_j_per_service": 0.16184647001947614,
+      "measurement_class": "provisional_postroute_duty_estimate"
+    },
+    {
+      "pattern_id": 14,
+      "label": "v7_holdout_godot_reflective_d_seed20260805__scene_24_reflective_d__q50",
+      "selected_tiles": 25,
+      "accelerator_cycle_duty": 0.4858683522441491,
+      "estimated_onchip_w": 1.5888694681795317,
+      "estimated_onchip_j_per_service": 0.18507243659735115,
+      "measurement_class": "provisional_postroute_duty_estimate"
+    },
+    {
+      "pattern_id": 15,
+      "label": "v7_holdout_godot_reflective_d_seed20260805__scene_24_reflective_d__q90",
+      "selected_tiles": 28,
+      "accelerator_cycle_duty": 0.5307694167757345,
+      "estimated_onchip_w": 1.5924615533420585,
+      "estimated_onchip_j_per_service": 0.20263247305820423,
+      "measurement_class": "provisional_postroute_duty_estimate"
+    }
+  ],
+  "claim_boundary": {
+    "physical_wall_power_claimed": false,
+    "physical_energy_claimed": false,
+    "board_regulators_and_external_memory_included": false,
+    "simulation_activity_file_used": false,
+    "representative_controller_saif_generated": true,
+    "full_routed_datapath_saif_annotated": false,
+    "journal_measurement_deferred": true
+  }
+}

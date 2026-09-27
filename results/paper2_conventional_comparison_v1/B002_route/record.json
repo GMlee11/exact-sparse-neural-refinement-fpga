@@ -1,0 +1,41 @@
+{
+  "stage": "route",
+  "external_scratch": "D:\\Research\\Paper2_Engineering\\roi_v1_B002",
+  "large_outputs_not_duplicated": true,
+  "bindings": [
+    {
+      "external_path": "D:\\Research\\Paper2_Engineering\\roi_v1_B002\\build_manifest.json",
+      "local_copy": "results\\paper2_conventional_comparison_v1\\B002_route\\build_manifest.json",
+      "sha256": "e36584d6f543f2c24591a818fa3401d93434b9f5b109c8e4e3399cad4042390f",
+      "bytes": 2623
+    },
+    {
+      "external_path": "D:\\Research\\Paper2_Engineering\\roi_v1_B002\\reports\\route_drc.rpt",
+      "local_copy": "results\\paper2_conventional_comparison_v1\\B002_route\\route_drc.rpt",
+      "sha256": "d19f3a4b48f38339ce436e915e451bf4bad94f31ec841c890ab0d11f30e9528e",
+      "bytes": 375339
+    },
+    {
+      "external_path": "D:\\Research\\Paper2_Engineering\\roi_v1_B002\\reports\\route_timing.rpt",
+      "local_copy": "results\\paper2_conventional_comparison_v1\\B002_route\\route_timing.rpt",
+      "sha256": "a41278076385a88e60d44e30ce4535efa623500e29de12b47b5041e17f6f9e67",
+      "bytes": 37105
+    },
+    {
+      "external_path": "D:\\Research\\Paper2_Engineering\\roi_v1_B002\\reports\\route_utilization.rpt",
+      "local_copy": "results\\paper2_conventional_comparison_v1\\B002_route\\route_utilization.rpt",
+      "sha256": "35097d8f805a80242411afc4dc0a3f67273e98363bcfc4d4eb2c0efce0ea1aeb",
+      "bytes": 10187
+    },
+    {
+      "external_path": "D:\\Research\\Paper2_Engineering\\roi_v1_B002\\paper2_roi_v1.bit",
+      "sha256": "0fcecb85149b1d0432eaa3adeff645cb8d9614ea07534accd98a69ce11b2e608",
+      "bytes": 4045678
+    },
+    {
+      "external_path": "D:\\Research\\Paper2_Engineering\\roi_v1_B002\\paper2_roi_v1.xsa",
+      "sha256": "12f2a974e0ea443dc40cd0bb32194fc5f559772754f1872822936ec4e0a4ac6c",
+      "bytes": 1635314
+    }
+  ]
+}

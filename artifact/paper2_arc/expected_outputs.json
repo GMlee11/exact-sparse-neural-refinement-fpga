@@ -1,0 +1,272 @@
+{
+  "artifacts": [
+    {
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "path": "docs/paper/PAPER2_SUCCESSOR_DIAGNOSTICS_20260921.md",
+      "requires_latex": false,
+      "sha256": "11e046259735181d601befc62e657bba6e855f9f07a87af6ddf83a9c8ad3667b",
+      "size_bytes": 3703
+    },
+    {
+      "hash_mode": "raw_bytes",
+      "path": "results/paper2_service_successor_v1/engineering_evidence_v1/E010_stage2.log",
+      "requires_latex": false,
+      "sha256": "0646daba50e685005b7ee8cd84e52012f5ac30f216938f5244051b38bf4ad13b",
+      "size_bytes": 4142
+    },
+    {
+      "hash_mode": "raw_bytes",
+      "path": "results/paper2_service_successor_v1/engineering_evidence_v1/E010_case0_terminal.json",
+      "requires_latex": false,
+      "sha256": "5f4f772017f33e16ac2a7a7960d32b8294e102f7f9a42821dc0efd1a3ef45fc3",
+      "size_bytes": 210
+    },
+    {
+      "hash_mode": "raw_bytes",
+      "path": "results/paper2_service_successor_v1/engineering_evidence_v1/E010_case1_terminal.json",
+      "requires_latex": false,
+      "sha256": "ac877ef7ae9ba88bc2285df5d9940e4038172c2c29266ab6b40440ea95b40fb6",
+      "size_bytes": 210
+    },
+    {
+      "hash_mode": "raw_bytes",
+      "path": "results/paper2_service_successor_v1/host_diagnostic_H002/uart.raw",
+      "requires_latex": false,
+      "sha256": "cbc76ee1fd520ef38dea5e30d51e7dba12679bb79137ff659121d656b943819e",
+      "size_bytes": 4814
+    },
+    {
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "path": "src/hardware/verify_paper2_successor_diagnostics.py",
+      "requires_latex": false,
+      "sha256": "d071e96c0a61c5947d3766630530f2f38b5b6654517901a1d83adf9df3aadb5e",
+      "size_bytes": 3232
+    },
+    {
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "path": "tests/test_paper2_successor_publication.py",
+      "requires_latex": false,
+      "sha256": "e9c90d0ee9e4019af6782f60c1123a7fca08832eeba60ef1bbfdb07223b2f57a",
+      "size_bytes": 1053
+    },
+    {
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "path": "results/tables/sparse_accelerator_paper_v1.json",
+      "requires_latex": false,
+      "sha256": "2683cc84c25672ec5fe09d8cc56fe56ac78d76e89ae09540258d377d535058dc",
+      "size_bytes": 36467
+    },
+    {
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "path": "results/tables/sparse_architecture_ablation_v1.json",
+      "requires_latex": false,
+      "sha256": "a230744d09cf675515e924fb9eed3c8143cc81e95104a8767ee9ed19aa694aca",
+      "size_bytes": 8926
+    },
+    {
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "path": "results/tables/paper2_physical_evidence_index.json",
+      "requires_latex": false,
+      "sha256": "5a76dfec30e7dfe0304e4f066d2f68a71617ca42e21bb9560bae86ab709dadac",
+      "size_bytes": 17716
+    },
+    {
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "path": "results/tables/sparse_hierarchical_commit_controlled_masks_physical.json",
+      "requires_latex": false,
+      "sha256": "72d647e586f631e2e97b4699f23d6264e84b1a13b2c917d8e308caa0358ec7bf",
+      "size_bytes": 26301
+    },
+    {
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "path": "results/tables/sparse_hierarchical_commit_controlled_masks_50mhz_physical.json",
+      "requires_latex": false,
+      "sha256": "337ad9f9499e74eabdac30596b9b09cc6bc193ca6dec941b55432ad3f35a8220",
+      "size_bytes": 26143
+    },
+    {
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "path": "results/tables/sparse_realtime_envelope_v1.json",
+      "requires_latex": false,
+      "sha256": "527c25089b7b6f9ffd0d64d1b0a24d64bc8d47a3366d177594124cba827baab4",
+      "size_bytes": 2159
+    },
+    {
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "path": "results/tables/sparse_postroute_power_estimate.json",
+      "requires_latex": false,
+      "sha256": "edd4605b4a42806e1cad9eccc9639048c94b22dec5bed670142342196b4bd412",
+      "size_bytes": 7476
+    },
+    {
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "path": "results/tables/sparse_independent_worklists_joined.json",
+      "requires_latex": false,
+      "sha256": "57bcd52ac45aa7780997df2ca2d4bd1377a64a818db5cba973a22241f1b2cc71",
+      "size_bytes": 2688
+    },
+    {
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "path": "results/tables/sparse_deadline_trace_analysis.json",
+      "requires_latex": false,
+      "sha256": "a14c04692cbe28943d26e6c3074da670c7ffd89c12badd03cfa70391c9b17a4d",
+      "size_bytes": 2682
+    },
+    {
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "path": "results/tables/tang_sparse_commit_candidate_v1.json",
+      "requires_latex": false,
+      "sha256": "25809e5d31977ec40930be6c2cfcd4672d7a33283b27f248e64b833742f11742",
+      "size_bytes": 2355
+    },
+    {
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "path": "results/tables/sparse_same_clock_organization_control_126b_board_ready.json",
+      "requires_latex": false,
+      "sha256": "c2ddd963a059cdde972619dbfbaf5c56b09980b5b8b21fa31a2b91aba705ff48",
+      "size_bytes": 880
+    },
+    {
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "path": "results/tables/sparse_same_clock_organization_control_postfailure_126b_v1.json",
+      "requires_latex": false,
+      "sha256": "50f7f80b9959709626562ae54204a671a34b95f8566efcbbc8228b9750b9c298",
+      "size_bytes": 15126
+    },
+    {
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "path": "results/tables/sparse_same_clock_organization_control_126c_board_ready.json",
+      "requires_latex": false,
+      "sha256": "d025e4ff622797f1ebb9f231a1916e2e278287168604f0b7045d17c5352abe75",
+      "size_bytes": 893
+    },
+    {
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "path": "results/tables/sparse_same_clock_organization_control_126c_terminal_v1.json",
+      "requires_latex": false,
+      "sha256": "4ed3d4d6d9be4e1e2046cee0371cc2bedfb845025bd10f05729076920758e777",
+      "size_bytes": 7575
+    },
+    {
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "path": "results/tables/sparse_same_clock_organization_control_126c_terminal_v1.md",
+      "requires_latex": false,
+      "sha256": "e4c72ac1c4c2f148711ef178fbb29e3dc66737115950516ace5b6b2ef60fb937",
+      "size_bytes": 1243
+    },
+    {
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "path": "results/manifests/sparse_same_clock_organization_control_126c_terminal_v1.json",
+      "requires_latex": false,
+      "sha256": "f4036c7e727f5ebe2d9ab9cf6f87eaf5737c058f3666f5c291a36a195dd60fd7",
+      "size_bytes": 6043
+    },
+    {
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "path": "results/tables/sparse_matched_control_130_feasibility_v1.json",
+      "requires_latex": false,
+      "sha256": "793e2e5671bc161867f4beab6230b96497a405bd70b4e0ba95c430895208d382",
+      "size_bytes": 1352
+    },
+    {
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "path": "results/analysis/sparse_distilled_same_bitstream_b030_execution_factorial.json",
+      "requires_latex": false,
+      "sha256": "cce967d81908abfcf274d66db43b3a808b3bbf69f4910aa8292259d61887b58a",
+      "size_bytes": 65396
+    },
+    {
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "path": "results/preflight/experiment134/E134-B030_physical_result.json",
+      "requires_latex": false,
+      "sha256": "72eb9182b243d52be97db1e38e2da740b0aa3dead1a0cea196ece94eaef01917",
+      "size_bytes": 2832
+    },
+    {
+      "hash_mode": "raw_bytes",
+      "path": "results/plots/sparse_accelerator_architecture.pdf",
+      "requires_latex": false,
+      "sha256": "62fce82c023b9987af387a7ae98293dc5d65bb3b5931f1e80db72d7add455f4d",
+      "size_bytes": 22793
+    },
+    {
+      "hash_mode": "raw_bytes",
+      "path": "results/plots/sparse_accelerator_physical_scaling.pdf",
+      "requires_latex": false,
+      "sha256": "14b1d90da83dab44342ad9ad28928187a872f15325c8022c6b7663f59a8b9300",
+      "size_bytes": 17892
+    },
+    {
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "path": "docs/paper/generated/sparse_architecture_ablation_v1.tex",
+      "requires_latex": false,
+      "sha256": "471fea5f5314adbd71d4307451c42acf7ff530632565aa9adcb1df6655a0f9f2",
+      "size_bytes": 1217
+    },
+    {
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "path": "docs/paper/generated/sparse_mask_geometry_sensitivity_v1.tex",
+      "requires_latex": false,
+      "sha256": "2a5db293bdd12d3ed3782396a80037f0ce99101184f75bfa7d1f2777f61a2b63",
+      "size_bytes": 608
+    },
+    {
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "path": "docs/paper/generated/sparse_independent_worklists_joined.tex",
+      "requires_latex": false,
+      "sha256": "45ef50773bc9d4b6acb1ac80077271b0dc897deed6837c5f662ae65dc11e473e",
+      "size_bytes": 535
+    },
+    {
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "path": "docs/paper/generated/sparse_deadline_trace_analysis.tex",
+      "requires_latex": false,
+      "sha256": "667e6521f72e01ff892a97b81b4477c7753c10914f1ac464e367403906f52421",
+      "size_bytes": 469
+    },
+    {
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "path": "docs/paper/generated/sparse_realtime_envelope_v1.tex",
+      "requires_latex": false,
+      "sha256": "286e5d72a1f34d3d3bcf3ea26a66adb2f1beccafac55cb04bc0233bdde2d06f3",
+      "size_bytes": 400
+    },
+    {
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "path": "docs/paper/generated/sparse_postroute_power_estimate.tex",
+      "requires_latex": false,
+      "sha256": "583751aecf33cf19ecf6cad5e57e1d6b0dca064adebfca72e26da57f30b1421c",
+      "size_bytes": 465
+    },
+    {
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "path": "docs/paper/generated/tang_sparse_commit_candidate_v1.tex",
+      "requires_latex": false,
+      "sha256": "e4573f403adb1bf744fcfedff3609bfc2b55cb8734d591472101db02420133af",
+      "size_bytes": 459
+    },
+    {
+      "path": "artifact/paper2_arc/PHYSICAL_EVIDENCE_INDEX.md",
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "requires_latex": false,
+      "sha256": "0239aa46b2aebc09df2257b1f5e330b0a474564781d1100c8f3433cb39154b48",
+      "size_bytes": 10256
+    },
+    {
+      "path": "results/tables/paper2_roi_publication_v1.json",
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "requires_latex": false,
+      "sha256": "c4ae5a312a82059223f433cd16cd60126b64652ff8687b552b3020028e36c47c",
+      "size_bytes": 39812
+    },
+    {
+      "path": "docs/paper/generated/paper2_roi_publication_v1.tex",
+      "hash_mode": "crlf_to_lf_fail_closed",
+      "requires_latex": false,
+      "sha256": "593511f43de28e7349e0a6f0c832ee7582a19f1129a6f42252c8d643cb508f01",
+      "size_bytes": 1332
+    }
+  ],
+  "schema_version": 1,
+  "status": "exact_reproduction_required"
+}

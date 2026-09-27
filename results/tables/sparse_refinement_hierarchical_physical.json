@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "artifact": "sparse_refinement_hierarchical_physical_v1",
+  "decision": "accept_hierarchical_mask_dataflow_as_paper2_candidate",
+  "evidence_boundary": {
+    "worklist": "fixed_renderer_or_hr_oracle",
+    "selector_generalization_claimed": false,
+    "physical_energy_claimed": false,
+    "absolute_realtime_claimed": false
+  },
+  "correctness": {
+    "expected_residual_checksum": "0x51dce5cc",
+    "actual_residual_checksum": "0x51dce5cc",
+    "bit_exact": true,
+    "counter_exact": true
+  },
+  "physical_performance": {
+    "iterations": 5,
+    "fabric_clock_hz": 50000000,
+    "average_service_ms": 102.67709702236418,
+    "p95_service_ms": 102.6771000223641,
+    "p99_service_ms": 102.6771000223641,
+    "average_fpga_cycles": 4922897,
+    "compute_ms": 98.45794,
+    "service_fps": 9.739270285195044,
+    "compute_fps": 10.156621192765154,
+    "strict_30_fps_pass": false
+  },
+  "architecture_delta": {
+    "prior_balanced_cycles": 7432485,
+    "prior_balanced_service_ms_at_100mhz": 75.876199,
+    "compute_cycle_reduction_percent": 33.76512700664717,
+    "prior_region_axis_bytes": 2385696,
+    "persistent_sparse_axis_bytes": 1322256,
+    "axis_traffic_reduction_percent": 44.57567099915496,
+    "full_layer_positions": 691200,
+    "active_layer_positions": 199988,
+    "layer_position_bypass_percent": 71.06655092592592,
+    "preflight_cycle_estimate": 4601912,
+    "physical_vs_estimate_percent": 6.97503559390097,
+    "comparison_note": "Cycle and byte reductions compare the same trained model and frozen selected worklist; absolute service times use different routed clocks."
+  },
+  "physical_counters": {
+    "input_words": 69444,
+    "output_words": 261120,
+    "generated_zeros": 160956,
+    "suppressed_outputs": 660480,
+    "conv1_active": 68048,
+    "conv2_active": 66660,
+    "conv3_active": 65280,
+    "conv1_bypassed": 162352,
+    "conv2_bypassed": 163740,
+    "conv3_bypassed": 165120
+  },
+  "implementation": {
+    "wns_ns": 2.955,
+    "slice_luts": 44408.0,
+    "slice_registers": 26056.0,
+    "bram_tiles": 3.5,
+    "dsp48e1": 180.0,
+    "fabric_clock_hz": 50000000,
+    "timing_closed": true
+  },
+  "gates": {
+    "bit_exact": true,
+    "counter_exact": true,
+    "timing_closed": true,
+    "dsp_within_device": true,
+    "compute_reduction_at_least_25_percent": true,
+    "traffic_reduction_at_least_25_percent": true,
+    "strict_30_fps": false,
+    "mechanism_pass": true
+  },
+  "publication_interpretation": "Persistent hierarchical masks physically avoid convolution work and AXI traffic while preserving selected residuals exactly. The mechanism passes its architecture gates but the integrated Zybo prototype remains below the 30-FPS application target."
+}

@@ -1,0 +1,145 @@
+{
+  "artifact": "sparse_same_clock_organization_control_126c_terminal_result",
+  "authorization_head": "08728931e0b2d5221662eea3292a9338342e1350",
+  "board_phase": {
+    "authorization_record_present": false,
+    "capture_authorized": false,
+    "contacted": false,
+    "permanently_prohibited": true,
+    "programming_authorized": false,
+    "raw_capture_present": false,
+    "ready": false
+  },
+  "claim_boundary": "Experiment 126c validates one fixed-control independent baseline route/package only. It supplies no cross-organization comparison, board row, or performance-gate evaluation and does not change the paper's original cross-route evidence.",
+  "decision": "terminal_no_matched_result",
+  "experiment_id": "sparse_same_clock_organization_control_126c_v1",
+  "independent_success": {
+    "artifact_count": 14,
+    "artifacts_sha256": {
+      "fpga/build/sparse_same_clock_organization_control_126c_v1/independent_halo_tiles/ps7_init.tcl": "49af037f2b6bbe883c2499969da844119dc1cb85a26f404be7ca85d87c54284e",
+      "fpga/build/sparse_same_clock_organization_control_126c_v1/independent_halo_tiles/zybo_sparse_same_clock_independent_halo_tiles_126c.bit": "ddfe8f9b7c40cf3f34eed3b1cd2e2d7de54c1ace4b43b359b798eba21fc7b755",
+      "fpga/build/sparse_same_clock_organization_control_126c_v1/independent_halo_tiles/zybo_sparse_same_clock_independent_halo_tiles_126c.xsa": "47531766111e4e834f8352c144a787bf6624866380662ad64d5dd3125dd6d9b4",
+      "fpga/build/sparse_same_clock_organization_control_126c_v1/independent_halo_tiles/zybo_sparse_same_clock_independent_halo_tiles_126c_app_ocm.elf": "1ece333fb66027747d48c4320d2ce75c1d19414689aa02ffbe6356f3f87075f8",
+      "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/dsp48e1_post_synthesis.txt": "d7ec4a282ab29a2bef4804ee03927ef1cff5a4a9744a6942873792bdc633411e",
+      "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/dsp48e1_routed.txt": "d7ec4a282ab29a2bef4804ee03927ef1cff5a4a9744a6942873792bdc633411e",
+      "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/evidence_inventory.json": "7706bdc216b30cc028b90d0bb936ccac56437bd4fa52fc08abfa07e699efb6d5",
+      "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/software_package_inventory.json": "02bdd2b220094f6d9d387b89c89340dcbdb9e1d07a3c52a2f8408cd957a05262",
+      "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/timing_summary.txt": "59e67e7189cbdbf4a636dbcc857005c04dea8062f1668324d4255ee5c074c03e",
+      "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/utilization.txt": "39571dc7d2818246583fdc4b133f08780f59d5f618f952c78fab6745712a7602",
+      "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/utilization_hierarchical.txt": "fb6186a86acdbedc98c7db52d4e59fa896b5b414a46ad85c08b6049c6c1791d5",
+      "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/vivado.jou": "ad9196b6ed08f67ac0082856ac999ba82d7e8f31bce908a74704d1b6d157f8ae",
+      "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/vivado.log": "4d86dab94a579dcca4b6f30add320f067bd4c8932b2604ff0d1366e23c065836",
+      "fpga/docs/captures/paper2/sparse_same_clock_organization_control_126c_v1/route/independent_halo_tiles/xsct.log": "8e761e249064dcda8254472f3abbd88a7c09981213e97eb79722acde2a06b51d"
+    },
+    "dsp48e1": {
+      "post_synthesis": {
+        "all_trained_convolution": true,
+        "bookkeeping_count": 0,
+        "count": 180,
+        "sha256": "d7ec4a282ab29a2bef4804ee03927ef1cff5a4a9744a6942873792bdc633411e"
+      },
+      "routed": {
+        "all_trained_convolution": true,
+        "bookkeeping_count": 0,
+        "count": 180,
+        "sha256": "d7ec4a282ab29a2bef4804ee03927ef1cff5a4a9744a6942873792bdc633411e"
+      }
+    },
+    "route": {
+      "bram_tiles": 52.0,
+      "dsps": 180,
+      "registers": 29257,
+      "slice_luts": 39151,
+      "target_mhz": 50.0,
+      "timing_closed": true,
+      "whs_ns": 0.016,
+      "wns_ns": 2.712
+    },
+    "same_xsa": {
+      "application_elf_present": true,
+      "bitstream_sha256": "ddfe8f9b7c40cf3f34eed3b1cd2e2d7de54c1ace4b43b359b798eba21fc7b755",
+      "embedded_bitstream_count": 1,
+      "extracted_ps7_init_equal": true,
+      "hardware_platform_sha256": "47531766111e4e834f8352c144a787bf6624866380662ad64d5dd3125dd6d9b4",
+      "ps7_init_sha256": "49af037f2b6bbe883c2499969da844119dc1cb85a26f404be7ca85d87c54284e",
+      "root_ps7_init_count": 1,
+      "software_image_sha256": "1ece333fb66027747d48c4320d2ce75c1d19414689aa02ffbe6356f3f87075f8",
+      "standalone_and_embedded_bit_equal": true
+    }
+  },
+  "organization_status": {
+    "global_closure_persistent": "not_attempted",
+    "independent_halo_tiles": "route_and_same_xsa_package_success",
+    "rectangle_compaction": "not_attempted"
+  },
+  "performance_evaluation": {
+    "gates": [
+      {
+        "baseline": "independent_halo_tiles",
+        "evaluated": false,
+        "metric": "fpga_cycles",
+        "minimum_reduction_percent": 25.0,
+        "passed": null,
+        "value_percent": null
+      },
+      {
+        "baseline": "independent_halo_tiles",
+        "evaluated": false,
+        "metric": "service_time_ns",
+        "minimum_reduction_percent": 25.0,
+        "passed": null,
+        "value_percent": null
+      },
+      {
+        "baseline": "independent_halo_tiles",
+        "evaluated": false,
+        "metric": "axis_bytes",
+        "minimum_reduction_percent": 25.0,
+        "passed": null,
+        "value_percent": null
+      },
+      {
+        "baseline": "rectangle_compaction",
+        "evaluated": false,
+        "metric": "fpga_cycles",
+        "minimum_reduction_percent": 25.0,
+        "passed": null,
+        "value_percent": null
+      },
+      {
+        "baseline": "rectangle_compaction",
+        "evaluated": false,
+        "metric": "service_time_ns",
+        "minimum_reduction_percent": 25.0,
+        "passed": null,
+        "value_percent": null
+      },
+      {
+        "baseline": "rectangle_compaction",
+        "evaluated": false,
+        "metric": "axis_bytes",
+        "minimum_reduction_percent": 25.0,
+        "passed": null,
+        "value_percent": null
+      }
+    ],
+    "matched_result_eligible": false,
+    "physical_row_count": 0,
+    "reason": "Only the baseline organization was attempted; no board phase occurred.",
+    "status": "not_evaluated",
+    "timed_iteration_count": 0
+  },
+  "schema_version": 1,
+  "sealed_evidence_commit": "1845727a76bd475ed0b51a04fed40f8e88916439",
+  "status": "terminal_shared_preflight_stop",
+  "stop_reason": {
+    "classification": "shared_attestation_progressive_preflight_defect",
+    "cleanup_lock_after_build_complete": true,
+    "cleanup_lock_boundary": "The driver emitted BUILD_COMPLETE and published the complete success set, then its scratch cleanup hit a locked Eclipse .pdom file. This did not invalidate the success evidence and no retry occurred.",
+    "description": "The mandatory preflight before rectangle_compaction treated the legitimate independent_halo_tiles success set as unauthorized/untracked state.",
+    "discovered_after_result_bearing_attempt": true,
+    "protocol_action": "stop_all",
+    "retry_allowed": false,
+    "source_edit_after_result_allowed": false
+  }
+}

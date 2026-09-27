@@ -1,0 +1,33 @@
+\begin{table}[!htbp]
+\centering\small
+\caption{Same-image 50-MHz request-to-selected-residual-publication time (ms),
+six repetitions per cell, balanced across mode order and two private banks.
+The primary mean weights the fifteen sparse masks equally; empty and dense
+controls remain separate. This is not complete rendering time.}
+\label{tab:roi-service}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Request & Tiles & Full raster & Outer box & Merged \\
+\midrule
+Empty & 0 & 0.159 & 0.159 & 0.159 \\
+Dense & 60 & 309.888 & 309.860 & 309.941 \\
+Clustered & 6 & 57.494 & 32.435 & 32.423 \\
+Clustered & 15 & 99.532 & 79.281 & 79.306 \\
+Clustered & 30 & 167.577 & 156.391 & 156.410 \\
+Scattered & 7 & 65.397 & 62.495 & 39.777 \\
+Scattered & 17 & 116.212 & 116.240 & 95.068 \\
+Scattered & 31 & 184.957 & 184.937 & 171.752 \\
+Checkerboard & 8 & 70.267 & 67.638 & 45.337 \\
+Checkerboard & 20 & 132.128 & 122.993 & 112.928 \\
+Checkerboard & 30 & 183.927 & 183.913 & 169.454 \\
+Prefix & 5 & 52.942 & 27.774 & 28.009 \\
+Prefix & 17 & 109.523 & 96.205 & 93.761 \\
+Prefix & 24 & 143.651 & 135.043 & 129.742 \\
+Motion band & 8 & 67.598 & 44.062 & 44.035 \\
+Motion band & 18 & 112.926 & 95.212 & 95.220 \\
+Motion band & 28 & 158.973 & 147.526 & 149.125 \\
+\midrule
+Sparse mean & -- & 114.874 & 103.476 & 96.157 \\
+\bottomrule
+\end{tabular}
+\end{table}

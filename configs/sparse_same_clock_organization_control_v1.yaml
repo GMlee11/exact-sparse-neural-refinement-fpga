@@ -1,0 +1,148 @@
+# Experiment 126: preregistered same-clock, compute-resource-matched control.
+experiment_id: sparse_same_clock_organization_control_v1
+numeric_experiment_id: 126
+schema_version: 1
+status: preregistered_not_run
+
+question: >-
+  Do exact global closure and persistent traversal retain at least a 25 percent
+  cycle, service-time, and AXI-byte advantage over equally sparse independent
+  and rectangle organizations when clock, trained arithmetic, compute lanes,
+  commit semantics, host protocol, and tool strategy are controlled?
+
+frozen_inputs:
+  model: width24_int8_sparse_fpga_student
+  output_mask: 0x0000C03F0FE03000
+  controlled_suite_patterns: 16
+  lr_width: 640
+  lr_height: 360
+  scale: 2
+  sealed_images_used: false
+  selector_used_or_tuned: false
+
+organizations:
+  - independent_halo_tiles
+  - rectangle_compaction
+  - global_closure_persistent
+
+matched_controls:
+  fabric_clock_hz: 50000000
+  fabric_clock_tolerance_hz: 1000
+  conv1_output_lanes: 2
+  conv2_output_lanes: 12
+  conv3_output_lanes: 6
+  dsp48_count: 180
+  axis_word_bits: 32
+  private_atomic_commit_all_organizations: true
+  identical_frame_id_deadline_and_dma_protocol: true
+  vivado_version: 2020.2
+  synthesis_strategy: Vivado Synthesis Defaults
+  implementation_strategy: Vivado Implementation Defaults
+  route_seed_sweeps_allowed: false
+  repetitions_after_initialization: 10
+
+# Metadata-only clarification recorded before any Experiment 126 build. These
+# destinations are immutable experiment inputs: build/capture tooling must
+# refuse an existing destination rather than overwrite or rename it.
+artifact_bindings:
+  build_root: fpga/build/sparse_same_clock_organization_control_v1
+  organizations:
+    independent_halo_tiles:
+      artifact_stem: zybo_sparse_same_clock_independent_halo_tiles
+      bitstream: fpga/build/sparse_same_clock_organization_control_v1/independent_halo_tiles/zybo_sparse_same_clock_independent_halo_tiles.bit
+      hardware_platform: fpga/build/sparse_same_clock_organization_control_v1/independent_halo_tiles/zybo_sparse_same_clock_independent_halo_tiles.xsa
+      software_image: fpga/build/sparse_same_clock_organization_control_v1/independent_halo_tiles/zybo_sparse_same_clock_independent_halo_tiles_app_ocm.elf
+      ps7_init: fpga/build/sparse_same_clock_organization_control_v1/independent_halo_tiles/ps7_init.tcl
+      build_driver: fpga/scripts/build_sparse_same_clock_independent_halo_tiles.ps1
+    rectangle_compaction:
+      artifact_stem: zybo_sparse_same_clock_rectangle_compaction
+      bitstream: fpga/build/sparse_same_clock_organization_control_v1/rectangle_compaction/zybo_sparse_same_clock_rectangle_compaction.bit
+      hardware_platform: fpga/build/sparse_same_clock_organization_control_v1/rectangle_compaction/zybo_sparse_same_clock_rectangle_compaction.xsa
+      software_image: fpga/build/sparse_same_clock_organization_control_v1/rectangle_compaction/zybo_sparse_same_clock_rectangle_compaction_app_ocm.elf
+      ps7_init: fpga/build/sparse_same_clock_organization_control_v1/rectangle_compaction/ps7_init.tcl
+      build_driver: fpga/scripts/build_sparse_same_clock_rectangle_compaction.ps1
+    global_closure_persistent:
+      artifact_stem: zybo_sparse_same_clock_global_closure_persistent
+      bitstream: fpga/build/sparse_same_clock_organization_control_v1/global_closure_persistent/zybo_sparse_same_clock_global_closure_persistent.bit
+      hardware_platform: fpga/build/sparse_same_clock_organization_control_v1/global_closure_persistent/zybo_sparse_same_clock_global_closure_persistent.xsa
+      software_image: fpga/build/sparse_same_clock_organization_control_v1/global_closure_persistent/zybo_sparse_same_clock_global_closure_persistent_app_ocm.elf
+      ps7_init: fpga/build/sparse_same_clock_organization_control_v1/global_closure_persistent/ps7_init.tcl
+      build_driver: fpga/scripts/build_sparse_same_clock_global_closure_persistent.ps1
+
+# Freeze the estimator before any physical result exists. Each physical row
+# contains ten post-initialization samples. Row medians are computed first;
+# organization summaries are the medians of the sixteen row medians.
+analysis_plan:
+  row_estimator: median_of_10_post_initialization_repetitions
+  organization_estimator: median_of_16_pattern_row_medians
+  reduction_formula: 100_times_one_minus_persistent_over_baseline
+  compare_metrics:
+    - fpga_cycles
+    - service_time_ns
+    - axis_bytes
+  require_all_48_rows: true
+  require_all_480_timed_iterations: true
+
+# BRAM and control LUTs are architecture outcomes and therefore are not padded
+# artificially. "Resource matched" here means identical trained arithmetic,
+# lane allocation, DSP budget, interfaces, and device capacity. Total LUT/FF/
+# BRAM must be reported, not forced equal by inert logic or memory.
+resource_interpretation:
+  compute_resources_exactly_matched: true
+  total_resources_expected_equal: false
+  inert_padding_allowed: false
+  all_total_resources_reported: true
+
+acceptance:
+  all_routes_meet_setup_and_hold: true
+  all_outputs_checksums_counters_and_commit_outcomes_exact: true
+  measured_fabric_clock_matches_contract: true
+  lane_allocation_and_dsp_count_match_exactly: true
+  persistent_vs_rectangle_minimum_cycle_reduction_percent: 25.0
+  persistent_vs_rectangle_minimum_service_time_reduction_percent: 25.0
+  persistent_vs_rectangle_minimum_axis_byte_reduction_percent: 25.0
+  persistent_vs_independent_minimum_cycle_reduction_percent: 25.0
+  persistent_vs_independent_minimum_service_time_reduction_percent: 25.0
+  persistent_vs_independent_minimum_axis_byte_reduction_percent: 25.0
+  no_claim_if_any_correctness_or_control_gate_fails: true
+
+failure_actions:
+  - If clock or compute resources differ, label the run uncontrolled and do not use it as the matched headline.
+  - If persistent execution misses any 25 percent gate, narrow the manuscript to the passing measured mechanisms.
+  - Preserve all failed routes and captures without changing thresholds.
+
+expected_files:
+  manifest: results/manifests/sparse_same_clock_organization_control_v1.json
+  board_ready: results/tables/sparse_same_clock_organization_control_board_ready.json
+  raw_capture: fpga/docs/captures/paper2/sparse_same_clock_organization_control_v1/physical_zybo_sparse_same_clock_organizations.txt
+  timing_reports: fpga/docs/captures/paper2/sparse_same_clock_organization_control_v1/route/<organization>/timing_summary.txt
+  utilization_reports: fpga/docs/captures/paper2/sparse_same_clock_organization_control_v1/route/<organization>/utilization.txt
+  result_json: results/tables/sparse_same_clock_organization_control_v1.json
+  result_markdown: results/tables/sparse_same_clock_organization_control_v1.md
+  result_latex: docs/paper/generated/sparse_same_clock_organization_control_v1.tex
+  analyzer: src/hardware/analyze_sparse_same_clock_organization_control.py
+  test: tests/test_analyze_sparse_same_clock_organization_control.py
+  preflight: src/hardware/prepare_sparse_same_clock_organization_control.py
+  orchestration: fpga/scripts/invoke_sparse_same_clock_organization_control.ps1
+  preflight_test: tests/test_prepare_sparse_same_clock_organization_control.py
+
+estimated_setup:
+  board: Digilent Zybo Z7-20 with Zynq-7020
+  board_connections:
+    - 12 V board supply
+    - Digilent JTAG USB connection
+    - existing PS/AXI-DMA mailbox harness
+  tools:
+    - Vivado 2020.2
+    - Vitis 2020.2 or the frozen standalone ARM build
+  expected_implementation_runs: 3
+  expected_board_images: 3
+  expected_board_replays: 48
+  estimated_route_time_hours: 6-12 total, hardware dependent
+  estimated_board_time_hours: 2-3 including programming and capture audit
+
+prohibited_steps:
+  - no sealed image data
+  - no selector fitting or threshold changes
+  - no route seed sweep
+  - no model, quantization, lane, or clock retuning after results are seen

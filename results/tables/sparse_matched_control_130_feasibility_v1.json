@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "experiment_id": "sparse_matched_control_130_feasibility_v1",
+  "numeric_experiment_id": 130,
+  "status": "terminal_no_go_before_implementation",
+  "classification": "governance_feasibility_result_not_physical_evidence",
+  "decision": "no_go",
+  "reason_codes": [
+    "would_retry_terminal_126c_question_and_infrastructure",
+    "new_identity_and_paths_do_not_create_scientific_independence",
+    "equal_total_resource_padding_is_not_a_neutral_control",
+    "matched_common_controls_would_not_isolate_individual_mechanisms"
+  ],
+  "next_unused_identity_audit": {
+    "127": "paper2_second_topology_closure",
+    "128": "paper1_renderer_deadline_refresh",
+    "129": "paper3_codesign_boundary",
+    "selected": 130
+  },
+  "hardware": {
+    "enumeration_result_used_for_decision": false,
+    "synthesis_attempted": false,
+    "implementation_or_route_attempted": false,
+    "packaging_attempted": false,
+    "board_contacted": false,
+    "programmed": false,
+    "capture_created": false,
+    "timed_rows_created": false,
+    "performance_gates_evaluated": false
+  },
+  "sealed_126c_immutable": true,
+  "matched_claim_eligible": false,
+  "individual_mechanism_causal_claim_eligible": false,
+  "publication_action": "retain_direct_measurements_and_narrow_causal_attribution",
+  "future_authorization_for_this_identity": false
+}

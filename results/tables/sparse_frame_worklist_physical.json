@@ -1,0 +1,87 @@
+{
+  "artifact": "sparse_frame_worklist_physical_v1",
+  "compacted": {
+    "compute_cycles": 10777492,
+    "distribution": {
+      "average_compute_cycles": 10778448,
+      "average_ms": 109.212066,
+      "maximum_ms": 109.257258,
+      "median_ms": 109.202577,
+      "minimum_ms": 109.20201,
+      "p95_ms": 109.257258,
+      "p99_ms": 109.257258,
+      "repetitions": 10
+    },
+    "halo_bytes_saved": 10692,
+    "lr_input_bytes": 222552,
+    "output_bytes": 783360,
+    "packet_words": 335304,
+    "scheduler_cycles": 498
+  },
+  "decision": "retain_horizontal_compaction_as_supporting_mechanism",
+  "evidence_boundary": "This is a physical replay of every admitted neural region from one frozen renderer frame, with exact per-region output validation. Unselected pixels use the pre-existing classical fallback. It is not an end-to-end display, energy, or multi-game measurement.",
+  "implementation": {
+    "board": "Zybo Z7-20",
+    "bram_tiles": 52.0,
+    "dsp48e1": 175,
+    "fabric_clock_hz": 100000000,
+    "slice_luts": 36531,
+    "slice_registers": 28179,
+    "timing_closed": true,
+    "wns_ns": 0.057
+  },
+  "measured_savings": {
+    "average_service_reduction_percent": 18.152092,
+    "compute_cycle_reduction_percent": 18.342505,
+    "issued_region_reduction_percent": 60.0,
+    "lr_input_reduction_percent": 4.584041,
+    "p95_service_reduction_percent": 19.332628,
+    "total_packet_reduction_percent": 1.051737
+  },
+  "naive": {
+    "compute_cycles": 13145809,
+    "distribution": {
+      "average_compute_cycles": 13199582,
+      "average_ms": 133.432934,
+      "maximum_ms": 135.441698,
+      "median_ms": 132.864917,
+      "minimum_ms": 132.863396,
+      "p95_ms": 135.441698,
+      "p99_ms": 135.441698,
+      "repetitions": 10
+    },
+    "lr_input_bytes": 233244,
+    "output_bytes": 783360,
+    "packet_words": 338868,
+    "scheduler_cycles": 960
+  },
+  "provenance": {
+    "bitstream_sha256": "8f6a6524957fd0e24ad2b9d578af5bd1cacc91d9799c23da0b19910b82278215",
+    "elf_sha256": "dc91562ab4e4ada993f0b5e32dd288ba077cbb58a355693f6f359a2ce009b2b2",
+    "model_checkpoint_sha256": "fdbaf032b50d02dc214b978ab9083e27d349240f2f5c1929974f90a88a2be1fb",
+    "model_id": "student_npu_w24_int8"
+  },
+  "publication_gate": {
+    "metric": "physical_average_service_reduction_percent",
+    "observed_percent": 18.152092,
+    "passed": false,
+    "threshold_percent": 25.0
+  },
+  "real_time_boundary": {
+    "compacted_service_ms": 109.212066,
+    "deadline_30_fps_ms": 33.333333333333336,
+    "meets_30_fps": false,
+    "service_only_fps": 9.156497414855242
+  },
+  "schema_version": 1,
+  "workload": {
+    "compacted_regions": 6,
+    "full_frame_output_measurement": false,
+    "full_renderer_worklist": true,
+    "naive_regions": 15,
+    "selected_hr_fraction": 0.2833333333333333,
+    "selected_hr_pixels": 261120,
+    "source_frame_id": 111,
+    "source_worklist_sha256": "bddac486a227b0af35247155d5910009fc6fe53469ec8c397997ea1b93f269fc"
+  }
+}

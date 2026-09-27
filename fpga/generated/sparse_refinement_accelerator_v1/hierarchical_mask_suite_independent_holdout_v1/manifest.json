@@ -1,0 +1,476 @@
+{
+  "schema_version": 1,
+  "artifact": "sparse_hierarchical_mask_suite_v1",
+  "evidence_scope": "sealed_frozen_policy_worklists_architecture_only",
+  "deployable": false,
+  "selector_generalization_claimed": false,
+  "sealed_benchmark_used": true,
+  "physical_energy_claimed": false,
+  "selection_mode": "selected_indices",
+  "classical_base": "not_applicable",
+  "oracle_utility_threshold": null,
+  "source_observations": {
+    "path": "results/analysis/sparse_refinement_selector_v7_holdout_observations.jsonl",
+    "sha256": "8a2b45a5ad7ad1a8ceb00ec65b78959bd9704e4a0a93578ad5dbb15c39576434",
+    "frame_count": 1500
+  },
+  "oracle_report_sha256": null,
+  "checkpoint": {
+    "path": "experiments/exp090_qat_student_npu_w24/checkpoints/best_model.pth",
+    "sha256": "fdbaf032b50d02dc214b978ab9083e27d349240f2f5c1929974f90a88a2be1fb",
+    "epoch": 0,
+    "feature_channels": 24
+  },
+  "fabric_clock_hz": 58823529,
+  "pattern_count": 16,
+  "patterns": [
+    {
+      "pattern_id": 0,
+      "label": "all_neural_control",
+      "engine_id": "control",
+      "sequence_id": "all_neural_control",
+      "frame_id": 0,
+      "quantile": null,
+      "selected_tiles": 60,
+      "mask": 1152921504606846975,
+      "mask_hex": "0x0FFFFFFFFFFFFFFF",
+      "selected_fraction": 1.0,
+      "input_words": 230400,
+      "output_words": 921600,
+      "generated_zero_words": 0,
+      "suppressed_output_words": 0,
+      "conv_active": [
+        230400,
+        230400,
+        230400
+      ],
+      "conv_bypassed": [
+        0,
+        0,
+        0
+      ],
+      "input_checksum": "0x1CC367C5",
+      "residual_checksum": "0x9897196F"
+    },
+    {
+      "pattern_id": 1,
+      "label": "v7_holdout_godot_fences_d_seed20260805__scene_19_fences_d__q10",
+      "engine_id": "godot_4_6_3_opengl",
+      "sequence_id": "v7_holdout_godot_fences_d_seed20260805__scene_19_fences_d",
+      "frame_id": 4,
+      "quantile": 0.1,
+      "selected_tiles": 23,
+      "mask": 73209874169741312,
+      "mask_hex": "0x010417FE1FF04000",
+      "selected_fraction": 0.38333333333333336,
+      "input_words": 95103,
+      "output_words": 353280,
+      "generated_zero_words": 135297,
+      "suppressed_output_words": 568320,
+      "conv_active": [
+        92844,
+        90583,
+        88320
+      ],
+      "conv_bypassed": [
+        137556,
+        139817,
+        142080
+      ],
+      "input_checksum": "0xFAB74926",
+      "residual_checksum": "0x4B3148F0"
+    },
+    {
+      "pattern_id": 2,
+      "label": "v7_holdout_godot_fences_d_seed20260805__scene_19_fences_d__q50",
+      "engine_id": "godot_4_6_3_opengl",
+      "sequence_id": "v7_holdout_godot_fences_d_seed20260805__scene_19_fences_d",
+      "frame_id": 59,
+      "quantile": 0.5,
+      "selected_tiles": 33,
+      "mask": 3659174159794176,
+      "mask_hex": "0x000CFFFFDFF74000",
+      "selected_fraction": 0.55,
+      "input_words": 131427,
+      "output_words": 506880,
+      "generated_zero_words": 98973,
+      "suppressed_output_words": 414720,
+      "conv_active": [
+        129860,
+        128291,
+        126720
+      ],
+      "conv_bypassed": [
+        100540,
+        102109,
+        103680
+      ],
+      "input_checksum": "0xF847DF6C",
+      "residual_checksum": "0xE225B000"
+    },
+    {
+      "pattern_id": 3,
+      "label": "v7_holdout_godot_fences_d_seed20260805__scene_19_fences_d__q90",
+      "engine_id": "godot_4_6_3_opengl",
+      "sequence_id": "v7_holdout_godot_fences_d_seed20260805__scene_19_fences_d",
+      "frame_id": 91,
+      "quantile": 0.9,
+      "selected_tiles": 49,
+      "mask": 1152921504606838864,
+      "mask_hex": "0x0FFFFFFFFFFFE050",
+      "selected_fraction": 0.8166666666666667,
+      "input_words": 190560,
+      "output_words": 752640,
+      "generated_zero_words": 39840,
+      "suppressed_output_words": 168960,
+      "conv_active": [
+        189768,
+        188968,
+        188160
+      ],
+      "conv_bypassed": [
+        40632,
+        41432,
+        42240
+      ],
+      "input_checksum": "0xB4F8D779",
+      "residual_checksum": "0x98BB2306"
+    },
+    {
+      "pattern_id": 4,
+      "label": "v7_holdout_godot_foliage_d_seed20260805__scene_04_foliage_d__q10",
+      "engine_id": "godot_4_6_3_opengl",
+      "sequence_id": "v7_holdout_godot_foliage_d_seed20260805__scene_04_foliage_d",
+      "frame_id": 132,
+      "quantile": 0.1,
+      "selected_tiles": 1,
+      "mask": 2251799813685248,
+      "mask_hex": "0x0008000000000000",
+      "selected_fraction": 0.016666666666666666,
+      "input_words": 4410,
+      "output_words": 15360,
+      "generated_zero_words": 225990,
+      "suppressed_output_words": 906240,
+      "conv_active": [
+        4216,
+        4026,
+        3840
+      ],
+      "conv_bypassed": [
+        226184,
+        226374,
+        226560
+      ],
+      "input_checksum": "0xB6BA2F67",
+      "residual_checksum": "0x29682B98"
+    },
+    {
+      "pattern_id": 5,
+      "label": "v7_holdout_godot_foliage_d_seed20260805__scene_04_foliage_d__q50",
+      "engine_id": "godot_4_6_3_opengl",
+      "sequence_id": "v7_holdout_godot_foliage_d_seed20260805__scene_04_foliage_d",
+      "frame_id": 190,
+      "quantile": 0.5,
+      "selected_tiles": 5,
+      "mask": 571759468216320,
+      "mask_hex": "0x0002080320000000",
+      "selected_fraction": 0.08333333333333333,
+      "input_words": 21888,
+      "output_words": 76800,
+      "generated_zero_words": 208512,
+      "suppressed_output_words": 844800,
+      "conv_active": [
+        20976,
+        20080,
+        19200
+      ],
+      "conv_bypassed": [
+        209424,
+        210320,
+        211200
+      ],
+      "input_checksum": "0xC288EA9F",
+      "residual_checksum": "0x4A93DADF"
+    },
+    {
+      "pattern_id": 6,
+      "label": "v7_holdout_godot_foliage_d_seed20260805__scene_04_foliage_d__q90",
+      "engine_id": "godot_4_6_3_opengl",
+      "sequence_id": "v7_holdout_godot_foliage_d_seed20260805__scene_04_foliage_d",
+      "frame_id": 232,
+      "quantile": 0.9,
+      "selected_tiles": 18,
+      "mask": 6762073295190048,
+      "mask_hex": "0x00180611E0B47820",
+      "selected_fraction": 0.3,
+      "input_words": 75444,
+      "output_words": 276480,
+      "generated_zero_words": 154956,
+      "suppressed_output_words": 645120,
+      "conv_active": [
+        73336,
+        71228,
+        69120
+      ],
+      "conv_bypassed": [
+        157064,
+        159172,
+        161280
+      ],
+      "input_checksum": "0xD06261B1",
+      "residual_checksum": "0x7DAC0610"
+    },
+    {
+      "pattern_id": 7,
+      "label": "v7_holdout_godot_hud_text_d_seed20260805__scene_09_hud_text_d__q10",
+      "engine_id": "godot_4_6_3_opengl",
+      "sequence_id": "v7_holdout_godot_hud_text_d_seed20260805__scene_09_hud_text_d",
+      "frame_id": 58,
+      "quantile": 0.1,
+      "selected_tiles": 11,
+      "mask": 838261028864,
+      "mask_hex": "0x000000C32C403800",
+      "selected_fraction": 0.18333333333333332,
+      "input_words": 47166,
+      "output_words": 168960,
+      "generated_zero_words": 183234,
+      "suppressed_output_words": 752640,
+      "conv_active": [
+        45512,
+        43870,
+        42240
+      ],
+      "conv_bypassed": [
+        184888,
+        186530,
+        188160
+      ],
+      "input_checksum": "0x8311D7E4",
+      "residual_checksum": "0x9B6BE785"
+    },
+    {
+      "pattern_id": 8,
+      "label": "v7_holdout_godot_hud_text_d_seed20260805__scene_09_hud_text_d__q50",
+      "engine_id": "godot_4_6_3_opengl",
+      "sequence_id": "v7_holdout_godot_hud_text_d_seed20260805__scene_09_hud_text_d",
+      "frame_id": 17,
+      "quantile": 0.5,
+      "selected_tiles": 16,
+      "mask": 427842354176,
+      "mask_hex": "0x000000639D643C00",
+      "selected_fraction": 0.26666666666666666,
+      "input_words": 67254,
+      "output_words": 245760,
+      "generated_zero_words": 163146,
+      "suppressed_output_words": 675840,
+      "conv_active": [
+        65312,
+        63374,
+        61440
+      ],
+      "conv_bypassed": [
+        165088,
+        167026,
+        168960
+      ],
+      "input_checksum": "0x4ED3A462",
+      "residual_checksum": "0x59C18417"
+    },
+    {
+      "pattern_id": 9,
+      "label": "v7_holdout_godot_hud_text_d_seed20260805__scene_09_hud_text_d__q90",
+      "engine_id": "godot_4_6_3_opengl",
+      "sequence_id": "v7_holdout_godot_hud_text_d_seed20260805__scene_09_hud_text_d",
+      "frame_id": 3,
+      "quantile": 0.9,
+      "selected_tiles": 21,
+      "mask": 285202428738560,
+      "mask_hex": "0x00010363DD743C00",
+      "selected_fraction": 0.35,
+      "input_words": 86634,
+      "output_words": 322560,
+      "generated_zero_words": 143766,
+      "suppressed_output_words": 599040,
+      "conv_active": [
+        84632,
+        82634,
+        80640
+      ],
+      "conv_bypassed": [
+        145768,
+        147766,
+        149760
+      ],
+      "input_checksum": "0xADFAE4B3",
+      "residual_checksum": "0x7F376023"
+    },
+    {
+      "pattern_id": 10,
+      "label": "v7_holdout_godot_particles_d_seed20260805__scene_14_particles_d__q10",
+      "engine_id": "godot_4_6_3_opengl",
+      "sequence_id": "v7_holdout_godot_particles_d_seed20260805__scene_14_particles_d",
+      "frame_id": 12,
+      "quantile": 0.1,
+      "selected_tiles": 9,
+      "mask": 102005480448,
+      "mask_hex": "0x00000017C0001C00",
+      "selected_fraction": 0.15,
+      "input_words": 38808,
+      "output_words": 138240,
+      "generated_zero_words": 191592,
+      "suppressed_output_words": 783360,
+      "conv_active": [
+        37376,
+        35960,
+        34560
+      ],
+      "conv_bypassed": [
+        193024,
+        194440,
+        195840
+      ],
+      "input_checksum": "0x9FE266CF",
+      "residual_checksum": "0xFA855973"
+    },
+    {
+      "pattern_id": 11,
+      "label": "v7_holdout_godot_particles_d_seed20260805__scene_14_particles_d__q50",
+      "engine_id": "godot_4_6_3_opengl",
+      "sequence_id": "v7_holdout_godot_particles_d_seed20260805__scene_14_particles_d",
+      "frame_id": 110,
+      "quantile": 0.5,
+      "selected_tiles": 17,
+      "mask": 282022655327232,
+      "mask_hex": "0x0001007F84307C00",
+      "selected_fraction": 0.2833333333333333,
+      "input_words": 71346,
+      "output_words": 261120,
+      "generated_zero_words": 159054,
+      "suppressed_output_words": 660480,
+      "conv_active": [
+        69320,
+        67298,
+        65280
+      ],
+      "conv_bypassed": [
+        161080,
+        163102,
+        165120
+      ],
+      "input_checksum": "0xCCC5D206",
+      "residual_checksum": "0x56ED2376"
+    },
+    {
+      "pattern_id": 12,
+      "label": "v7_holdout_godot_particles_d_seed20260805__scene_14_particles_d__q90",
+      "engine_id": "godot_4_6_3_opengl",
+      "sequence_id": "v7_holdout_godot_particles_d_seed20260805__scene_14_particles_d",
+      "frame_id": 111,
+      "quantile": 0.9,
+      "selected_tiles": 23,
+      "mask": 1099448220688,
+      "mask_hex": "0x000000FFFC387C10",
+      "selected_fraction": 0.38333333333333336,
+      "input_words": 94182,
+      "output_words": 353280,
+      "generated_zero_words": 136218,
+      "suppressed_output_words": 568320,
+      "conv_active": [
+        92232,
+        90278,
+        88320
+      ],
+      "conv_bypassed": [
+        138168,
+        140122,
+        142080
+      ],
+      "input_checksum": "0xA0A9244F",
+      "residual_checksum": "0xE351B250"
+    },
+    {
+      "pattern_id": 13,
+      "label": "v7_holdout_godot_reflective_d_seed20260805__scene_24_reflective_d__q10",
+      "engine_id": "godot_4_6_3_opengl",
+      "sequence_id": "v7_holdout_godot_reflective_d_seed20260805__scene_24_reflective_d",
+      "frame_id": 217,
+      "quantile": 0.1,
+      "selected_tiles": 21,
+      "mask": 1152901713397554176,
+      "mask_hex": "0x0FFFEE0000001C00",
+      "selected_fraction": 0.35,
+      "input_words": 84450,
+      "output_words": 322560,
+      "generated_zero_words": 145950,
+      "suppressed_output_words": 599040,
+      "conv_active": [
+        83176,
+        81906,
+        80640
+      ],
+      "conv_bypassed": [
+        147224,
+        148494,
+        149760
+      ],
+      "input_checksum": "0xAA7E306A",
+      "residual_checksum": "0x8199F700"
+    },
+    {
+      "pattern_id": 14,
+      "label": "v7_holdout_godot_reflective_d_seed20260805__scene_24_reflective_d__q50",
+      "engine_id": "godot_4_6_3_opengl",
+      "sequence_id": "v7_holdout_godot_reflective_d_seed20260805__scene_24_reflective_d",
+      "frame_id": 18,
+      "quantile": 0.5,
+      "selected_tiles": 25,
+      "mask": 36025481311558656,
+      "mask_hex": "0x007FFCFC00701C00",
+      "selected_fraction": 0.4166666666666667,
+      "input_words": 100941,
+      "output_words": 384000,
+      "generated_zero_words": 129459,
+      "suppressed_output_words": 537600,
+      "conv_active": [
+        99292,
+        97645,
+        96000
+      ],
+      "conv_bypassed": [
+        131108,
+        132755,
+        134400
+      ],
+      "input_checksum": "0x6E6B9B99",
+      "residual_checksum": "0x52519BFD"
+    },
+    {
+      "pattern_id": 15,
+      "label": "v7_holdout_godot_reflective_d_seed20260805__scene_24_reflective_d__q90",
+      "engine_id": "godot_4_6_3_opengl",
+      "sequence_id": "v7_holdout_godot_reflective_d_seed20260805__scene_24_reflective_d",
+      "frame_id": 60,
+      "quantile": 0.9,
+      "selected_tiles": 28,
+      "mask": 288228709711748096,
+      "mask_hex": "0x03FFFE7C00701C00",
+      "selected_fraction": 0.4666666666666667,
+      "input_words": 112065,
+      "output_words": 430080,
+      "generated_zero_words": 118335,
+      "suppressed_output_words": 491520,
+      "conv_active": [
+        110548,
+        109033,
+        107520
+      ],
+      "conv_bypassed": [
+        119852,
+        121367,
+        122880
+      ],
+      "input_checksum": "0x2D69779E",
+      "residual_checksum": "0x14826B02"
+    }
+  ]
+}

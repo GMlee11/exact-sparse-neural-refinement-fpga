@@ -1,0 +1,20 @@
+{
+    "schema_version":  1,
+    "artifact":  "sparse_hierarchical_commit_suite_zybo_board_ready_v1",
+    "evidence_scope":  "controlled_mask_geometry_same_clock_commit_ablation",
+    "selector_generalization_claimed":  false,
+    "physical_energy_claimed":  false,
+    "sealed_benchmark_used":  false,
+    "commit_safe_controller":  true,
+    "outcome_count":  4,
+    "pattern_count":  16,
+    "fabric_clock_hz":  50000000,
+    "timing_closed":  true,
+    "checkpoint_sha256":  "fdbaf032b50d02dc214b978ab9083e27d349240f2f5c1929974f90a88a2be1fb",
+    "suite_manifest_sha256":  "7c836ab050b97fc3f79b6f948efb518503f2a7cc9b66a1eb0ac2290b8cbcd973",
+    "gate_config_sha256":  "17255f5b71466f58d2706ed254d71435ea46943e714dc76a0ec50b8127cbb954",
+    "bitstream_sha256":  "6c195c73bfc03d551d0ea57ceb52944c998f64d1575ceb14e7aa4728dc2b4d2f",
+    "xsa_sha256":  "8e45717ad4268ed2ebad83217e5d99c03099c482044cdc80bd5320eafdcb9955",
+    "elf_sha256":  "ac173e594f056a1e378b3841c3ecb60951299078fca9b4c40a3ca584a8a4ea4e",
+    "ps7_init_sha256":  "49af037f2b6bbe883c2499969da844119dc1cb85a26f404be7ca85d87c54284e"
+}

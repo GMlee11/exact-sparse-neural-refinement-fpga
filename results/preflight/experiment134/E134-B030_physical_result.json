@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "record_type": "E134_B030_PHYSICAL_RESULT",
+  "experiment_identity": "E134-B030",
+  "terminal_utc": "2026-08-22T05:08:30Z",
+  "disposition": "PHYSICAL_EXECUTION_PASS",
+  "source_checkpoint": "5c117c67c039b06b0c1809dbefc6c81a1698e349",
+  "build": {
+    "legacy_terminal_unchanged": "results/preflight/experiment134/E134-B030_attempt_terminal.json",
+    "collector_note": "The legacy Stage C parser searched CLOCK_PERIOD_NS while the valid machine report emitted E134_MACHINE_CLOCK_PERIOD_NS=100.000.",
+    "clock_mhz": 10.0,
+    "wns_ns": 28.155,
+    "whs_ns": 0.009,
+    "drc_errors": 0,
+    "drc_critical_warnings": 0,
+    "slice_luts": 37289,
+    "slice_registers": 26362,
+    "bram36_tile_equivalent": 113,
+    "dsp48e1": 154,
+    "bitstream_sha256": "0d83ec0c145fb4f246eefea3198dde6116c2fcaad98da60ddfbb6a48afd06209",
+    "xsa_sha256": "c84b900bf567638e41654ae20e79a1a83d30b10a28d6683f0ba4c2690afbfd6b",
+    "excluded_regenerable_checkpoints": {
+      "post_route_dcp": {"bytes": 32534046, "sha256": "49758d73ee5191dbc2409292b130268553463fa9a0125a8b9e5db1b8c4110649"},
+      "post_synth_dcp": {"bytes": 14579097, "sha256": "00826eb1141cc9bbe5d32ecc7951da4ec698b4ed010174dbb21757fbfdf71422"}
+    }
+  },
+  "physical": {
+    "board": "Zybo Zynq-7020; FTDI serial 210351BDF8A6; UART COM3",
+    "software_sha256": "4f4725e7fb9639cdc86e30c9c2d1da05e972a2a3bc3ca4f3a1218a65b7da0e8b",
+    "software_note": "The B029 ELF was reused byte-for-byte because B030 changes only FPGA publication alignment; ABI, fixture, schedule, and host behavior are unchanged.",
+    "input_sha256": "3cbf8785e37a809844e272630fcd551d49aa6c480547369da3f3c904ead8d727",
+    "uart_path": "fpga/docs/captures/paper2/experiment134/E134-B030/physical/uart_b030_raw.bin",
+    "uart_bytes": 94371,
+    "uart_sha256": "ee6da3a171ea6f01f55732fbbe571f78ebe48aa156c39dfb994ab25006c724b8",
+    "rows": 480,
+    "masks": 12,
+    "modes": 4,
+    "repetitions_per_cell": 10,
+    "checksum_mismatches": 0,
+    "nonzero_adapter_errors": 0,
+    "incomplete_status_rows": 0,
+    "word_count_invariant_failures": 0,
+    "publication_safety_rows_run": 0
+  },
+  "analysis": {
+    "path": "results/analysis/sparse_distilled_same_bitstream_b030_execution_factorial.json",
+    "sha256": "cce967d81908abfcf274d66db43b3a808b3bbf69f4910aa8292259d61887b58a",
+    "aggregate_cycle_raw": {"coverage": 0.0, "retention": 0.0, "interaction": 0.0},
+    "aggregate_cycle_fractional": {"coverage": 0.0, "retention": 0.0, "interaction": 0.0},
+    "opportunity_masks": {"coverage": 4, "retention": 5, "total": 12}
+  },
+  "claim_firewall": "This 10 MHz same-bitstream companion confirms opportunity-dependent cycle/work/reuse effects. It is not universal acceleration, the full-scale throughput point, an area/energy result, or a new physical publication-safety study."
+}

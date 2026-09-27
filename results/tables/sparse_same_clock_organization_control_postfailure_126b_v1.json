@@ -1,0 +1,302 @@
+{
+  "artifact": "sparse_same_clock_organization_control_126b_adverse_result",
+  "authorization_head": "2253ba5f8779e171c541ffec1f74b2fe7f3dcbfd",
+  "board_phase": {
+    "capture_authorized": false,
+    "contacted": false,
+    "permanently_prohibited": true,
+    "programming_authorized": false,
+    "raw_capture_present": false,
+    "ready": false,
+    "reason": "No valid application ELF exists for any organization."
+  },
+  "claim_boundary": "Experiment 126b proves successful same-clock, exact-180-DSP route attribution only. It supplies no executable board image, board/service row, or evaluation of the six performance gates, and it does not resolve equal-build performance attribution.",
+  "decision": "blocked_before_board",
+  "experiment_id": "sparse_same_clock_organization_control_postfailure_126b_v1",
+  "experiment_label": "Experiment 126b",
+  "gates": {
+    "all_archive_hashes_match": true,
+    "all_dsp_paths_trained_convolution_only": true,
+    "all_post_synthesis_dsp48e1_exactly_180": true,
+    "all_routed_dsp48e1_exactly_180": true,
+    "all_routes_exactly_50mhz": true,
+    "all_routes_meet_setup_and_hold": true,
+    "all_same_xsa_application_builds_failed": true,
+    "authorization_head_exact": true,
+    "board_ready": false,
+    "no_application_elf_discoverable": true,
+    "no_board_or_raw_capture": true,
+    "performance_gates_not_evaluated": true,
+    "three_complete_17_file_failure_archives": true
+  },
+  "lineage": {
+    "blinded_confirmation": false,
+    "classification": "disclosed_post_failure_remediation",
+    "fresh_replication": false,
+    "independent_confirmation": false,
+    "replaces_experiment_126": false,
+    "sealed_predecessor": "Experiment 126"
+  },
+  "organizations": [
+    {
+      "archive_file_count": 17,
+      "archive_path": "fpga/docs/captures/paper2/sparse_same_clock_organization_control_postfailure_126b_v1/failed_builds/independent_halo_tiles/2253ba5f8779e171c541ffec1f74b2fe7f3dcbfd",
+      "artifact_sha256": {
+        "failure_summary.txt": "8a343f5c38297ef76fe8d1a3a154441efdce8668ad0952a8c4a4ad7e8c9ee769",
+        "staged_dsp48e1_post_synthesis.txt": "f9b2edc75aa5f1e283acf9cd5ea4700f0dc2f831b0f1349623826e69d8682118",
+        "staged_dsp48e1_routed.txt": "f9b2edc75aa5f1e283acf9cd5ea4700f0dc2f831b0f1349623826e69d8682118",
+        "staged_ps7_init.c": "1731cc7bfbaa391b4e6ac2a8980743587fedbdbd2b5c74e298cf1d9d08304af2",
+        "staged_ps7_init.h": "4ce25d998d4c11cadcf11695d4ff2e66f0b98f15702830694b91bd88248a837f",
+        "staged_ps7_init.html": "7804ed1ee161fd30279734e3111204feb3c38eb3d25c958052ec2e443b1ad971",
+        "staged_ps7_init.tcl": "49af037f2b6bbe883c2499969da844119dc1cb85a26f404be7ca85d87c54284e",
+        "staged_ps7_init_gpl.c": "2698ecf0b523868e5febb49afb7b1350dd06a90a6d95c0f44e794ec850cc857b",
+        "staged_ps7_init_gpl.h": "30e57a836b35d613025c0ccc4acc461c4be52d01a156691ce2fe77d80a7acb20",
+        "staged_timing_summary.txt": "4e6623949c8a5671ecbb7d8ce86e238ceda1a4f1547370dc94a7af0c27b95f08",
+        "staged_utilization.txt": "780602a3467073dca1ddb72a08f0a76c62a73fce8fc9cabc7c3b3a0362b73ad3",
+        "staged_utilization_hierarchical.txt": "2dd038454af99c4a88e3f8875b6b671e6ef6f8d2915ef3365127c386aae4abfc",
+        "staged_zybo_sparse_same_clock_independent_halo_tiles_126b.bit": "1751a679e4750993a08c8c46d6b06aa86633658e45b1860b5d8b7877f5b1db7e",
+        "staged_zybo_sparse_same_clock_independent_halo_tiles_126b.xsa": "2bba4509120762bc5a4b362de778e81d49638c1de71423271ca45af3f34f8276",
+        "vivado.jou": "4dbaa88f99e7feb7f38bbf0a508e8881c3f19590bdfb21c9ad6da689520c4ba5",
+        "vivado.log": "5b8d8624131049fefcef18c22a66a0e62ecf794387d7e01506bd691c5f63253e"
+      },
+      "dsp48e1": {
+        "post_synthesis": {
+          "all_trained_convolution": true,
+          "bookkeeping_count": 0,
+          "count": 180,
+          "sha256": "f9b2edc75aa5f1e283acf9cd5ea4700f0dc2f831b0f1349623826e69d8682118"
+        },
+        "routed": {
+          "all_trained_convolution": true,
+          "bookkeeping_count": 0,
+          "count": 180,
+          "sha256": "f9b2edc75aa5f1e283acf9cd5ea4700f0dc2f831b0f1349623826e69d8682118"
+        }
+      },
+      "failure": "Experiment 126b same-XSA application build failed",
+      "inventory_sha256": "f147ed8ba482afd1aeeace23e1dc6da722de231848a83756decffbcd5f68d6b1",
+      "organization": "independent_halo_tiles",
+      "packaging": {
+        "application_elf_discoverable": false,
+        "stage": "same_xsa_application_build",
+        "status": "failed"
+      },
+      "route": {
+        "bram_tiles": 52.0,
+        "dsps": 180,
+        "hierarchical_utilization_sha256": "2dd038454af99c4a88e3f8875b6b671e6ef6f8d2915ef3365127c386aae4abfc",
+        "registers": 29257,
+        "slice_luts": 39151,
+        "target_mhz": 50.0,
+        "timing_closed": true,
+        "timing_report_sha256": "4e6623949c8a5671ecbb7d8ce86e238ceda1a4f1547370dc94a7af0c27b95f08",
+        "utilization_report_sha256": "780602a3467073dca1ddb72a08f0a76c62a73fce8fc9cabc7c3b3a0362b73ad3",
+        "whs_ns": 0.016,
+        "wns_ns": 2.712
+      },
+      "same_xsa": {
+        "application_elf_count": 0,
+        "bitstream_sha256": "1751a679e4750993a08c8c46d6b06aa86633658e45b1860b5d8b7877f5b1db7e",
+        "embedded_bitstream_count": 1,
+        "root_ps7_init_count": 1,
+        "staged_bitstream_matches_xsa": true,
+        "staged_ps7_init_matches_xsa": true,
+        "xsa_sha256": "2bba4509120762bc5a4b362de778e81d49638c1de71423271ca45af3f34f8276"
+      }
+    },
+    {
+      "archive_file_count": 17,
+      "archive_path": "fpga/docs/captures/paper2/sparse_same_clock_organization_control_postfailure_126b_v1/failed_builds/rectangle_compaction/2253ba5f8779e171c541ffec1f74b2fe7f3dcbfd",
+      "artifact_sha256": {
+        "failure_summary.txt": "25b757f4ff242b905bcdc666a9e3acf35128331b184d382d98688d1eabf5fb06",
+        "staged_dsp48e1_post_synthesis.txt": "cc42c20c2b1e85be7dc17739a7b173dcfd1c3bcd3277cd09f61c80a8b0a1c0a8",
+        "staged_dsp48e1_routed.txt": "cc42c20c2b1e85be7dc17739a7b173dcfd1c3bcd3277cd09f61c80a8b0a1c0a8",
+        "staged_ps7_init.c": "1731cc7bfbaa391b4e6ac2a8980743587fedbdbd2b5c74e298cf1d9d08304af2",
+        "staged_ps7_init.h": "4ce25d998d4c11cadcf11695d4ff2e66f0b98f15702830694b91bd88248a837f",
+        "staged_ps7_init.html": "7804ed1ee161fd30279734e3111204feb3c38eb3d25c958052ec2e443b1ad971",
+        "staged_ps7_init.tcl": "49af037f2b6bbe883c2499969da844119dc1cb85a26f404be7ca85d87c54284e",
+        "staged_ps7_init_gpl.c": "2698ecf0b523868e5febb49afb7b1350dd06a90a6d95c0f44e794ec850cc857b",
+        "staged_ps7_init_gpl.h": "30e57a836b35d613025c0ccc4acc461c4be52d01a156691ce2fe77d80a7acb20",
+        "staged_timing_summary.txt": "4b210e30f598edf6e3b410220df50d727b0c107bce39076e310ede3fd3b6d315",
+        "staged_utilization.txt": "6e4a1ecb6c6e7be64f5aff5220359a20c067629bc93fc0b631e089dced14e3c3",
+        "staged_utilization_hierarchical.txt": "80533dde0c262846b72661f7668a63de63d1ffbece367b3de088329ca4e36565",
+        "staged_zybo_sparse_same_clock_rectangle_compaction_126b.bit": "0e7fa17e1f51519d34230c07fe26aba95b16c08bc98031d077aa923fd07e3f61",
+        "staged_zybo_sparse_same_clock_rectangle_compaction_126b.xsa": "efa97689d6fdae8922f270fcd98f16c068002b6ef9ca01857b624665c600687d",
+        "vivado.jou": "5ae381acf7ec2035bc927e73f2f9b178dfb80e84a2c01516f79042bf3cec21a0",
+        "vivado.log": "10de753fe4f4a4ecb35b011e2ec7742816209c0fcc0fef3a1f27f05760c2c3c8"
+      },
+      "dsp48e1": {
+        "post_synthesis": {
+          "all_trained_convolution": true,
+          "bookkeeping_count": 0,
+          "count": 180,
+          "sha256": "cc42c20c2b1e85be7dc17739a7b173dcfd1c3bcd3277cd09f61c80a8b0a1c0a8"
+        },
+        "routed": {
+          "all_trained_convolution": true,
+          "bookkeeping_count": 0,
+          "count": 180,
+          "sha256": "cc42c20c2b1e85be7dc17739a7b173dcfd1c3bcd3277cd09f61c80a8b0a1c0a8"
+        }
+      },
+      "failure": "Experiment 126b same-XSA application build failed",
+      "inventory_sha256": "3bd5371740b721df4a140a72059d155390eb24798470dd083b5b130630b5e0dd",
+      "organization": "rectangle_compaction",
+      "packaging": {
+        "application_elf_discoverable": false,
+        "stage": "same_xsa_application_build",
+        "status": "failed"
+      },
+      "route": {
+        "bram_tiles": 52.0,
+        "dsps": 180,
+        "hierarchical_utilization_sha256": "80533dde0c262846b72661f7668a63de63d1ffbece367b3de088329ca4e36565",
+        "registers": 29261,
+        "slice_luts": 39155,
+        "target_mhz": 50.0,
+        "timing_closed": true,
+        "timing_report_sha256": "4b210e30f598edf6e3b410220df50d727b0c107bce39076e310ede3fd3b6d315",
+        "utilization_report_sha256": "6e4a1ecb6c6e7be64f5aff5220359a20c067629bc93fc0b631e089dced14e3c3",
+        "whs_ns": 0.02,
+        "wns_ns": 2.845
+      },
+      "same_xsa": {
+        "application_elf_count": 0,
+        "bitstream_sha256": "0e7fa17e1f51519d34230c07fe26aba95b16c08bc98031d077aa923fd07e3f61",
+        "embedded_bitstream_count": 1,
+        "root_ps7_init_count": 1,
+        "staged_bitstream_matches_xsa": true,
+        "staged_ps7_init_matches_xsa": true,
+        "xsa_sha256": "efa97689d6fdae8922f270fcd98f16c068002b6ef9ca01857b624665c600687d"
+      }
+    },
+    {
+      "archive_file_count": 17,
+      "archive_path": "fpga/docs/captures/paper2/sparse_same_clock_organization_control_postfailure_126b_v1/failed_builds/global_closure_persistent/2253ba5f8779e171c541ffec1f74b2fe7f3dcbfd",
+      "artifact_sha256": {
+        "failure_summary.txt": "e6de610255b1aea725a66af662ade9a8983819526f01d31bc9a3d177feda2d95",
+        "staged_dsp48e1_post_synthesis.txt": "5f1c51dd1fcfa958fc716bb7d04fe77c5471f24bb44bb0f0d8a48b056668008e",
+        "staged_dsp48e1_routed.txt": "5f1c51dd1fcfa958fc716bb7d04fe77c5471f24bb44bb0f0d8a48b056668008e",
+        "staged_ps7_init.c": "1731cc7bfbaa391b4e6ac2a8980743587fedbdbd2b5c74e298cf1d9d08304af2",
+        "staged_ps7_init.h": "4ce25d998d4c11cadcf11695d4ff2e66f0b98f15702830694b91bd88248a837f",
+        "staged_ps7_init.html": "7804ed1ee161fd30279734e3111204feb3c38eb3d25c958052ec2e443b1ad971",
+        "staged_ps7_init.tcl": "49af037f2b6bbe883c2499969da844119dc1cb85a26f404be7ca85d87c54284e",
+        "staged_ps7_init_gpl.c": "2698ecf0b523868e5febb49afb7b1350dd06a90a6d95c0f44e794ec850cc857b",
+        "staged_ps7_init_gpl.h": "30e57a836b35d613025c0ccc4acc461c4be52d01a156691ce2fe77d80a7acb20",
+        "staged_timing_summary.txt": "0b612bf19c87e7d855f002ca07a57662a3b23a494d34be0bcc2e4169699adaba",
+        "staged_utilization.txt": "71cc98ca028a703243e2c3d5f18fed433ac5954ad31916e67c1b85e4dc460ccc",
+        "staged_utilization_hierarchical.txt": "c826c4b294509c39ebdd8560cab966fbce8e6cfe25d39fbd02286091dfceecca",
+        "staged_zybo_sparse_same_clock_global_closure_persistent_126b.bit": "824dc5bc37e280b66bdfa0cf3d497debdc324fa76bd3c9402d22378a460f82bc",
+        "staged_zybo_sparse_same_clock_global_closure_persistent_126b.xsa": "15de30655dd7ed505fa78e34c8c662e941ad2b54d41c0f747fa50472d31622fc",
+        "vivado.jou": "dfec2ca6b78624c7bba54eb2ddfd522512f28cea28290f227d9fd5668aa86c18",
+        "vivado.log": "60a3a5ba30ad2da55eac17c7568efed4ef740fc1def461f97422b95ba86f9d8a"
+      },
+      "dsp48e1": {
+        "post_synthesis": {
+          "all_trained_convolution": true,
+          "bookkeeping_count": 0,
+          "count": 180,
+          "sha256": "5f1c51dd1fcfa958fc716bb7d04fe77c5471f24bb44bb0f0d8a48b056668008e"
+        },
+        "routed": {
+          "all_trained_convolution": true,
+          "bookkeeping_count": 0,
+          "count": 180,
+          "sha256": "5f1c51dd1fcfa958fc716bb7d04fe77c5471f24bb44bb0f0d8a48b056668008e"
+        }
+      },
+      "failure": "Experiment 126b same-XSA application build failed",
+      "inventory_sha256": "0c0c192eb76ed377ea0e14198f5f812739dabebda3cf684ea74ddc657f513fb2",
+      "organization": "global_closure_persistent",
+      "packaging": {
+        "application_elf_discoverable": false,
+        "stage": "same_xsa_application_build",
+        "status": "failed"
+      },
+      "route": {
+        "bram_tiles": 4.5,
+        "dsps": 180,
+        "hierarchical_utilization_sha256": "c826c4b294509c39ebdd8560cab966fbce8e6cfe25d39fbd02286091dfceecca",
+        "registers": 28123,
+        "slice_luts": 46015,
+        "target_mhz": 50.0,
+        "timing_closed": true,
+        "timing_report_sha256": "0b612bf19c87e7d855f002ca07a57662a3b23a494d34be0bcc2e4169699adaba",
+        "utilization_report_sha256": "71cc98ca028a703243e2c3d5f18fed433ac5954ad31916e67c1b85e4dc460ccc",
+        "whs_ns": 0.016,
+        "wns_ns": 3.318
+      },
+      "same_xsa": {
+        "application_elf_count": 0,
+        "bitstream_sha256": "824dc5bc37e280b66bdfa0cf3d497debdc324fa76bd3c9402d22378a460f82bc",
+        "embedded_bitstream_count": 1,
+        "root_ps7_init_count": 1,
+        "staged_bitstream_matches_xsa": true,
+        "staged_ps7_init_matches_xsa": true,
+        "xsa_sha256": "15de30655dd7ed505fa78e34c8c662e941ad2b54d41c0f747fa50472d31622fc"
+      }
+    }
+  ],
+  "packaging_disposition": "same_xsa_application_elf_failed_all_three",
+  "performance_evaluation": {
+    "gates": [
+      {
+        "baseline": "independent_halo_tiles",
+        "evaluated": false,
+        "metric": "fpga_cycles",
+        "minimum_reduction_percent": 25.0,
+        "passed": null,
+        "value_percent": null
+      },
+      {
+        "baseline": "independent_halo_tiles",
+        "evaluated": false,
+        "metric": "service_time_ns",
+        "minimum_reduction_percent": 25.0,
+        "passed": null,
+        "value_percent": null
+      },
+      {
+        "baseline": "independent_halo_tiles",
+        "evaluated": false,
+        "metric": "axis_bytes",
+        "minimum_reduction_percent": 25.0,
+        "passed": null,
+        "value_percent": null
+      },
+      {
+        "baseline": "rectangle_compaction",
+        "evaluated": false,
+        "metric": "fpga_cycles",
+        "minimum_reduction_percent": 25.0,
+        "passed": null,
+        "value_percent": null
+      },
+      {
+        "baseline": "rectangle_compaction",
+        "evaluated": false,
+        "metric": "service_time_ns",
+        "minimum_reduction_percent": 25.0,
+        "passed": null,
+        "value_percent": null
+      },
+      {
+        "baseline": "rectangle_compaction",
+        "evaluated": false,
+        "metric": "axis_bytes",
+        "minimum_reduction_percent": 25.0,
+        "passed": null,
+        "value_percent": null
+      }
+    ],
+    "physical_row_count": 0,
+    "reason": "Packaging failed before board programming or capture.",
+    "status": "not_evaluated",
+    "timed_iteration_count": 0
+  },
+  "route_disposition": "all_three_exact_50mhz_180dsp_routes_passed",
+  "schema_version": 1,
+  "sealed_evidence_commit": "5ffde49b7c0cda9b29bf34a0ecb6d0fa7e822fd6",
+  "status": "complete_adverse",
+  "warning_evidence_boundary": "The archived disposition and absent ELF are hash-bound. Missing BSP-export member warnings (including translation_table.d or mblaze_nt_types.h) were observed in the launch transcript but are not promoted to separately archived claim evidence."
+}

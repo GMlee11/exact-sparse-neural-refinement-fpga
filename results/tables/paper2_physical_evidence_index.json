@@ -1,0 +1,446 @@
+{
+  "artifact": "paper2_physical_evidence_index_v1",
+  "claims": [
+    {
+      "analyzer": "src/hardware/analyze_sparse_accelerator_paper.py",
+      "claim_id": "persistent_vs_independent",
+      "evidence_class": "physical_zybo_checksum_length_counters",
+      "json_fields": [
+        "canonical_comparison[independent_halo_tiles]",
+        "canonical_comparison[persistent_hierarchical_mask]",
+        "headline_operating_point_comparison"
+      ],
+      "raw_evidence_ids": [
+        "zybo_independent_rectangle",
+        "zybo_persistent"
+      ],
+      "result_path": "results/tables/sparse_accelerator_paper_v1.json",
+      "value": {
+        "axis_byte_reduction_percent": 44.904898097961954,
+        "cycle_reduction_percent": 50.06054132137927,
+        "operating_points": {
+          "axis_reduction_percent": 44.904898097961954,
+          "baseline": "independent_jobs",
+          "boundary": "These are coupled routed operating points with different clocks, resource footprints, routing, and memory organizations. Their counter reduction is not an observed elapsed-time speedup or an isolated mechanism effect.",
+          "candidate": "global_closure_persistent",
+          "causal_mechanism_isolated": false,
+          "clock_normalized_acceleration_claimed": false,
+          "cycle_derived_elapsed_delta_ms": -0.11936000000000035,
+          "cycle_reduction_percent": 50.06054132137927,
+          "independent_axis_bytes": 2399952,
+          "independent_clock_mhz": 100.0,
+          "independent_cycle_derived_compute_ms": 98.5773,
+          "independent_cycles": 9857730,
+          "independent_resources": {
+            "bram_tiles": 52.0,
+            "dsps": 193,
+            "luts": 38274,
+            "registers": 28681
+          },
+          "persistent_axis_bytes": 1322256,
+          "persistent_clock_mhz": 50.0,
+          "persistent_cycle_derived_compute_ms": 98.45794,
+          "persistent_cycles": 4922897,
+          "persistent_resources": {
+            "bram_tiles": 3.5,
+            "dsps": 180,
+            "luts": 44408,
+            "registers": 26056
+          },
+          "wall_time_speedup_claimed": false
+        }
+      }
+    },
+    {
+      "analyzer": "src/hardware/analyze_sparse_architecture_ablation.py",
+      "claim_id": "persistent_vs_rectangle",
+      "evidence_class": "physical_zybo_checksum_length_counters",
+      "json_fields": [
+        "mechanism_effects.global_closure_and_persistent_reuse"
+      ],
+      "raw_evidence_ids": [
+        "zybo_independent_rectangle",
+        "zybo_persistent"
+      ],
+      "result_path": "results/tables/sparse_architecture_ablation_v1.json",
+      "value": {
+        "axis_byte_reduction_percent": 44.57567099915496,
+        "cycle_reduction_percent": 33.761473074477856
+      }
+    },
+    {
+      "analyzer": "src/hardware/audit_sparse_accelerator_evidence.py",
+      "claim_id": "same_bitstream_closure_retention_b030",
+      "evidence_class": "physical_zybo_same_routed_build_checksum_length_counters",
+      "json_fields": [
+        "validation",
+        "aggregate.cycles",
+        "per_mask",
+        "claim_firewall",
+        "results/preflight/experiment134/E134-B030_physical_result.json"
+      ],
+      "raw_evidence_ids": [
+        "b030_uart",
+        "b030_timing",
+        "b030_utilization",
+        "b030_drc"
+      ],
+      "result_path": "results/analysis/sparse_distilled_same_bitstream_b030_execution_factorial.json",
+      "value": {
+        "aggregate_cycle_fractional": {
+          "coverage": 0.0,
+          "interaction": 0.0,
+          "retention": 0.0
+        },
+        "aggregate_cycle_raw": {
+          "coverage": 0.0,
+          "interaction": 0.0,
+          "retention": 0.0
+        },
+        "clock_mhz": 10.0,
+        "conditional_reductions_percent": {
+          "closure_0x000081": 59.636938155366934,
+          "closure_0x810081": 65.37764255610813,
+          "retention_0xFFFFFF": 8.163882325845684
+        },
+        "masks": 12,
+        "modes": 4,
+        "opportunity_masks": {
+          "coverage": 4,
+          "retention": 5,
+          "total": 12
+        },
+        "publication_safety_rows_run": 0,
+        "repetitions_per_cell": 10,
+        "rows": 480
+      }
+    },
+    {
+      "analyzer": "src/hardware/analyze_sparse_architecture_ablation.py",
+      "claim_id": "exact_dependency_closure_geometry",
+      "evidence_class": "exact_geometry_not_board_cycles",
+      "json_fields": [
+        "mechanism_effects.exact_union_geometry"
+      ],
+      "raw_evidence_ids": [],
+      "result_path": "results/tables/sparse_architecture_ablation_v1.json",
+      "value": {
+        "duplicate_dependency_reduction_percent": 4.233148811462062,
+        "independent_active_layer_positions": 208828,
+        "measurement_class": "exact_geometry_not_cycle_projection",
+        "persistent_active_layer_positions": 199988
+      }
+    },
+    {
+      "analyzer": "src/hardware/analyze_sparse_hierarchical_commit_physical.py",
+      "claim_id": "controlled_mask_geometry",
+      "evidence_class": "physical_zybo_checksum_length_counters",
+      "json_fields": [
+        "patterns",
+        "summary",
+        "route",
+        "gates"
+      ],
+      "raw_evidence_ids": [
+        "zybo_controlled_masks_commit",
+        "zybo_controlled_masks_timing",
+        "zybo_controlled_masks_utilization"
+      ],
+      "result_path": "results/tables/sparse_hierarchical_commit_controlled_masks_physical.json",
+      "value": {
+        "exact_masks": 16,
+        "maximum_axis_byte_reduction_percent": 91.50104166666667,
+        "maximum_cycle_reduction_percent": 82.16681790922766,
+        "minimum_axis_byte_reduction_percent": 47.14739583333334,
+        "minimum_cycle_reduction_percent": 39.50853034281276
+      }
+    },
+    {
+      "analyzer": "src/hardware/analyze_sparse_architecture_ablation.py",
+      "claim_id": "private_atomic_commit",
+      "evidence_class": "physical_zybo_same_clock_counters",
+      "json_fields": [
+        "mechanism_effects.private_atomic_commit"
+      ],
+      "raw_evidence_ids": [
+        "zybo_controlled_masks_commit"
+      ],
+      "result_path": "results/tables/sparse_architecture_ablation_v1.json",
+      "value": {
+        "all_four_outcomes_exact": true,
+        "bram_delta": 0.0,
+        "dsp_delta": 0,
+        "lut_delta": 638,
+        "register_delta": 592,
+        "service_overhead_percent": 0.0
+      }
+    },
+    {
+      "analyzer": "src/hardware/analyze_sparse_independent_worklists.py",
+      "claim_id": "independent_worklist_scaling",
+      "evidence_class": "physical_zybo_checksum_length_counters_architecture_only",
+      "json_fields": [
+        "hardware_summary.median_cycle_reduction_percent",
+        "hardware_summary.median_axis_byte_reduction_percent",
+        "hardware_summary.cycles_vs_active_positions_r_squared",
+        "quality_summary.selector_quality_gate_passed"
+      ],
+      "raw_evidence_ids": [
+        "zybo_independent_worklists_commit",
+        "zybo_independent_worklists_timing",
+        "zybo_independent_worklists_utilization"
+      ],
+      "result_path": "results/tables/sparse_independent_worklists_joined.json",
+      "value": {
+        "cycles_vs_active_positions_r_squared": 0.9999042175199727,
+        "median_axis_byte_reduction_percent": 64.66927083333334,
+        "median_cycle_reduction_percent": 57.413560036678305,
+        "selector_accepted": false,
+        "sparse_masks": 15
+      }
+    },
+    {
+      "analyzer": "src/hardware/audit_sparse_accelerator_evidence.py",
+      "claim_id": "distinct_58p824_bitstream_identities",
+      "evidence_class": "physical_zybo_route_reports",
+      "json_fields": [
+        "claims[distinct_58p824_bitstream_identities].value"
+      ],
+      "raw_evidence_ids": [
+        "zybo_controlled_masks_timing",
+        "zybo_controlled_masks_utilization",
+        "zybo_independent_worklists_timing",
+        "zybo_independent_worklists_utilization"
+      ],
+      "result_path": "results/tables/paper2_physical_evidence_index.json",
+      "value": {
+        "controlled_mask_image": {
+          "bram_tiles": 3.5,
+          "clock_mhz": 58.824,
+          "dsps": 180,
+          "purpose": "controlled_geometry_and_commit_suite",
+          "registers": 26648,
+          "slice_luts": 45048,
+          "wns_ns": 1.363
+        },
+        "independent_worklist_image": {
+          "bram_tiles": 3.5,
+          "clock_mhz": 58.824,
+          "dsps": 180,
+          "purpose": "independent_temporal_worklists_and_stage_counters",
+          "registers": 26873,
+          "slice_luts": 45160,
+          "wns_ns": 2.368
+        }
+      }
+    },
+    {
+      "analyzer": "src/hardware/audit_sparse_accelerator_evidence.py",
+      "claim_id": "worklist_service_rate_not_dense_fps",
+      "evidence_class": "physical_zybo_distinct_work_definitions",
+      "json_fields": [
+        "results/tables/sparse_refinement_hierarchical_physical.json:physical_performance.service_fps",
+        "results/tables/sparse_independent_worklists_joined.json:hardware_summary.dense_service_fps"
+      ],
+      "raw_evidence_ids": [
+        "zybo_persistent",
+        "zybo_independent_worklists_commit"
+      ],
+      "result_path": "results/tables/paper2_physical_evidence_index.json",
+      "value": {
+        "dense_frame_clock_mhz": 58.824,
+        "dense_frame_definition": "dense_360p_to_720p_all_outputs",
+        "dense_frames_per_second": 4.1712035970923775,
+        "ratio_claimed": false,
+        "sparse_worklist_clock_mhz": 50.0,
+        "sparse_worklist_definition": "canonical_17_tile_request",
+        "sparse_worklist_services_per_second": 9.739270285195044
+      }
+    },
+    {
+      "analyzer": "src/hardware/analyze_sparse_deadline_traces.py",
+      "claim_id": "deadline_trace_safety",
+      "evidence_class": "deterministic_replay_from_physical_service_times",
+      "json_fields": [
+        "traces",
+        "gates",
+        "claim_boundary"
+      ],
+      "raw_evidence_ids": [
+        "zybo_controlled_masks_commit"
+      ],
+      "result_path": "results/tables/sparse_deadline_trace_analysis.json",
+      "value": {
+        "gates": {
+          "all_frames_terminal": true,
+          "commit_ids_monotonic": true,
+          "no_partial_or_stale_commits": true
+        },
+        "traces": 5
+      }
+    },
+    {
+      "analyzer": "src/hardware/analyze_tang_sparse_commit_candidate.py",
+      "claim_id": "tang_control_portability",
+      "evidence_class": "physical_tang_resource_scaled_control",
+      "json_fields": [
+        "sparse_control_image",
+        "physical_gates"
+      ],
+      "raw_evidence_ids": [
+        "tang_sparse_control"
+      ],
+      "result_path": "results/tables/tang_sparse_commit_candidate_v1.json",
+      "value": {
+        "commit_outcome_checks": 4,
+        "mask_checks": 576,
+        "physical_pass": true
+      }
+    },
+    {
+      "analyzer": "src/hardware/analyze_sparse_postroute_power.py",
+      "claim_id": "power_boundary",
+      "evidence_class": "provisional_post_route_estimate",
+      "json_fields": [
+        "vivado_report",
+        "claim_boundary"
+      ],
+      "raw_evidence_ids": [],
+      "result_path": "results/tables/sparse_postroute_power_estimate.json",
+      "value": {
+        "full_datapath_saif_annotated": false,
+        "physical_energy_claimed": false
+      }
+    }
+  ],
+  "decision": "all_claims_traceable_with_evidence_class_boundaries",
+  "gates": {
+    "b030_same_bitstream_480_rows_checksum_length_verified": true,
+    "b030_zero_aggregate_and_conditional_effects_disclosed": true,
+    "canonical_physical_checksum_length_counter_records_match": true,
+    "controlled_masks_checksum_length_counters_match": true,
+    "deadline_replay_safe": true,
+    "distinct_58p824_bitstreams_identified": true,
+    "headline_counter_time_boundary_explicit": true,
+    "independent_architecture_not_selector": true,
+    "independent_worklists_checksum_length_counters_match": true,
+    "organization_operating_points_passed": true,
+    "physical_commit_outcomes_exact": true,
+    "physical_energy_not_claimed": true,
+    "tang_control_physically_passed": true,
+    "worklist_service_rate_not_dense_fps": true
+  },
+  "physical_output_verification": {
+    "bytewise_physical_replay_claimed": false,
+    "full_physical_output_byte_streams_archived": false,
+    "method": "expected_checksum_selected_length_counters_and_terminal_conditions",
+    "software_rtl_selected_bytes_compared_directly": true
+  },
+  "raw_evidence": [
+    {
+      "evidence_id": "zybo_independent_rectangle",
+      "hash_normalization": "crlf_to_lf_fail_closed",
+      "path": "fpga/docs/captures/sparse_refinement_accelerator_v1/physical_zybo_balanced_region.txt",
+      "required_marker": "SPARSE_VARIABLE_BOARD_COMPLETE PASS",
+      "sha256": "83b83e62ac08a70ec99fac1266cfe73fb801deceb30393c6477dd0d4c699edef",
+      "size_bytes": 4057
+    },
+    {
+      "evidence_id": "zybo_persistent",
+      "hash_normalization": "crlf_to_lf_fail_closed",
+      "path": "fpga/docs/captures/sparse_refinement_accelerator_v1/hierarchical_mask_physical/physical_zybo_sparse_hierarchical.txt",
+      "required_marker": "SPARSE_HIERARCHICAL_BOARD_COMPLETE correctness=bit_exact",
+      "sha256": "a7ee42e35830cb135fc590c8151873aa549e53784b95c8df5a8c631a01c32e11",
+      "size_bytes": 825
+    },
+    {
+      "evidence_id": "zybo_controlled_masks_commit",
+      "hash_normalization": "crlf_to_lf_fail_closed",
+      "path": "fpga/docs/captures/sparse_refinement_accelerator_v2/hierarchical_commit_suite_controlled_masks_physical/physical_zybo_sparse_hierarchical_commit_suite.txt",
+      "required_marker": "SPARSE_HIERARCHICAL_COMMIT_SUITE_BOARD_COMPLETE correctness=bit_exact",
+      "sha256": "b171de5ac1bbe3879444a9585eeb10cd829afcab68b57dffb27dd5707f93e4e9",
+      "size_bytes": 11464
+    },
+    {
+      "evidence_id": "zybo_controlled_masks_timing",
+      "hash_normalization": "crlf_to_lf_fail_closed",
+      "path": "fpga/docs/captures/sparse_refinement_accelerator_v2/hierarchical_commit_suite_controlled_masks_physical/route/timing_summary.txt",
+      "required_marker": null,
+      "sha256": "0945c399a63ad51a45123a3de08bb32b0641dec5e58b2a319e401639a121f39d",
+      "size_bytes": 261315
+    },
+    {
+      "evidence_id": "zybo_controlled_masks_utilization",
+      "hash_normalization": "crlf_to_lf_fail_closed",
+      "path": "fpga/docs/captures/sparse_refinement_accelerator_v2/hierarchical_commit_suite_controlled_masks_physical/route/utilization.txt",
+      "required_marker": null,
+      "sha256": "cc115a92e8db94ddfba3b3e84868248f8c702edb27bfbd439d2c067cba679a59",
+      "size_bytes": 10222
+    },
+    {
+      "evidence_id": "zybo_independent_worklists_commit",
+      "hash_normalization": "crlf_to_lf_fail_closed",
+      "path": "fpga/docs/captures/sparse_refinement_accelerator_v2/hierarchical_commit_suite_independent_holdout_v1_physical/physical_zybo_sparse_hierarchical_commit_suite.txt",
+      "required_marker": "SPARSE_HIERARCHICAL_COMMIT_SUITE_BOARD_COMPLETE correctness=bit_exact",
+      "sha256": "18a8cd3711057507ff11c7302aa3ac73e48ef60df94dca9ab36c93a4f9639077",
+      "size_bytes": 11095
+    },
+    {
+      "evidence_id": "zybo_independent_worklists_timing",
+      "hash_normalization": "crlf_to_lf_fail_closed",
+      "path": "fpga/docs/captures/sparse_refinement_accelerator_v2/hierarchical_commit_suite_independent_holdout_v1_physical/route/timing_summary.txt",
+      "required_marker": null,
+      "sha256": "bf0a1f15cb0fa9733736db7644ac26c85f1f0cb40906c202d53456bfd616256a",
+      "size_bytes": 254236
+    },
+    {
+      "evidence_id": "zybo_independent_worklists_utilization",
+      "hash_normalization": "crlf_to_lf_fail_closed",
+      "path": "fpga/docs/captures/sparse_refinement_accelerator_v2/hierarchical_commit_suite_independent_holdout_v1_physical/route/utilization.txt",
+      "required_marker": null,
+      "sha256": "e5ace81bd5a9c33a413d5cb6aee86e09a5d575c2efe9e51d3c5ae8c7807802e2",
+      "size_bytes": 10222
+    },
+    {
+      "evidence_id": "tang_sparse_control",
+      "hash_normalization": "crlf_to_lf_fail_closed",
+      "path": "fpga/docs/captures/paper2/tang_sparse_commit_candidate_v1/physical_capture.json",
+      "required_marker": null,
+      "sha256": "0fc28508a1a73aa88c2e8a468fc5d58ec3ef1f5439425910a92ad9bc36f92303",
+      "size_bytes": 1459
+    },
+    {
+      "evidence_id": "b030_uart",
+      "hash_normalization": "raw_bytes",
+      "path": "fpga/docs/captures/paper2/experiment134/E134-B030/physical/uart_b030_raw.bin",
+      "required_marker": "E134_B029_EXECUTION_PASS rows=480",
+      "sha256": "ee6da3a171ea6f01f55732fbbe571f78ebe48aa156c39dfb994ab25006c724b8",
+      "size_bytes": 94371
+    },
+    {
+      "evidence_id": "b030_timing",
+      "hash_normalization": "crlf_to_lf_fail_closed",
+      "path": "fpga/docs/captures/paper2/experiment134/E134-B030/failure/reports/timing_summary_post_route.rpt",
+      "required_marker": null,
+      "sha256": "9ab6ba836f42b9ff7313580f1267004ab5adfc97245558540374d6c7c7f35036",
+      "size_bytes": 80385
+    },
+    {
+      "evidence_id": "b030_utilization",
+      "hash_normalization": "crlf_to_lf_fail_closed",
+      "path": "fpga/docs/captures/paper2/experiment134/E134-B030/failure/reports/utilization_post_route.rpt",
+      "required_marker": null,
+      "sha256": "3c0c9a26bbdb2dd3628e3e686908956c1031d089fea213191617e13b2eece9f2",
+      "size_bytes": 10264
+    },
+    {
+      "evidence_id": "b030_drc",
+      "hash_normalization": "crlf_to_lf_fail_closed",
+      "path": "fpga/docs/captures/paper2/experiment134/E134-B030/failure/reports/drc_post_route.rpt",
+      "required_marker": null,
+      "sha256": "24beb09a45aa6dfcda4463d1ca229ef8f580b372bce97d17dcb6aa2bbeaa2a4a",
+      "size_bytes": 299191
+    }
+  ],
+  "schema_version": 2
+}

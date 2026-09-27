@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "artifact": "sparse_multicontext_issue_gate_v1",
+  "decision": "reject_two_context_issue_engine_no_system_cycle_gain",
+  "accepted": false,
+  "evidence_scope": {
+    "latency_hiding_is_not_the_paper_novelty_by_itself": true,
+    "deployable_selector_generalization_claimed": false,
+    "realtime_720p_claimed": false,
+    "physical_energy_claimed": false
+  },
+  "summary": {
+    "dense_cycle_reduction_percent": 0.0,
+    "median_sparse_cycle_reduction_percent": 0.0,
+    "minimum_cycle_reduction_percent": 0.0,
+    "maximum_cycle_reduction_percent": 0.0,
+    "dsp_increase": 0,
+    "bram_increase": 0.0,
+    "lut_increase": 1899,
+    "register_increase": 4347,
+    "candidate_wns_ns": 1.763
+  },
+  "gates": {
+    "all_16_masks_bit_exact": true,
+    "all_commit_outcomes_exact": true,
+    "dense_cycle_reduction_met": false,
+    "median_sparse_cycle_reduction_met": false,
+    "dsp_limit_met": true,
+    "bram_limit_met": true,
+    "timing_closed": true
+  },
+  "patterns": [
+    {
+      "pattern_id": 0,
+      "label": "all_neural_control",
+      "selected_tiles": 60,
+      "baseline_cycles": 14102071,
+      "candidate_cycles": 14102071,
+      "cycle_reduction_percent": 0.0,
+      "candidate_exact": true
+    },
+    {
+      "pattern_id": 1,
+      "label": "sparse_blender_scifi_seed20260731__scene_18_scifi_c__q10",
+      "selected_tiles": 5,
+      "baseline_cycles": 2558463,
+      "candidate_cycles": 2558463,
+      "cycle_reduction_percent": 0.0,
+      "candidate_exact": true
+    },
+    {
+      "pattern_id": 2,
+      "label": "sparse_blender_scifi_seed20260731__scene_18_scifi_c__q50",
+      "selected_tiles": 19,
+      "baseline_cycles": 5691209,
+      "candidate_cycles": 5691209,
+      "cycle_reduction_percent": 0.0,
+      "candidate_exact": true
+    },
+    {
+      "pattern_id": 3,
+      "label": "sparse_blender_scifi_seed20260731__scene_18_scifi_c__q90",
+      "selected_tiles": 37,
+      "baseline_cycles": 9540540,
+      "candidate_cycles": 9540540,
+      "cycle_reduction_percent": 0.0,
+      "candidate_exact": true
+    },
+    {
+      "pattern_id": 4,
+      "label": "sparse_godot_foliage_seed20260731__scene_01_foliage_a__q10",
+      "selected_tiles": 1,
+      "baseline_cycles": 1627560,
+      "candidate_cycles": 1627560,
+      "cycle_reduction_percent": 0.0,
+      "candidate_exact": true
+    },
+    {
+      "pattern_id": 5,
+      "label": "sparse_godot_foliage_seed20260731__scene_01_foliage_a__q50",
+      "selected_tiles": 1,
+      "baseline_cycles": 1627560,
+      "candidate_cycles": 1627560,
+      "cycle_reduction_percent": 0.0,
+      "candidate_exact": true
+    },
+    {
+      "pattern_id": 6,
+      "label": "sparse_godot_foliage_seed20260731__scene_01_foliage_a__q90",
+      "selected_tiles": 4,
+      "baseline_cycles": 2316106,
+      "candidate_cycles": 2316106,
+      "cycle_reduction_percent": 0.0,
+      "candidate_exact": true
+    },
+    {
+      "pattern_id": 7,
+      "label": "sparse_procedural_seed20260731__proc_01_racing_hud_a__q10",
+      "selected_tiles": 22,
+      "baseline_cycles": 6362190,
+      "candidate_cycles": 6362190,
+      "cycle_reduction_percent": 0.0,
+      "candidate_exact": true
+    },
+    {
+      "pattern_id": 8,
+      "label": "sparse_procedural_seed20260731__proc_01_racing_hud_a__q50",
+      "selected_tiles": 24,
+      "baseline_cycles": 6778934,
+      "candidate_cycles": 6778934,
+      "cycle_reduction_percent": 0.0,
+      "candidate_exact": true
+    },
+    {
+      "pattern_id": 9,
+      "label": "sparse_procedural_seed20260731__proc_01_racing_hud_a__q90",
+      "selected_tiles": 30,
+      "baseline_cycles": 8068511,
+      "candidate_cycles": 8068511,
+      "cycle_reduction_percent": 0.0,
+      "candidate_exact": true
+    },
+    {
+      "pattern_id": 10,
+      "label": "sparse_procedural_seed20260731__proc_02_robot_vision_a__q10",
+      "selected_tiles": 16,
+      "baseline_cycles": 4981693,
+      "candidate_cycles": 4981693,
+      "cycle_reduction_percent": 0.0,
+      "candidate_exact": true
+    },
+    {
+      "pattern_id": 11,
+      "label": "sparse_procedural_seed20260731__proc_02_robot_vision_a__q50",
+      "selected_tiles": 19,
+      "baseline_cycles": 5652903,
+      "candidate_cycles": 5652903,
+      "cycle_reduction_percent": 0.0,
+      "candidate_exact": true
+    },
+    {
+      "pattern_id": 12,
+      "label": "sparse_procedural_seed20260731__proc_02_robot_vision_a__q90",
+      "selected_tiles": 27,
+      "baseline_cycles": 7385137,
+      "candidate_cycles": 7385137,
+      "cycle_reduction_percent": 0.0,
+      "candidate_exact": true
+    },
+    {
+      "pattern_id": 13,
+      "label": "sparse_procedural_seed20260731__proc_03_space_radar_a__q10",
+      "selected_tiles": 28,
+      "baseline_cycles": 7643899,
+      "candidate_cycles": 7643899,
+      "cycle_reduction_percent": 0.0,
+      "candidate_exact": true
+    },
+    {
+      "pattern_id": 14,
+      "label": "sparse_procedural_seed20260731__proc_03_space_radar_a__q50",
+      "selected_tiles": 35,
+      "baseline_cycles": 9040401,
+      "candidate_cycles": 9040401,
+      "cycle_reduction_percent": 0.0,
+      "candidate_exact": true
+    },
+    {
+      "pattern_id": 15,
+      "label": "sparse_procedural_seed20260731__proc_03_space_radar_a__q90",
+      "selected_tiles": 40,
+      "baseline_cycles": 10124462,
+      "candidate_cycles": 10124462,
+      "cycle_reduction_percent": 0.0,
+      "candidate_exact": true
+    }
+  ],
+  "interpretation": "The candidate hid retirement latency in an isolated grouped-layer microbenchmark, but the complete line-buffered accelerator remained limited by its steady-state initiation/dataflow boundary. It added control storage without reducing any physical frame cycle count."
+}

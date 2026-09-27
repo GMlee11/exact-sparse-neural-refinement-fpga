@@ -1,0 +1,41 @@
+# One-shot Paper-2 architecture evaluation on masks never used to design or
+# tune the persistent hierarchical FPGA datapath.
+experiment_id: sparse_independent_worklists_v1
+schema_version: 1
+status: frozen_after_architecture_before_physical_replay
+
+source:
+  evidence_class: one_shot_semantic_renderer_metadata_temporal_holdout
+  observations: results/analysis/sparse_refinement_selector_v7_holdout_observations.jsonl
+  observations_sha256: 8a2b45a5ad7ad1a8ceb00ec65b78959bd9704e4a0a93578ad5dbb15c39576434
+  source_engine: godot_4_6_3_opengl
+  frame_count: 1500
+  sequence_count: 5
+  used_for_fpga_design_or_tuning: false
+
+selection:
+  mode: frozen_selected_indices
+  density_quantiles_per_sequence: [0.10, 0.50, 0.90]
+  include_all_neural_control: true
+  expected_pattern_count: 16
+
+implementation:
+  build_name: sparse_hierarchical_commit_stage_profile_60mhz
+  fabric_clock_hz: 58823529
+  grouped_contexts: 1
+  lane_allocation: [2, 12, 6]
+
+acceptance:
+  all_patterns_bit_and_counter_exact: true
+  all_commit_outcomes_exact: true
+  every_sparse_pattern_lower_cycles_than_dense: true
+  every_sparse_pattern_lower_axis_bytes_than_dense: true
+  minimum_cycles_vs_active_positions_r_squared: 0.99
+  timing_must_remain_closed: true
+
+evidence_boundary:
+  scope: sealed_frozen_policy_worklists_architecture_only
+  selector_generalization_claimed: false
+  selector_accepted: false
+  realtime_720p_claimed: false
+  physical_energy_claimed: false

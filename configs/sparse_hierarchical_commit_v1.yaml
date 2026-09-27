@@ -1,0 +1,84 @@
+# Commit-safe persistent sparse-refinement accelerator contract.
+#
+# This contract combines Experiment 118's exact persistent hierarchical-mask
+# datapath with the previously verified deadline/cancellation semantics. The
+# output DMA buffer is private until a matching frame-ID commit is observed.
+experiment_id: sparse_hierarchical_commit_v1
+schema_version: 1
+status: architecture_candidate
+
+clock:
+  baseline_hz: 50000000
+  deadline_origin: accepted_start_command
+
+frame:
+  lr_width: 640
+  lr_height: 360
+  scale: 2
+  mask_tile_width: 64
+  mask_tile_height: 60
+  mask_bits: 64
+
+control_bits:
+  start: 0
+  cancel: 1
+  clear_counters: 2
+  deadline_enable: 3
+
+outcomes:
+  running: 0
+  committed: 1
+  deadline_skip: 2
+  canceled: 3
+  late_discard: 4
+  protocol_error: 5
+
+# Addresses are word selectors used by the existing AXI-GPIO bridge, not byte
+# offsets. Registers 0x00-0x0F preserve the Experiment 118 interface.
+registers:
+  frame_id: 0x10
+  expected_compute_cycles: 0x11
+  frame_budget_cycles: 0x12
+  committed_frame_id: 0x13
+  completed_frame_id: 0x14
+  frame_launches: 0x15
+  deadline_skips: 0x16
+  canceled_frames: 0x17
+  useful_commits: 0x18
+  late_discards: 0x19
+  commit_sequence: 0x1A
+  frame_elapsed_cycles: 0x1B
+  total_compute_cycles: 0x1C
+  input_stall_cycles: 0x1D
+  output_stall_cycles: 0x1E
+  discarded_private_output_words: 0x1F
+  raw_input_wait_cycles: 0x20
+  conv1_window_wait_cycles: 0x21
+  conv1_output_wait_cycles: 0x22
+  conv2_window_wait_cycles: 0x23
+  conv2_output_wait_cycles: 0x24
+  conv3_window_wait_cycles: 0x25
+  conv3_output_wait_cycles: 0x26
+
+safety:
+  classical_fallback_always_available: true
+  output_dma_buffer_private_until_commit: true
+  commit_requires_matching_frame_id: true
+  prelaunch_deadline_miss_starts_dma: false
+  canceled_output_commits: false
+  late_output_commits: false
+  canceled_dma_requires_host_reset: true
+
+evidence_boundary:
+  can_prove:
+    - exact_dense_sparse_and_empty_outputs
+    - prelaunch_deadline_compute_bypass
+    - in_flight_cancel_compute_termination
+    - frame_id_atomic_commit
+    - causal_compute_traffic_stall_and_outcome_counters
+  cannot_prove_without_external_equipment:
+    - wall_power
+    - joules_per_frame
+  not_claimed:
+    - deployable_selector_generalization
+    - realtime_720p

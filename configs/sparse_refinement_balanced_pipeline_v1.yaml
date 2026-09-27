@@ -1,0 +1,56 @@
+# Preregistered layer-balanced successor to the frozen sparse accelerator V1.
+#
+# The baseline gives every convolution six output lanes even though Conv2 has
+# eight times as much input-channel work as Conv1.  This candidate moves lanes
+# from Conv1 to Conv2 while preserving the model, fixed-point arithmetic,
+# descriptor stream, region geometry, and exact committed output.
+experiment_id: sparse_refinement_balanced_pipeline_v1
+schema_version: 1
+status: preregistered_before_balanced_route_and_physical_capture
+
+clock:
+  target_hz: 100000000
+
+model:
+  id: student_npu_w24_int8
+  feature_channels: 24
+  output_channels: 12
+  kernel_taps: 9
+  multiplier_lanes_per_output_lane: 9
+
+baseline:
+  name: uniform_6_6_6
+  conv1_output_lanes: 6
+  conv2_output_lanes: 6
+  conv3_output_lanes: 6
+  measured_non_convolution_dsp: 13
+
+candidate:
+  name: balanced_2_12_6
+  conv1_output_lanes: 2
+  conv2_output_lanes: 12
+  conv3_output_lanes: 6
+
+device:
+  board: Zybo Z7-20
+  part: xc7z020clg400-1
+  available_dsp: 220
+
+physical_gate:
+  exact_word_match_required: true
+  routed_timing_closure_required: true
+  maximum_dsp: 220
+  minimum_selected_worklist_service_reduction_percent: 25.0
+  minimum_full_grid_service_reduction_percent: 25.0
+  repetitions: 10
+
+evidence_boundary:
+  accepted_inputs:
+    - fixed_full_grid_worklist
+    - frozen_renderer_worklist
+    - hr_oracle_worklist
+  excluded_claims:
+    - deployable_selector_generalization
+    - end_to_end_30_fps
+    - physical_energy_without_external_meter
+
