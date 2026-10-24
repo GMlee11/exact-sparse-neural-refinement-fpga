@@ -17,6 +17,8 @@ FPGA**. Run `python -B reproduce.py` for the complete offline workflow.
 | Table 5, organization × skipping | `results/organization_skipping_v1/comparison.json`, twelve primary captures across W24/W16/W12 plus separate qualification and diagnostic records |
 | Output-traversal RTL probe | `results/traversal_assessment_v1/assessment.json`, source snapshots, fixtures and simulator logs |
 | Table 6, stronger physical baseline | `results/output_suppression_v1/comparison.json`, primary P001–P004 and qualification Q001/Q002 captures, formatter sources and build reports |
+| Figure 6, strongest-baseline geometry; layer sparsity context | `results/interpretation_v1/analysis.json`: all eight sparse geometry cells and layerwise eligible-channel histograms regenerated from retained inputs/weights |
+| Model training/export provenance | `results/interpretation_v1/model_provenance.json`: deployed package and source-checkpoint hashes, selected epochs and compact training metadata |
 
 ## Individual verification commands
 
@@ -29,6 +31,7 @@ python -B scripts/width_study_v1/replay.py
 python -B scripts/organization_skipping_v1/replay.py
 python -B results/traversal_assessment_v1/simulate.py
 python -B scripts/output_suppression_v1/replay.py
+python -B scripts/interpretation_v1/analyze.py
 python -B -m pytest -p no:cacheprovider tests -q
 ```
 
@@ -51,3 +54,10 @@ performance repetitions. Older unrelated campaigns are not part of this release.
 `payload_aliases.json` preserves original logical archive paths while sharing
 identical stored bytes. The original export manifests remain the authority for
 acquired file identities; `release_manifest.json` identifies this distribution.
+
+The offline characterization counts global dependency-support positions once,
+not duplicated work in overlapping crops. Effective channel counts retain one
+bias-only transaction when no nonzero channel exists. These counts characterize
+available sparsity; they are not hardware timing counters. Dense outputs are
+checked against all six retained references plus independent INT64 patches.
+No new physical observations or reclassification of the frozen workloads is used.

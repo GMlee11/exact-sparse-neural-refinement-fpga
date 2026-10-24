@@ -1,0 +1,593 @@
+{
+  "method": "Metadata extracted from hash-matched deployed checkpoints and their hash-matched floating sources. Checkpoint tensors and full training histories are not distributed; integer replay uses the included exported parameters.",
+  "training_context": {
+    "corpus": "teacher_development_v3_frontier",
+    "train_pairs": 10040,
+    "train_scene_clusters": 50,
+    "sources": [
+      "Blender/Kenney",
+      "GameIR",
+      "Godot",
+      "procedural"
+    ],
+    "teacher": "Project Teacher V3",
+    "teacher_checkpoint_sha256": "f9012ffebee7df721d74d6762dfc6d998a8c17bfd61d56c86e351e4578760a2b",
+    "freeze_record": "docs/baseline_v1_freeze.md",
+    "freeze_record_sha256": "03fa6f94ad69de24a4ae1606cb5f08bfc2d6d1c2fb1aea236f32cdf016d5827b",
+    "performance_input_relation": "Development/training-pool inputs, not an unseen-content generalization test; exact input provenance is retained in results/design_study_v1/skipping/input_provenance.json."
+  },
+  "models": {
+    "w24": {
+      "package": "results/design_study_v1/buffer/build/sources/espcn_fpga_student_weights_pkg.sv",
+      "package_sha256": "cc1a67ee659447a80252c97064ed7bc50826b40649ebf3c8399ef189ba692029",
+      "checkpoint": "experiments/exp090_qat_student_npu_w24/checkpoints/best_model.pth",
+      "checkpoint_sha256": "fdbaf032b50d02dc214b978ab9083e27d349240f2f5c1929974f90a88a2be1fb",
+      "epoch": 0,
+      "checkpoint_type": "initial_qat_baseline",
+      "config": {
+        "model": {
+          "scale": 2,
+          "input_channels": 3,
+          "feature_channels": 24,
+          "reconstruction": "residual_bicubic",
+          "architecture": "student_espcn",
+          "blocks": 0,
+          "branch_type": "dense",
+          "bottleneck_channels": null,
+          "deploy": false,
+          "gate_activation": "sigmoid",
+          "gate_initial_probability": 0.9,
+          "variant": "dense",
+          "color_mode": "rgb"
+        },
+        "data": {
+          "pairs_dir": "data/teacher_development/v2",
+          "lr_patch_size": 64,
+          "hr_patch_size": 128,
+          "train_crop_mode": "random",
+          "eval_crop_mode": "stratified",
+          "augmentation": {
+            "horizontal_flip": true,
+            "vertical_flip": true,
+            "rotate_90": true
+          },
+          "validation_samples_per_cluster": 16,
+          "train_record_set": "dataset.pairs.split.train.teacher_v3",
+          "validation_record_set": "dataset.pairs.split.val",
+          "sampling_mode": "source_scene_difficulty_balanced",
+          "training_samples_per_epoch": 5020
+        },
+        "training": {
+          "epochs": 10,
+          "batch_size": 32,
+          "learning_rate": 0.0001,
+          "loss": "mse",
+          "charbonnier_epsilon": 0.001,
+          "optimizer": "adam",
+          "random_seed": 42,
+          "scheduler": {
+            "name": "reduce_on_plateau",
+            "factor": 0.5,
+            "patience": 3,
+            "min_learning_rate": 6.25e-06
+          },
+          "early_stopping": {
+            "enabled": false,
+            "patience": 10,
+            "min_delta": 0.0
+          },
+          "edge_loss_weight": 0.0,
+          "checkpoint_metric": "psnr",
+          "include_initialization_as_candidate": false
+        },
+        "distillation": {
+          "enabled": false,
+          "teacher_checkpoint": null,
+          "teacher_weight": 0.0,
+          "ground_truth_weight": 1.0,
+          "loss": "mse"
+        }
+      },
+      "qat_profile": {
+        "scheme": "symmetric_power_of_two",
+        "rounding": "nearest_ties_away_from_zero",
+        "saturation": true,
+        "activation": {
+          "bits": 8,
+          "signed": true,
+          "fractional_bits": 7,
+          "scale": 0.0078125,
+          "qmin": -128,
+          "qmax": 127
+        },
+        "weight": {
+          "bits": 8,
+          "signed": true,
+          "fractional_bits": 8,
+          "scale": 0.00390625,
+          "qmin": -128,
+          "qmax": 127
+        },
+        "bias": {
+          "bits": 32,
+          "signed": true,
+          "fractional_bits": 15,
+          "scale": 3.0517578125e-05,
+          "qmin": -2147483648,
+          "qmax": 2147483647
+        },
+        "accumulator": {
+          "bits": 32,
+          "signed": true,
+          "fractional_bits": 15,
+          "scale": 3.0517578125e-05,
+          "qmin": -2147483648,
+          "qmax": 2147483647
+        },
+        "output": {
+          "bits": 8,
+          "signed": true,
+          "fractional_bits": 7,
+          "scale": 0.0078125,
+          "qmin": -128,
+          "qmax": 127
+        },
+        "right_shift_bits": 8,
+        "config_path": "C:/Research/Thesis/Visual_Upscaling/neural-upscaling-hw-sw-codesign/configs/fixed_point.yaml",
+        "config_sha256": "4db085f6d66dc54f8a5b9179b03a340ac3689a3c90a6d3eeef366235e8c53f04"
+      },
+      "floating_source": "experiments/exp088_student_npu_w24/checkpoints/best_model.pth",
+      "floating_source_sha256": "4668786cc1e0d2884f70c1c241fbb4c7ed4f4893b895d84a9084c69477034ef3",
+      "floating_epoch": 37,
+      "floating_checkpoint_type": "best",
+      "floating_config": {
+        "model": {
+          "scale": 2,
+          "input_channels": 3,
+          "feature_channels": 24,
+          "reconstruction": "residual_bicubic",
+          "architecture": "student_espcn",
+          "blocks": 0,
+          "branch_type": "dense",
+          "bottleneck_channels": null,
+          "deploy": false,
+          "gate_activation": "sigmoid",
+          "gate_initial_probability": 0.9,
+          "variant": "dense",
+          "color_mode": "rgb"
+        },
+        "data": {
+          "pairs_dir": "data/teacher_development/v2",
+          "lr_patch_size": 64,
+          "hr_patch_size": 128,
+          "train_crop_mode": "random",
+          "eval_crop_mode": "stratified",
+          "augmentation": {
+            "horizontal_flip": true,
+            "vertical_flip": true,
+            "rotate_90": true
+          },
+          "validation_samples_per_cluster": 16,
+          "train_record_set": "dataset.pairs.split.train.teacher_v3",
+          "validation_record_set": "dataset.pairs.split.val",
+          "sampling_mode": "source_scene_difficulty_balanced",
+          "training_samples_per_epoch": 10040
+        },
+        "training": {
+          "epochs": 40,
+          "batch_size": 32,
+          "learning_rate": 0.001,
+          "loss": "mse",
+          "charbonnier_epsilon": 0.001,
+          "optimizer": "adam",
+          "random_seed": 42,
+          "scheduler": {
+            "name": "reduce_on_plateau",
+            "factor": 0.5,
+            "patience": 5,
+            "min_learning_rate": 3.90625e-06
+          },
+          "early_stopping": {
+            "enabled": false,
+            "patience": 40,
+            "min_delta": 0.0
+          },
+          "edge_loss_weight": 0.0,
+          "checkpoint_metric": "psnr",
+          "include_initialization_as_candidate": false
+        },
+        "distillation": {
+          "enabled": true,
+          "teacher_checkpoint": "experiments/teacher_v3_selected/best_model.pth",
+          "teacher_weight": 0.7,
+          "ground_truth_weight": 0.3,
+          "loss": "mse"
+        }
+      }
+    },
+    "w16": {
+      "package": "results/width_study_v1/models/w16.sv",
+      "package_sha256": "d4064709d14a5bc59bfa8c2d615d57d46fcecf223e350d27d316321205559c3b",
+      "checkpoint": "experiments/exp049_qat_student_g1_w16/checkpoints/best_model.pth",
+      "checkpoint_sha256": "1ee9cfd12730ab43d2506dc4dc537c2bfd95cbd70dd10831ebb77dcc45faedda",
+      "epoch": 9,
+      "checkpoint_type": "best",
+      "config": {
+        "model": {
+          "scale": 2,
+          "input_channels": 3,
+          "feature_channels": 16,
+          "reconstruction": "residual_bicubic",
+          "architecture": "student_espcn",
+          "blocks": 0,
+          "branch_type": "dense",
+          "bottleneck_channels": null,
+          "deploy": false,
+          "gate_activation": "sigmoid",
+          "gate_initial_probability": 0.9
+        },
+        "data": {
+          "pairs_dir": "data/teacher_development/v2",
+          "lr_patch_size": 64,
+          "hr_patch_size": 128,
+          "train_crop_mode": "random",
+          "eval_crop_mode": "stratified",
+          "augmentation": {
+            "horizontal_flip": true,
+            "vertical_flip": true,
+            "rotate_90": true
+          },
+          "validation_samples_per_cluster": 16,
+          "train_record_set": "dataset.pairs.split.train.teacher_v3",
+          "validation_record_set": "dataset.pairs.split.val",
+          "sampling_mode": "source_scene_difficulty_balanced",
+          "training_samples_per_epoch": 5020
+        },
+        "training": {
+          "epochs": 10,
+          "batch_size": 32,
+          "learning_rate": 0.0001,
+          "loss": "mse",
+          "charbonnier_epsilon": 0.001,
+          "optimizer": "adam",
+          "random_seed": 42,
+          "scheduler": {
+            "name": "reduce_on_plateau",
+            "factor": 0.5,
+            "patience": 3,
+            "min_learning_rate": 6.25e-06
+          },
+          "early_stopping": {
+            "enabled": false,
+            "patience": 10,
+            "min_delta": 0.0
+          },
+          "edge_loss_weight": 0.0,
+          "checkpoint_metric": "psnr",
+          "include_initialization_as_candidate": false
+        },
+        "distillation": {
+          "enabled": false,
+          "teacher_checkpoint": null,
+          "teacher_weight": 0.0,
+          "ground_truth_weight": 1.0,
+          "loss": "mse"
+        }
+      },
+      "qat_profile": {
+        "scheme": "symmetric_power_of_two",
+        "rounding": "nearest_ties_away_from_zero",
+        "saturation": true,
+        "activation": {
+          "bits": 8,
+          "signed": true,
+          "fractional_bits": 7,
+          "scale": 0.0078125,
+          "qmin": -128,
+          "qmax": 127
+        },
+        "weight": {
+          "bits": 8,
+          "signed": true,
+          "fractional_bits": 8,
+          "scale": 0.00390625,
+          "qmin": -128,
+          "qmax": 127
+        },
+        "bias": {
+          "bits": 32,
+          "signed": true,
+          "fractional_bits": 15,
+          "scale": 3.0517578125e-05,
+          "qmin": -2147483648,
+          "qmax": 2147483647
+        },
+        "accumulator": {
+          "bits": 32,
+          "signed": true,
+          "fractional_bits": 15,
+          "scale": 3.0517578125e-05,
+          "qmin": -2147483648,
+          "qmax": 2147483647
+        },
+        "output": {
+          "bits": 8,
+          "signed": true,
+          "fractional_bits": 7,
+          "scale": 0.0078125,
+          "qmin": -128,
+          "qmax": 127
+        },
+        "right_shift_bits": 8,
+        "config_path": "C:/Research/Thesis/Visual_Upscaling/neural-upscaling-hw-sw-codesign/configs/fixed_point.yaml",
+        "config_sha256": "4db085f6d66dc54f8a5b9179b03a340ac3689a3c90a6d3eeef366235e8c53f04"
+      },
+      "floating_source": "experiments/exp046_student_g1_w16/checkpoints/best_model.pth",
+      "floating_source_sha256": "a4670c53af27bcb2d4d78c49430cc04b9b7d13349da3282ef14298f0bb75ce2c",
+      "floating_epoch": 33,
+      "floating_checkpoint_type": "best",
+      "floating_config": {
+        "model": {
+          "scale": 2,
+          "input_channels": 3,
+          "feature_channels": 16,
+          "reconstruction": "residual_bicubic",
+          "architecture": "student_espcn",
+          "blocks": 0,
+          "branch_type": "dense",
+          "bottleneck_channels": null,
+          "deploy": false,
+          "gate_activation": "sigmoid",
+          "gate_initial_probability": 0.9
+        },
+        "data": {
+          "pairs_dir": "data/teacher_development/v2",
+          "lr_patch_size": 64,
+          "hr_patch_size": 128,
+          "train_crop_mode": "random",
+          "eval_crop_mode": "stratified",
+          "augmentation": {
+            "horizontal_flip": true,
+            "vertical_flip": true,
+            "rotate_90": true
+          },
+          "validation_samples_per_cluster": 16,
+          "train_record_set": "dataset.pairs.split.train.teacher_v3",
+          "validation_record_set": "dataset.pairs.split.val",
+          "sampling_mode": "source_scene_difficulty_balanced",
+          "training_samples_per_epoch": 10040
+        },
+        "training": {
+          "epochs": 40,
+          "batch_size": 32,
+          "learning_rate": 0.001,
+          "loss": "mse",
+          "charbonnier_epsilon": 0.001,
+          "optimizer": "adam",
+          "random_seed": 42,
+          "scheduler": {
+            "name": "reduce_on_plateau",
+            "factor": 0.5,
+            "patience": 5,
+            "min_learning_rate": 3.90625e-06
+          },
+          "early_stopping": {
+            "enabled": false,
+            "patience": 40,
+            "min_delta": 0.0
+          },
+          "edge_loss_weight": 0.0,
+          "checkpoint_metric": "psnr",
+          "include_initialization_as_candidate": false
+        },
+        "distillation": {
+          "enabled": true,
+          "teacher_checkpoint": "experiments/teacher_v3_selected/best_model.pth",
+          "teacher_weight": 0.7,
+          "ground_truth_weight": 0.3,
+          "loss": "mse"
+        }
+      }
+    },
+    "w12": {
+      "package": "results/width_study_v1/models/w12.sv",
+      "package_sha256": "5982ef40883ad44e8be58eae086a8ee2deaaf3eadb35662d0575c3955b967c6d",
+      "checkpoint": "experiments/exp061_fpga_qat_structured_w12_int8/checkpoints/best_model.pth",
+      "checkpoint_sha256": "3f38fa86739ec2ac66e560ccbb04b3582e838b651c9d02cfe01cc7f32b1d79fc",
+      "epoch": 0,
+      "checkpoint_type": "initial_qat_baseline",
+      "config": {
+        "model": {
+          "scale": 2,
+          "input_channels": 3,
+          "feature_channels": 12,
+          "reconstruction": "residual_bicubic",
+          "architecture": "fpga_student",
+          "blocks": 0,
+          "branch_type": "dense",
+          "bottleneck_channels": null,
+          "deploy": false,
+          "gate_activation": "sigmoid",
+          "gate_initial_probability": 0.9,
+          "variant": "dense",
+          "color_mode": "rgb"
+        },
+        "data": {
+          "pairs_dir": "data/teacher_development/v2",
+          "lr_patch_size": 64,
+          "hr_patch_size": 128,
+          "train_crop_mode": "random",
+          "eval_crop_mode": "stratified",
+          "augmentation": {
+            "horizontal_flip": true,
+            "vertical_flip": true,
+            "rotate_90": true
+          },
+          "validation_samples_per_cluster": 16,
+          "train_record_set": "dataset.pairs.split.train.teacher_v3",
+          "validation_record_set": "dataset.pairs.split.val",
+          "sampling_mode": "source_scene_difficulty_balanced",
+          "training_samples_per_epoch": 2510
+        },
+        "training": {
+          "epochs": 5,
+          "batch_size": 32,
+          "learning_rate": 0.0001,
+          "loss": "mse",
+          "charbonnier_epsilon": 0.001,
+          "optimizer": "adam",
+          "random_seed": 42,
+          "scheduler": {
+            "name": "reduce_on_plateau",
+            "factor": 0.5,
+            "patience": 2,
+            "min_learning_rate": 6.25e-06
+          },
+          "early_stopping": {
+            "enabled": false,
+            "patience": 5,
+            "min_delta": 0.0
+          },
+          "edge_loss_weight": 0.0,
+          "checkpoint_metric": "psnr",
+          "include_initialization_as_candidate": false
+        },
+        "distillation": {
+          "enabled": false,
+          "teacher_checkpoint": null,
+          "teacher_weight": 0.0,
+          "ground_truth_weight": 1.0,
+          "loss": "mse"
+        }
+      },
+      "qat_profile": {
+        "profile_type": "fpga_low_bit_v1",
+        "rounding": "nearest_ties_away_from_zero",
+        "activation_bits": 8,
+        "activation_scale": 0.0078125,
+        "weight_bits": 8,
+        "weight_scale_granularity": "per_output_channel_power_of_two",
+        "weight_scales": {
+          "conv1": [
+            0.0078125,
+            0.00390625,
+            0.00390625,
+            0.00390625,
+            0.00390625,
+            0.015625,
+            0.00390625,
+            0.00390625,
+            0.0078125,
+            0.00390625,
+            0.0078125,
+            0.015625
+          ],
+          "conv2": [
+            0.0078125,
+            0.015625,
+            0.0078125,
+            0.015625,
+            0.0078125,
+            0.00390625,
+            0.015625,
+            0.015625,
+            0.00390625,
+            0.015625,
+            0.00390625,
+            0.0078125
+          ],
+          "conv3": [
+            0.00390625,
+            0.00390625,
+            0.0078125,
+            0.00390625,
+            0.00390625,
+            0.00390625,
+            0.0078125,
+            0.0078125,
+            0.00390625,
+            0.00390625,
+            0.0078125,
+            0.0078125
+          ]
+        },
+        "accumulator_bits": 32
+      },
+      "floating_source": "experiments/exp055_fpga_structured_w12/checkpoints/best_model.pth",
+      "floating_source_sha256": "b6a6f3c3eba1ff8c4a26db2a3f5287ba3e2eb6470db4f5ab318652c1c6032685",
+      "floating_epoch": 17,
+      "floating_checkpoint_type": "best",
+      "floating_config": {
+        "model": {
+          "scale": 2,
+          "input_channels": 3,
+          "feature_channels": 12,
+          "reconstruction": "residual_bicubic",
+          "architecture": "fpga_student",
+          "blocks": 0,
+          "branch_type": "dense",
+          "bottleneck_channels": null,
+          "deploy": false,
+          "gate_activation": "sigmoid",
+          "gate_initial_probability": 0.9,
+          "variant": "dense",
+          "color_mode": "rgb"
+        },
+        "data": {
+          "pairs_dir": "data/teacher_development/v2",
+          "lr_patch_size": 64,
+          "hr_patch_size": 128,
+          "train_crop_mode": "random",
+          "eval_crop_mode": "stratified",
+          "augmentation": {
+            "horizontal_flip": true,
+            "vertical_flip": true,
+            "rotate_90": true
+          },
+          "validation_samples_per_cluster": 16,
+          "train_record_set": "dataset.pairs.split.train.teacher_v3",
+          "validation_record_set": "dataset.pairs.split.val",
+          "sampling_mode": "source_scene_difficulty_balanced",
+          "training_samples_per_epoch": 5020
+        },
+        "training": {
+          "epochs": 20,
+          "batch_size": 32,
+          "learning_rate": 0.0005,
+          "loss": "mse",
+          "charbonnier_epsilon": 0.001,
+          "optimizer": "adam",
+          "random_seed": 42,
+          "scheduler": {
+            "name": "reduce_on_plateau",
+            "factor": 0.5,
+            "patience": 4,
+            "min_learning_rate": 3.90625e-06
+          },
+          "early_stopping": {
+            "enabled": false,
+            "patience": 20,
+            "min_delta": 0.0
+          },
+          "edge_loss_weight": 0.0,
+          "checkpoint_metric": "psnr",
+          "include_initialization_as_candidate": true
+        },
+        "distillation": {
+          "enabled": true,
+          "teacher_checkpoint": "experiments/teacher_v3_selected/best_model.pth",
+          "teacher_weight": 0.7,
+          "ground_truth_weight": 0.3,
+          "loss": "mse"
+        }
+      }
+    }
+  },
+  "w12_initialization_record": {
+    "path": "configs/fpga_model_ablation_v1.yaml",
+    "sha256": "53d0bf581ba7217d49c2a605bc64505c2493129538aa52dc1f2446e29fdf7198",
+    "candidate": "fpga_structured_w12",
+    "source_checkpoint": "experiments/exp046_student_g1_w16/checkpoints/best_model.pth",
+    "method": "Whole-channel pruning initialization documented in the retained training configuration; not rerun for this analysis."
+  }
+}

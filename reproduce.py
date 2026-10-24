@@ -17,6 +17,7 @@ def main():
         ('Organization by skipping', ['scripts/organization_skipping_v1/replay.py']),
         ('Retained RTL probe', ['results/traversal_assessment_v1/simulate.py']),
         ('Physical output suppression', ['scripts/output_suppression_v1/replay.py']),
+        ('Offline geometry and channel sparsity', ['scripts/interpretation_v1/analyze.py']),
         ('Table and replay tests', ['-m', 'pytest', '-p', 'no:cacheprovider', 'tests', '-q']),
         ('Unchanged release', ['verify_release.py']),
     ]

@@ -141,6 +141,8 @@ results/design_study_v1/skipping/host/board_campaign.c
 results/design_study_v1/skipping/host/roi_campaign_masks.h
 results/design_study_v1/skipping/input_provenance.json
 results/design_study_v1/skipping/qualification_freeze.json
+results/interpretation_v1/analysis.json
+results/interpretation_v1/model_provenance.json
 results/organization_skipping_v1/FINDINGS.txt
 results/organization_skipping_v1/PROTOCOL.txt
 results/organization_skipping_v1/PROVENANCE.txt
@@ -457,6 +459,7 @@ scripts/design_study_v1/c07/analyze.py
 scripts/design_study_v1/c07/schedule.py
 scripts/design_study_v1/replay.py
 scripts/design_study_v1/skip_summary.py
+scripts/interpretation_v1/analyze.py
 scripts/organization_skipping_v1/analyze.py
 scripts/organization_skipping_v1/common.py
 scripts/organization_skipping_v1/replay.py
@@ -476,6 +479,7 @@ src/experiments/paper2_conventional_comparison_v1/roi_stream.sv
 src/hardware/__init__.py
 src/hardware/experiment133/reference_sparse_distilled_same_bitstream_133.py
 src/report/paper2_roi_publication.py
+tests/test_interpretation.py
 tests/test_paper2_roi_public_replay.py
 tests/test_paper2_roi_publication.py
 verify_release.py

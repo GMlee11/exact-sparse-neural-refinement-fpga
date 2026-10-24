@@ -1,0 +1,2068 @@
+{
+  "method": "Post-hoc offline analysis of the two retained interaction images and four sparse masks. Each global dependency-support position counted once, not once per overlapping crop. Effective issued channels=max(1, eligible channels), retaining the bias-only transaction. These are channel-opportunity counts, not measured cycle reductions.",
+  "source_sha256": {
+    "results/design_study_v1/buffer/build/sources/espcn_fpga_student_weights_pkg.sv": "cc1a67ee659447a80252c97064ed7bc50826b40649ebf3c8399ef189ba692029",
+    "results/design_study_v1/skipping/goldens/frame_0.npy.gz": "06dcc10f621f68257a4773d10b894dbcf105b767153bac8328079bcbab91665e",
+    "results/design_study_v1/skipping/goldens/frame_2.npy.gz": "5ea789b4607b5781e41aeb8cd25c485e9cb8b5be9ce17245b768919d4a83ef9b",
+    "results/design_study_v1/skipping/goldens/input_banks.bin.gz": "920d1ac514666ba6acb55791666f2024cbf989e50134b5ba909f75288a6ed56f",
+    "results/organization_skipping_v1/export_manifest.json": "13c9a2c49cda417a02ea6dd2fcf5c0b537c089e5cbf0455b587c4a4d1e075bb7",
+    "results/organization_skipping_v1/w12/goldens/frame_0.npy.gz": "2c1660edcbe4bc90c8fecd2cd180ab99790cf2d59254dd8a1f5d9734774711f4",
+    "results/organization_skipping_v1/w12/goldens/frame_2.npy.gz": "ab72cb81248c6180942363a03cb4eb6acb934a913efe5fddfc88eed5423df67d",
+    "results/organization_skipping_v1/w12/goldens/manifest.json": "9fde5bd1b0feea44faf7e0fe9d1ad6f942701cc9a7b8d9287c9ea7d9353308b3",
+    "results/organization_skipping_v1/w16/goldens/frame_0.npy.gz": "96ef71718543dcedaf44b1d8596da61513d773fe19d43f4d83d990321b95404a",
+    "results/organization_skipping_v1/w16/goldens/frame_2.npy.gz": "eb87044e2e220cca2c3df24d31e023fe1cd8f288cd425978c6a56583f57d3f15",
+    "results/organization_skipping_v1/w16/goldens/manifest.json": "00f9c97432fb1fdfa13e047c78650161f30b530d3c639e3c5a37c4b3caf4de42",
+    "results/organization_skipping_v1/w24/goldens/manifest.json": "db937a91fc2e7a82c427b73db7820e114d3c400ef745e7a9239cc83f44b19279",
+    "results/output_suppression_v1/comparison.json": "d4166a3d91594fab28387deee13bc82008dddbf37bca81fdacfbf9835e83dd88",
+    "results/paper2_conventional_comparison_v1/F006/cases.json": "91b13aed1f515798ed64cca0a535114b4d65c5fe0ea1c9398af1afe1780ea128",
+    "results/width_study_v1/models/w12.sv": "5982ef40883ad44e8be58eae086a8ee2deaaf3eadb35662d0575c3955b967c6d",
+    "results/width_study_v1/models/w16.sv": "d4064709d14a5bc59bfa8c2d615d57d46fcecf223e350d27d316321205559c3b",
+    "scripts/width_study_v1/replay.py": "99ad4eb95fe53fca4d4965410797c637ba0b761609c79defbf0cd84b62417334",
+    "src/experiments/paper2_conventional_comparison_v1/comparison.py": "49298367ecf871a680e58cbb3da668fdd2fd8e4aa612393d5bfff34e4f5cb584"
+  },
+  "geometry": [
+    {
+      "frame": 0,
+      "mask": 2,
+      "name": "clustered_rectangles_10",
+      "tiles": 6,
+      "merged_regions": 1,
+      "raster_positions": 230400,
+      "box_positions": 24948,
+      "merged_positions": 24948,
+      "suppressed_skip_on_ms": {
+        "raster": 39.316422359823754,
+        "bounding_box": 26.741323224501627,
+        "merged": 26.746202224360136
+      },
+      "merged_vs_raster_percent": 31.97193279800743,
+      "merged_vs_box_percent": -0.018245169910069414
+    },
+    {
+      "frame": 0,
+      "mask": 5,
+      "name": "scattered_random_10",
+      "tiles": 7,
+      "merged_regions": 7,
+      "raster_positions": 230400,
+      "box_positions": 208440,
+      "merged_positions": 31521,
+      "suppressed_skip_on_ms": {
+        "raster": 45.48417118095904,
+        "bounding_box": 43.976019724695426,
+        "merged": 32.42961355954121
+      },
+      "merged_vs_raster_percent": 28.70132022298526,
+      "merged_vs_box_percent": 26.256141955180524
+    },
+    {
+      "frame": 0,
+      "mask": 4,
+      "name": "clustered_rectangles_90",
+      "tiles": 30,
+      "merged_regions": 1,
+      "raster_positions": 230400,
+      "box_positions": 119040,
+      "merged_positions": 119040,
+      "suppressed_skip_on_ms": {
+        "raster": 133.83555011876905,
+        "bounding_box": 129.05534825739488,
+        "merged": 129.0280587581863
+      },
+      "merged_vs_raster_percent": 3.5920884670152753,
+      "merged_vs_box_percent": 0.021145577906744872
+    },
+    {
+      "frame": 0,
+      "mask": 10,
+      "name": "adversarial_checkerboard_90",
+      "tiles": 30,
+      "merged_regions": 30,
+      "raster_positions": 230400,
+      "box_positions": 230400,
+      "merged_positions": 135330,
+      "suppressed_skip_on_ms": {
+        "raster": 144.53916730836414,
+        "bounding_box": 144.56554380759923,
+        "merged": 137.90660250070852
+      },
+      "merged_vs_raster_percent": 4.588766443842529,
+      "merged_vs_box_percent": 4.6061745638041
+    },
+    {
+      "frame": 2,
+      "mask": 2,
+      "name": "clustered_rectangles_10",
+      "tiles": 6,
+      "merged_regions": 1,
+      "raster_positions": 230400,
+      "box_positions": 24948,
+      "merged_positions": 24948,
+      "suppressed_skip_on_ms": {
+        "raster": 38.91170737156049,
+        "bounding_box": 26.353335235753278,
+        "merged": 26.351297735812366
+      },
+      "merged_vs_raster_percent": 32.27925599822995,
+      "merged_vs_box_percent": 0.0077314689874485865
+    },
+    {
+      "frame": 2,
+      "mask": 5,
+      "name": "scattered_random_10",
+      "tiles": 7,
+      "merged_regions": 7,
+      "raster_positions": 230400,
+      "box_positions": 208440,
+      "merged_positions": 31521,
+      "suppressed_skip_on_ms": {
+        "raster": 42.341780772088356,
+        "bounding_box": 40.88031231447094,
+        "merged": 29.40506964725298
+      },
+      "merged_vs_raster_percent": 30.553063402007975,
+      "merged_vs_box_percent": 28.07034001830735
+    },
+    {
+      "frame": 2,
+      "mask": 4,
+      "name": "clustered_rectangles_90",
+      "tiles": 30,
+      "merged_regions": 1,
+      "raster_positions": 230400,
+      "box_positions": 119040,
+      "merged_positions": 119040,
+      "suppressed_skip_on_ms": {
+        "raster": 129.22187175256573,
+        "bounding_box": 124.38604989280455,
+        "merged": 124.39718539248162
+      },
+      "merged_vs_raster_percent": 3.73364531456597,
+      "merged_vs_box_percent": -0.008952370210857374
+    },
+    {
+      "frame": 2,
+      "mask": 10,
+      "name": "adversarial_checkerboard_90",
+      "tiles": 30,
+      "merged_regions": 30,
+      "raster_positions": 230400,
+      "box_positions": 230400,
+      "merged_positions": 135330,
+      "suppressed_skip_on_ms": {
+        "raster": 128.2841162797606,
+        "bounding_box": 128.2857447797134,
+        "merged": 122.0354204609728
+      },
+      "merged_vs_raster_percent": 4.870981692823706,
+      "merged_vs_box_percent": 4.872189290769125
+    }
+  ],
+  "sparsity": [
+    {
+      "width": "w24",
+      "frame": 0,
+      "layers": [
+        {
+          "layer": 1,
+          "masks": [
+            {
+              "mask": 2,
+              "positions": 24304,
+              "input_channels": 3,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                24304
+              ],
+              "all_zero_channel_window_percent": 0.0,
+              "effective_channel_issue_reduction_percent": 0.0,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 5,
+              "positions": 29932,
+              "input_channels": 3,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                29932
+              ],
+              "all_zero_channel_window_percent": 0.0,
+              "effective_channel_issue_reduction_percent": 0.0,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 4,
+              "positions": 117760,
+              "input_channels": 3,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                36,
+                117724
+              ],
+              "all_zero_channel_window_percent": 0.010190217391304348,
+              "effective_channel_issue_reduction_percent": 0.01019021739131487,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 10,
+              "positions": 127720,
+              "input_channels": 3,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                127720
+              ],
+              "all_zero_channel_window_percent": 0.0,
+              "effective_channel_issue_reduction_percent": 0.0,
+              "bias_only_positions": 0
+            }
+          ],
+          "full_frame_output_zero_percent": 28.612196180555554
+        },
+        {
+          "layer": 2,
+          "masks": [
+            {
+              "mask": 2,
+              "positions": 23668,
+              "input_channels": 24,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4,
+                7978,
+                4902,
+                8910,
+                1223,
+                413,
+                180,
+                49,
+                9
+              ],
+              "all_zero_channel_window_percent": 24.009210748690215,
+              "effective_channel_issue_reduction_percent": 24.00921074869021,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 5,
+              "positions": 28385,
+              "input_channels": 24,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                13,
+                52,
+                18,
+                15,
+                10,
+                10,
+                16,
+                25,
+                8678,
+                14179,
+                3698,
+                876,
+                507,
+                214,
+                74,
+                0
+              ],
+              "all_zero_channel_window_percent": 25.208149844401383,
+              "effective_channel_issue_reduction_percent": 25.208149844401394,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 4,
+              "positions": 116480,
+              "input_channels": 24,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                67,
+                222,
+                153,
+                283,
+                94,
+                99,
+                104,
+                89,
+                91,
+                292,
+                22788,
+                53513,
+                26848,
+                5647,
+                4222,
+                1372,
+                554,
+                42
+              ],
+              "all_zero_channel_window_percent": 24.036064846611723,
+              "effective_channel_issue_reduction_percent": 24.036064846611715,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 10,
+              "positions": 121550,
+              "input_channels": 24,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                120,
+                255,
+                260,
+                295,
+                131,
+                114,
+                97,
+                337,
+                867,
+                2600,
+                35830,
+                48151,
+                22643,
+                4611,
+                3186,
+                1371,
+                618,
+                64
+              ],
+              "all_zero_channel_window_percent": 25.180104209515974,
+              "effective_channel_issue_reduction_percent": 25.180104209515974,
+              "bias_only_positions": 0
+            }
+          ],
+          "full_frame_output_zero_percent": 72.53654875578704
+        },
+        {
+          "layer": 3,
+          "masks": [
+            {
+              "mask": 2,
+              "positions": 23040,
+              "input_channels": 24,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                480,
+                12084,
+                8309,
+                1303,
+                364,
+                253,
+                77,
+                43,
+                39,
+                23,
+                20,
+                22,
+                11,
+                10,
+                2,
+                0,
+                0,
+                0,
+                0
+              ],
+              "all_zero_channel_window_percent": 68.24616608796296,
+              "effective_channel_issue_reduction_percent": 68.24616608796296,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 5,
+              "positions": 26880,
+              "input_channels": 24,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                8825,
+                7129,
+                7695,
+                1780,
+                250,
+                494,
+                229,
+                300,
+                63,
+                77,
+                28,
+                6,
+                3,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "all_zero_channel_window_percent": 69.35841393849206,
+              "effective_channel_issue_reduction_percent": 69.35841393849206,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 4,
+              "positions": 115200,
+              "input_channels": 24,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                52,
+                25,
+                16,
+                30859,
+                44219,
+                23592,
+                8968,
+                2096,
+                1471,
+                1017,
+                1061,
+                673,
+                537,
+                294,
+                167,
+                87,
+                50,
+                14,
+                2,
+                0,
+                0,
+                0
+              ],
+              "all_zero_channel_window_percent": 69.05862991898148,
+              "effective_channel_issue_reduction_percent": 69.05862991898148,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 10,
+              "positions": 115200,
+              "input_channels": 24,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                363,
+                1715,
+                2545,
+                28629,
+                35672,
+                27645,
+                10737,
+                2097,
+                1764,
+                1172,
+                1076,
+                590,
+                487,
+                355,
+                206,
+                101,
+                38,
+                8,
+                0,
+                0,
+                0,
+                0
+              ],
+              "all_zero_channel_window_percent": 69.04593460648148,
+              "effective_channel_issue_reduction_percent": 69.04593460648147,
+              "bias_only_positions": 0
+            }
+          ],
+          "full_frame_output_zero_percent": 1.1496310763888888
+        }
+      ]
+    },
+    {
+      "width": "w24",
+      "frame": 2,
+      "layers": [
+        {
+          "layer": 1,
+          "masks": [
+            {
+              "mask": 2,
+              "positions": 24304,
+              "input_channels": 3,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                24304
+              ],
+              "all_zero_channel_window_percent": 0.0,
+              "effective_channel_issue_reduction_percent": 0.0,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 5,
+              "positions": 29932,
+              "input_channels": 3,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                29932
+              ],
+              "all_zero_channel_window_percent": 0.0,
+              "effective_channel_issue_reduction_percent": 0.0,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 4,
+              "positions": 117760,
+              "input_channels": 3,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                117760
+              ],
+              "all_zero_channel_window_percent": 0.0,
+              "effective_channel_issue_reduction_percent": 0.0,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 10,
+              "positions": 127720,
+              "input_channels": 3,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                127720
+              ],
+              "all_zero_channel_window_percent": 0.0,
+              "effective_channel_issue_reduction_percent": 0.0,
+              "bias_only_positions": 0
+            }
+          ],
+          "full_frame_output_zero_percent": 52.896158854166664
+        },
+        {
+          "layer": 2,
+          "masks": [
+            {
+              "mask": 2,
+              "positions": 23668,
+              "input_channels": 24,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2400,
+                678,
+                201,
+                251,
+                473,
+                1369,
+                2183,
+                1054,
+                950,
+                1048,
+                1130,
+                1496,
+                1841,
+                2179,
+                2376,
+                2790,
+                1249
+              ],
+              "all_zero_channel_window_percent": 27.69861557095375,
+              "effective_channel_issue_reduction_percent": 27.698615570953756,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 5,
+              "positions": 28385,
+              "input_channels": 24,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                346,
+                2689,
+                3822,
+                5437,
+                1359,
+                1721,
+                1026,
+                663,
+                578,
+                665,
+                770,
+                946,
+                1415,
+                2001,
+                1922,
+                2152,
+                873
+              ],
+              "all_zero_channel_window_percent": 37.84481240091598,
+              "effective_channel_issue_reduction_percent": 37.844812400915984,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 4,
+              "positions": 116480,
+              "input_channels": 24,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3454,
+                1609,
+                9263,
+                9662,
+                3634,
+                5797,
+                7527,
+                4305,
+                4042,
+                6990,
+                6931,
+                7437,
+                9457,
+                11336,
+                10293,
+                10370,
+                4373
+              ],
+              "all_zero_channel_window_percent": 29.293512477106226,
+              "effective_channel_issue_reduction_percent": 29.293512477106233,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 10,
+              "positions": 121550,
+              "input_channels": 24,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                5453,
+                16586,
+                15008,
+                14841,
+                4909,
+                7609,
+                6590,
+                3528,
+                3091,
+                5562,
+                4422,
+                4898,
+                6150,
+                7341,
+                6646,
+                6479,
+                2437
+              ],
+              "all_zero_channel_window_percent": 39.77855477855478,
+              "effective_channel_issue_reduction_percent": 39.77855477855478,
+              "bias_only_positions": 0
+            }
+          ],
+          "full_frame_output_zero_percent": 84.73994502314814
+        },
+        {
+          "layer": 3,
+          "masks": [
+            {
+              "mask": 2,
+              "positions": 23040,
+              "input_channels": 24,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                2982,
+                242,
+                256,
+                518,
+                841,
+                1294,
+                1975,
+                2428,
+                1955,
+                1587,
+                1515,
+                1435,
+                1345,
+                1306,
+                1199,
+                953,
+                721,
+                348,
+                103,
+                32,
+                5,
+                0,
+                0
+              ],
+              "all_zero_channel_window_percent": 58.01884403935185,
+              "effective_channel_issue_reduction_percent": 58.01884403935185,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 5,
+              "positions": 26880,
+              "input_channels": 24,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                10898,
+                1188,
+                882,
+                696,
+                588,
+                759,
+                888,
+                1054,
+                1044,
+                935,
+                989,
+                1173,
+                1266,
+                1273,
+                1242,
+                933,
+                636,
+                302,
+                105,
+                22,
+                6,
+                1,
+                0
+              ],
+              "all_zero_channel_window_percent": 69.29315476190476,
+              "effective_channel_issue_reduction_percent": 69.29315476190476,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 4,
+              "positions": 115200,
+              "input_channels": 24,
+              "eligible_channel_histogram": [
+                0,
+                2,
+                19469,
+                2963,
+                2222,
+                2343,
+                3333,
+                8919,
+                10361,
+                10629,
+                8721,
+                6582,
+                6722,
+                6629,
+                6270,
+                5750,
+                5085,
+                4173,
+                2983,
+                1461,
+                456,
+                109,
+                16,
+                2,
+                0
+              ],
+              "all_zero_channel_window_percent": 61.101851851851855,
+              "effective_channel_issue_reduction_percent": 61.10185185185186,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 10,
+              "positions": 115200,
+              "input_channels": 24,
+              "eligible_channel_histogram": [
+                3,
+                6,
+                44974,
+                5165,
+                2971,
+                3118,
+                3314,
+                6608,
+                7165,
+                7197,
+                5452,
+                4301,
+                4207,
+                4278,
+                4083,
+                3758,
+                3309,
+                2544,
+                1643,
+                796,
+                237,
+                60,
+                10,
+                1,
+                0
+              ],
+              "all_zero_channel_window_percent": 71.435546875,
+              "effective_channel_issue_reduction_percent": 71.43543836805554,
+              "bias_only_positions": 3
+            }
+          ],
+          "full_frame_output_zero_percent": 49.368019386574076
+        }
+      ]
+    },
+    {
+      "width": "w16",
+      "frame": 0,
+      "layers": [
+        {
+          "layer": 1,
+          "masks": [
+            {
+              "mask": 2,
+              "positions": 24304,
+              "input_channels": 3,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                24304
+              ],
+              "all_zero_channel_window_percent": 0.0,
+              "effective_channel_issue_reduction_percent": 0.0,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 5,
+              "positions": 29932,
+              "input_channels": 3,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                29932
+              ],
+              "all_zero_channel_window_percent": 0.0,
+              "effective_channel_issue_reduction_percent": 0.0,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 4,
+              "positions": 117760,
+              "input_channels": 3,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                36,
+                117724
+              ],
+              "all_zero_channel_window_percent": 0.010190217391304348,
+              "effective_channel_issue_reduction_percent": 0.01019021739131487,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 10,
+              "positions": 127720,
+              "input_channels": 3,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                127720
+              ],
+              "all_zero_channel_window_percent": 0.0,
+              "effective_channel_issue_reduction_percent": 0.0,
+              "bias_only_positions": 0
+            }
+          ],
+          "full_frame_output_zero_percent": 25.00387912326389
+        },
+        {
+          "layer": 2,
+          "masks": [
+            {
+              "mask": 2,
+              "positions": 23668,
+              "input_channels": 16,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                6938,
+                13161,
+                2871,
+                628,
+                70
+              ],
+              "all_zero_channel_window_percent": 19.4368451073179,
+              "effective_channel_issue_reduction_percent": 19.4368451073179,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 5,
+              "positions": 28385,
+              "input_channels": 16,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                22,
+                35,
+                47,
+                38,
+                19152,
+                5229,
+                2757,
+                1061,
+                42
+              ],
+              "all_zero_channel_window_percent": 21.970450942399154,
+              "effective_channel_issue_reduction_percent": 21.970450942399154,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 4,
+              "positions": 116480,
+              "input_channels": 16,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                121,
+                22,
+                239,
+                153,
+                207,
+                143,
+                110,
+                179,
+                155,
+                54578,
+                39722,
+                15867,
+                4439,
+                545
+              ],
+              "all_zero_channel_window_percent": 20.672701322115383,
+              "effective_channel_issue_reduction_percent": 20.672701322115383,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 10,
+              "positions": 121550,
+              "input_channels": 16,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                143,
+                36,
+                329,
+                532,
+                299,
+                167,
+                186,
+                221,
+                9234,
+                59575,
+                31894,
+                14500,
+                3999,
+                435
+              ],
+              "all_zero_channel_window_percent": 22.163512957630605,
+              "effective_channel_issue_reduction_percent": 22.163512957630605,
+              "bias_only_positions": 0
+            }
+          ],
+          "full_frame_output_zero_percent": 80.29123263888889
+        },
+        {
+          "layer": 3,
+          "masks": [
+            {
+              "mask": 2,
+              "positions": 23040,
+              "input_channels": 16,
+              "eligible_channel_histogram": [
+                0,
+                52,
+                249,
+                16827,
+                3958,
+                1498,
+                354,
+                59,
+                27,
+                14,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "all_zero_channel_window_percent": 79.04405381944444,
+              "effective_channel_issue_reduction_percent": 79.04405381944444,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 5,
+              "positions": 26880,
+              "input_channels": 16,
+              "eligible_channel_histogram": [
+                0,
+                180,
+                4540,
+                7221,
+                11861,
+                1403,
+                934,
+                559,
+                151,
+                25,
+                5,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "all_zero_channel_window_percent": 77.58719308035714,
+              "effective_channel_issue_reduction_percent": 77.58719308035714,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 4,
+              "positions": 115200,
+              "input_channels": 16,
+              "eligible_channel_histogram": [
+                0,
+                719,
+                5138,
+                51427,
+                47433,
+                5015,
+                2955,
+                1512,
+                583,
+                262,
+                77,
+                65,
+                11,
+                3,
+                0,
+                0,
+                0
+              ],
+              "all_zero_channel_window_percent": 77.37223307291666,
+              "effective_channel_issue_reduction_percent": 77.37223307291666,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 10,
+              "positions": 115200,
+              "input_channels": 16,
+              "eligible_channel_histogram": [
+                1,
+                1083,
+                20259,
+                39845,
+                42938,
+                3930,
+                3475,
+                2085,
+                819,
+                385,
+                207,
+                122,
+                43,
+                8,
+                0,
+                0,
+                0
+              ],
+              "all_zero_channel_window_percent": 78.18836805555556,
+              "effective_channel_issue_reduction_percent": 78.18831380208333,
+              "bias_only_positions": 1
+            }
+          ],
+          "full_frame_output_zero_percent": 12.327690972222221
+        }
+      ]
+    },
+    {
+      "width": "w16",
+      "frame": 2,
+      "layers": [
+        {
+          "layer": 1,
+          "masks": [
+            {
+              "mask": 2,
+              "positions": 24304,
+              "input_channels": 3,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                24304
+              ],
+              "all_zero_channel_window_percent": 0.0,
+              "effective_channel_issue_reduction_percent": 0.0,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 5,
+              "positions": 29932,
+              "input_channels": 3,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                29932
+              ],
+              "all_zero_channel_window_percent": 0.0,
+              "effective_channel_issue_reduction_percent": 0.0,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 4,
+              "positions": 117760,
+              "input_channels": 3,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                117760
+              ],
+              "all_zero_channel_window_percent": 0.0,
+              "effective_channel_issue_reduction_percent": 0.0,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 10,
+              "positions": 127720,
+              "input_channels": 3,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                127720
+              ],
+              "all_zero_channel_window_percent": 0.0,
+              "effective_channel_issue_reduction_percent": 0.0,
+              "bias_only_positions": 0
+            }
+          ],
+          "full_frame_output_zero_percent": 68.14073350694444
+        },
+        {
+          "layer": 2,
+          "masks": [
+            {
+              "mask": 2,
+              "positions": 23668,
+              "input_channels": 16,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                15,
+                5962,
+                890,
+                869,
+                815,
+                746,
+                727,
+                914,
+                931,
+                1199,
+                1412,
+                2629,
+                2892,
+                2371,
+                1296
+              ],
+              "all_zero_channel_window_percent": 41.80327868852459,
+              "effective_channel_issue_reduction_percent": 41.80327868852459,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 5,
+              "positions": 28385,
+              "input_channels": 16,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                3,
+                15097,
+                426,
+                530,
+                619,
+                766,
+                437,
+                492,
+                457,
+                637,
+                888,
+                1498,
+                2585,
+                2578,
+                1372
+              ],
+              "all_zero_channel_window_percent": 54.824290998766955,
+              "effective_channel_issue_reduction_percent": 54.824290998766955,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 4,
+              "positions": 116480,
+              "input_channels": 16,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                20,
+                33706,
+                4622,
+                3844,
+                3360,
+                3031,
+                2769,
+                2823,
+                2937,
+                5209,
+                8176,
+                9854,
+                14309,
+                13669,
+                8151
+              ],
+              "all_zero_channel_window_percent": 42.23997682005495,
+              "effective_channel_issue_reduction_percent": 42.23997682005495,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 10,
+              "positions": 121550,
+              "input_channels": 16,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                22,
+                62648,
+                4712,
+                3459,
+                2800,
+                3138,
+                2198,
+                2176,
+                2206,
+                4041,
+                5533,
+                6218,
+                8799,
+                8862,
+                4738
+              ],
+              "all_zero_channel_window_percent": 56.51326614561909,
+              "effective_channel_issue_reduction_percent": 56.51326614561909,
+              "bias_only_positions": 0
+            }
+          ],
+          "full_frame_output_zero_percent": 83.61347113715277
+        },
+        {
+          "layer": 3,
+          "masks": [
+            {
+              "mask": 2,
+              "positions": 23040,
+              "input_channels": 16,
+              "eligible_channel_histogram": [
+                0,
+                318,
+                1463,
+                3965,
+                2079,
+                1898,
+                1968,
+                2063,
+                2281,
+                2219,
+                1982,
+                1564,
+                884,
+                299,
+                55,
+                2,
+                0
+              ],
+              "all_zero_channel_window_percent": 59.382595486111114,
+              "effective_channel_issue_reduction_percent": 59.382595486111114,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 5,
+              "positions": 26880,
+              "input_channels": 16,
+              "eligible_channel_histogram": [
+                0,
+                127,
+                1462,
+                12061,
+                2859,
+                1564,
+                1418,
+                1157,
+                1367,
+                1385,
+                1186,
+                1104,
+                829,
+                313,
+                41,
+                7,
+                0
+              ],
+              "all_zero_channel_window_percent": 68.09942336309524,
+              "effective_channel_issue_reduction_percent": 68.09942336309524,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 4,
+              "positions": 115200,
+              "input_channels": 16,
+              "eligible_channel_histogram": [
+                0,
+                937,
+                6288,
+                29825,
+                17038,
+                9989,
+                9264,
+                8718,
+                9524,
+                8873,
+                6396,
+                4587,
+                2663,
+                924,
+                161,
+                13,
+                0
+              ],
+              "all_zero_channel_window_percent": 64.48687065972221,
+              "effective_channel_issue_reduction_percent": 64.48687065972223,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 10,
+              "positions": 115200,
+              "input_channels": 16,
+              "eligible_channel_histogram": [
+                0,
+                538,
+                5779,
+                52224,
+                13291,
+                7405,
+                6478,
+                6083,
+                6367,
+                5874,
+                4452,
+                3389,
+                2256,
+                909,
+                139,
+                16,
+                0
+              ],
+              "all_zero_channel_window_percent": 69.23383246527777,
+              "effective_channel_issue_reduction_percent": 69.23383246527777,
+              "bias_only_positions": 0
+            }
+          ],
+          "full_frame_output_zero_percent": 49.29835792824074
+        }
+      ]
+    },
+    {
+      "width": "w12",
+      "frame": 0,
+      "layers": [
+        {
+          "layer": 1,
+          "masks": [
+            {
+              "mask": 2,
+              "positions": 24304,
+              "input_channels": 3,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                24304
+              ],
+              "all_zero_channel_window_percent": 0.0,
+              "effective_channel_issue_reduction_percent": 0.0,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 5,
+              "positions": 29932,
+              "input_channels": 3,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                29932
+              ],
+              "all_zero_channel_window_percent": 0.0,
+              "effective_channel_issue_reduction_percent": 0.0,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 4,
+              "positions": 117760,
+              "input_channels": 3,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                36,
+                117724
+              ],
+              "all_zero_channel_window_percent": 0.010190217391304348,
+              "effective_channel_issue_reduction_percent": 0.01019021739131487,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 10,
+              "positions": 127720,
+              "input_channels": 3,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                127720
+              ],
+              "all_zero_channel_window_percent": 0.0,
+              "effective_channel_issue_reduction_percent": 0.0,
+              "bias_only_positions": 0
+            }
+          ],
+          "full_frame_output_zero_percent": 19.26027199074074
+        },
+        {
+          "layer": 2,
+          "masks": [
+            {
+              "mask": 2,
+              "positions": 23668,
+              "input_channels": 12,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                8982,
+                9413,
+                4881,
+                392
+              ],
+              "all_zero_channel_window_percent": 17.834558616415976,
+              "effective_channel_issue_reduction_percent": 17.834558616415976,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 5,
+              "positions": 28385,
+              "input_channels": 12,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                105,
+                11,
+                16,
+                9,
+                10048,
+                2258,
+                15376,
+                562
+              ],
+              "all_zero_channel_window_percent": 14.958898479243732,
+              "effective_channel_issue_reduction_percent": 14.958898479243732,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 4,
+              "positions": 116480,
+              "input_channels": 12,
+              "eligible_channel_histogram": [
+                0,
+                5,
+                123,
+                49,
+                412,
+                386,
+                95,
+                126,
+                104,
+                25403,
+                28660,
+                57570,
+                3547
+              ],
+              "all_zero_channel_window_percent": 14.340015453296703,
+              "effective_channel_issue_reduction_percent": 14.340015453296706,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 10,
+              "positions": 121550,
+              "input_channels": 12,
+              "eligible_channel_histogram": [
+                0,
+                51,
+                100,
+                134,
+                832,
+                502,
+                172,
+                2936,
+                4956,
+                35168,
+                21476,
+                52429,
+                2794
+              ],
+              "all_zero_channel_window_percent": 17.095708213355273,
+              "effective_channel_issue_reduction_percent": 17.095708213355277,
+              "bias_only_positions": 0
+            }
+          ],
+          "full_frame_output_zero_percent": 86.91981336805556
+        },
+        {
+          "layer": 3,
+          "masks": [
+            {
+              "mask": 2,
+              "positions": 23040,
+              "input_channels": 12,
+              "eligible_channel_histogram": [
+                0,
+                9190,
+                12423,
+                1364,
+                16,
+                24,
+                23,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "all_zero_channel_window_percent": 86.09302662037037,
+              "effective_channel_issue_reduction_percent": 86.09302662037037,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 5,
+              "positions": 26880,
+              "input_channels": 12,
+              "eligible_channel_histogram": [
+                0,
+                8574,
+                16440,
+                1657,
+                119,
+                87,
+                3,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "all_zero_channel_window_percent": 85.31932043650794,
+              "effective_channel_issue_reduction_percent": 85.31932043650794,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 4,
+              "positions": 115200,
+              "input_channels": 12,
+              "eligible_channel_histogram": [
+                1,
+                34663,
+                74530,
+                4355,
+                1003,
+                393,
+                196,
+                40,
+                12,
+                7,
+                0,
+                0,
+                0
+              ],
+              "all_zero_channel_window_percent": 85.21556712962963,
+              "effective_channel_issue_reduction_percent": 85.21549479166667,
+              "bias_only_positions": 1
+            },
+            {
+              "mask": 10,
+              "positions": 115200,
+              "input_channels": 12,
+              "eligible_channel_histogram": [
+                5,
+                42706,
+                66324,
+                3940,
+                1144,
+                579,
+                289,
+                132,
+                48,
+                27,
+                6,
+                0,
+                0
+              ],
+              "all_zero_channel_window_percent": 85.67780671296296,
+              "effective_channel_issue_reduction_percent": 85.67744502314815,
+              "bias_only_positions": 5
+            }
+          ],
+          "full_frame_output_zero_percent": 7.432327835648148
+        }
+      ]
+    },
+    {
+      "width": "w12",
+      "frame": 2,
+      "layers": [
+        {
+          "layer": 1,
+          "masks": [
+            {
+              "mask": 2,
+              "positions": 24304,
+              "input_channels": 3,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                24304
+              ],
+              "all_zero_channel_window_percent": 0.0,
+              "effective_channel_issue_reduction_percent": 0.0,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 5,
+              "positions": 29932,
+              "input_channels": 3,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                29932
+              ],
+              "all_zero_channel_window_percent": 0.0,
+              "effective_channel_issue_reduction_percent": 0.0,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 4,
+              "positions": 117760,
+              "input_channels": 3,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                117760
+              ],
+              "all_zero_channel_window_percent": 0.0,
+              "effective_channel_issue_reduction_percent": 0.0,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 10,
+              "positions": 127720,
+              "input_channels": 3,
+              "eligible_channel_histogram": [
+                0,
+                0,
+                0,
+                127720
+              ],
+              "all_zero_channel_window_percent": 0.0,
+              "effective_channel_issue_reduction_percent": 0.0,
+              "bias_only_positions": 0
+            }
+          ],
+          "full_frame_output_zero_percent": 73.70771846064815
+        },
+        {
+          "layer": 2,
+          "masks": [
+            {
+              "mask": 2,
+              "positions": 23668,
+              "input_channels": 12,
+              "eligible_channel_histogram": [
+                0,
+                5792,
+                1839,
+                854,
+                779,
+                887,
+                985,
+                994,
+                1036,
+                1439,
+                2681,
+                4640,
+                1742
+              ],
+              "all_zero_channel_window_percent": 46.32555912342966,
+              "effective_channel_issue_reduction_percent": 46.32555912342967,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 5,
+              "positions": 28385,
+              "input_channels": 12,
+              "eligible_channel_histogram": [
+                0,
+                15131,
+                794,
+                536,
+                687,
+                801,
+                529,
+                480,
+                555,
+                734,
+                1844,
+                4018,
+                2276
+              ],
+              "all_zero_channel_window_percent": 61.06805237508074,
+              "effective_channel_issue_reduction_percent": 61.068052375080725,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 4,
+              "positions": 116480,
+              "input_channels": 12,
+              "eligible_channel_histogram": [
+                0,
+                33116,
+                8043,
+                3755,
+                3167,
+                3302,
+                3323,
+                2894,
+                2919,
+                4481,
+                12160,
+                26085,
+                13235
+              ],
+              "all_zero_channel_window_percent": 45.56454613095238,
+              "effective_channel_issue_reduction_percent": 45.56454613095239,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 10,
+              "positions": 121550,
+              "input_channels": 12,
+              "eligible_channel_histogram": [
+                0,
+                63324,
+                6979,
+                3030,
+                2584,
+                3342,
+                2581,
+                2200,
+                2329,
+                3074,
+                8478,
+                16225,
+                7404
+              ],
+              "all_zero_channel_window_percent": 62.79274646921705,
+              "effective_channel_issue_reduction_percent": 62.792746469217064,
+              "bias_only_positions": 0
+            }
+          ],
+          "full_frame_output_zero_percent": 82.64963107638889
+        },
+        {
+          "layer": 3,
+          "masks": [
+            {
+              "mask": 2,
+              "positions": 23040,
+              "input_channels": 12,
+              "eligible_channel_histogram": [
+                0,
+                2229,
+                2260,
+                5162,
+                3701,
+                2763,
+                2574,
+                2131,
+                1361,
+                642,
+                192,
+                25,
+                0
+              ],
+              "all_zero_channel_window_percent": 63.803530092592595,
+              "effective_channel_issue_reduction_percent": 63.80353009259259,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 5,
+              "positions": 26880,
+              "input_channels": 12,
+              "eligible_channel_histogram": [
+                0,
+                1154,
+                12892,
+                3399,
+                3110,
+                1643,
+                1703,
+                1361,
+                973,
+                477,
+                143,
+                18,
+                7
+              ],
+              "all_zero_channel_window_percent": 71.68774801587303,
+              "effective_channel_issue_reduction_percent": 71.68774801587301,
+              "bias_only_positions": 0
+            },
+            {
+              "mask": 4,
+              "positions": 115200,
+              "input_channels": 12,
+              "eligible_channel_histogram": [
+                70,
+                12791,
+                33831,
+                18670,
+                14898,
+                11139,
+                9856,
+                7099,
+                3983,
+                2100,
+                658,
+                101,
+                4
+              ],
+              "all_zero_channel_window_percent": 69.68446180555556,
+              "effective_channel_issue_reduction_percent": 69.67939814814814,
+              "bias_only_positions": 70
+            },
+            {
+              "mask": 10,
+              "positions": 115200,
+              "input_channels": 12,
+              "eligible_channel_histogram": [
+                11,
+                7840,
+                38294,
+                30347,
+                13909,
+                7827,
+                6727,
+                5006,
+                3149,
+                1553,
+                467,
+                61,
+                9
+              ],
+              "all_zero_channel_window_percent": 71.76924189814815,
+              "effective_channel_issue_reduction_percent": 71.76844618055556,
+              "bias_only_positions": 11
+            }
+          ],
+          "full_frame_output_zero_percent": 56.43192997685185
+        }
+      ]
+    }
+  ],
+  "sparsity_summary": [
+    {
+      "width": "w24",
+      "layer": 1,
+      "equal_cell_issue_reduction_percent": 0.0012737771739143589,
+      "min_cell_issue_reduction_percent": 0.0,
+      "max_cell_issue_reduction_percent": 0.01019021739131487
+    },
+    {
+      "width": "w24",
+      "layer": 2,
+      "equal_cell_issue_reduction_percent": 29.131128109593757,
+      "min_cell_issue_reduction_percent": 24.00921074869021,
+      "max_cell_issue_reduction_percent": 39.77855477855478
+    },
+    {
+      "width": "w24",
+      "layer": 3,
+      "equal_cell_issue_reduction_percent": 66.94480419663525,
+      "min_cell_issue_reduction_percent": 58.01884403935185,
+      "max_cell_issue_reduction_percent": 71.43543836805554
+    },
+    {
+      "width": "w16",
+      "layer": 1,
+      "equal_cell_issue_reduction_percent": 0.0012737771739143589,
+      "min_cell_issue_reduction_percent": 0.0,
+      "max_cell_issue_reduction_percent": 0.01019021739131487
+    },
+    {
+      "width": "w16",
+      "layer": 2,
+      "equal_cell_issue_reduction_percent": 34.95304037280358,
+      "min_cell_issue_reduction_percent": 19.4368451073179,
+      "max_cell_issue_reduction_percent": 56.51326614561909
+    },
+    {
+      "width": "w16",
+      "layer": 3,
+      "equal_cell_issue_reduction_percent": 71.674314468626,
+      "min_cell_issue_reduction_percent": 59.382595486111114,
+      "max_cell_issue_reduction_percent": 79.04405381944444
+    },
+    {
+      "width": "w12",
+      "layer": 1,
+      "equal_cell_issue_reduction_percent": 0.0012737771739143589,
+      "min_cell_issue_reduction_percent": 0.0,
+      "max_cell_issue_reduction_percent": 0.01019021739131487
+    },
+    {
+      "width": "w12",
+      "layer": 2,
+      "equal_cell_issue_reduction_percent": 34.997510607623944,
+      "min_cell_issue_reduction_percent": 14.340015453296706,
+      "max_cell_issue_reduction_percent": 62.792746469217064
+    },
+    {
+      "width": "w12",
+      "layer": 3,
+      "equal_cell_issue_reduction_percent": 77.4055511636078,
+      "min_cell_issue_reduction_percent": 63.80353009259259,
+      "max_cell_issue_reduction_percent": 86.09302662037037
+    }
+  ]
+}

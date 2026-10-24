@@ -9,6 +9,11 @@ contains the completed region, buffering, network-width, zero-skipping and
 output-suppression comparisons, together with their numerical references,
 author-written RTL, routed reports and acquisition protocols.
 
+The expanded measurement and RTL snapshot is pinned at
+[449ca75](https://github.com/GMlee11/exact-sparse-neural-refinement-fpga/tree/449ca759603cbff0580826322624136915d45916).
+`results/interpretation_v1` adds offline geometry/sparsity characterization of
+that retained evidence and compact, checkpoint-bound model provenance.
+
 Start with `EVIDENCE_GUIDE.md` for the manuscript-to-data mapping or
 `REPOSITORY_MAP.txt` for the directory layout.
 
@@ -61,8 +66,9 @@ Byte-identical large archives share one stored payload via `payload_aliases.json
 the replay scripts resolve the original paths automatically. No Git LFS or
 manual decompression is required. `.gitattributes` preserves exact file bytes.
 
-The original region evidence is identified by snapshot `34c46d4`; the additional
-studies are bound by their export manifests and the current release manifest.
+The original region evidence is identified by snapshot `34c46d4`; `449ca75`
+contains the expanded measurements and RTL. Study export manifests and the
+release manifest bind the data and derived analysis files.
 The repository distributes offline replay and author RTL, not vendor IP,
 bitstreams or a complete vendor-tool build environment. It contains no manuscript
 or submission correspondence.

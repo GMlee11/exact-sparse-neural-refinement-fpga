@@ -8,6 +8,7 @@ results/width_study_v1                    W24 controls, W16 and W12 comparisons
 results/organization_skipping_v1          Three-width organization/skipping study
 results/traversal_assessment_v1           Output-traversal RTL probe
 results/output_suppression_v1             Stronger W24 physical baseline
+results/interpretation_v1                 Offline geometry/sparsity; model provenance
 
 scripts/              Current studies' replay and summary tools
 src/                  Shared geometry, integer oracle and table-generation code
