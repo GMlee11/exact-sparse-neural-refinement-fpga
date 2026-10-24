@@ -1,8 +1,0 @@
-{
-  "engineering_only": true,
-  "ordinal": 1,
-  "baseline_cycles": 2688760,
-  "candidate_cycles": 2688478,
-  "full_output_words_per_core": 921600,
-  "byte_coordinate_order_and_work_counters_pass": true
-}

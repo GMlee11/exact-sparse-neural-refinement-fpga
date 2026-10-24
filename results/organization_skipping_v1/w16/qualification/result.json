@@ -1,0 +1,169 @@
+{
+  "passed": true,
+  "stages": [
+    {
+      "command": [
+        "C:\\Xilinx\\Vivado\\2020.2\\bin\\xvlog.bat",
+        "--sv",
+        "espcn_fpga_student_weights_pkg.sv",
+        "relu_clamp_pipelined.sv",
+        "mac_array_3x3_pipelined.sv",
+        "conv2d_3x3_multi_channel.sv",
+        "line_buffer_3x3_stallable.sv",
+        "espcn_streaming_grouped_conv_layer_multicontext.sv",
+        "espcn_streaming_pixel_shuffle_rgb.sv",
+        "sparse_hierarchical_mask_lookup.sv",
+        "sparse_hierarchical_commit_controller.sv",
+        "packed_bram_window.sv",
+        "bram_feature_window_buffer.sv",
+        "c07_grouped_conv_layer.sv",
+        "espcn_streaming_grouped_conv_layer_selectable.sv",
+        "paper2_origin_core.sv",
+        "roi_stream.sv",
+        "roi_board_wrapper.sv",
+        "tb_roi_integration.sv",
+        "roi_request_guard.sv"
+      ],
+      "exit": 0,
+      "seconds": 1.0150000000139698
+    },
+    {
+      "command": [
+        "C:\\Xilinx\\Vivado\\2020.2\\bin\\xelab.bat",
+        "tb_roi_integration",
+        "-s",
+        "integrated"
+      ],
+      "exit": 0,
+      "seconds": 5.094000000040978
+    },
+    {
+      "command": [
+        "C:\\Xilinx\\Vivado\\2020.2\\bin\\xsim.bat",
+        "integrated",
+        "-runall"
+      ],
+      "exit": 0,
+      "seconds": 377.0779999999795
+    }
+  ],
+  "requests": [
+    [
+      "0",
+      "1",
+      "515589",
+      "515545"
+    ],
+    [
+      "1",
+      "2",
+      "485390",
+      "485303"
+    ],
+    [
+      "2",
+      "1",
+      "527846",
+      "527802"
+    ],
+    [
+      "3",
+      "2",
+      "497687",
+      "497600"
+    ],
+    [
+      "4",
+      "1",
+      "1599195",
+      "1599151"
+    ],
+    [
+      "5",
+      "1",
+      "480248",
+      "480204"
+    ],
+    [
+      "0",
+      "1",
+      "328470",
+      "328426"
+    ],
+    [
+      "1",
+      "2",
+      "299217",
+      "299130"
+    ],
+    [
+      "2",
+      "1",
+      "334727",
+      "334683"
+    ],
+    [
+      "3",
+      "2",
+      "305458",
+      "305371"
+    ],
+    [
+      "4",
+      "1",
+      "1506134",
+      "1506090"
+    ],
+    [
+      "5",
+      "1",
+      "295390",
+      "295346"
+    ]
+  ],
+  "cases": [
+    [
+      [
+        0,
+        2
+      ],
+      1
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      2
+    ],
+    [
+      [
+        57,
+        59
+      ],
+      1
+    ],
+    [
+      [
+        57,
+        59
+      ],
+      2
+    ],
+    [
+      [
+        0
+      ],
+      0
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      2
+    ]
+  ],
+  "output_words_per_mode": 168960,
+  "board_access": false
+}

@@ -1,6 +1,7 @@
 """Verify exact release inventory and bytes; ignore root Git metadata only."""
 import hashlib, json
 from pathlib import Path
+from payloads import verify_aliases
 root = Path(__file__).resolve().parent
 expected = json.loads((root / "release_manifest.json").read_text())["files"]
 actual = {p.relative_to(root).as_posix() for p in root.rglob("*")
@@ -11,3 +12,4 @@ for name, digest in expected.items():
     assert not path.is_symlink() and path.resolve().is_relative_to(root), name
     assert hashlib.sha256(path.read_bytes()).hexdigest() == digest, name
 print("ARTIFACT_INVENTORY_AND_HASHES_PASS", len(expected), "files")
+print("DEDUPLICATED_PAYLOAD_ALIASES_PASS", verify_aliases(), "logical capture paths")

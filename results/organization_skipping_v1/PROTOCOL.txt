@@ -1,0 +1,45 @@
+W16/W12 extension of the completed W24 organization x skipping pilot.
+Exploratory development cases, not held-out evaluation. Defined before captures.
+
+No qualified skipping-capable W16/W12 image existed at inspection. Port C07 by
+changing only its trained weight package. Keep 4/12/4 lanes, 50 MHz and all other
+RTL unchanged. W16's second layer has a partial 12-lane group; W12 has one group.
+Use each width's existing 2/12/6-lane original engine as reference, not just C07
+skipping off. Within-C07 on/off is causal for its runtime setting; comparison to
+the reference changes lane organization as well. No training or retuning.
+
+Use the identical input banks, frame indices 0 and 2, masks 0/1/2/5/4/10 and
+raster/bbox/merged organizations from paper2_zero_region_20261022. Regenerate
+exact reference outputs separately per network using per-channel quantization
+and independent INT64 patches. Numerical equality is within a network, not
+between widths. W12's known historical quality limitation remains unchanged.
+
+Qualify each port in integrated RTL, skipping off/on, disjoint top/bottom regions,
+full-raster one-tile request, adjacent merged region, backpressure and the reused
+fault/reuse cases. Synthesize and route one build per width at 50 MHz; no tuning
+sweep. A failure stops that width for diagnosis, preserving unsuccessful attempts.
+
+For each width: physical exact-byte qualification first; then reference/C07/C07/
+reference, three repetitions per leg and cyclic mode rotation exactly as W24.
+W16 first, W12 second. Preserve all losses. Full output archives on first global
+repetition, checksum/status/ownership checks throughout. Same residual-publication
+boundary and coarse primary timing; optional profile separate, never substituted.
+Report per-case effects, absolute savings, relative savings, both legs and controls.
+Do not treat consecutive launches or different widths as independent-day sessions.
+
+No manuscript or public-artifact changes, commits or pushes during exploration.
+Do not add another architecture search if widths confirm the same explanation.
+
+PRE-CAPTURE ORDER AMENDMENT, 22 October 2026, after W16 B003 failure:
+No new-width board data have been collected. W12 route passes; W16 passed RTL
+but three fresh builds failed in Vivado startup/BD automation, before synthesis.
+Proceed with W12 Q001/P001/P002/P003/P004 now, retaining its fixed internal ABBA
+order. Defer W16 physical evaluation until its tooling issue is resolved. This
+changes the width acquisition order for tool availability, not performance.
+No design workaround, fabricated result or unqualified W16 image is permitted.
+
+BUILD-FLOW RECOVERY: B004 copies the successful W12 board platform read-only via
+save_project_as, excludes prior run results, substitutes the qualified W16 weight
+package and performs fresh synthesis/routing. This avoids platform recreation;
+it does not change the candidate RTL, lane allocation, clocks, masks or analysis.
+If B004 passes, run W16's previously defined campaign unchanged after W12.

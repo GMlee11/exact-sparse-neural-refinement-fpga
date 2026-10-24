@@ -1,0 +1,541 @@
+{
+  "schema": 1,
+  "campaigns": {
+    "w16": [
+      {
+        "run": "P001",
+        "model": "w24"
+      },
+      {
+        "run": "P002",
+        "model": "w16"
+      },
+      {
+        "run": "P003",
+        "model": "w16"
+      },
+      {
+        "run": "P004",
+        "model": "w24"
+      }
+    ],
+    "w12": [
+      {
+        "run": "P001",
+        "model": "w24"
+      },
+      {
+        "run": "P002",
+        "model": "w12"
+      },
+      {
+        "run": "P003",
+        "model": "w12"
+      },
+      {
+        "run": "P004",
+        "model": "w24"
+      }
+    ]
+  },
+  "compiled_sources": {
+    "w16": {
+      "conv2d_3x3_multi_channel.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/conv2d_3x3_multi_channel.sv",
+        "sha256": "73ab31e9e00f33b01fe6ef451b10fcf29137749894a133c2cf3cbb21b0353ef6"
+      },
+      "espcn_fpga_student_weights_pkg.sv": {
+        "path": "results/width_study_v1/models/w16.sv",
+        "sha256": "d4064709d14a5bc59bfa8c2d615d57d46fcecf223e350d27d316321205559c3b"
+      },
+      "espcn_streaming_feature_window_buffer.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/espcn_streaming_feature_window_buffer.sv",
+        "sha256": "4e9913f92f23c56c914aaf9485e1066d577a30321fe6172e565516ebdd7f2815"
+      },
+      "espcn_streaming_grouped_conv_layer.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/espcn_streaming_grouped_conv_layer.sv",
+        "sha256": "6b8c323b0dd558d80ea285f35a853b560dea8955c6c1b78469ed4bf71bfd416a"
+      },
+      "espcn_streaming_grouped_conv_layer_multicontext.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/espcn_streaming_grouped_conv_layer_multicontext.sv",
+        "sha256": "75d7d0c7c6ebb39bb09c22c26bd7007b472ca0dc54ece94de988891145bbc4c6"
+      },
+      "espcn_streaming_grouped_conv_layer_selectable.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/espcn_streaming_grouped_conv_layer_selectable.sv",
+        "sha256": "27519c47194c4df0d766f1674a70e1392a43a96b05ac3975a46b02a3b7792c0e"
+      },
+      "espcn_streaming_linebuffer_core.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/espcn_streaming_linebuffer_core.sv",
+        "sha256": "864a3c2106e08617833db6d34bad6758ca0571779abadfaba8f09fef7ff30842"
+      },
+      "espcn_streaming_pixel_shuffle_rgb.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/espcn_streaming_pixel_shuffle_rgb.sv",
+        "sha256": "b7ae2e961fd1f4546c31a861c3f94fcfd2dd405fd8a5888614b4a6787e690438"
+      },
+      "line_buffer_3x3_stallable.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/line_buffer_3x3_stallable.sv",
+        "sha256": "c1a0dbaadc21330ee694cae5fb61d6f42c6efbdf9cdf26c41c8e63b20ac3c6cf"
+      },
+      "mac_array_3x3_pipelined.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/mac_array_3x3_pipelined.sv",
+        "sha256": "0cd16c1016ab366630420a4b055fbeee6161c477ea0378f171bef79c84f30f9c"
+      },
+      "packed_bram_window.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/packed_bram_window.sv",
+        "sha256": "1f38b7fa4158967dbc225a5598df5d2e2ec9952a3ebea77b69624fc4a33799d7"
+      },
+      "paper2_origin_core.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/paper2_origin_core.sv",
+        "sha256": "01f93b0e554a4edc6fde471b4b234242568ef2737054983c621bf5553a5160d9"
+      },
+      "relu_clamp_pipelined.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/relu_clamp_pipelined.sv",
+        "sha256": "3091738ee18582c50854388cbffa58acefb741442c85d5011b9a169eabece1cb"
+      },
+      "roi_board_wrapper.v": {
+        "path": "results/design_study_v1/buffer/build/sources/roi_board_wrapper.v",
+        "sha256": "f6891ffee861e44a9496fefceb2ecf96538056f9bc520e16d2a14582da09a59c"
+      },
+      "roi_request_guard.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/roi_request_guard.sv",
+        "sha256": "0398355e122c8958726b0f6dcc4116e2384c673e1e2cc50fc527d5907a54dd71"
+      },
+      "roi_stream.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/roi_stream.sv",
+        "sha256": "bbe161647a3373ad4f4598c7285506a0e676bb2b4cbd8dfa9e7ea0f9056df9f3"
+      },
+      "sparse_hierarchical_commit_controller.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/sparse_hierarchical_commit_controller.sv",
+        "sha256": "71bfc954591410f1462a0c79a819e04610eddd5cfc30c170af0466d5f519b808"
+      },
+      "sparse_hierarchical_mask_lookup.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/sparse_hierarchical_mask_lookup.sv",
+        "sha256": "2a20d0923456ddff8c9b8a8f637d820a5cea2b2441d000c78ff2c3ab45e0b025"
+      }
+    },
+    "w12": {
+      "conv2d_3x3_multi_channel.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/conv2d_3x3_multi_channel.sv",
+        "sha256": "73ab31e9e00f33b01fe6ef451b10fcf29137749894a133c2cf3cbb21b0353ef6"
+      },
+      "espcn_fpga_student_weights_pkg.sv": {
+        "path": "results/width_study_v1/models/w12.sv",
+        "sha256": "5982ef40883ad44e8be58eae086a8ee2deaaf3eadb35662d0575c3955b967c6d"
+      },
+      "espcn_streaming_feature_window_buffer.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/espcn_streaming_feature_window_buffer.sv",
+        "sha256": "4e9913f92f23c56c914aaf9485e1066d577a30321fe6172e565516ebdd7f2815"
+      },
+      "espcn_streaming_grouped_conv_layer.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/espcn_streaming_grouped_conv_layer.sv",
+        "sha256": "6b8c323b0dd558d80ea285f35a853b560dea8955c6c1b78469ed4bf71bfd416a"
+      },
+      "espcn_streaming_grouped_conv_layer_multicontext.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/espcn_streaming_grouped_conv_layer_multicontext.sv",
+        "sha256": "75d7d0c7c6ebb39bb09c22c26bd7007b472ca0dc54ece94de988891145bbc4c6"
+      },
+      "espcn_streaming_grouped_conv_layer_selectable.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/espcn_streaming_grouped_conv_layer_selectable.sv",
+        "sha256": "27519c47194c4df0d766f1674a70e1392a43a96b05ac3975a46b02a3b7792c0e"
+      },
+      "espcn_streaming_linebuffer_core.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/espcn_streaming_linebuffer_core.sv",
+        "sha256": "864a3c2106e08617833db6d34bad6758ca0571779abadfaba8f09fef7ff30842"
+      },
+      "espcn_streaming_pixel_shuffle_rgb.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/espcn_streaming_pixel_shuffle_rgb.sv",
+        "sha256": "b7ae2e961fd1f4546c31a861c3f94fcfd2dd405fd8a5888614b4a6787e690438"
+      },
+      "line_buffer_3x3_stallable.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/line_buffer_3x3_stallable.sv",
+        "sha256": "c1a0dbaadc21330ee694cae5fb61d6f42c6efbdf9cdf26c41c8e63b20ac3c6cf"
+      },
+      "mac_array_3x3_pipelined.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/mac_array_3x3_pipelined.sv",
+        "sha256": "0cd16c1016ab366630420a4b055fbeee6161c477ea0378f171bef79c84f30f9c"
+      },
+      "packed_bram_window.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/packed_bram_window.sv",
+        "sha256": "1f38b7fa4158967dbc225a5598df5d2e2ec9952a3ebea77b69624fc4a33799d7"
+      },
+      "paper2_origin_core.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/paper2_origin_core.sv",
+        "sha256": "01f93b0e554a4edc6fde471b4b234242568ef2737054983c621bf5553a5160d9"
+      },
+      "relu_clamp_pipelined.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/relu_clamp_pipelined.sv",
+        "sha256": "3091738ee18582c50854388cbffa58acefb741442c85d5011b9a169eabece1cb"
+      },
+      "roi_board_wrapper.v": {
+        "path": "results/design_study_v1/buffer/build/sources/roi_board_wrapper.v",
+        "sha256": "f6891ffee861e44a9496fefceb2ecf96538056f9bc520e16d2a14582da09a59c"
+      },
+      "roi_request_guard.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/roi_request_guard.sv",
+        "sha256": "0398355e122c8958726b0f6dcc4116e2384c673e1e2cc50fc527d5907a54dd71"
+      },
+      "roi_stream.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/roi_stream.sv",
+        "sha256": "bbe161647a3373ad4f4598c7285506a0e676bb2b4cbd8dfa9e7ea0f9056df9f3"
+      },
+      "sparse_hierarchical_commit_controller.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/sparse_hierarchical_commit_controller.sv",
+        "sha256": "71bfc954591410f1462a0c79a819e04610eddd5cfc30c170af0466d5f519b808"
+      },
+      "sparse_hierarchical_mask_lookup.sv": {
+        "path": "results/design_study_v1/buffer/build/sources/sparse_hierarchical_mask_lookup.sv",
+        "sha256": "2a20d0923456ddff8c9b8a8f637d820a5cea2b2441d000c78ff2c3ab45e0b025"
+      }
+    }
+  },
+  "model_packages": {
+    "w24": "results/design_study_v1/buffer/build/sources/espcn_fpga_student_weights_pkg.sv",
+    "w16": "results/width_study_v1/models/w16.sv",
+    "w12": "results/width_study_v1/models/w12.sv"
+  },
+  "files": {
+    "results/width_study_v1/w16/PROTOCOL.txt": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_second_network_20261022\\PROTOCOL.txt",
+      "original_sha256": "6052e324bf42803b0bb1962b70eb050347922f7c095d205783c70c866364746c",
+      "distributed_sha256": "6052e324bf42803b0bb1962b70eb050347922f7c095d205783c70c866364746c",
+      "compression": "none"
+    },
+    "results/width_study_v1/w16/comparison.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_second_network_20261022\\comparison.json",
+      "original_sha256": "133fff89e76b237f01464d2e7b6b741b17bbec08e226079dc3fea8893f51d20d",
+      "distributed_sha256": "133fff89e76b237f01464d2e7b6b741b17bbec08e226079dc3fea8893f51d20d",
+      "compression": "none"
+    },
+    "results/width_study_v1/w16/qualification/result.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_second_network_20261022\\qualification\\Q002\\result.json",
+      "original_sha256": "88eee2daa98aa17407a0fa45146421014ec4bc396f8d660027c95a7d39993951",
+      "distributed_sha256": "88eee2daa98aa17407a0fa45146421014ec4bc396f8d660027c95a7d39993951",
+      "compression": "none"
+    },
+    "results/width_study_v1/w16/qualification/freeze.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_second_network_20261022\\qualification\\Q002\\freeze.json",
+      "original_sha256": "36f2bc42c5fc3751a1607379c0144bee99e55d4a68982962b7aa88f98fd8e465",
+      "distributed_sha256": "36f2bc42c5fc3751a1607379c0144bee99e55d4a68982962b7aa88f98fd8e465",
+      "compression": "none"
+    },
+    "results/width_study_v1/models/w16.sv": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_second_network_20261022\\audit\\espcn_fpga_student_weights_pkg.sv",
+      "original_sha256": "d4064709d14a5bc59bfa8c2d615d57d46fcecf223e350d27d316321205559c3b",
+      "distributed_sha256": "d4064709d14a5bc59bfa8c2d615d57d46fcecf223e350d27d316321205559c3b",
+      "compression": "none"
+    },
+    "results/width_study_v1/w16/build/build_manifest.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_second_network_20261022\\build\\build_manifest.json",
+      "original_sha256": "e012ecfb9b4203828760cd13da177db58df5cc6ba5c99253a7223d7ef673da15",
+      "distributed_sha256": "e012ecfb9b4203828760cd13da177db58df5cc6ba5c99253a7223d7ef673da15",
+      "compression": "none"
+    },
+    "results/width_study_v1/w16/build/route_utilization.rpt": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_second_network_20261022\\build\\route_utilization.rpt",
+      "original_sha256": "b308ece8a30aa3ca8af7a5ac18149439d77731eadda80768320e22bddfd68284",
+      "distributed_sha256": "b308ece8a30aa3ca8af7a5ac18149439d77731eadda80768320e22bddfd68284",
+      "compression": "none"
+    },
+    "results/width_study_v1/w16/build/route_timing.rpt": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_second_network_20261022\\build\\route_timing.rpt",
+      "original_sha256": "e3c3dfce502e5a12561f32bbd15dbd83817190eb4c815c810434d55d1f28aa7b",
+      "distributed_sha256": "e3c3dfce502e5a12561f32bbd15dbd83817190eb4c815c810434d55d1f28aa7b",
+      "compression": "none"
+    },
+    "results/width_study_v1/w16/P001/analysis.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_second_network_20261022\\physical\\P001\\analysis.json",
+      "original_sha256": "ebdd25316104dbc5f182f43f4ffdd680862312ba83ac94ed456cd96273085d62",
+      "distributed_sha256": "ebdd25316104dbc5f182f43f4ffdd680862312ba83ac94ed456cd96273085d62",
+      "compression": "none"
+    },
+    "results/width_study_v1/w16/P001/launch_manifest.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_second_network_20261022\\physical\\P001\\launch_manifest.json",
+      "original_sha256": "581682818b3a011678f0fc273712740bec40a673b05a793c2e9618007ad1f2cd",
+      "distributed_sha256": "581682818b3a011678f0fc273712740bec40a673b05a793c2e9618007ad1f2cd",
+      "compression": "none"
+    },
+    "results/width_study_v1/w16/P001/capture_record.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_second_network_20261022\\physical\\P001\\capture_record.json",
+      "original_sha256": "9930a236d613695e04a811929c0150e7ab078ad7b7ae0a3b33b59f31ae2a1e9b",
+      "distributed_sha256": "9930a236d613695e04a811929c0150e7ab078ad7b7ae0a3b33b59f31ae2a1e9b",
+      "compression": "none"
+    },
+    "results/width_study_v1/w16/P001/records.bin.gz": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_second_network_20261022\\physical\\P001\\records.bin",
+      "original_sha256": "9e583c57d48e8d3e493a461b7b5c33eb734dc200c611c99ddf75d242732cba1a",
+      "distributed_sha256": "26a73df24478fc758e4d331d849b394db387b2766ade92e2014b825c2789ab19",
+      "compression": "gzip"
+    },
+    "results/width_study_v1/w16/P001/archive.bin.gz": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_second_network_20261022\\physical\\P001\\archive.bin",
+      "original_sha256": "f98d4b887370b477ca3422bfeb7825ce89d726f6cc1f12430c97cc63f234179c",
+      "distributed_sha256": "d8bbab156370a62d00c3dc1c7d6b162861a5c64b38fa0ead9b2d9229d71e448e",
+      "compression": "gzip"
+    },
+    "results/width_study_v1/w16/P002/analysis.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_second_network_20261022\\physical\\P002\\analysis.json",
+      "original_sha256": "92a6ada8f43c08b15aa3bf1abe7e2388cbde63423238529bbcf8f14c9c7ebf72",
+      "distributed_sha256": "92a6ada8f43c08b15aa3bf1abe7e2388cbde63423238529bbcf8f14c9c7ebf72",
+      "compression": "none"
+    },
+    "results/width_study_v1/w16/P002/launch_manifest.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_second_network_20261022\\physical\\P002\\launch_manifest.json",
+      "original_sha256": "78a59ed401fcc21312273ed314f7da77a615461c746bb78f672d606591dbe169",
+      "distributed_sha256": "78a59ed401fcc21312273ed314f7da77a615461c746bb78f672d606591dbe169",
+      "compression": "none"
+    },
+    "results/width_study_v1/w16/P002/capture_record.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_second_network_20261022\\physical\\P002\\capture_record.json",
+      "original_sha256": "9f1fae793dfceafad72ecc6b4e4cc60cb86fa429000888118ef7f198b5fa46c1",
+      "distributed_sha256": "9f1fae793dfceafad72ecc6b4e4cc60cb86fa429000888118ef7f198b5fa46c1",
+      "compression": "none"
+    },
+    "results/width_study_v1/w16/P002/records.bin.gz": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_second_network_20261022\\physical\\P002\\records.bin",
+      "original_sha256": "5ff90a154b7fd7ea4bfd151e1ccd74a3069a407f7490976b9840f225bcb3a780",
+      "distributed_sha256": "2c72184c1372aa0ebe5bd7c61955a29aa3d9c744e3ef7b701a784a4a8be178d2",
+      "compression": "gzip"
+    },
+    "results/width_study_v1/w16/P002/archive.bin.gz": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_second_network_20261022\\physical\\P002\\archive.bin",
+      "original_sha256": "0e758c4abe11ce56b32e0e0e486225b62b04b84c0134f3f699db47f6ff694766",
+      "distributed_sha256": "f39895f3692a03cc6bff5d176ecaa13b46e9f845462310d6d61b5c438628549e",
+      "compression": "gzip"
+    },
+    "results/width_study_v1/w16/P003/analysis.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_second_network_20261022\\physical\\P003\\analysis.json",
+      "original_sha256": "845137b01b41f15ae18527064ebcdfc9d1acc3e2401d38d87821a51d431638c6",
+      "distributed_sha256": "845137b01b41f15ae18527064ebcdfc9d1acc3e2401d38d87821a51d431638c6",
+      "compression": "none"
+    },
+    "results/width_study_v1/w16/P003/launch_manifest.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_second_network_20261022\\physical\\P003\\launch_manifest.json",
+      "original_sha256": "3b7d273fb835254d559e2db2f7e97619ff48663d3d9d63665360d54274363c5f",
+      "distributed_sha256": "3b7d273fb835254d559e2db2f7e97619ff48663d3d9d63665360d54274363c5f",
+      "compression": "none"
+    },
+    "results/width_study_v1/w16/P003/capture_record.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_second_network_20261022\\physical\\P003\\capture_record.json",
+      "original_sha256": "3e04d6cbd9315c27c4caea074e74f52ad137b032ea235a19171ad514ec0f02c1",
+      "distributed_sha256": "3e04d6cbd9315c27c4caea074e74f52ad137b032ea235a19171ad514ec0f02c1",
+      "compression": "none"
+    },
+    "results/width_study_v1/w16/P003/records.bin.gz": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_second_network_20261022\\physical\\P003\\records.bin",
+      "original_sha256": "627007023f9548e29a2b218d87ac5aa368c342026b197b616775eaa17fec3c79",
+      "distributed_sha256": "1f9464271f948b0b28a52049269d8f3e93f196eb37795b850e9bae1e7fe2d236",
+      "compression": "gzip"
+    },
+    "results/width_study_v1/w16/P003/archive.bin.gz": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_second_network_20261022\\physical\\P003\\archive.bin",
+      "original_sha256": "0e758c4abe11ce56b32e0e0e486225b62b04b84c0134f3f699db47f6ff694766",
+      "distributed_sha256": "f39895f3692a03cc6bff5d176ecaa13b46e9f845462310d6d61b5c438628549e",
+      "compression": "gzip"
+    },
+    "results/width_study_v1/w16/P004/analysis.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_second_network_20261022\\physical\\P004\\analysis.json",
+      "original_sha256": "7508373742d56e2abf0f3cfd6829728cd33bd63ff3a904eaf4801c37354abfbc",
+      "distributed_sha256": "7508373742d56e2abf0f3cfd6829728cd33bd63ff3a904eaf4801c37354abfbc",
+      "compression": "none"
+    },
+    "results/width_study_v1/w16/P004/launch_manifest.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_second_network_20261022\\physical\\P004\\launch_manifest.json",
+      "original_sha256": "3959e3d6e8c9493fe3061f1596f4fa0b108ab5bb44b051347dcc0375e2fcd1c5",
+      "distributed_sha256": "3959e3d6e8c9493fe3061f1596f4fa0b108ab5bb44b051347dcc0375e2fcd1c5",
+      "compression": "none"
+    },
+    "results/width_study_v1/w16/P004/capture_record.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_second_network_20261022\\physical\\P004\\capture_record.json",
+      "original_sha256": "df7f9c3a86860c49a51f58509941f408d90707bcdf2d4f4be76ef6110f5b35d7",
+      "distributed_sha256": "df7f9c3a86860c49a51f58509941f408d90707bcdf2d4f4be76ef6110f5b35d7",
+      "compression": "none"
+    },
+    "results/width_study_v1/w16/P004/records.bin.gz": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_second_network_20261022\\physical\\P004\\records.bin",
+      "original_sha256": "2f78d86c5b572b46de53980c5b40a98729f7aa4fca70e1ba06efae51df3063a5",
+      "distributed_sha256": "b435262678ab420f6f1e05dfb1b5719bfb14e6cb944a00c15e541f15a3bfac5c",
+      "compression": "gzip"
+    },
+    "results/width_study_v1/w16/P004/archive.bin.gz": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_second_network_20261022\\physical\\P004\\archive.bin",
+      "original_sha256": "f98d4b887370b477ca3422bfeb7825ce89d726f6cc1f12430c97cc63f234179c",
+      "distributed_sha256": "d8bbab156370a62d00c3dc1c7d6b162861a5c64b38fa0ead9b2d9229d71e448e",
+      "compression": "gzip"
+    },
+    "results/width_study_v1/w12/PROTOCOL.txt": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_third_network_20261022\\PROTOCOL.txt",
+      "original_sha256": "40593d874314f153318ce16fc1306dd6a432d04c17ba0a0d61d0f8dcf95c66d7",
+      "distributed_sha256": "40593d874314f153318ce16fc1306dd6a432d04c17ba0a0d61d0f8dcf95c66d7",
+      "compression": "none"
+    },
+    "results/width_study_v1/w12/comparison.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_third_network_20261022\\comparison.json",
+      "original_sha256": "12033608360188108b72d511b1424235737fad310c3cf0ba3057517037bd8e26",
+      "distributed_sha256": "12033608360188108b72d511b1424235737fad310c3cf0ba3057517037bd8e26",
+      "compression": "none"
+    },
+    "results/width_study_v1/w12/qualification/result.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_third_network_20261022\\qualification\\Q001\\result.json",
+      "original_sha256": "be5b44432ac75c61ecf5cf912bf1baa4723568cb3b9f50beab4c3c11bf76b007",
+      "distributed_sha256": "be5b44432ac75c61ecf5cf912bf1baa4723568cb3b9f50beab4c3c11bf76b007",
+      "compression": "none"
+    },
+    "results/width_study_v1/w12/qualification/freeze.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_third_network_20261022\\qualification\\Q001\\freeze.json",
+      "original_sha256": "d1c7f346d4b66086f61fa115f7da0c378dd04c3d80dfd4fc5ec9e555c1e0026a",
+      "distributed_sha256": "d1c7f346d4b66086f61fa115f7da0c378dd04c3d80dfd4fc5ec9e555c1e0026a",
+      "compression": "none"
+    },
+    "results/width_study_v1/models/w12.sv": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_third_network_20261022\\audit\\espcn_fpga_student_weights_pkg.sv",
+      "original_sha256": "5982ef40883ad44e8be58eae086a8ee2deaaf3eadb35662d0575c3955b967c6d",
+      "distributed_sha256": "5982ef40883ad44e8be58eae086a8ee2deaaf3eadb35662d0575c3955b967c6d",
+      "compression": "none"
+    },
+    "results/width_study_v1/w12/build/build_manifest.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_third_network_20261022\\build\\build_manifest.json",
+      "original_sha256": "5831d709d9dfb46b610026d4fb670c9344930f433f94d3998083bfe7f2450536",
+      "distributed_sha256": "5831d709d9dfb46b610026d4fb670c9344930f433f94d3998083bfe7f2450536",
+      "compression": "none"
+    },
+    "results/width_study_v1/w12/build/route_utilization.rpt": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_third_network_20261022\\build\\route_utilization.rpt",
+      "original_sha256": "35b5cdb20294d1cdcc95ae377c812c95ec54e972da70a666521b7cd4043abcb5",
+      "distributed_sha256": "35b5cdb20294d1cdcc95ae377c812c95ec54e972da70a666521b7cd4043abcb5",
+      "compression": "none"
+    },
+    "results/width_study_v1/w12/build/route_timing.rpt": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_third_network_20261022\\build\\route_timing.rpt",
+      "original_sha256": "f90a6383f412f748200cadfd879f4e51b569f9e8bf6c94f367921b1370841e03",
+      "distributed_sha256": "f90a6383f412f748200cadfd879f4e51b569f9e8bf6c94f367921b1370841e03",
+      "compression": "none"
+    },
+    "results/width_study_v1/w12/P001/analysis.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_third_network_20261022\\physical\\P001\\analysis.json",
+      "original_sha256": "187dd1fd389d117df3ca56e5704f203d7196cc24047a07008cb1f489adf3369a",
+      "distributed_sha256": "187dd1fd389d117df3ca56e5704f203d7196cc24047a07008cb1f489adf3369a",
+      "compression": "none"
+    },
+    "results/width_study_v1/w12/P001/launch_manifest.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_third_network_20261022\\physical\\P001\\launch_manifest.json",
+      "original_sha256": "614edd9ca01d05e2945cc749cc5aa7a70a995dd131dff57c81d2478576f21b9d",
+      "distributed_sha256": "614edd9ca01d05e2945cc749cc5aa7a70a995dd131dff57c81d2478576f21b9d",
+      "compression": "none"
+    },
+    "results/width_study_v1/w12/P001/capture_record.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_third_network_20261022\\physical\\P001\\capture_record.json",
+      "original_sha256": "d6c1805b6a92edc63fc21c53895bbdb80658c1d2e8ca2a41e240d990207967bd",
+      "distributed_sha256": "d6c1805b6a92edc63fc21c53895bbdb80658c1d2e8ca2a41e240d990207967bd",
+      "compression": "none"
+    },
+    "results/width_study_v1/w12/P001/records.bin.gz": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_third_network_20261022\\physical\\P001\\records.bin",
+      "original_sha256": "6e4e7e46603bcba31a4e92628171a94cd6b80c2339128036f673bb28ea028c88",
+      "distributed_sha256": "ea6c2a8e0eec1bd4dc6c68fef8be22fa6d1d976cdf5ae09e42c6b70f0a50a4b3",
+      "compression": "gzip"
+    },
+    "results/width_study_v1/w12/P001/archive.bin.gz": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_third_network_20261022\\physical\\P001\\archive.bin",
+      "original_sha256": "f98d4b887370b477ca3422bfeb7825ce89d726f6cc1f12430c97cc63f234179c",
+      "distributed_sha256": "d8bbab156370a62d00c3dc1c7d6b162861a5c64b38fa0ead9b2d9229d71e448e",
+      "compression": "gzip"
+    },
+    "results/width_study_v1/w12/P002/analysis.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_third_network_20261022\\physical\\P002\\analysis.json",
+      "original_sha256": "93d33cb389de0c0cdf3c88c00ade130c35075b531bacefe8766f9f7064dde346",
+      "distributed_sha256": "93d33cb389de0c0cdf3c88c00ade130c35075b531bacefe8766f9f7064dde346",
+      "compression": "none"
+    },
+    "results/width_study_v1/w12/P002/launch_manifest.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_third_network_20261022\\physical\\P002\\launch_manifest.json",
+      "original_sha256": "7e442d557757aaf5f41d4fb3648e4e812251b4ac744ca75eafb5a80e9bed3c4e",
+      "distributed_sha256": "7e442d557757aaf5f41d4fb3648e4e812251b4ac744ca75eafb5a80e9bed3c4e",
+      "compression": "none"
+    },
+    "results/width_study_v1/w12/P002/capture_record.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_third_network_20261022\\physical\\P002\\capture_record.json",
+      "original_sha256": "b34981bb045a7531bb2b4ca3436e8a1cdcdbff75c3d8223f1237d0594ceef535",
+      "distributed_sha256": "b34981bb045a7531bb2b4ca3436e8a1cdcdbff75c3d8223f1237d0594ceef535",
+      "compression": "none"
+    },
+    "results/width_study_v1/w12/P002/records.bin.gz": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_third_network_20261022\\physical\\P002\\records.bin",
+      "original_sha256": "8d34cb69f66826416ed8aa638a1b5e90791f3f61a43a65680b08c7a19c6b155d",
+      "distributed_sha256": "733367dfb53cf7d0fd9bdae1eb6217663d781cf80b9a4fbf81bfe43522dcdee0",
+      "compression": "gzip"
+    },
+    "results/width_study_v1/w12/P002/archive.bin.gz": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_third_network_20261022\\physical\\P002\\archive.bin",
+      "original_sha256": "dccf5b755cc5980feee9639a2151a254b26bddf9dcc5e9cedeab45936647dbac",
+      "distributed_sha256": "3872c43f6e45a119843aac5166a77b8397fef227a627314f32a290165ced16f1",
+      "compression": "gzip"
+    },
+    "results/width_study_v1/w12/P003/analysis.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_third_network_20261022\\physical\\P003\\analysis.json",
+      "original_sha256": "879e799e83434be4eea8f831255913ace4c9648b0fecea8b1de2108e01f4c3a7",
+      "distributed_sha256": "879e799e83434be4eea8f831255913ace4c9648b0fecea8b1de2108e01f4c3a7",
+      "compression": "none"
+    },
+    "results/width_study_v1/w12/P003/launch_manifest.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_third_network_20261022\\physical\\P003\\launch_manifest.json",
+      "original_sha256": "1065c8ebff1ff5bbf8d989c7845883a3783da8e7daf39b1b05f23b6b810812da",
+      "distributed_sha256": "1065c8ebff1ff5bbf8d989c7845883a3783da8e7daf39b1b05f23b6b810812da",
+      "compression": "none"
+    },
+    "results/width_study_v1/w12/P003/capture_record.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_third_network_20261022\\physical\\P003\\capture_record.json",
+      "original_sha256": "397fac5e5c384acd09f42552d8291ba63c0328a78bb9c4ecde153c37465ff773",
+      "distributed_sha256": "397fac5e5c384acd09f42552d8291ba63c0328a78bb9c4ecde153c37465ff773",
+      "compression": "none"
+    },
+    "results/width_study_v1/w12/P003/records.bin.gz": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_third_network_20261022\\physical\\P003\\records.bin",
+      "original_sha256": "74225392bb77f4c793ffeaddfc8fd16642b3546c1352083bf1aa012b54e8ea2a",
+      "distributed_sha256": "d32a7be18e992da3c30b38a0e41efe723c3c98583f75f8ccc39554e5a9704d1c",
+      "compression": "gzip"
+    },
+    "results/width_study_v1/w12/P003/archive.bin.gz": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_third_network_20261022\\physical\\P003\\archive.bin",
+      "original_sha256": "dccf5b755cc5980feee9639a2151a254b26bddf9dcc5e9cedeab45936647dbac",
+      "distributed_sha256": "3872c43f6e45a119843aac5166a77b8397fef227a627314f32a290165ced16f1",
+      "compression": "gzip"
+    },
+    "results/width_study_v1/w12/P004/analysis.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_third_network_20261022\\physical\\P004\\analysis.json",
+      "original_sha256": "6c43b4fbbd065b409ea2ef0c49a44e2d4f419eaeb882f164abae5fa73e465471",
+      "distributed_sha256": "6c43b4fbbd065b409ea2ef0c49a44e2d4f419eaeb882f164abae5fa73e465471",
+      "compression": "none"
+    },
+    "results/width_study_v1/w12/P004/launch_manifest.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_third_network_20261022\\physical\\P004\\launch_manifest.json",
+      "original_sha256": "7be27f8a3b270998ed0444e66b6e4afa3f768b6be9bf6e3f95de7d5d03de86db",
+      "distributed_sha256": "7be27f8a3b270998ed0444e66b6e4afa3f768b6be9bf6e3f95de7d5d03de86db",
+      "compression": "none"
+    },
+    "results/width_study_v1/w12/P004/capture_record.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_third_network_20261022\\physical\\P004\\capture_record.json",
+      "original_sha256": "d3d731cdb1077b5b57b4165499d33a6c83dff904c9eb06cdefe0746b6488b9cf",
+      "distributed_sha256": "d3d731cdb1077b5b57b4165499d33a6c83dff904c9eb06cdefe0746b6488b9cf",
+      "compression": "none"
+    },
+    "results/width_study_v1/w12/P004/records.bin.gz": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_third_network_20261022\\physical\\P004\\records.bin",
+      "original_sha256": "39e0581a7a33eb210a00d63c0a258e9c235b22359c602c0f071fbc66e1133be5",
+      "distributed_sha256": "ce9c0e14361a446cb87fdb3345770c5b0ab65a171bd82cc240346d2e4aa5fbdc",
+      "compression": "gzip"
+    },
+    "results/width_study_v1/w12/P004/archive.bin.gz": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_third_network_20261022\\physical\\P004\\archive.bin",
+      "original_sha256": "f98d4b887370b477ca3422bfeb7825ce89d726f6cc1f12430c97cc63f234179c",
+      "distributed_sha256": "d8bbab156370a62d00c3dc1c7d6b162861a5c64b38fa0ead9b2d9229d71e448e",
+      "compression": "gzip"
+    },
+    "results/width_study_v1/historical_quality.json": {
+      "original_path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\results\\tables\\fpga_model_ablation_v1.json",
+      "original_sha256": "7f3cbc1c034259062ee95a0043eec6ee7ad224b51b654f3e15cf21bdbdf85101",
+      "distributed_sha256": "7f3cbc1c034259062ee95a0043eec6ee7ad224b51b654f3e15cf21bdbdf85101",
+      "compression": "none"
+    }
+  },
+  "scope": "Two separate width campaigns; fixed lane policy, synthetic input, no zero skipping."
+}

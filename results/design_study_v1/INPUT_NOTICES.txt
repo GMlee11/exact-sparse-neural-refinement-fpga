@@ -1,0 +1,43 @@
+INPUT PROVENANCE AND THIRD-PARTY TERMS
+
+The four inputs are numerical packed INT8 RGB banks, not a newly collected
+dataset. goldens/manifest.json and input_provenance.json identify source files,
+hashes, strata, native extents and crops. frame_0/1/2/3.npy contain residuals.
+
+Frames 0/1: project-rendered Blender/Kenney forest, frames 0123/0163.
+Kenney asset packs are CC0 (https://kenney.nl/support).
+Project provenance permits only packs with retained CC0 license records.
+The procedural scene composition is project-authored.
+
+Frame 2: GameIR, dynamic_town07, spawn 16, frame 00000050.
+Source: https://huggingface.co/datasets/LLLebin/GameIR
+Dataset authors: Lebin Zhou, Kun Han, Nam Ling, Wei Wang and Wei Jiang.
+Paper: https://doi.org/10.48550/arXiv.2408.16866
+The upstream dataset card declares MIT; its unchanged licensing metadata is
+retained as GameIR_DATASET_CARD.md. Upstream rights remain controlling for this
+input and its derived residuals, including words in combined captures. The
+project does not relicense them.
+Modification: crop [160,180,800,540], INT8 packing and fixed network evaluation.
+GameIR uses CARLA-rendered content.
+
+MIT permission terms (no claim of ownership by this project):
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to
+do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+Frame 3: project-authored procedural robot-vision render, frame 0042, under the
+artifact's original-data license. Original numerical measurement records and
+project-authored code retain their existing licenses. No additional rights to
+third-party assets or vendor material are granted. This is not held-out data.

@@ -1,0 +1,909 @@
+{
+  "scope": "Completed historical evidence; no new board runs.",
+  "files": {
+    "results/design_study_v1/buffer/paired_service_comparison.json": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/paired_service_comparison.json",
+      "original_sha256": "153734ccb0e23ad6923f408475eb2326a8ec3778fba186cf6d05f7756f7e7839",
+      "distributed_sha256": "153734ccb0e23ad6923f408475eb2326a8ec3778fba186cf6d05f7756f7e7839",
+      "original_bytes": 120473,
+      "distributed_bytes": 120473,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/routed_resource_comparison.json": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/routed_resource_comparison.json",
+      "original_sha256": "0233eab889998c31603bd698a00a747b694dcf3b35544b769d6ce66b0c386335",
+      "distributed_sha256": "0233eab889998c31603bd698a00a747b694dcf3b35544b769d6ce66b0c386335",
+      "original_bytes": 1935,
+      "distributed_bytes": 1935,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/physical_freeze.json": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/physical_freeze.json",
+      "original_sha256": "860486d4f048e724770c9606f3945a2eaada6d076b87843347c1881509bdd98c",
+      "distributed_sha256": "860486d4f048e724770c9606f3945a2eaada6d076b87843347c1881509bdd98c",
+      "original_bytes": 981,
+      "distributed_bytes": 981,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/campaign_identity_verification.json": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/campaign_identity_verification.json",
+      "original_sha256": "0319a5a318a6f14d429b895b4852505218f6a546583a36f98a4434235013241b",
+      "distributed_sha256": "0319a5a318a6f14d429b895b4852505218f6a546583a36f98a4434235013241b",
+      "original_bytes": 1462,
+      "distributed_bytes": 1462,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/PROTOCOL.md": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/PROTOCOL.md",
+      "original_sha256": "12ed5fc71f4c70654712d439789dfb8d4c966a133caf8b7f1a3831c3928d8505",
+      "distributed_sha256": "12ed5fc71f4c70654712d439789dfb8d4c966a133caf8b7f1a3831c3928d8505",
+      "original_bytes": 4760,
+      "distributed_bytes": 4760,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/c07_paired_physical_analysis.json": {
+      "original_source": "experiments/paper2_architecture_search_20261021/c07_paired_physical_analysis.json",
+      "original_sha256": "dbde1bc352f4934de506922177dd182b62971305663350720fdc91308742789d",
+      "distributed_sha256": "dbde1bc352f4934de506922177dd182b62971305663350720fdc91308742789d",
+      "original_bytes": 32487,
+      "distributed_bytes": 32487,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/c07_stage_diagnostic.json": {
+      "original_source": "experiments/paper2_architecture_search_20261021/c07_stage_diagnostic.json",
+      "original_sha256": "731cd9422b655119c85128e426fa315dced9a5c69acb514200a9761cda5b9e2f",
+      "distributed_sha256": "731cd9422b655119c85128e426fa315dced9a5c69acb514200a9761cda5b9e2f",
+      "original_bytes": 4262,
+      "distributed_bytes": 4262,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/campaign_freeze.json": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/campaign_freeze.json",
+      "original_sha256": "3453233eda385df482fae76b282ac622908d09e8e96917c29d32bc3e915f3925",
+      "distributed_sha256": "3453233eda385df482fae76b282ac622908d09e8e96917c29d32bc3e915f3925",
+      "original_bytes": 6155,
+      "distributed_bytes": 6155,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/qualification_freeze.json": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/qualification_freeze.json",
+      "original_sha256": "cfadf168c21630555ab2318290f01e61f70cf412edec98d69202fb81c91bba65",
+      "distributed_sha256": "cfadf168c21630555ab2318290f01e61f70cf412edec98d69202fb81c91bba65",
+      "original_bytes": 2511,
+      "distributed_bytes": 2511,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/PHYSICAL_PROTOCOL.md": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/PHYSICAL_PROTOCOL.md",
+      "original_sha256": "4a0b36a1f25761d79531cd2bcd5b17c5de0b26de47a89116b14572020397fa3e",
+      "distributed_sha256": "4a0b36a1f25761d79531cd2bcd5b17c5de0b26de47a89116b14572020397fa3e",
+      "original_bytes": 5517,
+      "distributed_bytes": 5517,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/P002/records.bin.gz": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/P002/records.bin",
+      "original_sha256": "7f18634de45cf337e8430686ed571f8d2fa4a981403222c28de860caa1018ae6",
+      "distributed_sha256": "6b2f9580378ee61e3dbf9e8931aea653d04846a66429fb7dfb713543f7d0d6d4",
+      "original_bytes": 31952,
+      "distributed_bytes": 10079,
+      "compression": "gzip"
+    },
+    "results/design_study_v1/buffer/P002/archive.bin.gz": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/P002/archive.bin",
+      "original_sha256": "f98d4b887370b477ca3422bfeb7825ce89d726f6cc1f12430c97cc63f234179c",
+      "distributed_sha256": "d8bbab156370a62d00c3dc1c7d6b162861a5c64b38fa0ead9b2d9229d71e448e",
+      "original_bytes": 59719680,
+      "distributed_bytes": 1332343,
+      "compression": "gzip"
+    },
+    "results/design_study_v1/buffer/P002/analysis.json": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/P002/analysis.json",
+      "original_sha256": "85bf0c678486c2b3f999ce728720e07861cb0f677179387b233dbaca7a44367a",
+      "distributed_sha256": "85bf0c678486c2b3f999ce728720e07861cb0f677179387b233dbaca7a44367a",
+      "original_bytes": 286286,
+      "distributed_bytes": 286286,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/P002/launch_manifest.json": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/P002/launch_manifest.json",
+      "original_sha256": "c9acccf2984d0bf330b23191d80ae80fec21698ee1192608c95fe241a8106ca2",
+      "distributed_sha256": "c9acccf2984d0bf330b23191d80ae80fec21698ee1192608c95fe241a8106ca2",
+      "original_bytes": 110515,
+      "distributed_bytes": 110515,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/P002/capture_record.json": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/P002/capture_record.json",
+      "original_sha256": "509d6b6b67210fab3284e3031305847c994d14264f02c58795b31ae9854f5147",
+      "distributed_sha256": "509d6b6b67210fab3284e3031305847c994d14264f02c58795b31ae9854f5147",
+      "original_bytes": 358,
+      "distributed_bytes": 358,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/P003/records.bin.gz": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/P003/records.bin",
+      "original_sha256": "9ad5eb4061dd9ba599531b61f8d3f53d062a73e2880713278b4b253891c600f3",
+      "distributed_sha256": "cd7e30947becf21babdc235e1d3d13522d49ee60e8154b67209e42d916128e0d",
+      "original_bytes": 31952,
+      "distributed_bytes": 10123,
+      "compression": "gzip"
+    },
+    "results/design_study_v1/buffer/P003/archive.bin.gz": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/P003/archive.bin",
+      "original_sha256": "f98d4b887370b477ca3422bfeb7825ce89d726f6cc1f12430c97cc63f234179c",
+      "distributed_sha256": "d8bbab156370a62d00c3dc1c7d6b162861a5c64b38fa0ead9b2d9229d71e448e",
+      "original_bytes": 59719680,
+      "distributed_bytes": 1332343,
+      "compression": "gzip"
+    },
+    "results/design_study_v1/buffer/P003/analysis.json": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/P003/analysis.json",
+      "original_sha256": "fa0b3ece9a93f0a0a02d518f42847d6f4dc8804b8eec3e7172c99dc99a9de448",
+      "distributed_sha256": "fa0b3ece9a93f0a0a02d518f42847d6f4dc8804b8eec3e7172c99dc99a9de448",
+      "original_bytes": 286311,
+      "distributed_bytes": 286311,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/P003/launch_manifest.json": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/P003/launch_manifest.json",
+      "original_sha256": "c9be191f4d6ea08a21e881703cbd9ee5d3f6838dc9996ba1861dcc9686bdd057",
+      "distributed_sha256": "c9be191f4d6ea08a21e881703cbd9ee5d3f6838dc9996ba1861dcc9686bdd057",
+      "original_bytes": 110582,
+      "distributed_bytes": 110582,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/P003/capture_record.json": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/P003/capture_record.json",
+      "original_sha256": "57450f3a1d652de72e1a8b9217c143bc2bf869e1160b9b43b26bc8e804e6b7c3",
+      "distributed_sha256": "57450f3a1d652de72e1a8b9217c143bc2bf869e1160b9b43b26bc8e804e6b7c3",
+      "original_bytes": 358,
+      "distributed_bytes": 358,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/P004/records.bin.gz": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/P004/records.bin",
+      "original_sha256": "b4cebe8d66e5ee5e262d800d3d8b6bdcf4788d2e7022aea22093e84a511356e9",
+      "distributed_sha256": "269463d5e6ac09f22e0e46a154749ab7698cd8bc4ad081527288c4f5d037aee7",
+      "original_bytes": 31952,
+      "distributed_bytes": 10076,
+      "compression": "gzip"
+    },
+    "results/design_study_v1/buffer/P004/archive.bin.gz": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/P004/archive.bin",
+      "original_sha256": "f98d4b887370b477ca3422bfeb7825ce89d726f6cc1f12430c97cc63f234179c",
+      "distributed_sha256": "d8bbab156370a62d00c3dc1c7d6b162861a5c64b38fa0ead9b2d9229d71e448e",
+      "original_bytes": 59719680,
+      "distributed_bytes": 1332343,
+      "compression": "gzip"
+    },
+    "results/design_study_v1/buffer/P004/analysis.json": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/P004/analysis.json",
+      "original_sha256": "d37195874505966858589fb05181c11122931090b0c55c17e24a35882ad76137",
+      "distributed_sha256": "d37195874505966858589fb05181c11122931090b0c55c17e24a35882ad76137",
+      "original_bytes": 286307,
+      "distributed_bytes": 286307,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/P004/launch_manifest.json": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/P004/launch_manifest.json",
+      "original_sha256": "dbb2d0c0893cb5a4661447663d6a62fe8aa68cd36d58d7ca041bfa52c929c783",
+      "distributed_sha256": "dbb2d0c0893cb5a4661447663d6a62fe8aa68cd36d58d7ca041bfa52c929c783",
+      "original_bytes": 110582,
+      "distributed_bytes": 110582,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/P004/capture_record.json": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/P004/capture_record.json",
+      "original_sha256": "aa55104fa4e82e6ddac5c9ba56c79d0be28eb3a9296cfbcad060ec497d96c24e",
+      "distributed_sha256": "aa55104fa4e82e6ddac5c9ba56c79d0be28eb3a9296cfbcad060ec497d96c24e",
+      "original_bytes": 359,
+      "distributed_bytes": 359,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/P005/records.bin.gz": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/P005/records.bin",
+      "original_sha256": "13c246d35c1fc821525579bc49a53e7e23beac319fe4505d5416de8838d6eaa4",
+      "distributed_sha256": "42ad320404c2178d211fe0861ccee644c89de0d8ef6b541476d191c28f67f6ad",
+      "original_bytes": 31952,
+      "distributed_bytes": 10094,
+      "compression": "gzip"
+    },
+    "results/design_study_v1/buffer/P005/archive.bin.gz": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/P005/archive.bin",
+      "original_sha256": "f98d4b887370b477ca3422bfeb7825ce89d726f6cc1f12430c97cc63f234179c",
+      "distributed_sha256": "d8bbab156370a62d00c3dc1c7d6b162861a5c64b38fa0ead9b2d9229d71e448e",
+      "original_bytes": 59719680,
+      "distributed_bytes": 1332343,
+      "compression": "gzip"
+    },
+    "results/design_study_v1/buffer/P005/analysis.json": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/P005/analysis.json",
+      "original_sha256": "cfb5344d1362c0d258d49e0f72105ee5f7e8e8bc8b35b3d6163ce8117b410be2",
+      "distributed_sha256": "cfb5344d1362c0d258d49e0f72105ee5f7e8e8bc8b35b3d6163ce8117b410be2",
+      "original_bytes": 286280,
+      "distributed_bytes": 286280,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/P005/launch_manifest.json": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/P005/launch_manifest.json",
+      "original_sha256": "2bc983f1817b64c747699e0b6a0e0326f3bf5cfe6bf2ebfea3ad85c3944c6a0c",
+      "distributed_sha256": "2bc983f1817b64c747699e0b6a0e0326f3bf5cfe6bf2ebfea3ad85c3944c6a0c",
+      "original_bytes": 110515,
+      "distributed_bytes": 110515,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/P005/capture_record.json": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/P005/capture_record.json",
+      "original_sha256": "b330846909de9d05f8a9cc019a0d9bf9e83c1960843da19358b6e730e1f009fa",
+      "distributed_sha256": "b330846909de9d05f8a9cc019a0d9bf9e83c1960843da19358b6e730e1f009fa",
+      "original_bytes": 358,
+      "distributed_bytes": 358,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/P001/records.bin.gz": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/physical/P001/records.bin",
+      "original_sha256": "e85969ceec9fc1e30a126e6ce20db8096505ab6571ea9f9cd3d84c3f5504d941",
+      "distributed_sha256": "aa479d09e6a8a5ccd06da925eca43e836f9764ecf199d50403a0dc1da7a05812",
+      "original_bytes": 22976,
+      "distributed_bytes": 7612,
+      "compression": "gzip"
+    },
+    "results/design_study_v1/skipping/P001/archive.bin.gz": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/physical/P001/archive.bin",
+      "original_sha256": "44c651b5856cbb02278d1fdbf2aafc476c9d440343f7e512bd58b3c3f22f9fce",
+      "distributed_sha256": "707596bb64222bf52869abebd2a309570169a4718ff6c40af118c0e602c1921a",
+      "original_bytes": 79626240,
+      "distributed_bytes": 25855505,
+      "compression": "gzip"
+    },
+    "results/design_study_v1/skipping/P001/analysis.json": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/physical/P001/analysis.json",
+      "original_sha256": "c590c7443405edc97db4b1c28bc1a6a45fcfde11bf6e2f6ab6617bbab11730cb",
+      "distributed_sha256": "c590c7443405edc97db4b1c28bc1a6a45fcfde11bf6e2f6ab6617bbab11730cb",
+      "original_bytes": 254701,
+      "distributed_bytes": 254701,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/P001/launch_manifest.json": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/physical/P001/launch_manifest.json",
+      "original_sha256": "81898ccfe9edbf68e9d23b2f1c95e74b611a3cd3062dd0cb895bc5944f129723",
+      "distributed_sha256": "81898ccfe9edbf68e9d23b2f1c95e74b611a3cd3062dd0cb895bc5944f129723",
+      "original_bytes": 114676,
+      "distributed_bytes": 114676,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/P001/capture_record.json": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/physical/P001/capture_record.json",
+      "original_sha256": "af1a255e5e7f1463794acc88b0864c07eed1e55811434d4fe43e381aeccda878",
+      "distributed_sha256": "af1a255e5e7f1463794acc88b0864c07eed1e55811434d4fe43e381aeccda878",
+      "original_bytes": 359,
+      "distributed_bytes": 359,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/P002/records.bin.gz": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/physical/P002/records.bin",
+      "original_sha256": "1461c88118de5675b45d91ae8e7d539dfe0194e3ae51d7e052eae5082f1e38af",
+      "distributed_sha256": "61f2525194cc67fbd4f7ffb9411f33afab143a1e3c65ca238bcc56c2237cc99c",
+      "original_bytes": 45824,
+      "distributed_bytes": 14095,
+      "compression": "gzip"
+    },
+    "results/design_study_v1/skipping/P002/archive.bin.gz": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/physical/P002/archive.bin",
+      "original_sha256": "78bbe092600fe0bb1a26f9b0e8dd725f3bd3c7a3d6f5cb9877497d9007418371",
+      "distributed_sha256": "3e9024a6b8111e56cf26b56ab96debf14053cf2d307d6051646ecfaedb7764a4",
+      "original_bytes": 159252480,
+      "distributed_bytes": 51710718,
+      "compression": "gzip"
+    },
+    "results/design_study_v1/skipping/P002/analysis.json": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/physical/P002/analysis.json",
+      "original_sha256": "656e4a5697e531c098431ff272182e25ebfa9410e97a746920afbc95361aeac2",
+      "distributed_sha256": "656e4a5697e531c098431ff272182e25ebfa9410e97a746920afbc95361aeac2",
+      "original_bytes": 507727,
+      "distributed_bytes": 507727,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/P002/launch_manifest.json": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/physical/P002/launch_manifest.json",
+      "original_sha256": "0797798d62c6130c1f3160603614979506c94fe7b69abd12c5402bfdfdc5372b",
+      "distributed_sha256": "0797798d62c6130c1f3160603614979506c94fe7b69abd12c5402bfdfdc5372b",
+      "original_bytes": 114703,
+      "distributed_bytes": 114703,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/P002/capture_record.json": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/physical/P002/capture_record.json",
+      "original_sha256": "f6ca1f24a091b316617acde82e6167ea03045b04c0789ff08d905e8c209db556",
+      "distributed_sha256": "f6ca1f24a091b316617acde82e6167ea03045b04c0789ff08d905e8c209db556",
+      "original_bytes": 359,
+      "distributed_bytes": 359,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/P003/records.bin.gz": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/physical/P003/records.bin",
+      "original_sha256": "41930723ffc604bfea1c1f128569b5ee88996267fd0b148033224e0a7a9bd63d",
+      "distributed_sha256": "2580e549360d0edcefec0eee3c231d9d02b82c6ed154a8cd9850fd2db7a828ba",
+      "original_bytes": 45824,
+      "distributed_bytes": 13452,
+      "compression": "gzip"
+    },
+    "results/design_study_v1/skipping/P003/analysis.json": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/physical/P003/analysis.json",
+      "original_sha256": "499e5409383ec138ed3a9cff50c64abaa2ed3019870f085a4da0aad29add1044",
+      "distributed_sha256": "499e5409383ec138ed3a9cff50c64abaa2ed3019870f085a4da0aad29add1044",
+      "original_bytes": 507990,
+      "distributed_bytes": 507990,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/P003/launch_manifest.json": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/physical/P003/launch_manifest.json",
+      "original_sha256": "61dc900e35a7f92859a43fe2c878cd1ecf63388edc60f4e2f6039e95af5e99d2",
+      "distributed_sha256": "61dc900e35a7f92859a43fe2c878cd1ecf63388edc60f4e2f6039e95af5e99d2",
+      "original_bytes": 114703,
+      "distributed_bytes": 114703,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/P003/capture_record.json": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/physical/P003/capture_record.json",
+      "original_sha256": "23d161a6b03e382f47a6f3a8429590915dcf7e5ccbca5f9453dc541794401742",
+      "distributed_sha256": "23d161a6b03e382f47a6f3a8429590915dcf7e5ccbca5f9453dc541794401742",
+      "original_bytes": 359,
+      "distributed_bytes": 359,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/P004/records.bin.gz": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/physical/P004/records.bin",
+      "original_sha256": "9eb57a8c9b4793bac1f1fbdffe5b3afed30d17d21952ebae5786cb4ddf84c46c",
+      "distributed_sha256": "f3f4cafb218c553292de18a986e30b601e8c73b4f8da8ea628f001c9f82cfc62",
+      "original_bytes": 22976,
+      "distributed_bytes": 7237,
+      "compression": "gzip"
+    },
+    "results/design_study_v1/skipping/P004/analysis.json": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/physical/P004/analysis.json",
+      "original_sha256": "530f656bf4abac1122fcc1a718c4385bbf87bc8b3b4a233253663f87046472e4",
+      "distributed_sha256": "530f656bf4abac1122fcc1a718c4385bbf87bc8b3b4a233253663f87046472e4",
+      "original_bytes": 254836,
+      "distributed_bytes": 254836,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/P004/launch_manifest.json": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/physical/P004/launch_manifest.json",
+      "original_sha256": "8ff7c6131160a78edbbe09351d4e044127e8724e934d6ce3d327342026786a8e",
+      "distributed_sha256": "8ff7c6131160a78edbbe09351d4e044127e8724e934d6ce3d327342026786a8e",
+      "original_bytes": 114676,
+      "distributed_bytes": 114676,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/P004/capture_record.json": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/physical/P004/capture_record.json",
+      "original_sha256": "6f7616619a1f041f92844921cda9c9176e7abe6fe35cc99444c355821495b16b",
+      "distributed_sha256": "6f7616619a1f041f92844921cda9c9176e7abe6fe35cc99444c355821495b16b",
+      "original_bytes": 359,
+      "distributed_bytes": 359,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/build/sources/conv2d_3x3_multi_channel.sv": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/B001/sources/conv2d_3x3_multi_channel.sv",
+      "original_sha256": "73ab31e9e00f33b01fe6ef451b10fcf29137749894a133c2cf3cbb21b0353ef6",
+      "distributed_sha256": "73ab31e9e00f33b01fe6ef451b10fcf29137749894a133c2cf3cbb21b0353ef6",
+      "original_bytes": 10175,
+      "distributed_bytes": 10175,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/build/sources/espcn_fpga_student_weights_pkg.sv": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/B001/sources/espcn_fpga_student_weights_pkg.sv",
+      "original_sha256": "cc1a67ee659447a80252c97064ed7bc50826b40649ebf3c8399ef189ba692029",
+      "distributed_sha256": "cc1a67ee659447a80252c97064ed7bc50826b40649ebf3c8399ef189ba692029",
+      "original_bytes": 118421,
+      "distributed_bytes": 118421,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/build/sources/espcn_streaming_feature_window_buffer.sv": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/B001/sources/espcn_streaming_feature_window_buffer.sv",
+      "original_sha256": "4e9913f92f23c56c914aaf9485e1066d577a30321fe6172e565516ebdd7f2815",
+      "distributed_sha256": "4e9913f92f23c56c914aaf9485e1066d577a30321fe6172e565516ebdd7f2815",
+      "original_bytes": 2090,
+      "distributed_bytes": 2090,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/build/sources/espcn_streaming_grouped_conv_layer.sv": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/B001/sources/espcn_streaming_grouped_conv_layer.sv",
+      "original_sha256": "6b8c323b0dd558d80ea285f35a853b560dea8955c6c1b78469ed4bf71bfd416a",
+      "distributed_sha256": "6b8c323b0dd558d80ea285f35a853b560dea8955c6c1b78469ed4bf71bfd416a",
+      "original_bytes": 17938,
+      "distributed_bytes": 17938,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/build/sources/espcn_streaming_grouped_conv_layer_multicontext.sv": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/B001/sources/espcn_streaming_grouped_conv_layer_multicontext.sv",
+      "original_sha256": "75d7d0c7c6ebb39bb09c22c26bd7007b472ca0dc54ece94de988891145bbc4c6",
+      "distributed_sha256": "75d7d0c7c6ebb39bb09c22c26bd7007b472ca0dc54ece94de988891145bbc4c6",
+      "original_bytes": 18309,
+      "distributed_bytes": 18309,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/build/sources/espcn_streaming_grouped_conv_layer_selectable.sv": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/B001/sources/espcn_streaming_grouped_conv_layer_selectable.sv",
+      "original_sha256": "27519c47194c4df0d766f1674a70e1392a43a96b05ac3975a46b02a3b7792c0e",
+      "distributed_sha256": "27519c47194c4df0d766f1674a70e1392a43a96b05ac3975a46b02a3b7792c0e",
+      "original_bytes": 5742,
+      "distributed_bytes": 5742,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/build/sources/espcn_streaming_linebuffer_core.sv": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/B001/sources/espcn_streaming_linebuffer_core.sv",
+      "original_sha256": "864a3c2106e08617833db6d34bad6758ca0571779abadfaba8f09fef7ff30842",
+      "distributed_sha256": "864a3c2106e08617833db6d34bad6758ca0571779abadfaba8f09fef7ff30842",
+      "original_bytes": 19747,
+      "distributed_bytes": 19747,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/build/sources/espcn_streaming_pixel_shuffle_rgb.sv": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/B001/sources/espcn_streaming_pixel_shuffle_rgb.sv",
+      "original_sha256": "b7ae2e961fd1f4546c31a861c3f94fcfd2dd405fd8a5888614b4a6787e690438",
+      "distributed_sha256": "b7ae2e961fd1f4546c31a861c3f94fcfd2dd405fd8a5888614b4a6787e690438",
+      "original_bytes": 8170,
+      "distributed_bytes": 8170,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/build/sources/line_buffer_3x3_stallable.sv": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/B001/sources/line_buffer_3x3_stallable.sv",
+      "original_sha256": "c1a0dbaadc21330ee694cae5fb61d6f42c6efbdf9cdf26c41c8e63b20ac3c6cf",
+      "distributed_sha256": "c1a0dbaadc21330ee694cae5fb61d6f42c6efbdf9cdf26c41c8e63b20ac3c6cf",
+      "original_bytes": 9899,
+      "distributed_bytes": 9899,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/build/sources/mac_array_3x3_pipelined.sv": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/B001/sources/mac_array_3x3_pipelined.sv",
+      "original_sha256": "0cd16c1016ab366630420a4b055fbeee6161c477ea0378f171bef79c84f30f9c",
+      "distributed_sha256": "0cd16c1016ab366630420a4b055fbeee6161c477ea0378f171bef79c84f30f9c",
+      "original_bytes": 6379,
+      "distributed_bytes": 6379,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/build/sources/packed_bram_window.sv": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/B001/sources/packed_bram_window.sv",
+      "original_sha256": "1f38b7fa4158967dbc225a5598df5d2e2ec9952a3ebea77b69624fc4a33799d7",
+      "distributed_sha256": "1f38b7fa4158967dbc225a5598df5d2e2ec9952a3ebea77b69624fc4a33799d7",
+      "original_bytes": 5496,
+      "distributed_bytes": 5496,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/build/sources/paper2_origin_core.sv": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/B001/sources/paper2_origin_core.sv",
+      "original_sha256": "01f93b0e554a4edc6fde471b4b234242568ef2737054983c621bf5553a5160d9",
+      "distributed_sha256": "01f93b0e554a4edc6fde471b4b234242568ef2737054983c621bf5553a5160d9",
+      "original_bytes": 20428,
+      "distributed_bytes": 20428,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/build/sources/relu_clamp_pipelined.sv": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/B001/sources/relu_clamp_pipelined.sv",
+      "original_sha256": "3091738ee18582c50854388cbffa58acefb741442c85d5011b9a169eabece1cb",
+      "distributed_sha256": "3091738ee18582c50854388cbffa58acefb741442c85d5011b9a169eabece1cb",
+      "original_bytes": 5196,
+      "distributed_bytes": 5196,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/build/sources/roi_board_wrapper.v": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/B001/sources/roi_board_wrapper.v",
+      "original_sha256": "f6891ffee861e44a9496fefceb2ecf96538056f9bc520e16d2a14582da09a59c",
+      "distributed_sha256": "f6891ffee861e44a9496fefceb2ecf96538056f9bc520e16d2a14582da09a59c",
+      "original_bytes": 5600,
+      "distributed_bytes": 5600,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/build/sources/roi_request_guard.sv": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/B001/sources/roi_request_guard.sv",
+      "original_sha256": "0398355e122c8958726b0f6dcc4116e2384c673e1e2cc50fc527d5907a54dd71",
+      "distributed_sha256": "0398355e122c8958726b0f6dcc4116e2384c673e1e2cc50fc527d5907a54dd71",
+      "original_bytes": 7049,
+      "distributed_bytes": 7049,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/build/sources/roi_stream.sv": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/B001/sources/roi_stream.sv",
+      "original_sha256": "bbe161647a3373ad4f4598c7285506a0e676bb2b4cbd8dfa9e7ea0f9056df9f3",
+      "distributed_sha256": "bbe161647a3373ad4f4598c7285506a0e676bb2b4cbd8dfa9e7ea0f9056df9f3",
+      "original_bytes": 5047,
+      "distributed_bytes": 5047,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/build/sources/sparse_hierarchical_commit_controller.sv": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/B001/sources/sparse_hierarchical_commit_controller.sv",
+      "original_sha256": "71bfc954591410f1462a0c79a819e04610eddd5cfc30c170af0466d5f519b808",
+      "distributed_sha256": "71bfc954591410f1462a0c79a819e04610eddd5cfc30c170af0466d5f519b808",
+      "original_bytes": 11490,
+      "distributed_bytes": 11490,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/build/sources/sparse_hierarchical_mask_lookup.sv": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/B001/sources/sparse_hierarchical_mask_lookup.sv",
+      "original_sha256": "2a20d0923456ddff8c9b8a8f637d820a5cea2b2441d000c78ff2c3ab45e0b025",
+      "distributed_sha256": "2a20d0923456ddff8c9b8a8f637d820a5cea2b2441d000c78ff2c3ab45e0b025",
+      "original_bytes": 8086,
+      "distributed_bytes": 8086,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/build/reports/route_hierarchy.rpt": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/B001/reports/route_hierarchy.rpt",
+      "original_sha256": "01ace174a7abb47491caac924cb7a945c158c25c3b56ad361138e0ffb65a74fc",
+      "distributed_sha256": "01ace174a7abb47491caac924cb7a945c158c25c3b56ad361138e0ffb65a74fc",
+      "original_bytes": 159475,
+      "distributed_bytes": 159475,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/build/reports/route_timing.rpt": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/B001/reports/route_timing.rpt",
+      "original_sha256": "997a3faa2af9e769d211db897047af5536ba8407800117f87db6a5b259f2b853",
+      "distributed_sha256": "997a3faa2af9e769d211db897047af5536ba8407800117f87db6a5b259f2b853",
+      "original_bytes": 35214,
+      "distributed_bytes": 35214,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/build/reports/route_utilization.rpt": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/B001/reports/route_utilization.rpt",
+      "original_sha256": "eec0c9bae4ae6e54d97db2e42cc5cf15681f8f8608d9581e899b87bc297cf2cc",
+      "distributed_sha256": "eec0c9bae4ae6e54d97db2e42cc5cf15681f8f8608d9581e899b87bc297cf2cc",
+      "original_bytes": 10209,
+      "distributed_bytes": 10209,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/build/reports/route_drc.rpt": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/B001/reports/route_drc.rpt",
+      "original_sha256": "3621da87dfe17edf0db3b4e595a744d9966136b47bb46d55df03417a5f8084f1",
+      "distributed_sha256": "3621da87dfe17edf0db3b4e595a744d9966136b47bb46d55df03417a5f8084f1",
+      "original_bytes": 375405,
+      "distributed_bytes": 375405,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/build/build_manifest.json": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/B001/build_manifest.json",
+      "original_sha256": "0815789d668c7b2103f2cfdb71f3d0e5fc239c1ce2070815bd4860a424e64a82",
+      "distributed_sha256": "0815789d668c7b2103f2cfdb71f3d0e5fc239c1ce2070815bd4860a424e64a82",
+      "original_bytes": 5292,
+      "distributed_bytes": 5292,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/build/record.json": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/implementation/runs/B001/record.json",
+      "original_sha256": "5b96880106b7bfebaccd0ce82e2e4cee44dfeb73a25d0135514e0ab6153ff469",
+      "distributed_sha256": "5b96880106b7bfebaccd0ce82e2e4cee44dfeb73a25d0135514e0ab6153ff469",
+      "original_bytes": 12945,
+      "distributed_bytes": 12945,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/build/sources/c07_grouped_conv_layer.sv": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/runs/B001/sources/c07_grouped_conv_layer.sv",
+      "original_sha256": "5b5c48a585fa96f9eee8bd08b4cdc55bccbb159ffd9fa5d5657d0c1083bf87cd",
+      "distributed_sha256": "5b5c48a585fa96f9eee8bd08b4cdc55bccbb159ffd9fa5d5657d0c1083bf87cd",
+      "original_bytes": 19908,
+      "distributed_bytes": 19908,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/build/sources/conv2d_3x3_multi_channel.sv": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/runs/B001/sources/conv2d_3x3_multi_channel.sv",
+      "original_sha256": "73ab31e9e00f33b01fe6ef451b10fcf29137749894a133c2cf3cbb21b0353ef6",
+      "distributed_sha256": "73ab31e9e00f33b01fe6ef451b10fcf29137749894a133c2cf3cbb21b0353ef6",
+      "original_bytes": 10175,
+      "distributed_bytes": 10175,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/build/sources/espcn_fpga_student_weights_pkg.sv": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/runs/B001/sources/espcn_fpga_student_weights_pkg.sv",
+      "original_sha256": "cc1a67ee659447a80252c97064ed7bc50826b40649ebf3c8399ef189ba692029",
+      "distributed_sha256": "cc1a67ee659447a80252c97064ed7bc50826b40649ebf3c8399ef189ba692029",
+      "original_bytes": 118421,
+      "distributed_bytes": 118421,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/build/sources/espcn_streaming_feature_window_buffer.sv": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/runs/B001/sources/espcn_streaming_feature_window_buffer.sv",
+      "original_sha256": "4e9913f92f23c56c914aaf9485e1066d577a30321fe6172e565516ebdd7f2815",
+      "distributed_sha256": "4e9913f92f23c56c914aaf9485e1066d577a30321fe6172e565516ebdd7f2815",
+      "original_bytes": 2090,
+      "distributed_bytes": 2090,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/build/sources/espcn_streaming_grouped_conv_layer.sv": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/runs/B001/sources/espcn_streaming_grouped_conv_layer.sv",
+      "original_sha256": "6b8c323b0dd558d80ea285f35a853b560dea8955c6c1b78469ed4bf71bfd416a",
+      "distributed_sha256": "6b8c323b0dd558d80ea285f35a853b560dea8955c6c1b78469ed4bf71bfd416a",
+      "original_bytes": 17938,
+      "distributed_bytes": 17938,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/build/sources/espcn_streaming_grouped_conv_layer_multicontext.sv": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/runs/B001/sources/espcn_streaming_grouped_conv_layer_multicontext.sv",
+      "original_sha256": "75d7d0c7c6ebb39bb09c22c26bd7007b472ca0dc54ece94de988891145bbc4c6",
+      "distributed_sha256": "75d7d0c7c6ebb39bb09c22c26bd7007b472ca0dc54ece94de988891145bbc4c6",
+      "original_bytes": 18309,
+      "distributed_bytes": 18309,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/build/sources/espcn_streaming_grouped_conv_layer_selectable.sv": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/runs/B001/sources/espcn_streaming_grouped_conv_layer_selectable.sv",
+      "original_sha256": "d9f72c8dd0a1a93dbb6788187a9924845c5e8ec5b0e9ce140b4e58b6e2910347",
+      "distributed_sha256": "d9f72c8dd0a1a93dbb6788187a9924845c5e8ec5b0e9ce140b4e58b6e2910347",
+      "original_bytes": 5883,
+      "distributed_bytes": 5883,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/build/sources/espcn_streaming_linebuffer_core.sv": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/runs/B001/sources/espcn_streaming_linebuffer_core.sv",
+      "original_sha256": "864a3c2106e08617833db6d34bad6758ca0571779abadfaba8f09fef7ff30842",
+      "distributed_sha256": "864a3c2106e08617833db6d34bad6758ca0571779abadfaba8f09fef7ff30842",
+      "original_bytes": 19747,
+      "distributed_bytes": 19747,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/build/sources/espcn_streaming_pixel_shuffle_rgb.sv": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/runs/B001/sources/espcn_streaming_pixel_shuffle_rgb.sv",
+      "original_sha256": "b7ae2e961fd1f4546c31a861c3f94fcfd2dd405fd8a5888614b4a6787e690438",
+      "distributed_sha256": "b7ae2e961fd1f4546c31a861c3f94fcfd2dd405fd8a5888614b4a6787e690438",
+      "original_bytes": 8170,
+      "distributed_bytes": 8170,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/build/sources/line_buffer_3x3_stallable.sv": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/runs/B001/sources/line_buffer_3x3_stallable.sv",
+      "original_sha256": "c1a0dbaadc21330ee694cae5fb61d6f42c6efbdf9cdf26c41c8e63b20ac3c6cf",
+      "distributed_sha256": "c1a0dbaadc21330ee694cae5fb61d6f42c6efbdf9cdf26c41c8e63b20ac3c6cf",
+      "original_bytes": 9899,
+      "distributed_bytes": 9899,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/build/sources/mac_array_3x3_pipelined.sv": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/runs/B001/sources/mac_array_3x3_pipelined.sv",
+      "original_sha256": "0cd16c1016ab366630420a4b055fbeee6161c477ea0378f171bef79c84f30f9c",
+      "distributed_sha256": "0cd16c1016ab366630420a4b055fbeee6161c477ea0378f171bef79c84f30f9c",
+      "original_bytes": 6379,
+      "distributed_bytes": 6379,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/build/sources/packed_bram_window.sv": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/runs/B001/sources/packed_bram_window.sv",
+      "original_sha256": "1f38b7fa4158967dbc225a5598df5d2e2ec9952a3ebea77b69624fc4a33799d7",
+      "distributed_sha256": "1f38b7fa4158967dbc225a5598df5d2e2ec9952a3ebea77b69624fc4a33799d7",
+      "original_bytes": 5496,
+      "distributed_bytes": 5496,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/build/sources/paper2_origin_core.sv": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/runs/B001/sources/paper2_origin_core.sv",
+      "original_sha256": "611fcdb60376b2ed259243f8fec113521700795f37790cdb9e31c33b559d1a70",
+      "distributed_sha256": "611fcdb60376b2ed259243f8fec113521700795f37790cdb9e31c33b559d1a70",
+      "original_bytes": 20153,
+      "distributed_bytes": 20153,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/build/sources/relu_clamp_pipelined.sv": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/runs/B001/sources/relu_clamp_pipelined.sv",
+      "original_sha256": "3091738ee18582c50854388cbffa58acefb741442c85d5011b9a169eabece1cb",
+      "distributed_sha256": "3091738ee18582c50854388cbffa58acefb741442c85d5011b9a169eabece1cb",
+      "original_bytes": 5196,
+      "distributed_bytes": 5196,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/build/sources/roi_board_wrapper.v": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/runs/B001/sources/roi_board_wrapper.v",
+      "original_sha256": "b7034499366691c33aca1fce835b658fde63c441c93c4fb70ac42af6d2b05913",
+      "distributed_sha256": "b7034499366691c33aca1fce835b658fde63c441c93c4fb70ac42af6d2b05913",
+      "original_bytes": 6011,
+      "distributed_bytes": 6011,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/build/sources/roi_request_guard.sv": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/runs/B001/sources/roi_request_guard.sv",
+      "original_sha256": "0398355e122c8958726b0f6dcc4116e2384c673e1e2cc50fc527d5907a54dd71",
+      "distributed_sha256": "0398355e122c8958726b0f6dcc4116e2384c673e1e2cc50fc527d5907a54dd71",
+      "original_bytes": 7049,
+      "distributed_bytes": 7049,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/build/sources/roi_stream.sv": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/runs/B001/sources/roi_stream.sv",
+      "original_sha256": "3a8d3fcadeba64edaf30426cc43597da7cbf89bf48cfcd9c714f4aab02e253bf",
+      "distributed_sha256": "3a8d3fcadeba64edaf30426cc43597da7cbf89bf48cfcd9c714f4aab02e253bf",
+      "original_bytes": 5135,
+      "distributed_bytes": 5135,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/build/sources/sparse_hierarchical_commit_controller.sv": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/runs/B001/sources/sparse_hierarchical_commit_controller.sv",
+      "original_sha256": "71bfc954591410f1462a0c79a819e04610eddd5cfc30c170af0466d5f519b808",
+      "distributed_sha256": "71bfc954591410f1462a0c79a819e04610eddd5cfc30c170af0466d5f519b808",
+      "original_bytes": 11490,
+      "distributed_bytes": 11490,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/build/sources/sparse_hierarchical_mask_lookup.sv": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/runs/B001/sources/sparse_hierarchical_mask_lookup.sv",
+      "original_sha256": "2a20d0923456ddff8c9b8a8f637d820a5cea2b2441d000c78ff2c3ab45e0b025",
+      "distributed_sha256": "2a20d0923456ddff8c9b8a8f637d820a5cea2b2441d000c78ff2c3ab45e0b025",
+      "original_bytes": 8086,
+      "distributed_bytes": 8086,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/build/reports/route_hierarchy.rpt": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/runs/B001/reports/route_hierarchy.rpt",
+      "original_sha256": "5f299fbe43f1dc96baa84846f51a2fd53ab7c7e0d2b1babd5fa9ef0274e7ae94",
+      "distributed_sha256": "5f299fbe43f1dc96baa84846f51a2fd53ab7c7e0d2b1babd5fa9ef0274e7ae94",
+      "original_bytes": 159496,
+      "distributed_bytes": 159496,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/build/reports/route_timing.rpt": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/runs/B001/reports/route_timing.rpt",
+      "original_sha256": "e86dc1b2b1a277ba7c72f458b1a92484df4b1bda29c754f57d158fbcd1395b1f",
+      "distributed_sha256": "e86dc1b2b1a277ba7c72f458b1a92484df4b1bda29c754f57d158fbcd1395b1f",
+      "original_bytes": 34343,
+      "distributed_bytes": 34343,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/build/reports/route_utilization.rpt": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/runs/B001/reports/route_utilization.rpt",
+      "original_sha256": "1d25ad24c08af0cdb0aeca17910264e4720b91d348aec86057774f421e5c1755",
+      "distributed_sha256": "1d25ad24c08af0cdb0aeca17910264e4720b91d348aec86057774f421e5c1755",
+      "original_bytes": 10230,
+      "distributed_bytes": 10230,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/build/reports/route_drc.rpt": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/runs/B001/reports/route_drc.rpt",
+      "original_sha256": "b5832e3cd47f8cdf2c60b9f20ae4425bca0c2ace3f259d9f199c76308088dd13",
+      "distributed_sha256": "b5832e3cd47f8cdf2c60b9f20ae4425bca0c2ace3f259d9f199c76308088dd13",
+      "original_bytes": 384786,
+      "distributed_bytes": 384786,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/build/build_manifest.json": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/runs/B001/build_manifest.json",
+      "original_sha256": "a05ca406132c0b20c10c35697ab85e4f74edc312e349ca98fbacf6534910071b",
+      "distributed_sha256": "a05ca406132c0b20c10c35697ab85e4f74edc312e349ca98fbacf6534910071b",
+      "original_bytes": 8126,
+      "distributed_bytes": 8126,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/build/record.json": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/runs/B001/record.json",
+      "original_sha256": "6733c3f0827638af89a91eabe8a88f5ec0fdec57f7c761bf862907042d9734e6",
+      "distributed_sha256": "6733c3f0827638af89a91eabe8a88f5ec0fdec57f7c761bf862907042d9734e6",
+      "original_bytes": 3780,
+      "distributed_bytes": 3780,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/reference_reports/hierarchy.rpt": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/reference_final_inspection/hierarchy.rpt",
+      "original_sha256": "a93d6cd2f1377633ab5b6a4889ca7801d4da4233974e0ad3038864b808e70af5",
+      "distributed_sha256": "a93d6cd2f1377633ab5b6a4889ca7801d4da4233974e0ad3038864b808e70af5",
+      "original_bytes": 33149,
+      "distributed_bytes": 33149,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/reference_reports/route_timing.rpt": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/reference_final_inspection/route_timing.rpt",
+      "original_sha256": "a41278076385a88e60d44e30ce4535efa623500e29de12b47b5041e17f6f9e67",
+      "distributed_sha256": "a41278076385a88e60d44e30ce4535efa623500e29de12b47b5041e17f6f9e67",
+      "original_bytes": 37105,
+      "distributed_bytes": 37105,
+      "compression": null
+    },
+    "results/design_study_v1/buffer/reference_reports/route_utilization.rpt": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/reference_final_inspection/route_utilization.rpt",
+      "original_sha256": "35097d8f805a80242411afc4dc0a3f67273e98363bcfc4d4eb2c0efce0ea1aeb",
+      "distributed_sha256": "35097d8f805a80242411afc4dc0a3f67273e98363bcfc4d4eb2c0efce0ea1aeb",
+      "original_bytes": 10187,
+      "distributed_bytes": 10187,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/goldens/manifest.json": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/goldens/G001/manifest.json",
+      "original_sha256": "db937a91fc2e7a82c427b73db7820e114d3c400ef745e7a9239cc83f44b19279",
+      "distributed_sha256": "db937a91fc2e7a82c427b73db7820e114d3c400ef745e7a9239cc83f44b19279",
+      "original_bytes": 40444,
+      "distributed_bytes": 40444,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/goldens/input_banks.bin.gz": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/goldens/G001/input_banks.bin",
+      "original_sha256": "92cab7a2267e2cceebbcf87dd31b33569f27bb293d8de7ef0d7bfdc879e32598",
+      "distributed_sha256": "920d1ac514666ba6acb55791666f2024cbf989e50134b5ba909f75288a6ed56f",
+      "original_bytes": 3686400,
+      "distributed_bytes": 905847,
+      "compression": "gzip"
+    },
+    "results/design_study_v1/skipping/goldens/frame_0.npy.gz": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/goldens/G001/frame_0.npy",
+      "original_sha256": "ed5a959bcfad5b3229b9b1d3e8315b17947da65e1d6426f6bed49fecb2b483fe",
+      "distributed_sha256": "06dcc10f621f68257a4773d10b894dbcf105b767153bac8328079bcbab91665e",
+      "original_bytes": 3686528,
+      "distributed_bytes": 1222045,
+      "compression": "gzip"
+    },
+    "results/design_study_v1/skipping/goldens/frame_1.npy.gz": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/goldens/G001/frame_1.npy",
+      "original_sha256": "2788f8ff5dd581bbb2e5b015c5e164138ab8bac84c9cdfa4b33421ba4ab60b33",
+      "distributed_sha256": "702c8eaad641e44a60e610f064a8856b50baf2952d878573ba0e793681156d9d",
+      "original_bytes": 3686528,
+      "distributed_bytes": 1432657,
+      "compression": "gzip"
+    },
+    "results/design_study_v1/skipping/goldens/frame_2.npy.gz": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/goldens/G001/frame_2.npy",
+      "original_sha256": "b5947a19b5c707da6f29ad1a2443a15c5e9403d46c36d52f924ad45bc9bb9240",
+      "distributed_sha256": "5ea789b4607b5781e41aeb8cd25c485e9cb8b5be9ce17245b768919d4a83ef9b",
+      "original_bytes": 3686528,
+      "distributed_bytes": 1269389,
+      "compression": "gzip"
+    },
+    "results/design_study_v1/skipping/goldens/frame_3.npy.gz": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/goldens/G001/frame_3.npy",
+      "original_sha256": "a1d438a04bd7b4379cf281be6398fd4b3d04deece9d5867560f5ab89901c378f",
+      "distributed_sha256": "61c5430a1738ceaae958e2872caa6aaf3586f4113fc988a178b44c282ed3a1cb",
+      "original_bytes": 3686528,
+      "distributed_bytes": 634933,
+      "compression": "gzip"
+    },
+    "results/design_study_v1/skipping/input_provenance.json": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/fixtures/N001/manifest.json",
+      "original_sha256": "35e0c3538cdee59cd5e2990f0dea616843591bc9d1e7972dd09c34572115162e",
+      "distributed_sha256": "35e0c3538cdee59cd5e2990f0dea616843591bc9d1e7972dd09c34572115162e",
+      "original_bytes": 3374,
+      "distributed_bytes": 3374,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/host/board_campaign.c": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/firmware/F002/board_campaign.c",
+      "original_sha256": "6518f31b88155797d730d81b872e962450775a5ffe3c3f61eec3975bbcb876d4",
+      "distributed_sha256": "6518f31b88155797d730d81b872e962450775a5ffe3c3f61eec3975bbcb876d4",
+      "original_bytes": 13240,
+      "distributed_bytes": 13240,
+      "compression": null
+    },
+    "results/design_study_v1/skipping/host/roi_campaign_masks.h": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/firmware/F002/roi_campaign_masks.h",
+      "original_sha256": "3426b5ce5aebcf66d455a5c417c48ad3c13458de9d7daba32dde2f62db639e1f",
+      "distributed_sha256": "3426b5ce5aebcf66d455a5c417c48ad3c13458de9d7daba32dde2f62db639e1f",
+      "original_bytes": 2230,
+      "distributed_bytes": 2230,
+      "compression": null
+    },
+    "scripts/design_study_v1/buffer_summary.py": {
+      "original_source": "experiments/paper2_bounded_salvage_20261021/paired_analysis.py",
+      "original_sha256": "5a4e66fa3a9fec04004361736d5464e34f4939da1f62ee88dd7a1a7df97154b8",
+      "distributed_sha256": "5a4e66fa3a9fec04004361736d5464e34f4939da1f62ee88dd7a1a7df97154b8",
+      "original_bytes": 6429,
+      "distributed_bytes": 6429,
+      "compression": null
+    },
+    "scripts/design_study_v1/skip_summary.py": {
+      "original_source": "experiments/paper2_architecture_search_20261021/paired_analysis.py",
+      "original_sha256": "186f3f56276de08ff5b5cf21260ad412a066a547f64392d2e6120a7334d85b3c",
+      "distributed_sha256": "186f3f56276de08ff5b5cf21260ad412a066a547f64392d2e6120a7334d85b3c",
+      "original_bytes": 6084,
+      "distributed_bytes": 6084,
+      "compression": null
+    },
+    "scripts/design_study_v1/c07/analyze.py": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/analyze.py",
+      "original_sha256": "94f1ac25ab6bc9a6b6a10805c0063e6e852653874a32e75606799cd5c4ad364e",
+      "distributed_sha256": "94f1ac25ab6bc9a6b6a10805c0063e6e852653874a32e75606799cd5c4ad364e",
+      "original_bytes": 8012,
+      "distributed_bytes": 8012,
+      "compression": null
+    },
+    "scripts/design_study_v1/c07/schedule.py": {
+      "original_source": "experiments/paper2_architecture_search_20261021/implementation/c07/schedule.py",
+      "original_sha256": "4e5cc5765aaa36bdc913373090597fc94376539308f2d30f3358b2c29af86504",
+      "distributed_sha256": "4e5cc5765aaa36bdc913373090597fc94376539308f2d30f3358b2c29af86504",
+      "original_bytes": 1138,
+      "distributed_bytes": 1138,
+      "compression": null
+    }
+  }
+}

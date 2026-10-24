@@ -1,0 +1,36 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Research/Thesis/Visual_Upscaling/neural-upscaling-hw-sw-codesign/experiments/paper2_traversal_assessment_20261022/reference/espcn_fpga_student_weights_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Research/Thesis/Visual_Upscaling/neural-upscaling-hw-sw-codesign/experiments/paper2_traversal_assessment_20261022/reference/relu_clamp_pipelined.sv" into library work
+INFO: [VRFC 10-311] analyzing module relu_clamp_pipelined
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Research/Thesis/Visual_Upscaling/neural-upscaling-hw-sw-codesign/experiments/paper2_traversal_assessment_20261022/reference/mac_array_3x3_pipelined.sv" into library work
+INFO: [VRFC 10-311] analyzing module signed_int8_registered_multiplier
+INFO: [VRFC 10-311] analyzing module mac_array_3x3_pipelined
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Research/Thesis/Visual_Upscaling/neural-upscaling-hw-sw-codesign/experiments/paper2_traversal_assessment_20261022/reference/conv2d_3x3_multi_channel.sv" into library work
+INFO: [VRFC 10-311] analyzing module conv2d_3x3_multi_channel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Research/Thesis/Visual_Upscaling/neural-upscaling-hw-sw-codesign/experiments/paper2_traversal_assessment_20261022/reference/line_buffer_3x3_stallable.sv" into library work
+INFO: [VRFC 10-311] analyzing module line_buffer_3x3_stallable
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Research/Thesis/Visual_Upscaling/neural-upscaling-hw-sw-codesign/experiments/paper2_traversal_assessment_20261022/reference/espcn_streaming_grouped_conv_layer_multicontext.sv" into library work
+INFO: [VRFC 10-311] analyzing module espcn_streaming_grouped_conv_layer_multicontext
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Research/Thesis/Visual_Upscaling/neural-upscaling-hw-sw-codesign/experiments/paper2_traversal_assessment_20261022/reference/espcn_streaming_pixel_shuffle_rgb.sv" into library work
+INFO: [VRFC 10-311] analyzing module espcn_streaming_pixel_shuffle_rgb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Research/Thesis/Visual_Upscaling/neural-upscaling-hw-sw-codesign/experiments/paper2_traversal_assessment_20261022/reference/sparse_hierarchical_mask_lookup.sv" into library work
+INFO: [VRFC 10-311] analyzing module sparse_hierarchical_mask_lookup
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Research/Thesis/Visual_Upscaling/neural-upscaling-hw-sw-codesign/experiments/paper2_traversal_assessment_20261022/reference/sparse_hierarchical_commit_controller.sv" into library work
+INFO: [VRFC 10-311] analyzing module sparse_hierarchical_commit_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Research/Thesis/Visual_Upscaling/neural-upscaling-hw-sw-codesign/experiments/paper2_traversal_assessment_20261022/reference/packed_bram_window.sv" into library work
+INFO: [VRFC 10-311] analyzing module paper2_packed_bram_window
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Research/Thesis/Visual_Upscaling/neural-upscaling-hw-sw-codesign/experiments/paper2_traversal_assessment_20261022/reference/bram_feature_window_buffer.sv" into library work
+INFO: [VRFC 10-311] analyzing module espcn_streaming_feature_window_buffer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Research/Thesis/Visual_Upscaling/neural-upscaling-hw-sw-codesign/experiments/paper2_traversal_assessment_20261022/reference/c07_grouped_conv_layer.sv" into library work
+INFO: [VRFC 10-311] analyzing module c07_grouped_conv_layer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Research/Thesis/Visual_Upscaling/neural-upscaling-hw-sw-codesign/experiments/paper2_traversal_assessment_20261022/reference/espcn_streaming_grouped_conv_layer_selectable.sv" into library work
+INFO: [VRFC 10-311] analyzing module espcn_streaming_grouped_conv_layer_selectable
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Research/Thesis/Visual_Upscaling/neural-upscaling-hw-sw-codesign/experiments/paper2_traversal_assessment_20261022/reference/paper2_origin_core.sv" into library work
+INFO: [VRFC 10-311] analyzing module paper2_origin_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Research/Thesis/Visual_Upscaling/neural-upscaling-hw-sw-codesign/experiments/paper2_traversal_assessment_20261022/reference/roi_stream.sv" into library work
+INFO: [VRFC 10-311] analyzing module paper2_roi_stream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Research/Thesis/Visual_Upscaling/neural-upscaling-hw-sw-codesign/experiments/paper2_traversal_assessment_20261022/reference/roi_board_wrapper.sv" into library work
+INFO: [VRFC 10-311] analyzing module paper2_roi_board_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Research/Thesis/Visual_Upscaling/neural-upscaling-hw-sw-codesign/experiments/paper2_traversal_assessment_20261022/reference/tb_roi_integration.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_roi_integration
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Research/Thesis/Visual_Upscaling/neural-upscaling-hw-sw-codesign/experiments/paper2_traversal_assessment_20261022/reference/roi_request_guard.sv" into library work
+INFO: [VRFC 10-311] analyzing module paper2_roi_request_guard

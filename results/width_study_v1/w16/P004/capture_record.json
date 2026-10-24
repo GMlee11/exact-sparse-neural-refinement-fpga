@@ -1,0 +1,14 @@
+{
+    "run":  "P004",
+    "started_utc":  "2026-10-22T22:49:48.0643796Z",
+    "terminal":  true,
+    "serial_closed":  true,
+    "board_programming_requested":  true,
+    "launch_marker_seen":  true,
+    "status":  "CAPTURED",
+    "program_pid":  17216,
+    "program_exit":  null,
+    "wait_seconds":  48.2047406,
+    "dump_exit":  null,
+    "ended_utc":  "2026-10-22T22:52:28.8952590Z"
+}

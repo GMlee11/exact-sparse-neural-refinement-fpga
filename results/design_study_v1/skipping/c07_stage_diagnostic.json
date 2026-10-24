@@ -1,0 +1,104 @@
+{
+  "post_hoc_descriptive_only": true,
+  "purpose": "Locate measured service-time changes; no isolated causality or independent-session confidence interval",
+  "caveat": "B launches interleave OFF/ON per case, unlike single-arm A; source/cache reuse exposure differs. DMA+engine includes transfers, not pure MAC time.",
+  "mean_stages_ms": {
+    "reference_B001": {
+      "service_ms": 96.1495381366634,
+      "planning_ms": 0.003360566569210236,
+      "packing_ms": 1.5880222372806885,
+      "dma_and_engine_ms": 88.67867667831838,
+      "invalidate_and_scatter_ms": 4.185398295290116,
+      "other_service_ms": 1.694080359205003
+    },
+    "C07_zero_off": {
+      "service_ms": 127.97504227205711,
+      "planning_ms": 0.0032647582386553446,
+      "packing_ms": 1.5891633372475966,
+      "dma_and_engine_ms": 120.48915473081452,
+      "invalidate_and_scatter_ms": 4.185743870280095,
+      "other_service_ms": 1.7077155754762485
+    },
+    "C07_zero_on": {
+      "service_ms": 78.31992832872209,
+      "planning_ms": 0.003259591572138511,
+      "packing_ms": 1.5898385122280165,
+      "dma_and_engine_ms": 70.83336256249915,
+      "invalidate_and_scatter_ms": 4.186528361924011,
+      "other_service_ms": 1.7069393004987605
+    }
+  },
+  "reference_minus_enabled_ms": {
+    "service_ms": 17.82960980794131,
+    "planning_ms": 0.00010097499707172487,
+    "packing_ms": -0.001816274947328056,
+    "dma_and_engine_ms": 17.845314115819235,
+    "invalidate_and_scatter_ms": -0.0011300666338946996,
+    "other_service_ms": -0.01285894129375742
+  },
+  "per_launch_sparse_mean_stages_ms": {
+    "P001": {
+      "reference_B001": {
+        "service_ms": 96.1643368779009,
+        "planning_ms": 0.0034086665678153363,
+        "packing_ms": 1.603912103486549,
+        "dma_and_engine_ms": 88.67866324498543,
+        "invalidate_and_scatter_ms": 4.188246511874184,
+        "other_service_ms": 1.690106350986916
+      }
+    },
+    "P002": {
+      "C07_zero_off": {
+        "service_ms": 127.99184052156996,
+        "planning_ms": 0.0032608332387691692,
+        "packing_ms": 1.603383820168536,
+        "dma_and_engine_ms": 120.48971487246493,
+        "invalidate_and_scatter_ms": 4.192676345079053,
+        "other_service_ms": 1.7028046506186656
+      },
+      "C07_zero_on": {
+        "service_ms": 78.33497206161914,
+        "planning_ms": 0.0032522832390171194,
+        "packing_ms": 1.6045800534671784,
+        "dma_and_engine_ms": 70.834080479145,
+        "invalidate_and_scatter_ms": 4.190460761809971,
+        "other_service_ms": 1.702598483957977
+      }
+    },
+    "P003": {
+      "C07_zero_off": {
+        "service_ms": 127.95824402254426,
+        "planning_ms": 0.0032686832385415195,
+        "packing_ms": 1.5749428543266573,
+        "dma_and_engine_ms": 120.4885945891641,
+        "invalidate_and_scatter_ms": 4.178811395481136,
+        "other_service_ms": 1.7126265003338315
+      },
+      "C07_zero_on": {
+        "service_ms": 78.30488459582502,
+        "planning_ms": 0.003266899905259903,
+        "packing_ms": 1.5750969709888545,
+        "dma_and_engine_ms": 70.8326446458533,
+        "invalidate_and_scatter_ms": 4.18259596203805,
+        "other_service_ms": 1.711280117039544
+      }
+    },
+    "P004": {
+      "reference_B001": {
+        "service_ms": 96.1347393954259,
+        "planning_ms": 0.003312466570605136,
+        "packing_ms": 1.5721323710748278,
+        "dma_and_engine_ms": 88.67869011165132,
+        "invalidate_and_scatter_ms": 4.182550078706048,
+        "other_service_ms": 1.69805436742309
+      }
+    }
+  },
+  "input_report_sha256": {
+    "implementation\\c07\\physical\\P001\\analysis.json": "c590c7443405edc97db4b1c28bc1a6a45fcfde11bf6e2f6ab6617bbab11730cb",
+    "implementation\\c07\\physical\\P002\\analysis.json": "656e4a5697e531c098431ff272182e25ebfa9410e97a746920afbc95361aeac2",
+    "implementation\\c07\\physical\\P003\\analysis.json": "499e5409383ec138ed3a9cff50c64abaa2ed3019870f085a4da0aad29add1044",
+    "implementation\\c07\\physical\\P004\\analysis.json": "530f656bf4abac1122fcc1a718c4385bbf87bc8b3b4a233253663f87046472e4"
+  },
+  "source_sha256": "01e171cc951e016ab8cb750a59584c5e525e8d4f3ce67f630d08bb095c13e757"
+}

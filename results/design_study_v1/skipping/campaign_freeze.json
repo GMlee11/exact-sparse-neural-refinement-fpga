@@ -1,0 +1,112 @@
+{
+  "purpose": "fixed development ABBA conventional-baseline comparison",
+  "board_access": false,
+  "launches": [
+    {
+      "launch_id": "P001",
+      "manifest": {
+        "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_architecture_search_20261021\\implementation\\c07\\physical\\P001\\launch_manifest.json",
+        "sha256": "81898ccfe9edbf68e9d23b2f1c95e74b611a3cd3062dd0cb895bc5944f129723"
+      },
+      "image": {
+        "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_bounded_salvage_20261021\\implementation\\runs\\B001\\paper2_roi_v1.bit",
+        "bytes": 4045678,
+        "sha256": "5a18f276213cbeffff09db65babc22a06aa49155192391deb18f57c1d9c9beda"
+      },
+      "firmware": {
+        "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_architecture_search_20261021\\implementation\\c07\\firmware\\F002\\campaign.elf",
+        "bytes": 238668,
+        "sha256": "574792f75110d737cc580c9575910b0c5c41b2bd79a2ed620cc0595673565cab"
+      },
+      "global_repeat_base": 0,
+      "initial_bank": 0,
+      "records": 204
+    },
+    {
+      "launch_id": "P002",
+      "manifest": {
+        "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_architecture_search_20261021\\implementation\\c07\\physical\\P002\\launch_manifest.json",
+        "sha256": "0797798d62c6130c1f3160603614979506c94fe7b69abd12c5402bfdfdc5372b"
+      },
+      "image": {
+        "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_architecture_search_20261021\\implementation\\c07\\runs\\B001\\paper2_roi_v1.bit",
+        "bytes": 4045678,
+        "sha256": "c6ddd8f79637e59f22984cf1bb4e890ef91430acecdda23fbee0b4f55adf4b84"
+      },
+      "firmware": {
+        "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_architecture_search_20261021\\implementation\\c07\\firmware\\F002\\campaign.elf",
+        "bytes": 238668,
+        "sha256": "574792f75110d737cc580c9575910b0c5c41b2bd79a2ed620cc0595673565cab"
+      },
+      "global_repeat_base": 0,
+      "initial_bank": 0,
+      "records": 408
+    },
+    {
+      "launch_id": "P003",
+      "manifest": {
+        "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_architecture_search_20261021\\implementation\\c07\\physical\\P003\\launch_manifest.json",
+        "sha256": "61dc900e35a7f92859a43fe2c878cd1ecf63388edc60f4e2f6039e95af5e99d2"
+      },
+      "image": {
+        "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_architecture_search_20261021\\implementation\\c07\\runs\\B001\\paper2_roi_v1.bit",
+        "bytes": 4045678,
+        "sha256": "c6ddd8f79637e59f22984cf1bb4e890ef91430acecdda23fbee0b4f55adf4b84"
+      },
+      "firmware": {
+        "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_architecture_search_20261021\\implementation\\c07\\firmware\\F002\\campaign.elf",
+        "bytes": 238668,
+        "sha256": "574792f75110d737cc580c9575910b0c5c41b2bd79a2ed620cc0595673565cab"
+      },
+      "global_repeat_base": 3,
+      "initial_bank": 0,
+      "records": 408
+    },
+    {
+      "launch_id": "P004",
+      "manifest": {
+        "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_architecture_search_20261021\\implementation\\c07\\physical\\P004\\launch_manifest.json",
+        "sha256": "8ff7c6131160a78edbbe09351d4e044127e8724e934d6ce3d327342026786a8e"
+      },
+      "image": {
+        "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_bounded_salvage_20261021\\implementation\\runs\\B001\\paper2_roi_v1.bit",
+        "bytes": 4045678,
+        "sha256": "5a18f276213cbeffff09db65babc22a06aa49155192391deb18f57c1d9c9beda"
+      },
+      "firmware": {
+        "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_architecture_search_20261021\\implementation\\c07\\firmware\\F002\\campaign.elf",
+        "bytes": 238668,
+        "sha256": "574792f75110d737cc580c9575910b0c5c41b2bd79a2ed620cc0595673565cab"
+      },
+      "global_repeat_base": 3,
+      "initial_bank": 1,
+      "records": 204
+    }
+  ],
+  "qualification": [
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_architecture_search_20261021\\implementation\\c07\\physical\\Q001\\analysis.json",
+      "sha256": "f5b275926fe840a84ce5d2da7ffe4f33ce20fc7257fc6a46ba1299fadbad2d91"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_architecture_search_20261021\\implementation\\c07\\physical\\Q002\\analysis.json",
+      "sha256": "3352fc09c79eeb22a0296e3bc3d95006df466d5ba29062b82d915d8cee6e20f5"
+    }
+  ],
+  "timed_records": 1224,
+  "byte_archives": 204,
+  "private_bank_visits_per_condition_case": 3,
+  "protocol": {
+    "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_architecture_search_20261021\\implementation\\c07\\PHYSICAL_PROTOCOL.md",
+    "sha256": "4a0b36a1f25761d79531cd2bcd5b17c5de0b26de47a89116b14572020397fa3e"
+  },
+  "paired_analysis": {
+    "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_architecture_search_20261021\\paired_analysis.py",
+    "sha256": "186f3f56276de08ff5b5cf21260ad412a066a547f64392d2e6120a7334d85b3c"
+  },
+  "source": {
+    "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_architecture_search_20261021\\implementation\\c07\\freeze_campaign.py",
+    "sha256": "1ab78a9a4b2d4e86c7c226cdbd02d1ae0e96adc44b3741f22aa3fd2dc3a6183e"
+  },
+  "requires_root_confirmation_before_launch": true
+}

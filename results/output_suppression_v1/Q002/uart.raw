@@ -1,0 +1,2 @@
+ROI_CAMPAIGN_START cases=12 repeats=1 kind=1 profile=0
+ROI_CAMPAIGN_TERMINAL status=00000001 records=72 archive_words=24514560

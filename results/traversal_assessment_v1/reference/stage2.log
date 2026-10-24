@@ -1,0 +1,55 @@
+
+****** xsim v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/integrated/xsim_script.tcl
+# xsim {integrated} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+AXI_FAILURE_PASS kind=0 outcome=5
+AXI_FAILURE_PASS kind=1 outcome=5
+AXI_FAILURE_PASS kind=2 outcome=3
+AXI_FAILURE_PASS kind=3 outcome=5
+AXI_FAILURE_PASS kind=4 outcome=4
+AXI_PROGRESS case=0 region=0 cycles=1000000 sent=8631 got=30720
+AXI_PROGRESS case=0 region=0 cycles=2000000 sent=8631 got=30720
+AXI_REGION_PASS case=0 region=0 cycles=2016084 input_words=8631 output_words=30720 checksum=03de13e2
+AXI_REQUEST_PASS case=0 regions=1 service_cycles=2016128 execution_loop_cycles=2016084
+AXI_REGION_PASS case=1 region=0 cycles=705198 input_words=8631 output_words=30720 checksum=03de13e2
+AXI_REQUEST_PASS case=1 regions=1 service_cycles=705242 execution_loop_cycles=705198
+AXI_REGION_PASS case=2 region=0 cycles=331543 input_words=4221 output_words=15360 checksum=2524c043
+AXI_REGION_PASS case=2 region=1 cycles=340703 input_words=4410 output_words=15360 checksum=a7e64e64
+AXI_REQUEST_PASS case=2 regions=2 service_cycles=672333 execution_loop_cycles=672246
+AXI_REGION_PASS case=3 region=0 cycles=722980 input_words=8631 output_words=30720 checksum=8846e760
+AXI_REQUEST_PASS case=3 regions=1 service_cycles=723024 execution_loop_cycles=722980
+AXI_REGION_PASS case=4 region=0 cycles=345422 input_words=4410 output_words=15360 checksum=6b9303f0
+AXI_REGION_PASS case=4 region=1 cycles=344067 input_words=4221 output_words=15360 checksum=62c97955
+AXI_REQUEST_PASS case=4 regions=2 service_cycles=689576 execution_loop_cycles=689489
+C07_MODE_PASS mode=0
+AXI_FAILURE_PASS kind=0 outcome=5
+AXI_FAILURE_PASS kind=1 outcome=5
+AXI_FAILURE_PASS kind=2 outcome=3
+AXI_FAILURE_PASS kind=3 outcome=5
+AXI_FAILURE_PASS kind=4 outcome=4
+AXI_PROGRESS case=0 region=0 cycles=1000000 sent=8631 got=30720
+AXI_REGION_PASS case=0 region=0 cycles=1733354 input_words=8631 output_words=30720 checksum=03de13e2
+AXI_REQUEST_PASS case=0 regions=1 service_cycles=1733398 execution_loop_cycles=1733354
+AXI_REGION_PASS case=1 region=0 cycles=422253 input_words=8631 output_words=30720 checksum=03de13e2
+AXI_REQUEST_PASS case=1 regions=1 service_cycles=422297 execution_loop_cycles=422253
+AXI_REGION_PASS case=2 region=0 cycles=191055 input_words=4221 output_words=15360 checksum=2524c043
+AXI_REGION_PASS case=2 region=1 cycles=199887 input_words=4410 output_words=15360 checksum=a7e64e64
+AXI_REQUEST_PASS case=2 regions=2 service_cycles=391029 execution_loop_cycles=390942
+AXI_REGION_PASS case=3 region=0 cycles=425015 input_words=8631 output_words=30720 checksum=8846e760
+AXI_REQUEST_PASS case=3 regions=1 service_cycles=425059 execution_loop_cycles=425015
+AXI_REGION_PASS case=4 region=0 cycles=197178 input_words=4410 output_words=15360 checksum=6b9303f0
+AXI_REGION_PASS case=4 region=1 cycles=196175 input_words=4221 output_words=15360 checksum=62c97955
+AXI_REQUEST_PASS case=4 regions=2 service_cycles=393440 execution_loop_cycles=393353
+C07_MODE_PASS mode=1
+PAPER2_ROI_INTEGRATION_PASS
+$finish called at time : 86319946 ns : File "C:/Research/Thesis/Visual_Upscaling/neural-upscaling-hw-sw-codesign/experiments/paper2_traversal_assessment_20261022/reference/tb_roi_integration.sv" Line 110
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:09:58 . Memory (MB): peak = 918.992 ; gain = 0.051
+exit
+INFO: [Common 17-206] Exiting xsim at Thu Oct 22 23:01:36 2026...

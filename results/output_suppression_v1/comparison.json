@@ -1,0 +1,952 @@
+{
+  "passed": true,
+  "primary_records": 864,
+  "primary_archives": 144,
+  "sparse_summaries": [
+    {
+      "state": "skip_off",
+      "mode": "raster",
+      "original_ms": 151.1111101177778,
+      "suppressed_ms": 141.69794995325944,
+      "saved_ms": 9.41316016451836,
+      "reduction_pct": 6.22929720864444,
+      "cells_slower": 0,
+      "legs": [
+        {
+          "leg": 0,
+          "original_ms": 151.13934886695887,
+          "suppressed_ms": 141.7282961398794,
+          "saved_ms": 9.411052727079465,
+          "reduction_pct": 6.226738964823507
+        },
+        {
+          "leg": 1,
+          "original_ms": 151.08287136859673,
+          "suppressed_ms": 141.6676037666395,
+          "saved_ms": 9.415267601957225,
+          "reduction_pct": 6.23185640878297
+        }
+      ]
+    },
+    {
+      "state": "skip_off",
+      "mode": "bounding_box",
+      "original_ms": 141.35870140059765,
+      "suppressed_ms": 136.96411871554056,
+      "saved_ms": 4.394582685057088,
+      "reduction_pct": 3.1088165365945475,
+      "cells_slower": 0,
+      "legs": [
+        {
+          "leg": 0,
+          "original_ms": 141.3852590248275,
+          "suppressed_ms": 136.98704740237562,
+          "saved_ms": 4.398211622451868,
+          "reduction_pct": 3.1107992818965196
+        },
+        {
+          "leg": 1,
+          "original_ms": 141.33214377636784,
+          "suppressed_ms": 136.9411900287055,
+          "saved_ms": 4.390953747662337,
+          "reduction_pct": 3.106833046140031
+        }
+      ]
+    },
+    {
+      "state": "skip_off",
+      "mode": "merged",
+      "original_ms": 132.53676934393368,
+      "suppressed_ms": 132.190103541487,
+      "saved_ms": 0.34666580244669376,
+      "reduction_pct": 0.2615619832614857,
+      "cells_slower": 0,
+      "legs": [
+        {
+          "leg": 0,
+          "original_ms": 132.55338453095186,
+          "suppressed_ms": 132.20609179102334,
+          "saved_ms": 0.3472927399285197,
+          "reduction_pct": 0.2620021670193002
+        },
+        {
+          "leg": 1,
+          "original_ms": 132.52015415691554,
+          "suppressed_ms": 132.17411529195067,
+          "saved_ms": 0.3460388649648678,
+          "reduction_pct": 0.2611216891244537
+        }
+      ]
+    },
+    {
+      "state": "skip_on",
+      "mode": "raster",
+      "original_ms": 97.14914937017467,
+      "suppressed_ms": 87.7418483929864,
+      "saved_ms": 9.407300977188271,
+      "reduction_pct": 9.683359080523628,
+      "cells_slower": 0,
+      "legs": [
+        {
+          "leg": 0,
+          "original_ms": 97.16498905721532,
+          "suppressed_ms": 87.7469000803399,
+          "saved_ms": 9.418088976875424,
+          "reduction_pct": 9.692883278492019
+        },
+        {
+          "leg": 1,
+          "original_ms": 97.13330968313402,
+          "suppressed_ms": 87.7367967056329,
+          "saved_ms": 9.396512977501118,
+          "reduction_pct": 9.67383177630228
+        }
+      ]
+    },
+    {
+      "state": "skip_on",
+      "mode": "bounding_box",
+      "original_ms": 87.42537846466402,
+      "suppressed_ms": 83.03045965461666,
+      "saved_ms": 4.394918810047358,
+      "reduction_pct": 5.027051512077486,
+      "cells_slower": 0,
+      "legs": [
+        {
+          "leg": 0,
+          "original_ms": 87.43742371431472,
+          "suppressed_ms": 83.05275571647009,
+          "saved_ms": 4.38466799784463,
+          "reduction_pct": 5.014635394760378
+        },
+        {
+          "leg": 1,
+          "original_ms": 87.41333321501334,
+          "suppressed_ms": 83.00816359276325,
+          "saved_ms": 4.405169622250085,
+          "reduction_pct": 5.039471051189125
+        }
+      ]
+    },
+    {
+      "state": "skip_on",
+      "mode": "merged",
+      "original_ms": 78.87830758752908,
+      "suppressed_ms": 78.53743128491449,
+      "saved_ms": 0.3408763026145891,
+      "reduction_pct": 0.43215468617443153,
+      "cells_slower": 0,
+      "legs": [
+        {
+          "leg": 0,
+          "original_ms": 78.90820958666193,
+          "suppressed_ms": 78.54836397209745,
+          "saved_ms": 0.3598456145644775,
+          "reduction_pct": 0.45603064174111385
+        },
+        {
+          "leg": 1,
+          "original_ms": 78.84840558839623,
+          "suppressed_ms": 78.52649859773155,
+          "saved_ms": 0.32190699066468653,
+          "reduction_pct": 0.40826062145771547
+        }
+      ]
+    }
+  ],
+  "organization_gaps": [
+    {
+      "state": "skip_off",
+      "original_raster_minus_merged_ms": 18.574340773844114,
+      "suppressed_raster_minus_merged_ms": 9.507846411772448,
+      "gap_reduction_pct": 48.81193078377704,
+      "suppressed_merged_vs_raster_pct": 6.709939286283754,
+      "suppressed_merged_vs_bbox_pct": 3.485595511309556
+    },
+    {
+      "state": "skip_on",
+      "original_raster_minus_merged_ms": 18.27084178264559,
+      "suppressed_raster_minus_merged_ms": 9.204417108071908,
+      "gap_reduction_pct": 49.62236979790034,
+      "suppressed_merged_vs_raster_pct": 10.490338734199334,
+      "suppressed_merged_vs_bbox_pct": 5.411301332537368
+    }
+  ],
+  "cells": [
+    {
+      "state": "skip_off",
+      "mode": "raster",
+      "frame": 0,
+      "mask": 0,
+      "original_ms": 0.13538399607386412,
+      "suppressed_ms": 0.1354054960732406,
+      "saved_ms": -2.1499999376478618e-05,
+      "reduction_pct": -0.01588075400341148
+    },
+    {
+      "state": "skip_off",
+      "mode": "raster",
+      "frame": 0,
+      "mask": 1,
+      "original_ms": 420.0903758173791,
+      "suppressed_ms": 420.0292303191523,
+      "saved_ms": 0.06114549822677873,
+      "reduction_pct": 0.014555319937479307
+    },
+    {
+      "state": "skip_off",
+      "mode": "raster",
+      "frame": 0,
+      "mask": 2,
+      "original_ms": 68.30127001926317,
+      "suppressed_ms": 55.88747687926317,
+      "saved_ms": 12.413793140000003,
+      "reduction_pct": 18.175054631486223
+    },
+    {
+      "state": "skip_off",
+      "mode": "raster",
+      "frame": 0,
+      "mask": 5,
+      "original_ms": 77.55773975082555,
+      "suppressed_ms": 65.46159710161368,
+      "saved_ms": 12.09614264921187,
+      "reduction_pct": 15.59630629782905
+    },
+    {
+      "state": "skip_off",
+      "mode": "raster",
+      "frame": 0,
+      "mask": 4,
+      "original_ms": 222.31108205297863,
+      "suppressed_ms": 215.6692337455922,
+      "saved_ms": 6.641848307386425,
+      "reduction_pct": 2.9876370741624187
+    },
+    {
+      "state": "skip_off",
+      "mode": "raster",
+      "frame": 0,
+      "mask": 10,
+      "original_ms": 236.27981864788526,
+      "suppressed_ms": 229.7627653368798,
+      "saved_ms": 6.517053311005469,
+      "reduction_pct": 2.758192954565228
+    },
+    {
+      "state": "skip_off",
+      "mode": "raster",
+      "frame": 2,
+      "mask": 0,
+      "original_ms": 0.13539849607344362,
+      "suppressed_ms": 0.1354099960731101,
+      "saved_ms": -1.1499999666486627e-05,
+      "reduction_pct": -0.008493447120896181
+    },
+    {
+      "state": "skip_off",
+      "mode": "raster",
+      "frame": 2,
+      "mask": 1,
+      "original_ms": 419.9154608224516,
+      "suppressed_ms": 419.8569528241484,
+      "saved_ms": 0.05850799830324149,
+      "reduction_pct": 0.013933280329485131
+    },
+    {
+      "state": "skip_off",
+      "mode": "raster",
+      "frame": 2,
+      "mask": 2,
+      "original_ms": 68.30124901926378,
+      "suppressed_ms": 55.89557737902825,
+      "saved_ms": 12.405671640235525,
+      "reduction_pct": 18.1631695150064
+    },
+    {
+      "state": "skip_off",
+      "mode": "raster",
+      "frame": 2,
+      "mask": 5,
+      "original_ms": 77.56418675063858,
+      "suppressed_ms": 65.45652160176087,
+      "saved_ms": 12.107665148877715,
+      "reduction_pct": 15.60986539806405
+    },
+    {
+      "state": "skip_off",
+      "mode": "raster",
+      "frame": 2,
+      "mask": 4,
+      "original_ms": 222.2980210533574,
+      "suppressed_ms": 215.69673974479454,
+      "saved_ms": 6.601281308562847,
+      "reduction_pct": 2.969563686299468
+    },
+    {
+      "state": "skip_off",
+      "mode": "raster",
+      "frame": 2,
+      "mask": 10,
+      "original_ms": 236.2755136480101,
+      "suppressed_ms": 229.75368783714305,
+      "saved_ms": 6.521825810867057,
+      "reduction_pct": 2.7602630971666846
+    },
+    {
+      "state": "skip_off",
+      "mode": "bounding_box",
+      "frame": 0,
+      "mask": 0,
+      "original_ms": 0.1354004960733856,
+      "suppressed_ms": 0.13540699607319712,
+      "saved_ms": -6.499999811504509e-06,
+      "reduction_pct": -0.004800573114578236
+    },
+    {
+      "state": "skip_off",
+      "mode": "bounding_box",
+      "frame": 0,
+      "mask": 1,
+      "original_ms": 420.0629793181736,
+      "suppressed_ms": 419.9965773200993,
+      "saved_ms": 0.06640199807429781,
+      "reduction_pct": 0.015807629175529442
+    },
+    {
+      "state": "skip_off",
+      "mode": "bounding_box",
+      "frame": 0,
+      "mask": 2,
+      "original_ms": 43.35659824265865,
+      "suppressed_ms": 43.26273974538054,
+      "saved_ms": 0.0938584972781058,
+      "reduction_pct": 0.216480307686497
+    },
+    {
+      "state": "skip_off",
+      "mode": "bounding_box",
+      "frame": 0,
+      "mask": 5,
+      "original_ms": 74.71868883315803,
+      "suppressed_ms": 63.913210646516895,
+      "saved_ms": 10.805478186641132,
+      "reduction_pct": 14.46154684374757
+    },
+    {
+      "state": "skip_off",
+      "mode": "bounding_box",
+      "frame": 0,
+      "mask": 4,
+      "original_ms": 211.0954168782329,
+      "suppressed_ms": 210.90968538361912,
+      "saved_ms": 0.18573149461377625,
+      "reduction_pct": 0.08798461726950357
+    },
+    {
+      "state": "skip_off",
+      "mode": "bounding_box",
+      "frame": 0,
+      "mask": 10,
+      "original_ms": 236.27555364800895,
+      "suppressed_ms": 229.77073983664854,
+      "saved_ms": 6.504813811360407,
+      "reduction_pct": 2.753062562304241
+    },
+    {
+      "state": "skip_off",
+      "mode": "bounding_box",
+      "frame": 2,
+      "mask": 0,
+      "original_ms": 0.1354329960724431,
+      "suppressed_ms": 0.13539049607367562,
+      "saved_ms": 4.249999876748678e-05,
+      "reduction_pct": 0.03138083037368052
+    },
+    {
+      "state": "skip_off",
+      "mode": "bounding_box",
+      "frame": 2,
+      "mask": 1,
+      "original_ms": 419.92150132227647,
+      "suppressed_ms": 419.8612948240225,
+      "saved_ms": 0.06020649825399005,
+      "reduction_pct": 0.014337560249810468
+    },
+    {
+      "state": "skip_off",
+      "mode": "bounding_box",
+      "frame": 2,
+      "mask": 2,
+      "original_ms": 43.35816524261321,
+      "suppressed_ms": 43.26332524536357,
+      "saved_ms": 0.0948399972496432,
+      "reduction_pct": 0.2187361866420323
+    },
+    {
+      "state": "skip_off",
+      "mode": "bounding_box",
+      "frame": 2,
+      "mask": 5,
+      "original_ms": 74.72157083307445,
+      "suppressed_ms": 63.92661214612825,
+      "saved_ms": 10.794958686946202,
+      "reduction_pct": 14.446910800445814
+    },
+    {
+      "state": "skip_off",
+      "mode": "bounding_box",
+      "frame": 2,
+      "mask": 4,
+      "original_ms": 211.07421587884775,
+      "suppressed_ms": 210.895033884044,
+      "saved_ms": 0.17918199480374142,
+      "reduction_pct": 0.08489051780089908
+    },
+    {
+      "state": "skip_off",
+      "mode": "bounding_box",
+      "frame": 2,
+      "mask": 10,
+      "original_ms": 236.26940164818734,
+      "suppressed_ms": 229.77160283662352,
+      "saved_ms": 6.497798811563825,
+      "reduction_pct": 2.750165178493682
+    },
+    {
+      "state": "skip_off",
+      "mode": "merged",
+      "frame": 0,
+      "mask": 0,
+      "original_ms": 0.1353949960735451,
+      "suppressed_ms": 0.1353859960738061,
+      "saved_ms": 8.999999738995568e-06,
+      "reduction_pct": 0.006647217400934717
+    },
+    {
+      "state": "skip_off",
+      "mode": "merged",
+      "frame": 0,
+      "mask": 1,
+      "original_ms": 420.1243048163951,
+      "suppressed_ms": 420.0767288177749,
+      "saved_ms": 0.047575998620231985,
+      "reduction_pct": 0.011324267145416376
+    },
+    {
+      "state": "skip_off",
+      "mode": "merged",
+      "frame": 0,
+      "mask": 2,
+      "original_ms": 43.347047742935615,
+      "suppressed_ms": 43.25541574559294,
+      "saved_ms": 0.0916319973426738,
+      "reduction_pct": 0.21139155285980765
+    },
+    {
+      "state": "skip_off",
+      "mode": "merged",
+      "frame": 0,
+      "mask": 5,
+      "original_ms": 52.38325548088559,
+      "suppressed_ms": 52.177059486865275,
+      "saved_ms": 0.2061959940203124,
+      "reduction_pct": 0.3936295904624568
+    },
+    {
+      "state": "skip_off",
+      "mode": "merged",
+      "frame": 0,
+      "mask": 4,
+      "original_ms": 211.08926387841134,
+      "suppressed_ms": 210.88710338427398,
+      "saved_ms": 0.2021604941373596,
+      "reduction_pct": 0.09577014501969423
+    },
+    {
+      "state": "skip_off",
+      "mode": "merged",
+      "frame": 0,
+      "mask": 10,
+      "original_ms": 223.34588902296923,
+      "suppressed_ms": 222.45651804876098,
+      "saved_ms": 0.8893709742082478,
+      "reduction_pct": 0.39820342254734026
+    },
+    {
+      "state": "skip_off",
+      "mode": "merged",
+      "frame": 2,
+      "mask": 0,
+      "original_ms": 0.13542149607277662,
+      "suppressed_ms": 0.1353799960739801,
+      "saved_ms": 4.149999879651811e-05,
+      "reduction_pct": 0.030645060053254524
+    },
+    {
+      "state": "skip_off",
+      "mode": "merged",
+      "frame": 2,
+      "mask": 1,
+      "original_ms": 419.9173658223964,
+      "suppressed_ms": 419.84966832435964,
+      "saved_ms": 0.0676974980367504,
+      "reduction_pct": 0.016121623811429363
+    },
+    {
+      "state": "skip_off",
+      "mode": "merged",
+      "frame": 2,
+      "mask": 2,
+      "original_ms": 43.35161224280324,
+      "suppressed_ms": 43.25529024559658,
+      "saved_ms": 0.09632199720665824,
+      "reduction_pct": 0.22218780853449932
+    },
+    {
+      "state": "skip_off",
+      "mode": "merged",
+      "frame": 2,
+      "mask": 5,
+      "original_ms": 52.38019298097441,
+      "suppressed_ms": 52.17198448701245,
+      "saved_ms": 0.20820849396195484,
+      "reduction_pct": 0.39749470575181073
+    },
+    {
+      "state": "skip_off",
+      "mode": "merged",
+      "frame": 2,
+      "mask": 4,
+      "original_ms": 211.0698373789747,
+      "suppressed_ms": 210.8663143848769,
+      "saved_ms": 0.20352299409782404,
+      "reduction_pct": 0.09642448045875908
+    },
+    {
+      "state": "skip_off",
+      "mode": "merged",
+      "frame": 2,
+      "mask": 10,
+      "original_ms": 223.32705602351538,
+      "suppressed_ms": 222.45114254891686,
+      "saved_ms": 0.8759134745985193,
+      "reduction_pct": 0.3922110872702721
+    },
+    {
+      "state": "skip_on",
+      "mode": "raster",
+      "frame": 0,
+      "mask": 0,
+      "original_ms": 0.13542049607280562,
+      "suppressed_ms": 0.13538949607370462,
+      "saved_ms": 3.099999910100015e-05,
+      "reduction_pct": 0.022891659682249085
+    },
+    {
+      "state": "skip_on",
+      "mode": "raster",
+      "frame": 0,
+      "mask": 1,
+      "original_ms": 253.98268513450213,
+      "suppressed_ms": 253.93965563575,
+      "saved_ms": 0.04302949875213358,
+      "reduction_pct": 0.016941902448722578
+    },
+    {
+      "state": "skip_on",
+      "mode": "raster",
+      "frame": 0,
+      "mask": 2,
+      "original_ms": 51.72448599998991,
+      "suppressed_ms": 39.316422359823754,
+      "saved_ms": 12.408063640166155,
+      "reduction_pct": 23.988761609286126
+    },
+    {
+      "state": "skip_on",
+      "mode": "raster",
+      "frame": 0,
+      "mask": 5,
+      "original_ms": 57.591907829834675,
+      "suppressed_ms": 45.48417118095904,
+      "saved_ms": 12.107736648875637,
+      "reduction_pct": 21.023329674457138
+    },
+    {
+      "state": "skip_on",
+      "mode": "raster",
+      "frame": 0,
+      "mask": 4,
+      "original_ms": 140.44320292714713,
+      "suppressed_ms": 133.83555011876905,
+      "saved_ms": 6.607652808378077,
+      "reduction_pct": 4.70485767246828
+    },
+    {
+      "state": "skip_on",
+      "mode": "raster",
+      "frame": 0,
+      "mask": 10,
+      "original_ms": 151.05922961928235,
+      "suppressed_ms": 144.53916730836414,
+      "saved_ms": 6.520062310918206,
+      "reduction_pct": 4.316229023112889
+    },
+    {
+      "state": "skip_on",
+      "mode": "raster",
+      "frame": 2,
+      "mask": 0,
+      "original_ms": 0.13542099607279112,
+      "suppressed_ms": 0.13539549607353063,
+      "saved_ms": 2.5499999260492068e-05,
+      "reduction_pct": 0.018830166665430064
+    },
+    {
+      "state": "skip_on",
+      "mode": "raster",
+      "frame": 2,
+      "mask": 1,
+      "original_ms": 223.67481001343052,
+      "suppressed_ms": 223.6192345150422,
+      "saved_ms": 0.055575498388321876,
+      "reduction_pct": 0.02484656112370671
+    },
+    {
+      "state": "skip_on",
+      "mode": "raster",
+      "frame": 2,
+      "mask": 2,
+      "original_ms": 51.32146651167747,
+      "suppressed_ms": 38.91170737156049,
+      "saved_ms": 12.409759140116982,
+      "reduction_pct": 24.18044530604619
+    },
+    {
+      "state": "skip_on",
+      "mode": "raster",
+      "frame": 2,
+      "mask": 5,
+      "original_ms": 54.4580794207157,
+      "suppressed_ms": 42.341780772088356,
+      "saved_ms": 12.116298648627343,
+      "reduction_pct": 22.248854123229208
+    },
+    {
+      "state": "skip_on",
+      "mode": "raster",
+      "frame": 2,
+      "mask": 4,
+      "original_ms": 135.81710506130395,
+      "suppressed_ms": 129.22187175256573,
+      "saved_ms": 6.595233308738216,
+      "reduction_pct": 4.855966636721727
+    },
+    {
+      "state": "skip_on",
+      "mode": "raster",
+      "frame": 2,
+      "mask": 10,
+      "original_ms": 134.7777175914462,
+      "suppressed_ms": 128.2841162797606,
+      "saved_ms": 6.49360131168558,
+      "reduction_pct": 4.818008071163318
+    },
+    {
+      "state": "skip_on",
+      "mode": "bounding_box",
+      "frame": 0,
+      "mask": 0,
+      "original_ms": 0.13539799607345812,
+      "suppressed_ms": 0.1353934960735886,
+      "saved_ms": 4.499999869511662e-06,
+      "reduction_pct": 0.003323535059610672
+    },
+    {
+      "state": "skip_on",
+      "mode": "bounding_box",
+      "frame": 0,
+      "mask": 1,
+      "original_ms": 253.99162313424293,
+      "suppressed_ms": 253.93592113585828,
+      "saved_ms": 0.05570199838464873,
+      "reduction_pct": 0.02193064389182961
+    },
+    {
+      "state": "skip_on",
+      "mode": "bounding_box",
+      "frame": 0,
+      "mask": 2,
+      "original_ms": 26.842726721560926,
+      "suppressed_ms": 26.741323224501627,
+      "saved_ms": 0.10140349705929808,
+      "reduction_pct": 0.37776898789439145
+    },
+    {
+      "state": "skip_on",
+      "mode": "bounding_box",
+      "frame": 0,
+      "mask": 5,
+      "original_ms": 54.77621791148968,
+      "suppressed_ms": 43.976019724695426,
+      "saved_ms": 10.800198186794255,
+      "reduction_pct": 19.71694760716373
+    },
+    {
+      "state": "skip_on",
+      "mode": "bounding_box",
+      "frame": 0,
+      "mask": 4,
+      "original_ms": 129.19475675335207,
+      "suppressed_ms": 129.05534825739488,
+      "saved_ms": 0.1394084959571842,
+      "reduction_pct": 0.10790569173277778
+    },
+    {
+      "state": "skip_on",
+      "mode": "bounding_box",
+      "frame": 0,
+      "mask": 10,
+      "original_ms": 151.08995261839138,
+      "suppressed_ms": 144.56554380759923,
+      "saved_ms": 6.524408810792153,
+      "reduction_pct": 4.318228113599905
+    },
+    {
+      "state": "skip_on",
+      "mode": "bounding_box",
+      "frame": 2,
+      "mask": 0,
+      "original_ms": 0.1354179960728781,
+      "suppressed_ms": 0.13539849607344362,
+      "saved_ms": 1.949999943448577e-05,
+      "reduction_pct": 0.014399858216770116
+    },
+    {
+      "state": "skip_on",
+      "mode": "bounding_box",
+      "frame": 2,
+      "mask": 1,
+      "original_ms": 223.67536251341448,
+      "suppressed_ms": 223.6170870151045,
+      "saved_ms": 0.05827549830999601,
+      "reduction_pct": 0.026053606286879742
+    },
+    {
+      "state": "skip_on",
+      "mode": "bounding_box",
+      "frame": 2,
+      "mask": 2,
+      "original_ms": 26.437811733303462,
+      "suppressed_ms": 26.353335235753278,
+      "saved_ms": 0.0844764975501846,
+      "reduction_pct": 0.3195290835805838
+    },
+    {
+      "state": "skip_on",
+      "mode": "bounding_box",
+      "frame": 2,
+      "mask": 5,
+      "original_ms": 51.681049001249576,
+      "suppressed_ms": 40.88031231447094,
+      "saved_ms": 10.800736686778635,
+      "reduction_pct": 20.898834090069432
+    },
+    {
+      "state": "skip_on",
+      "mode": "bounding_box",
+      "frame": 2,
+      "mask": 4,
+      "original_ms": 124.58014788717571,
+      "suppressed_ms": 124.38604989280455,
+      "saved_ms": 0.19409799437116249,
+      "reduction_pct": 0.15580170489679035
+    },
+    {
+      "state": "skip_on",
+      "mode": "bounding_box",
+      "frame": 2,
+      "mask": 10,
+      "original_ms": 134.8003650907894,
+      "suppressed_ms": 128.2857447797134,
+      "saved_ms": 6.514620311075987,
+      "reduction_pct": 4.832791295994135
+    },
+    {
+      "state": "skip_on",
+      "mode": "merged",
+      "frame": 0,
+      "mask": 0,
+      "original_ms": 0.13539099607366112,
+      "suppressed_ms": 0.1353939960735741,
+      "saved_ms": -2.9999999129892707e-06,
+      "reduction_pct": -0.0022158045955708045
+    },
+    {
+      "state": "skip_on",
+      "mode": "merged",
+      "frame": 0,
+      "mask": 1,
+      "original_ms": 254.00363613389456,
+      "suppressed_ms": 253.93946413575554,
+      "saved_ms": 0.06417199813901675,
+      "reduction_pct": 0.025264204527052265
+    },
+    {
+      "state": "skip_on",
+      "mode": "merged",
+      "frame": 0,
+      "mask": 2,
+      "original_ms": 26.844498721509538,
+      "suppressed_ms": 26.746202224360136,
+      "saved_ms": 0.09829649714940203,
+      "reduction_pct": 0.36616998577306475
+    },
+    {
+      "state": "skip_on",
+      "mode": "merged",
+      "frame": 0,
+      "mask": 5,
+      "original_ms": 32.64062005342202,
+      "suppressed_ms": 32.42961355954121,
+      "saved_ms": 0.2110064938808094,
+      "reduction_pct": 0.6464536933902014
+    },
+    {
+      "state": "skip_on",
+      "mode": "merged",
+      "frame": 0,
+      "mask": 4,
+      "original_ms": 129.24501875189446,
+      "suppressed_ms": 129.0280587581863,
+      "saved_ms": 0.21695999370817276,
+      "reduction_pct": 0.16786719968268995
+    },
+    {
+      "state": "skip_on",
+      "mode": "merged",
+      "frame": 0,
+      "mask": 10,
+      "original_ms": 138.7437269764319,
+      "suppressed_ms": 137.90660250070852,
+      "saved_ms": 0.8371244757233853,
+      "reduction_pct": 0.60336023398419
+    },
+    {
+      "state": "skip_on",
+      "mode": "merged",
+      "frame": 2,
+      "mask": 0,
+      "original_ms": 0.1353949960735451,
+      "suppressed_ms": 0.1354099960731101,
+      "saved_ms": -1.4999999565001865e-05,
+      "reduction_pct": -0.011078695668231362
+    },
+    {
+      "state": "skip_on",
+      "mode": "merged",
+      "frame": 2,
+      "mask": 1,
+      "original_ms": 223.68424051315702,
+      "suppressed_ms": 223.6187415150565,
+      "saved_ms": 0.06549899810050874,
+      "reduction_pct": 0.029281901107671517
+    },
+    {
+      "state": "skip_on",
+      "mode": "merged",
+      "frame": 2,
+      "mask": 2,
+      "original_ms": 26.444963733096053,
+      "suppressed_ms": 26.351297735812366,
+      "saved_ms": 0.09366599728368641,
+      "reduction_pct": 0.3541921941320826
+    },
+    {
+      "state": "skip_on",
+      "mode": "merged",
+      "frame": 2,
+      "mask": 5,
+      "original_ms": 29.618086641075486,
+      "suppressed_ms": 29.40506964725298,
+      "saved_ms": 0.2130169938225066,
+      "reduction_pct": 0.7192125419981943
+    },
+    {
+      "state": "skip_on",
+      "mode": "merged",
+      "frame": 2,
+      "mask": 4,
+      "original_ms": 124.58079638715691,
+      "suppressed_ms": 124.39718539248162,
+      "saved_ms": 0.1836109946752913,
+      "reduction_pct": 0.1473830638429117
+    },
+    {
+      "state": "skip_on",
+      "mode": "merged",
+      "frame": 2,
+      "mask": 10,
+      "original_ms": 122.90874943564627,
+      "suppressed_ms": 122.0354204609728,
+      "saved_ms": 0.8733289746734698,
+      "reduction_pct": 0.7105506960924175
+    }
+  ],
+  "independent_sessions": 1,
+  "statistical_significance_claim": false,
+  "qualification_records": 144,
+  "qualification_archives": 144,
+  "build": {
+    "passed": true,
+    "wns_ns": 1.709,
+    "whs_ns": 0.021,
+    "resources": {
+      "lut": 21354.0,
+      "ff": 24526.0,
+      "bram": 27.5,
+      "dsp": 180.0
+    },
+    "files": {
+      "active_files.txt": "670bf1f56bec8d3fb224bce48ef18b833c0b56a59efd37ae147429979d1e8d97",
+      "build_manifest.json": "35031bcb5ff71e2285a276e045ccc63bff97df83ca03f3264089fc27bf068123",
+      "paper2_roi_v1.bit": "94cc122f2509d2ff7484f31bc1fd5bdee67335c473456193f1f957377cda6d63",
+      "paper2_roi_v1.xsa": "d7241b5cebbd7bb765a0cf46ec28a79404155429a4adf16272d02cee43302a75",
+      "reports/route_drc.rpt": "9e3440136aa2e782db339df19011e119aa772a0d061f4489812e385509e67ca1",
+      "reports/route_timing.rpt": "3e1673578291259b1826db8cbfba7c7ac7541f9977b6f5c8d32b841d92c6673e",
+      "reports/route_utilization.rpt": "d0cb396f28488025bf8759bcbb8cde24aa09e128b2201afa8360405333a16cb0",
+      "reports/synth_timing.rpt": "c6d4ea1fb5d2029a251d577c5036c6b5b599bc76b819aa1ad05c6cab02c8d255",
+      "reports/synth_utilization.rpt": "b14861b9610a286cd87d6e903801e85fedf81139bdd1e39a667aa47ed296ee56",
+      "sources/c07_grouped_conv_layer.sv": "5b5c48a585fa96f9eee8bd08b4cdc55bccbb159ffd9fa5d5657d0c1083bf87cd",
+      "sources/conv2d_3x3_multi_channel.sv": "73ab31e9e00f33b01fe6ef451b10fcf29137749894a133c2cf3cbb21b0353ef6",
+      "sources/espcn_fpga_student_weights_pkg.sv": "cc1a67ee659447a80252c97064ed7bc50826b40649ebf3c8399ef189ba692029",
+      "sources/espcn_streaming_feature_window_buffer.sv": "4e9913f92f23c56c914aaf9485e1066d577a30321fe6172e565516ebdd7f2815",
+      "sources/espcn_streaming_grouped_conv_layer.sv": "6b8c323b0dd558d80ea285f35a853b560dea8955c6c1b78469ed4bf71bfd416a",
+      "sources/espcn_streaming_grouped_conv_layer_multicontext.sv": "75d7d0c7c6ebb39bb09c22c26bd7007b472ca0dc54ece94de988891145bbc4c6",
+      "sources/espcn_streaming_grouped_conv_layer_selectable.sv": "d9f72c8dd0a1a93dbb6788187a9924845c5e8ec5b0e9ce140b4e58b6e2910347",
+      "sources/espcn_streaming_linebuffer_core.sv": "864a3c2106e08617833db6d34bad6758ca0571779abadfaba8f09fef7ff30842",
+      "sources/espcn_streaming_pixel_shuffle_rgb.sv": "5e539c8dae14dd2ea4df16513d8fab689a99f32ef031590a5362c79948925832",
+      "sources/line_buffer_3x3_stallable.sv": "c1a0dbaadc21330ee694cae5fb61d6f42c6efbdf9cdf26c41c8e63b20ac3c6cf",
+      "sources/mac_array_3x3_pipelined.sv": "0cd16c1016ab366630420a4b055fbeee6161c477ea0378f171bef79c84f30f9c",
+      "sources/packed_bram_window.sv": "1f38b7fa4158967dbc225a5598df5d2e2ec9952a3ebea77b69624fc4a33799d7",
+      "sources/paper2_origin_core.sv": "887c22b9486ca4fda61b1187264c0f9f5994f8e99938f576cb9943d45c869c7d",
+      "sources/relu_clamp_pipelined.sv": "3091738ee18582c50854388cbffa58acefb741442c85d5011b9a169eabece1cb",
+      "sources/roi_board_wrapper.v": "b7034499366691c33aca1fce835b658fde63c441c93c4fb70ac42af6d2b05913",
+      "sources/roi_request_guard.sv": "0398355e122c8958726b0f6dcc4116e2384c673e1e2cc50fc527d5907a54dd71",
+      "sources/roi_stream.sv": "3a8d3fcadeba64edaf30426cc43597da7cbf89bf48cfcd9c714f4aab02e253bf",
+      "sources/sparse_hierarchical_commit_controller.sv": "71bfc954591410f1462a0c79a819e04610eddd5cfc30c170af0466d5f519b808",
+      "sources/sparse_hierarchical_mask_lookup.sv": "2a20d0923456ddff8c9b8a8f637d820a5cea2b2441d000c78ff2c3ab45e0b025"
+    }
+  },
+  "bindings": {
+    "PROTOCOL.txt": "9a66d0a7a624c480a199b6b662e59ccf5fcbf2f8922e5d8755b051bfea2143c6",
+    "summarize.py": "810f492101c047a7f9656c2e1590f6b41f0ff5a3f9fb4770e8c42165c0fab474",
+    "physical\\P001\\analysis.json": "d4b9c5135a2eb09489471f86fbbb4181a06185cfaa46241824011dac1b0b48a1",
+    "physical\\P002\\analysis.json": "7d8643982fd6ab2eb6fd22e7453207e6c02d9582f7059207e3299b0ca9b95f8f",
+    "physical\\P003\\analysis.json": "a0b08587405d11192acbff968e4deb5cf4315c6d0773114f39b921e3d351e09b",
+    "physical\\P004\\analysis.json": "69bd8dea148e3db29cbde45857e7f0a43094ecc2575c7a8e06aa444c6d77f43e",
+    "physical\\Q001\\analysis.json": "e515021b7245f7c69e4d14f9380d95105ba6be229f368f9f0e2f50892f2165d2",
+    "physical\\Q002\\analysis.json": "a983cbf0fe7eae03e5097d036ccbb3c81d5a2230fc9631b8542123510717376b"
+  }
+}

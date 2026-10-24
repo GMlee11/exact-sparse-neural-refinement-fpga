@@ -1,0 +1,1633 @@
+{
+  "scope": "Exploratory fixed development cases; ABBA legs are not independent sessions",
+  "cases": [
+    {
+      "case": 0,
+      "control": true,
+      "segments": [
+        {
+          "segment": "all",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 0.14072849591887363,
+              "bounding_box": 0.1407344959186996,
+              "merged": 0.1407254959189606
+            },
+            "skip_off": {
+              "raster": 0.1353959960735161,
+              "bounding_box": 0.13541249607303762,
+              "merged": 0.1354014960733566
+            },
+            "skip_on": {
+              "raster": 0.1354089960731391,
+              "bounding_box": 0.13541399607299412,
+              "merged": 0.13539649607350163
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": 0.002131764354784682,
+              "bounding_box": 0.006395020410765451
+            },
+            "skip_off": {
+              "raster": -0.004062158409401384,
+              "bounding_box": 0.00812332687161188
+            },
+            "skip_on": {
+              "raster": 0.00923129186389815,
+              "bounding_box": 0.012923331413294825
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 0.013293450273299534,
+            "bounding_box": 0.004800004541682945
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 3.7799734950631936,
+            "bounding_box": 3.7805228995022366,
+            "merged": 3.7868048079416905
+          }
+        },
+        {
+          "segment": "first_leg",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 0.14613099576220112,
+              "bounding_box": 0.1461349957620851,
+              "merged": 0.14611299576272313
+            },
+            "skip_off": {
+              "raster": 0.13529699607638712,
+              "bounding_box": 0.1353309960754011,
+              "merged": 0.13532599607554613
+            },
+            "skip_on": {
+              "raster": 0.13546799607142812,
+              "bounding_box": 0.13545099607192113,
+              "merged": 0.1354409960722111
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": 0.012317714927012613,
+              "bounding_box": 0.015054572826478374
+            },
+            "skip_off": {
+              "raster": -0.021434325964375667,
+              "bounding_box": 0.0036946449815555837
+            },
+            "skip_on": {
+              "raster": 0.019930906191878428,
+              "bounding_box": 0.007382743575179429
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 0.041365232156254095,
+            "bounding_box": 0.0036880985936238453
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 7.2968774592659935,
+            "bounding_box": 7.311048003558341,
+            "merged": 7.303935994743805
+          }
+        },
+        {
+          "segment": "second_leg",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 0.1353259960755461,
+              "bounding_box": 0.1353339960753141,
+              "merged": 0.1353379960751981
+            },
+            "skip_off": {
+              "raster": 0.1354949960706451,
+              "bounding_box": 0.1354939960706741,
+              "merged": 0.13547699607116712
+            },
+            "skip_on": {
+              "raster": 0.13534999607485013,
+              "bounding_box": 0.1353769960740671,
+              "merged": 0.13535199607479212
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": -0.008867475577511996,
+              "bounding_box": -0.0029556504647754167
+            },
+            "skip_off": {
+              "raster": 0.013284623048814836,
+              "bounding_box": 0.0125466810338426
+            },
+            "skip_on": {
+              "raster": -0.0014776505356417502,
+              "bounding_box": 0.018466947856721205
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": -0.014762273584456587,
+            "bounding_box": 0.005920266822878606
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": -0.017734951155001788,
+            "bounding_box": -0.03177324249634683,
+            "merged": -0.010344470880307988
+          }
+        }
+      ]
+    },
+    {
+      "case": 1,
+      "control": true,
+      "segments": [
+        {
+          "segment": "all",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 235.93753265781157,
+              "bounding_box": 235.88702715927622,
+              "merged": 235.9785556566219
+            },
+            "skip_off": {
+              "raster": 309.3851800278298,
+              "bounding_box": 309.342826529058,
+              "merged": 309.4367830263333
+            },
+            "skip_on": {
+              "raster": 202.4525656288756,
+              "bounding_box": 202.4492171289727,
+              "merged": 202.47076062834793
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": -0.017387228877141503,
+              "bounding_box": -0.03880183596696174
+            },
+            "skip_off": {
+              "raster": -0.01667920826033953,
+              "bounding_box": -0.030372935532230194
+            },
+            "skip_on": {
+              "raster": -0.00898729014167099,
+              "bounding_box": -0.010641433778180165
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 0.007691918118668539,
+            "bounding_box": 0.01973150175405003
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 14.192301941845088,
+            "bounding_box": 14.17534929028783,
+            "merged": 14.199508482894508
+          }
+        },
+        {
+          "segment": "first_leg",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 236.03836315488746,
+              "bounding_box": 235.95613715727202,
+              "merged": 236.12181415246738
+            },
+            "skip_off": {
+              "raster": 309.3688720283027,
+              "bounding_box": 309.2923310305224,
+              "merged": 309.4765790251792
+            },
+            "skip_on": {
+              "raster": 202.4465041290514,
+              "bounding_box": 202.44273012916082,
+              "merged": 202.44989112895317
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": -0.035354845061830176,
+              "bounding_box": -0.07021516676419814
+            },
+            "skip_off": {
+              "raster": -0.034815072431282346,
+              "bounding_box": -0.05957082545271497
+            },
+            "skip_on": {
+              "raster": -0.0016730345215654197,
+              "bounding_box": -0.003537296591371586
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 0.033142037909716926,
+            "bounding_box": 0.056033528861343385
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 14.231525154151836,
+            "bounding_box": 14.20323600473824,
+            "merged": 14.260403319522075
+          }
+        },
+        {
+          "segment": "second_leg",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 235.83670216073565,
+              "bounding_box": 235.8179171612804,
+              "merged": 235.83529716077638
+            },
+            "skip_off": {
+              "raster": 309.40148802735683,
+              "bounding_box": 309.3933220275936,
+              "merged": 309.3969870274874
+            },
+            "skip_on": {
+              "raster": 202.45862712869982,
+              "bounding_box": 202.4557041287846,
+              "merged": 202.49163012774272
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": 0.0005957511898690981,
+              "bounding_box": -0.007370092868774769
+            },
+            "skip_off": {
+              "raster": 0.001454744092577176,
+              "bounding_box": -0.0011845762764917112
+            },
+            "skip_on": {
+              "raster": -0.016301107792227043,
+              "bounding_box": -0.01774511570948878
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": -0.01775585188480422,
+            "bounding_box": -0.016560539432997068
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 14.153045190263413,
+            "bounding_box": 14.14744623059272,
+            "merged": 14.138539664951944
+          }
+        }
+      ]
+    },
+    {
+      "case": 2,
+      "control": false,
+      "segments": [
+        {
+          "segment": "all",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 49.69246105891863,
+              "bounding_box": 24.79402828097318,
+              "merged": 24.779883281383384
+            },
+            "skip_off": {
+              "raster": 56.91168834956104,
+              "bounding_box": 32.0950585692433,
+              "merged": 32.08154506963519
+            },
+            "skip_on": {
+              "raster": 46.547068150135026,
+              "bounding_box": 21.763669868853576,
+              "merged": 21.758377369007057
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": 50.13351572182603,
+              "bounding_box": 0.057050026036509216
+            },
+            "skip_off": {
+              "raster": 43.6292508621691,
+              "bounding_box": 0.04210461114739772
+            },
+            "skip_on": {
+              "raster": 53.25510663995722,
+              "bounding_box": 0.024318048740912257
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 9.625855777788118,
+            "bounding_box": -0.017786562406485462
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 6.329718516163297,
+            "bounding_box": 12.222130174970747,
+            "merged": 12.193382341902803
+          }
+        },
+        {
+          "segment": "first_leg",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 49.709531558423585,
+              "bounding_box": 24.809203280533104,
+              "merged": 24.78757128116043
+            },
+            "skip_off": {
+              "raster": 56.9510413484198,
+              "bounding_box": 32.13708206802462,
+              "merged": 32.09647406920225
+            },
+            "skip_on": {
+              "raster": 46.55017865004482,
+              "bounding_box": 21.769345368688985,
+              "merged": 21.775079368522697
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": 50.135174273312934,
+              "bounding_box": 0.08719344643222104
+            },
+            "skip_off": {
+              "raster": 43.64198913793379,
+              "bounding_box": 0.12635869907670072
+            },
+            "skip_on": {
+              "raster": 53.22235059026625,
+              "bounding_box": -0.026339789904561428
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 9.580361452332461,
+            "bounding_box": -0.15269848898126215
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 6.35562800398869,
+            "bounding_box": 12.252944512044806,
+            "merged": 12.153235500435466
+          }
+        },
+        {
+          "segment": "second_leg",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 49.67539055941367,
+              "bounding_box": 24.778853281413255,
+              "merged": 24.772195281606336
+            },
+            "skip_off": {
+              "raster": 56.87233535070227,
+              "bounding_box": 32.05303507046198,
+              "merged": 32.066616070068136
+            },
+            "skip_on": {
+              "raster": 46.54395765022523,
+              "bounding_box": 21.757994369018164,
+              "merged": 21.741675369491414
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": 50.13185603044662,
+              "bounding_box": 0.026869684933772398
+            },
+            "skip_off": {
+              "raster": 43.61649495782105,
+              "bounding_box": -0.04237040135606218
+            },
+            "skip_on": {
+              "raster": 53.28786706777565,
+              "bounding_box": 0.07500231524090184
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 9.671372109954604,
+            "bounding_box": 0.11737271659696402
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 6.303791221214716,
+            "bounding_box": 12.19127809542766,
+            "merged": 12.233554102349265
+          }
+        }
+      ]
+    },
+    {
+      "case": 5,
+      "control": false,
+      "segments": [
+        {
+          "segment": "all",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 55.638479886484085,
+              "bounding_box": 52.80169246875092,
+              "merged": 30.592266612824268
+            },
+            "skip_off": {
+              "raster": 63.75406115113223,
+              "bounding_box": 60.975286231716694,
+              "merged": 38.99428736916567
+            },
+            "skip_on": {
+              "raster": 50.95224102238501,
+              "bounding_box": 48.1818001027278,
+              "merged": 26.32395623660527
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": 45.01599131529138,
+              "bounding_box": 42.061958277323455
+            },
+            "skip_off": {
+              "raster": 38.836386788399665,
+              "bounding_box": 36.049029403518354
+            },
+            "skip_on": {
+              "raster": 48.336018772873445,
+              "bounding_box": 45.365353348193096
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 9.49963198447378,
+            "bounding_box": 9.316323944674743
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 8.422657976386361,
+            "bounding_box": 8.749515687886833,
+            "merged": 13.952252803751797
+          }
+        },
+        {
+          "segment": "first_leg",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 55.66393038574602,
+              "bounding_box": 52.81392246839625,
+              "merged": 30.61074111228851
+            },
+            "skip_off": {
+              "raster": 63.78308715029048,
+              "bounding_box": 61.01892223045125,
+              "merged": 39.01250886863724
+            },
+            "skip_on": {
+              "raster": 50.97899352160919,
+              "bounding_box": 48.1728896029862,
+              "merged": 26.34183523608678
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": 45.00794158774123,
+              "bounding_box": 42.040394498996136
+            },
+            "skip_off": {
+              "raster": 38.835652817002966,
+              "bounding_box": 36.06490012836018
+            },
+            "skip_on": {
+              "raster": 48.328059429182545,
+              "bounding_box": 45.318133387510414
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 9.492406612179579,
+            "bounding_box": 9.253233259150235
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 8.416467956306061,
+            "bounding_box": 8.78751785229971,
+            "merged": 13.945777596635844
+          }
+        },
+        {
+          "segment": "second_leg",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 55.61302938722215,
+              "bounding_box": 52.78946246910559,
+              "merged": 30.573792113360028
+            },
+            "skip_off": {
+              "raster": 63.725035151973984,
+              "bounding_box": 60.93165023298214,
+              "merged": 38.97606586969409
+            },
+            "skip_on": {
+              "raster": 50.92548852316083,
+              "bounding_box": 48.190710602469395,
+              "merged": 26.30607723712376
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": 45.02404841052451,
+              "bounding_box": 42.08353204722821
+            },
+            "skip_off": {
+              "raster": 38.83712142842695,
+              "bounding_box": 36.03313594714288
+            },
+            "skip_on": {
+              "raster": 48.34398647906971,
+              "bounding_box": 45.41255584686111
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 9.506865050642766,
+            "bounding_box": 9.37941989971823
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 8.428853662013147,
+            "bounding_box": 8.711495915169731,
+            "merged": 13.958735836276514
+          }
+        }
+      ]
+    },
+    {
+      "case": 4,
+      "control": false,
+      "segments": [
+        {
+          "segment": "all",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 130.0597037282686,
+              "bounding_box": 118.83575605376308,
+              "merged": 118.83364005382444
+            },
+            "skip_off": {
+              "raster": 166.5542106699279,
+              "bounding_box": 155.33117449539594,
+              "merged": 155.29769199636692
+            },
+            "skip_on": {
+              "raster": 114.29788418536137,
+              "bounding_box": 103.08423751055712,
+              "merged": 103.09037351037917
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": 8.63146951180096,
+              "bounding_box": 0.0017806088074001636
+            },
+            "skip_off": {
+              "raster": 6.758471387954767,
+              "bounding_box": 0.02155555646687901
+            },
+            "skip_on": {
+              "raster": 9.805527683090387,
+              "bounding_box": -0.005952413259513456
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 3.0470562951356204,
+            "bounding_box": -0.027507969726392467
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 12.118910847158403,
+            "bounding_box": 13.254864584763304,
+            "merged": 13.248156444853942
+          }
+        },
+        {
+          "segment": "first_leg",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 130.07196322791307,
+              "bounding_box": 118.80388055468747,
+              "merged": 118.84537855348403
+            },
+            "skip_off": {
+              "raster": 166.6060891684234,
+              "bounding_box": 155.30856649605158,
+              "merged": 155.30439849617244
+            },
+            "skip_on": {
+              "raster": 114.31469768487378,
+              "bounding_box": 103.1354690090714,
+              "merged": 103.12694300931865
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": 8.631056528882974,
+              "bounding_box": -0.034929834448838015
+            },
+            "skip_off": {
+              "raster": 6.783479960823047,
+              "bounding_box": 0.0026836896207194094
+            },
+            "skip_on": {
+              "raster": 9.78680336136295,
+              "bounding_box": 0.008266796897971052
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 3.0033234005399025,
+            "bounding_box": 0.005583107277251642
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 12.114267480863106,
+            "bounding_box": 13.18846781137223,
+            "merged": 13.225954374903692
+          }
+        },
+        {
+          "segment": "second_leg",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 130.04744422862413,
+              "bounding_box": 118.86763155283869,
+              "merged": 118.82190155416485
+            },
+            "skip_off": {
+              "raster": 166.50233217143236,
+              "bounding_box": 155.3537824947403,
+              "merged": 155.2909854965614
+            },
+            "skip_on": {
+              "raster": 114.28107068584895,
+              "bounding_box": 103.03300601204283,
+              "merged": 103.05380401143968
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": 8.631882572582283,
+              "bounding_box": 0.0384713635465217
+            },
+            "skip_off": {
+              "raster": 6.733447230833766,
+              "bounding_box": 0.040421930622136504
+            },
+            "skip_on": {
+              "raster": 9.824257514415724,
+              "bounding_box": -0.02018576396229932
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 3.0908102835819573,
+            "bounding_box": -0.06060769458443582
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 12.123555088908788,
+            "bounding_box": 13.321225748287159,
+            "merged": 13.27036290152056
+          }
+        }
+      ]
+    },
+    {
+      "case": 10,
+      "control": false,
+      "segments": [
+        {
+          "segment": "all",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 142.627897363791,
+              "bounding_box": 142.6489513631804,
+              "merged": 130.15915672538446
+            },
+            "skip_off": {
+              "raster": 177.4847273529429,
+              "bounding_box": 177.51336585211237,
+              "merged": 166.02370718531247
+            },
+            "skip_on": {
+              "raster": 122.71831794116878,
+              "bounding_box": 122.73757294061038,
+              "merged": 111.62136426298044
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": 8.74214713170971,
+              "bounding_box": 8.755616160119716
+            },
+            "skip_off": {
+              "raster": 6.457468390978372,
+              "bounding_box": 6.472559748752671
+            },
+            "skip_on": {
+              "raster": 9.042622050530568,
+              "bounding_box": 9.056891391366195
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 2.585153659552196,
+            "bounding_box": 2.584331642613524
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 13.959106030877145,
+            "bounding_box": 13.958306901167605,
+            "merged": 14.242403630130983
+          }
+        },
+        {
+          "segment": "first_leg",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 142.66360786275538,
+              "bounding_box": 142.67204386251072,
+              "merged": 130.1895352245035
+            },
+            "skip_off": {
+              "raster": 177.50610985232282,
+              "bounding_box": 177.5311688515961,
+              "merged": 166.06610218408304
+            },
+            "skip_on": {
+              "raster": 122.75619744007028,
+              "bounding_box": 122.7620554399004,
+              "merged": 111.63773876250558
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": 8.743696325311046,
+              "bounding_box": 8.749092183775186
+            },
+            "skip_off": {
+              "raster": 6.444852899856446,
+              "bounding_box": 6.45805845907379
+            },
+            "skip_on": {
+              "raster": 9.05735018632583,
+              "bounding_box": 9.061689817372642
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 2.6124972864693845,
+            "bounding_box": 2.603631358298852
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 13.954091531062595,
+            "bounding_box": 13.955073386203853,
+            "merged": 14.249836924301585
+          }
+        },
+        {
+          "segment": "second_leg",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 142.5921868648266,
+              "bounding_box": 142.62585886385008,
+              "merged": 130.12877822626544
+            },
+            "skip_off": {
+              "raster": 177.463344853563,
+              "bounding_box": 177.49556285262867,
+              "merged": 165.98131218654194
+            },
+            "skip_on": {
+              "raster": 122.68043844226729,
+              "bounding_box": 122.71309044132038,
+              "merged": 111.6049897634553
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": 8.740597162154561,
+              "bounding_box": 8.762142249053372
+            },
+            "skip_off": {
+              "raster": 6.470086922172946,
+              "bounding_box": 6.487063947422056
+            },
+            "skip_on": {
+              "raster": 9.027884819652021,
+              "bounding_box": 9.052091050690969
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 2.557797897479075,
+            "bounding_box": 2.5650271032689123
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 13.964123042334077,
+            "bounding_box": 13.961541463205728,
+            "merged": 14.234966865362663
+          }
+        }
+      ]
+    },
+    {
+      "case": 34,
+      "control": true,
+      "segments": [
+        {
+          "segment": "all",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 0.14070599591952612,
+              "bounding_box": 0.1407254959189606,
+              "merged": 0.14077349591756863
+            },
+            "skip_off": {
+              "raster": 0.13544549607208062,
+              "bounding_box": 0.1354084960731536,
+              "merged": 0.1354034960732986
+            },
+            "skip_on": {
+              "raster": 0.13539849607344362,
+              "bounding_box": 0.13539749607347262,
+              "merged": 0.1354169960729071
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": -0.04797236791609372,
+              "bounding_box": -0.03410895679889503
+            },
+            "skip_off": {
+              "raster": 0.03100878213009306,
+              "bounding_box": 0.003692530380305925
+            },
+            "skip_on": {
+              "raster": -0.01366337145536356,
+              "bounding_box": -0.014402038442362652
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": -0.04467215358545662,
+            "bounding_box": -0.018094568822668577
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 3.772049521697718,
+            "bounding_box": 3.78609420467505,
+            "merged": 3.80504853541328
+          }
+        },
+        {
+          "segment": "first_leg",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 0.14610099576307112,
+              "bounding_box": 0.1461269957623171,
+              "merged": 0.14614499576179513
+            },
+            "skip_off": {
+              "raster": 0.13529899607632911,
+              "bounding_box": 0.1353559960746761,
+              "merged": 0.13536699607435712
+            },
+            "skip_on": {
+              "raster": 0.1355019960704421,
+              "bounding_box": 0.13545599607177614,
+              "merged": 0.1354329960724431
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": -0.030116152524639617,
+              "bounding_box": -0.012318052105375621
+            },
+            "skip_off": {
+              "raster": -0.050259055868862035,
+              "bounding_box": -0.008126717692613639
+            },
+            "skip_on": {
+              "raster": 0.05092175761243212,
+              "bounding_box": 0.01697968343966627
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 0.10118081348129415,
+            "bounding_box": 0.02510640113227991
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 7.254570468374622,
+            "bounding_box": 7.302551889794473,
+            "merged": 7.329706798043045
+          }
+        },
+        {
+          "segment": "second_leg",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 0.1353109960759811,
+              "bounding_box": 0.1353239960756041,
+              "merged": 0.1354019960733421
+            },
+            "skip_off": {
+              "raster": 0.1355919960678321,
+              "bounding_box": 0.13546099607163112,
+              "merged": 0.1354399960722401
+            },
+            "skip_on": {
+              "raster": 0.13529499607644513,
+              "bounding_box": 0.1353389960751691,
+              "merged": 0.1354009960733711
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": -0.06725247762562336,
+              "bounding_box": -0.05763944311429903
+            },
+            "skip_off": {
+              "raster": 0.11210100890907126,
+              "bounding_box": 0.01550261698939348
+            },
+            "skip_on": {
+              "raster": -0.07834731512619264,
+              "bounding_box": -0.0458108896918219
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": -0.1904483240352639,
+            "bounding_box": -0.06131350668121538
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 0.011824611450639289,
+            "bounding_box": -0.011084508291214767,
+            "merged": 0.000738541528189085
+          }
+        }
+      ]
+    },
+    {
+      "case": 35,
+      "control": true,
+      "segments": [
+        {
+          "segment": "all",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 235.7424206634698,
+              "bounding_box": 235.75352266314783,
+              "merged": 235.75199416319217
+            },
+            "skip_off": {
+              "raster": 309.2008750331746,
+              "bounding_box": 309.1986935332379,
+              "merged": 309.20835403295774
+            },
+            "skip_on": {
+              "raster": 175.81676090131393,
+              "bounding_box": 175.8177039012866,
+              "merged": 175.82535640106465
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": -0.0040610000081597875,
+              "bounding_box": 0.0006483466030160479
+            },
+            "skip_off": {
+              "raster": -0.0024188158530780157,
+              "bounding_box": -0.0031243662802937777
+            },
+            "skip_on": {
+              "raster": -0.004888896659593911,
+              "bounding_box": -0.0043525194609372875
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": -0.0024700808065158952,
+            "bounding_box": -0.0012281531806435098
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 25.41997303391643,
+            "bounding_box": 25.423085129251476,
+            "merged": 25.419355613443983
+          }
+        },
+        {
+          "segment": "first_leg",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 235.80468516166414,
+              "bounding_box": 235.83899416066916,
+              "merged": 235.83353016082762
+            },
+            "skip_off": {
+              "raster": 309.17048303405596,
+              "bounding_box": 309.1895130335041,
+              "merged": 309.1907420334685
+            },
+            "skip_on": {
+              "raster": 175.79504390194373,
+              "bounding_box": 175.78767690215736,
+              "merged": 175.79540790193317
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": -0.01223258102089897,
+              "bounding_box": 0.0023168347800139877
+            },
+            "skip_off": {
+              "raster": -0.006552695203532188,
+              "bounding_box": -0.0003974908308945757
+            },
+            "skip_on": {
+              "raster": -0.00020705930119380156,
+              "bounding_box": -0.004397919076049028
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 0.006345635902338387,
+            "bounding_box": -0.004000428245154453
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 25.448875716179565,
+            "bounding_box": 25.462844883743387,
+            "merged": 25.45783978128606
+          }
+        },
+        {
+          "segment": "second_leg",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 235.68015616527546,
+              "bounding_box": 235.6680511656265,
+              "merged": 235.6704581655567
+            },
+            "skip_off": {
+              "raster": 309.23126703229326,
+              "bounding_box": 309.20787403297163,
+              "merged": 309.225966032447
+            },
+            "skip_on": {
+              "raster": 175.83847790068415,
+              "bounding_box": 175.8477309004158,
+              "merged": 175.85530490019616
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": 0.004114898715512627,
+              "bounding_box": -0.0010213518202073502
+            },
+            "skip_off": {
+              "raster": 0.0017142509220136048,
+              "bounding_box": -0.0058510798057520574
+            },
+            "skip_on": {
+              "raster": -0.00956957755373633,
+              "bounding_box": -0.004307135350334335
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": -0.011283828475749935,
+            "bounding_box": 0.0015439444554177228
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 25.391055080015356,
+            "bounding_box": 25.383296534823575,
+            "merged": 25.38084481651105
+          }
+        }
+      ]
+    },
+    {
+      "case": 36,
+      "control": false,
+      "segments": [
+        {
+          "segment": "all",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 49.690161058985325,
+              "bounding_box": 24.800522280784854,
+              "merged": 24.786427781193595
+            },
+            "skip_off": {
+              "raster": 56.91754384939123,
+              "bounding_box": 32.08671956948513,
+              "merged": 32.08762856945877
+            },
+            "skip_on": {
+              "raster": 45.454222181827554,
+              "bounding_box": 20.679705400288544,
+              "merged": 20.683583900176068
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": 50.11803694544166,
+              "bounding_box": 0.056831462788098364
+            },
+            "skip_off": {
+              "raster": 43.624361841112766,
+              "bounding_box": -0.002832947667563701
+            },
+            "skip_on": {
+              "raster": 54.49579179369327,
+              "bounding_box": -0.01875510222437704
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 10.871429952580506,
+            "bounding_box": -0.01592215455681334
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 8.524703456141847,
+            "bounding_box": 16.61584717386807,
+            "merged": 16.552784117324528
+          }
+        },
+        {
+          "segment": "first_leg",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 49.70033555869027,
+              "bounding_box": 24.81601228033564,
+              "merged": 24.79372928098185
+            },
+            "skip_off": {
+              "raster": 56.958587348200965,
+              "bounding_box": 32.125573068358385,
+              "merged": 32.106786068903205
+            },
+            "skip_on": {
+              "raster": 45.44990768195267,
+              "bounding_box": 20.684395400152535,
+              "merged": 20.69947139971533
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": 50.11355758010253,
+              "bounding_box": 0.08979282852566994
+            },
+            "skip_off": {
+              "raster": 43.63135119095032,
+              "bounding_box": 0.058479888950790926
+            },
+            "skip_on": {
+              "raster": 54.45651607355253,
+              "bounding_box": -0.07288586043312506
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 10.825164882602209,
+            "bounding_box": -0.131365749383916
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 8.552111024921228,
+            "bounding_box": 16.648995952734214,
+            "merged": 16.513279768715716
+          }
+        },
+        {
+          "segment": "second_leg",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 49.67998655928039,
+              "bounding_box": 24.785032281234063,
+              "merged": 24.77912628140534
+            },
+            "skip_off": {
+              "raster": 56.876500350581495,
+              "bounding_box": 32.04786607061188,
+              "merged": 32.06847107001434
+            },
+            "skip_on": {
+              "raster": 45.458536681702434,
+              "bounding_box": 20.675015400424552,
+              "merged": 20.667696400636803
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": 50.12251814553578,
+              "bounding_box": 0.02382889706056268
+            },
+            "skip_off": {
+              "raster": 43.61736240389749,
+              "bounding_box": -0.06429445054800809
+            },
+            "skip_on": {
+              "raster": 54.535060058464715,
+              "bounding_box": 0.03540021444239372
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 10.917697654567228,
+            "bounding_box": 0.0996946649904018
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 8.497284661179872,
+            "bounding_box": 16.582656960755305,
+            "merged": 16.592311746898925
+          }
+        }
+      ]
+    },
+    {
+      "case": 39,
+      "control": false,
+      "segments": [
+        {
+          "segment": "all",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 55.62807138678593,
+              "bounding_box": 52.804774968661526,
+              "merged": 30.594589612756902
+            },
+            "skip_off": {
+              "raster": 63.75792615102014,
+              "bounding_box": 60.96896673189997,
+              "merged": 38.99382786917899
+            },
+            "skip_on": {
+              "raster": 47.72559061595787,
+              "bounding_box": 44.96563419599661,
+              "merged": 23.142016828881513
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": 45.001527376294334,
+              "bounding_box": 42.06094121049826
+            },
+            "skip_off": {
+              "raster": 38.84081521595244,
+              "bounding_box": 36.043154477839
+            },
+            "skip_on": {
+              "raster": 51.510255755444575,
+              "bounding_box": 48.53399214162113
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 12.669440539492136,
+            "bounding_box": 12.490837663782123
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 14.205922610333822,
+            "bounding_box": 14.845514969654305,
+            "merged": 24.359119956189645
+          }
+        },
+        {
+          "segment": "first_leg",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 55.650177386144854,
+              "bounding_box": 52.82638446803485,
+              "merged": 30.614082112191618
+            },
+            "skip_off": {
+              "raster": 63.77072215064906,
+              "bounding_box": 61.01006223070819,
+              "merged": 39.01257886863522
+            },
+            "skip_on": {
+              "raster": 47.743812615429434,
+              "bounding_box": 44.95700969624672,
+              "merged": 23.15690832844966
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": 44.98834765652775,
+              "bounding_box": 42.04774295936126
+            },
+            "skip_off": {
+              "raster": 38.82368341936967,
+              "bounding_box": 36.05550061380036
+            },
+            "skip_on": {
+              "raster": 51.49757202053442,
+              "bounding_box": 48.490995097516596
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 12.673888601164748,
+            "bounding_box": 12.435494483716234
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 14.207258884108887,
+            "bounding_box": 14.896674930592447,
+            "merged": 24.358639126966498
+          }
+        },
+        {
+          "segment": "second_leg",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 55.605965387427005,
+              "bounding_box": 52.7831654692882,
+              "merged": 30.575097113322183
+            },
+            "skip_off": {
+              "raster": 63.74513015139123,
+              "bounding_box": 60.927871233091736,
+              "merged": 38.97507686972277
+            },
+            "skip_on": {
+              "raster": 47.70736861648631,
+              "bounding_box": 44.9742586957465,
+              "merged": 23.127125329313365
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": 45.01471757518397,
+              "bounding_box": 42.074150268399016
+            },
+            "skip_off": {
+              "raster": 38.85795389050257,
+              "bounding_box": 36.0307916870822
+            },
+            "skip_on": {
+              "raster": 51.522949179550245,
+              "bounding_box": 48.57697269504824
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 12.664995289047674,
+            "bounding_box": 12.546181007966041
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 14.204585274094772,
+            "bounding_box": 14.794313118801671,
+            "merged": 24.359601398497567
+          }
+        }
+      ]
+    },
+    {
+      "case": 38,
+      "control": false,
+      "segments": [
+        {
+          "segment": "all",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 130.06506822811303,
+              "bounding_box": 118.82120955418492,
+              "merged": 118.8110270544802
+            },
+            "skip_off": {
+              "raster": 166.56612916958227,
+              "bounding_box": 155.31416649588917,
+              "merged": 155.30278249621932
+            },
+            "skip_on": {
+              "raster": 108.05787086632175,
+              "bounding_box": 96.82967269193949,
+              "merged": 96.82161169217326
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": 8.652623895829636,
+              "bounding_box": 0.008569597753560476
+            },
+            "skip_off": {
+              "raster": 6.762087063868572,
+              "bounding_box": 0.007329659571109204
+            },
+            "skip_on": {
+              "raster": 10.398371802132623,
+              "bounding_box": 0.008324927206848631
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 3.6362847382640506,
+            "bounding_box": 0.0009952676357394274
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 16.920144402795557,
+            "bounding_box": 18.508090386183817,
+            "merged": 18.507890982394926
+          }
+        },
+        {
+          "segment": "first_leg",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 130.1120372267509,
+              "bounding_box": 118.81907155424693,
+              "merged": 118.84285555355719
+            },
+            "skip_off": {
+              "raster": 166.61594816813752,
+              "bounding_box": 155.27641349698402,
+              "merged": 155.28398849676435
+            },
+            "skip_on": {
+              "raster": 108.04717386663195,
+              "bounding_box": 96.87995119048142,
+              "merged": 96.87048119075604
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": 8.661136904308497,
+              "bounding_box": -0.020016988013060732
+            },
+            "skip_off": {
+              "raster": 6.801245496582187,
+              "bounding_box": -0.004878396924379302
+            },
+            "skip_on": {
+              "raster": 10.344271188131094,
+              "bounding_box": 0.009774983997223874
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 3.543025691548907,
+            "bounding_box": 0.014653380921603176
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 16.958356682760822,
+            "bounding_box": 18.464308866232127,
+            "merged": 18.48859509514157
+          }
+        },
+        {
+          "segment": "second_leg",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 130.01809922947513,
+              "bounding_box": 118.82334755412292,
+              "merged": 118.77919855540324
+            },
+            "skip_off": {
+              "raster": 166.51631017102702,
+              "bounding_box": 155.35191949479434,
+              "merged": 155.3215764956743
+            },
+            "skip_on": {
+              "raster": 108.06856786601153,
+              "bounding_box": 96.77939419339756,
+              "merged": 96.77274219359047
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": 8.644104736707325,
+              "bounding_box": 0.03715515479780773
+            },
+            "skip_off": {
+              "raster": 6.7229052000099765,
+              "bounding_box": 0.019531782560988642
+            },
+            "skip_on": {
+              "raster": 10.452461706003312,
+              "bounding_box": 0.00687336375944092
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 3.7295565059933358,
+            "bounding_box": -0.012658418801547722
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 16.881904514481338,
+            "bounding_box": 18.551870330605304,
+            "merged": 18.52719721083831
+          }
+        }
+      ]
+    },
+    {
+      "case": 44,
+      "control": false,
+      "segments": [
+        {
+          "segment": "all",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 142.637723863506,
+              "bounding_box": 142.64432886331446,
+              "merged": 130.1452307257883
+            },
+            "skip_off": {
+              "raster": 177.5257798517524,
+              "bounding_box": 177.51914035194494,
+              "merged": 166.01599868553603
+            },
+            "skip_on": {
+              "raster": 108.11624686462883,
+              "bounding_box": 108.11922436454249,
+              "merged": 97.19158818144395
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": 8.758197200112438,
+              "bounding_box": 8.76242205850547
+            },
+            "skip_off": {
+              "raster": 6.483442109550452,
+              "bounding_box": 6.479944440696972
+            },
+            "skip_on": {
+              "raster": 10.104548576185346,
+              "bounding_box": 10.107024210841676
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 3.6211064666348936,
+            "bounding_box": 3.6270797701447037
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 24.20220686633484,
+            "bounding_box": 24.203629246175517,
+            "merged": 25.32066857968587
+          }
+        },
+        {
+          "segment": "first_leg",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 142.69265686191295,
+              "bounding_box": 142.670275862562,
+              "merged": 130.1574202254348
+            },
+            "skip_off": {
+              "raster": 177.55466785091463,
+              "bounding_box": 177.5422718512741,
+              "merged": 166.05442918442154
+            },
+            "skip_on": {
+              "raster": 108.13553486406948,
+              "bounding_box": 108.14079586391692,
+              "merged": 97.21007918090771
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": 8.78478045903146,
+              "bounding_box": 8.770471327314988
+            },
+            "skip_off": {
+              "raster": 6.477012857893083,
+              "bounding_box": 6.470483083868528
+            },
+            "skip_on": {
+              "raster": 10.103483278549918,
+              "bounding_box": 10.10785670263079
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 3.626470420656835,
+            "bounding_box": 3.637373618762263
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 24.21786990152213,
+            "bounding_box": 24.202294268995615,
+            "merged": 25.31345580410379
+          }
+        },
+        {
+          "segment": "second_leg",
+          "mean_service_ms": {
+            "reference": {
+              "raster": 142.58279086509907,
+              "bounding_box": 142.61838186406692,
+              "merged": 130.1330412261418
+            },
+            "skip_off": {
+              "raster": 177.49689185259012,
+              "bounding_box": 177.49600885261574,
+              "merged": 165.97756818665053
+            },
+            "skip_on": {
+              "raster": 108.0969588651882,
+              "bounding_box": 108.09765286516807,
+              "merged": 97.17309718198018
+            }
+          },
+          "merged_saving_percent": {
+            "reference": {
+              "raster": 8.731593457681896,
+              "bounding_box": 8.754369860839672
+            },
+            "skip_off": {
+              "raster": 6.489873453956763,
+              "bounding_box": 6.489408263556829
+            },
+            "skip_on": {
+              "raster": 10.105614253988016,
+              "bounding_box": 10.10619138679566
+            }
+          },
+          "organization_skip_interaction_percentage_points": {
+            "raster": 3.6157408000312525,
+            "bounding_box": 3.6167831232388306
+          },
+          "skip_on_saving_vs_reference_percent": {
+            "raster": 24.186531762124595,
+            "bounding_box": 24.204964709108403,
+            "merged": 25.327882706502415
+          }
+        }
+      ]
+    }
+  ],
+  "no_automatic_advancement": true,
+  "source_sha256": {
+    "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_skip_width_20261022\\w16\\physical\\P001\\analysis.json": "1e7dc25198b7571e1edf7b090352ea470f6cf667fedb3a2d1db9fecfbeef9ebc",
+    "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_skip_width_20261022\\w16\\physical\\P002\\analysis.json": "30ffe72c4bbc9300895025e68ef063cf49a81b688f1e9997d2bbbc77f8711916",
+    "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_skip_width_20261022\\w16\\physical\\P003\\analysis.json": "cb91b4712a5082ad769a60c82b400a9aa7ced0ecab11e7f2b5d2e51c43735154",
+    "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_skip_width_20261022\\w16\\physical\\P004\\analysis.json": "18d5f8feb4c7e7ff92a9468e857bb36b8ea999518ed2d81f0b28f52f471bbb7e"
+  },
+  "summarizer_sha256": "8620fc555c590228b6e88031f4e7ef44389af6c68e633da98902ac3945b9617b"
+}

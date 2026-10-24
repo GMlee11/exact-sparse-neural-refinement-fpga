@@ -1,0 +1,14 @@
+{
+  "run": "Q001",
+  "started_utc": "2026-10-23T02:27:16.2683049Z",
+  "terminal": true,
+  "serial_closed": true,
+  "board_programming_requested": true,
+  "launch_marker_seen": true,
+  "status": "CAPTURED",
+  "program_pid": 43996,
+  "program_exit": 0,
+  "wait_seconds": 31.1265684,
+  "dump_exit": 0,
+  "ended_utc": "2026-10-23T02:30:52.4042085Z"
+}

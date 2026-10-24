@@ -1,22 +1,53 @@
-# Evidence guide
+# Current-paper evidence guide
 
-Use artifact/paper2_arc/PHYSICAL_EVIDENCE_INDEX.md for exact capture/analyzer/field
-mappings. `scripts/reproduce_paper2_arc.ps1` lists all offline regeneration commands.
+For **Resource and Service Trade-offs in Exact Sparse Neural Upscaling on a Zynq
+FPGA**. Run `python -B reproduce.py` for the complete offline workflow.
 
-- Same-bitstream contrasts and applicability: results/analysis/sparse_distilled_same_bitstream_b030_execution_factorial.json, physical UART in fpga/docs/captures/paper2/experiment134/E134-B030, and results/preflight/experiment134/E134-B030_physical_result.json.
-- Organization operating points: results/tables/sparse_architecture_ablation_v1.json and analyzer src/hardware/analyze_sparse_architecture_ablation.py.
-- Controlled masks/scaling: sparse_hierarchical_commit_controlled_masks* records, analyze_sparse_hierarchical_commit_physical.py and plot_sparse_accelerator_paper_figures.py.
-- Deadlines and power: analyze_sparse_deadline_traces.py, analyze_sparse_realtime_envelope.py and analyze_sparse_postroute_power.py. Power is a tool estimate, not measured energy.
-- Tang controls: analyze_tang_sparse_commit_candidate.py; split numerical/control evidence, not integrated throughput.
-- Bounded successor/host diagnostic: docs/paper/PAPER2_SUCCESSOR_DIAGNOSTICS_20260921.md and verify_paper2_successor_diagnostics.py. No new confirmatory speedup.
-- Later same-image ROI confirmation: artifact/paper2_arc/ROI_REPLAY.md, all 306 P003 timing records and 51 first-repeat raw-byte archives; scripts/paper2_conventional_comparison_v1/replay_physical.py.
-- Physical fault/reuse validation: all 11 P005 public-output archives and scripts/paper2_conventional_comparison_v1/replay_safety.py. These are selected fault checks, not exhaustive formal verification.
-- Full 17-workload ROI table: src/report/paper2_roi_publication.py regenerates results/tables/paper2_roi_publication_v1.json and docs/paper/generated/paper2_roi_publication_v1.tex. No manuscript source is distributed.
+## Manuscript mapping
 
-The compact replay checks the archived B030 contrast record and mask coverage;
-it is not a fresh physical capture or complete RTL/bitstream rebuild. Manuscript
-wording/layout regression tests are omitted because no manuscript is distributed.
-The retrospective mask grouping's data is retained, but its manuscript-string
-test is excluded. Frozen expected-output hashes retain the existing text hash
-normalization rules. Historical provenance may name files outside this compact
-snapshot; it does not imply those files are distributed.
+| Manuscript material | Retained evidence |
+| --- | --- |
+| Table 1, common conditions; Figure 1, request path | Shared `fpga/rtl/`; ROI wrappers in `src/experiments/paper2_conventional_comparison_v1/`; origin-aware core in `results/paper2_conventional_comparison_v1/E013/`; B002 routed reports and F006/F008 host sources in the same result tree |
+| Figure 2, request geometry | `configs/sparse_controlled_mask_suite_v1.jsonl` and `comparison.py` in the ROI source directory |
+| Table 2, Figure 3, region service and regressions | `results/paper2_conventional_comparison_v1/P003/summary.json`, all 306 raw requests and 51 complete first-repeat output archives |
+| Publication rejection and reuse checks | `results/paper2_conventional_comparison_v1/P005/`, eleven physical checks and 1,013,760 archived public-output words |
+| Table 3 and buffer service comparison | `results/design_study_v1/buffer/routed_resource_comparison.json`, `paired_service_comparison.json`, P002–P005 captures and reference/candidate reports |
+| Figure 4 and merged-region skipping comparison | `results/design_study_v1/skipping/c07_paired_physical_analysis.json`, P001–P004 captures, input provenance and dense references |
+| Table 4 and Figure 5, width/resource comparisons | `results/width_study_v1/`, W16/W12 comparisons, per-campaign W24 controls, weight packages and routed reports |
+| Table 5, organization × skipping | `results/organization_skipping_v1/comparison.json`, twelve primary captures across W24/W16/W12 plus separate qualification and diagnostic records |
+| Output-traversal RTL probe | `results/traversal_assessment_v1/assessment.json`, source snapshots, fixtures and simulator logs |
+| Table 6, stronger physical baseline | `results/output_suppression_v1/comparison.json`, primary P001–P004 and qualification Q001/Q002 captures, formatter sources and build reports |
+
+## Individual verification commands
+
+```text
+python -B verify_release.py
+python -B scripts/paper2_conventional_comparison_v1/replay_physical.py
+python -B scripts/paper2_conventional_comparison_v1/replay_safety.py
+python -B scripts/design_study_v1/replay.py
+python -B scripts/width_study_v1/replay.py
+python -B scripts/organization_skipping_v1/replay.py
+python -B results/traversal_assessment_v1/simulate.py
+python -B scripts/output_suppression_v1/replay.py
+python -B -m pytest -p no:cacheprovider tests -q
+```
+
+The region table is generated by `src/report/paper2_roi_publication.py`; tests
+compare its complete workload table and aggregates with the retained summary.
+Its generated TeX is a table fragment, not a manuscript.
+
+## Reading the records
+
+Acquisition protocols, order, model/source hashes and qualification records live
+with each study. Keep those cohorts separate: they use different request sets,
+inputs or build controls. The organization/skipping and output-suppression
+comparisons retain every primary cell, including near ties and losses.
+
+The W24 checker correction and W16 startup failures remain with the interaction
+study. `results/width_study_v1/historical_quality.json` supplies the W12 model
+context discussed in the manuscript. These are relevant provenance, not extra
+performance repetitions. Older unrelated campaigns are not part of this release.
+
+`payload_aliases.json` preserves original logical archive paths while sharing
+identical stored bytes. The original export manifests remain the authority for
+acquired file identities; `release_manifest.json` identifies this distribution.

@@ -1,0 +1,107 @@
+W24 conventional output-suppression physical comparison
+
+Completed: 864 primary records and 144 first-repeat full-output archives;
+separate qualification: 144 records and 144 archives. All passed.
+Every request has checked counts/status/identity/FNV; archived selected
+words are byte-identical to the retained dense integer reference.
+
+Fresh same-session ABBA captures; both images use the identical firmware,
+4/12/4 lanes, weights and 50-MHz fabric clock. Only the qualified formatter
+and mask/origin connections differ among author-written compiled sources.
+
+Eight sparse frame/mask cells, equally weighted; complete service:
+skip_off raster      : 151.111110 -> 141.697950 ms; reduction 6.2293%; slower cells 0/8
+  Acquisition-leg reductions: 6.2267%, 6.2319%
+skip_off bounding_box: 141.358701 -> 136.964119 ms; reduction 3.1088%; slower cells 0/8
+  Acquisition-leg reductions: 3.1108%, 3.1068%
+skip_off merged      : 132.536769 -> 132.190104 ms; reduction 0.2616%; slower cells 0/8
+  Acquisition-leg reductions: 0.2620%, 0.2611%
+skip_on  raster      : 97.149149 -> 87.741848 ms; reduction 9.6834%; slower cells 0/8
+  Acquisition-leg reductions: 9.6929%, 9.6738%
+skip_on  bounding_box: 87.425378 -> 83.030460 ms; reduction 5.0271%; slower cells 0/8
+  Acquisition-leg reductions: 5.0146%, 5.0395%
+skip_on  merged      : 78.878308 -> 78.537431 ms; reduction 0.4322%; slower cells 0/8
+  Acquisition-leg reductions: 0.4560%, 0.4083%
+
+Raster-minus-merged organization gaps:
+skip_off: 18.574341 -> 9.507846 ms; gap reduction 48.8119%
+  Improved-image merged reduction vs raster 6.7099%; vs box 3.4856%
+skip_on: 18.270842 -> 9.204417 ms; gap reduction 49.6224%
+  Improved-image merged reduction vs raster 10.4903%; vs box 5.4113%
+
+Empty/dense controls (equal means across both frames):
+empty skip_off raster: 0.135391 -> 0.135408 ms; change +0.01219%
+empty skip_off bounding_box: 0.135417 -> 0.135399 ms; change -0.01329%
+empty skip_off merged: 0.135408 -> 0.135383 ms; change -0.01865%
+empty skip_on raster: 0.135421 -> 0.135392 ms; change -0.02086%
+empty skip_on bounding_box: 0.135408 -> 0.135396 ms; change -0.00886%
+empty skip_on merged: 0.135393 -> 0.135402 ms; change +0.00665%
+dense skip_off raster: 420.002918 -> 419.943092 ms; change -0.01424%
+dense skip_off bounding_box: 419.992240 -> 419.928936 ms; change -0.01507%
+dense skip_off merged: 420.020835 -> 419.963199 ms; change -0.01372%
+dense skip_on raster: 238.828748 -> 238.779445 ms; change -0.02064%
+dense skip_on bounding_box: 238.833493 -> 238.776504 ms; change -0.02386%
+dense skip_on merged: 238.843938 -> 238.779103 ms; change -0.02715%
+
+All sparse per-cell changes (positive means slower):
+frame 0 mask 2 skip_off raster: -18.17505%
+frame 0 mask 5 skip_off raster: -15.59631%
+frame 0 mask 4 skip_off raster: -2.98764%
+frame 0 mask 10 skip_off raster: -2.75819%
+frame 2 mask 2 skip_off raster: -18.16317%
+frame 2 mask 5 skip_off raster: -15.60987%
+frame 2 mask 4 skip_off raster: -2.96956%
+frame 2 mask 10 skip_off raster: -2.76026%
+frame 0 mask 2 skip_off bounding_box: -0.21648%
+frame 0 mask 5 skip_off bounding_box: -14.46155%
+frame 0 mask 4 skip_off bounding_box: -0.08798%
+frame 0 mask 10 skip_off bounding_box: -2.75306%
+frame 2 mask 2 skip_off bounding_box: -0.21874%
+frame 2 mask 5 skip_off bounding_box: -14.44691%
+frame 2 mask 4 skip_off bounding_box: -0.08489%
+frame 2 mask 10 skip_off bounding_box: -2.75017%
+frame 0 mask 2 skip_off merged: -0.21139%
+frame 0 mask 5 skip_off merged: -0.39363%
+frame 0 mask 4 skip_off merged: -0.09577%
+frame 0 mask 10 skip_off merged: -0.39820%
+frame 2 mask 2 skip_off merged: -0.22219%
+frame 2 mask 5 skip_off merged: -0.39749%
+frame 2 mask 4 skip_off merged: -0.09642%
+frame 2 mask 10 skip_off merged: -0.39221%
+frame 0 mask 2 skip_on raster: -23.98876%
+frame 0 mask 5 skip_on raster: -21.02333%
+frame 0 mask 4 skip_on raster: -4.70486%
+frame 0 mask 10 skip_on raster: -4.31623%
+frame 2 mask 2 skip_on raster: -24.18045%
+frame 2 mask 5 skip_on raster: -22.24885%
+frame 2 mask 4 skip_on raster: -4.85597%
+frame 2 mask 10 skip_on raster: -4.81801%
+frame 0 mask 2 skip_on bounding_box: -0.37777%
+frame 0 mask 5 skip_on bounding_box: -19.71695%
+frame 0 mask 4 skip_on bounding_box: -0.10791%
+frame 0 mask 10 skip_on bounding_box: -4.31823%
+frame 2 mask 2 skip_on bounding_box: -0.31953%
+frame 2 mask 5 skip_on bounding_box: -20.89883%
+frame 2 mask 4 skip_on bounding_box: -0.15580%
+frame 2 mask 10 skip_on bounding_box: -4.83279%
+frame 0 mask 2 skip_on merged: -0.36617%
+frame 0 mask 5 skip_on merged: -0.64645%
+frame 0 mask 4 skip_on merged: -0.16787%
+frame 0 mask 10 skip_on merged: -0.60336%
+frame 2 mask 2 skip_on merged: -0.35419%
+frame 2 mask 5 skip_on merged: -0.71921%
+frame 2 mask 4 skip_on merged: -0.14738%
+frame 2 mask 10 skip_on merged: -0.71055%
+
+Routed resources: {'lut': 21354.0, 'ff': 24526.0, 'bram': 27.5, 'dsp': 180.0}; setup 1.709 ns; hold 0.021 ns.
+Original: 21,238 LUTs, 24,526 registers, 27.5 BRAM tiles, 180 DSPs;
+setup +2.712 ns, hold +0.014 ns. Added LUTs: 116.
+
+Interpretation boundaries:
+This is conventional output suppression, not a new execution primitive.
+The intervention leaves input/feature traversal and arithmetic intact.
+Separate routing can affect physical implementation; clocks are identical.
+Development renders and fixed masks, one board session, not held-out transfer.
+No inference of general statistical significance from within-session repeats.
+Keep earlier cohorts intact; do not pool this comparison with their means.
+Arithmetic-parallelism expansion remains held.

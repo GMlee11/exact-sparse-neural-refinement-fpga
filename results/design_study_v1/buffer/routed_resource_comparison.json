@@ -1,0 +1,75 @@
+{
+  "before": {
+    "design": "sparse_dma_wrapper",
+    "state": "Physopt postRoute",
+    "counts": {
+      "LUT": 46754,
+      "logic_LUT": 30212,
+      "LUTRAM": 16344,
+      "SRL": 198,
+      "FF": 27334,
+      "RAMB36": 3,
+      "RAMB18": 1,
+      "DSP": 180,
+      "BRAM_tiles": 3.5
+    },
+    "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_bounded_salvage_20261021\\reference_final_inspection\\hierarchy.rpt",
+    "sha256": "a93d6cd2f1377633ab5b6a4889ca7801d4da4233974e0ad3038864b808e70af5"
+  },
+  "after": {
+    "design": "sparse_dma_wrapper",
+    "state": "Physopt postRoute",
+    "counts": {
+      "LUT": 19946,
+      "logic_LUT": 19724,
+      "LUTRAM": 24,
+      "SRL": 198,
+      "FF": 24377,
+      "RAMB36": 25,
+      "RAMB18": 5,
+      "DSP": 180,
+      "BRAM_tiles": 27.5
+    },
+    "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_bounded_salvage_20261021\\implementation\\runs\\B001\\reports\\route_hierarchy.rpt",
+    "sha256": "01ace174a7abb47491caac924cb7a945c158c25c3b56ad361138e0ffb65a74fc"
+  },
+  "changes": {
+    "LUT": {
+      "delta": -26808,
+      "percent": -57.338409547846176
+    },
+    "logic_LUT": {
+      "delta": -10488,
+      "percent": -34.71468290745399
+    },
+    "LUTRAM": {
+      "delta": -16320,
+      "percent": -99.85315712187959
+    },
+    "SRL": {
+      "delta": 0,
+      "percent": 0.0
+    },
+    "FF": {
+      "delta": -2957,
+      "percent": -10.818028828565158
+    },
+    "RAMB36": {
+      "delta": 22,
+      "percent": 733.3333333333334
+    },
+    "RAMB18": {
+      "delta": 4,
+      "percent": 400.0
+    },
+    "DSP": {
+      "delta": 0,
+      "percent": 0.0
+    },
+    "BRAM_tiles": {
+      "delta": 24.0,
+      "percent": 685.7142857142857
+    }
+  },
+  "no_speed_energy_or_novelty_inference": true
+}

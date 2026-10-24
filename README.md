@@ -1,43 +1,71 @@
-# Exact Output-Driven Neural Refinement on FPGAs - reviewer artifact
+# Resource and Service Trade-offs in Exact Sparse Neural Upscaling on a Zynq FPGA
 
-Grant Lee, University of Central Florida, gr811059@ucf.edu
+Grant Lee, University of Central Florida — gr811059@ucf.edu
+
 ORCID: https://orcid.org/0009-0009-9377-8412
-Prepared for Microprocessors and Microsystems. Version review-v1, 2026-09-25.
 
-This is an artifact-only repository: measurements, evidence, analysis code and
-tests, with no manuscript, preprint or submission correspondence. Publication
-preparation is not a claim that the paper has been accepted. Legacy `paper2_arc`
-path names are stable experiment/replay identifiers, not the current venue.
+Code and experimental evidence for the current design study. The repository
+contains the completed region, buffering, network-width, zero-skipping and
+output-suppression comparisons, together with their numerical references,
+author-written RTL, routed reports and acquisition protocols.
 
-## Review without hardware
+Start with `EVIDENCE_GUIDE.md` for the manuscript-to-data mapping or
+`REPOSITORY_MAP.txt` for the directory layout.
 
-Use Python 3.12 and Windows PowerShell 5.1 (the replay entry point is PowerShell).
-Do not run deployment scripts on a board for this review. No hardware, FPGA
-toolchain, neural-network compiler, external model weights or LaTeX is needed. Paper 2 includes the own-trained integer weights required for raw-byte replay.
+## Reproduce without hardware
+
+Use Python 3.12. Create the environment outside this repository:
 
 ```powershell
 py -3.12 -m venv ..\artifact-review-env
-..\artifact-review-env\Scripts\python.exe -m pip install -r artifact/paper2_arc/requirements.txt
-..\artifact-review-env\Scripts\python.exe -B verify_release.py
-powershell -NoProfile -ExecutionPolicy Bypass -File artifact/paper2_arc/reproduce.ps1 -Python (Resolve-Path ..\artifact-review-env\Scripts\python.exe)
+..\artifact-review-env\Scripts\python.exe -m pip install -r requirements.txt
+..\artifact-review-env\Scripts\python.exe -B reproduce.py
 ```
 
-The environment is intentionally outside this exact-inventory release. Replay
-uses a disposable external copy and preserves the released evidence. On another
-OS, install PowerShell or execute the documented Python analysis commands; the
-full convenience script is validated on Windows. Standard-library hash verification
-does not require installing any packages. `.gitattributes` preserves byte identities
-through Git; do not enable automatic line-ending conversion for this snapshot.
+The same Python commands work on other platforms with the appropriate virtual
+environment executable. The complete replay verifies inventory and hashes,
+regenerates integer reference pixels, checks the archived selected outputs and
+request records, recomputes study aggregates, and runs the publication-table
+tests. It needs neither hardware nor a vendor toolchain, downloads no weights,
+and leaves the release files unchanged. Temporary decompressed captures are
+created outside the repository. The simulation probe's default check verifies
+retained logs; its optional `--xilinx-bin` argument reruns RTL with Vivado 2020.2.
 
-## Evidence and limitations
+Individual replay commands are listed in `EVIDENCE_GUIDE.md`. The previous
+`artifact/paper2_arc/reproduce.ps1` entry point remains as a thin compatibility
+wrapper around the same current-study workflow.
 
-Historical board evidence verifies checksums, lengths, counters and terminal outcomes, without raw output archives; B030 retains zero mandatory aggregate contrasts. Separately, P003 adds all 306 same-image ROI service records and 51 first-repeat selected-output byte archives, and P005 adds 11 physical failure/reuse publication-preservation archives. Portable NumPy-only replay checks those bytes against the included own-trained integer weights. See artifact/paper2_arc/ROI_REPLAY.md. Merged regions reduce equal-mask mean residual-publication time 16.29% versus full raster and 7.07% versus outer box, with 5/15 sparse-mask regressions against outer box. Cropping is conventional; this is not an area, energy, display, or unseen-mask claim. Complete bitstreams, vendor IP and synthesis environments are not distributed.
+## What the studies establish
 
-See EVIDENCE_GUIDE.md for table-to-evidence mapping. Generated `.tex` files are
-table fragments, not manuscript sources. The archive preserves unsuccessful and
-null outcomes. Do not combine historical diagnostic and confirmatory campaigns.
+- Region organization: 306 W24 requests and 51 output archives compare raster,
+  outer-box and merged execution on one shared image; a separate eleven-case
+  fault/reuse campaign checks publication behavior.
+- Buffering and skipping: the paired campaigns distinguish BRAM resource savings
+  from service-time effects and retain both skipping-off and buffer-only controls.
+- Network width: W16 and W12 comparisons each include their own W24 controls.
+- Organization by skipping: all three widths cross execution organization with
+  reference, skipping-off and skipping-on conditions.
+- Stronger output baseline: the W24 physical comparison measures how early
+  suppression changes service savings after a separate RTL probe.
 
-Only original code is Apache-2.0; original data/documentation is CC BY 4.0.
-See LICENSE and THIRD_PARTY_NOTICES.md. `release_manifest.json` hashes every
-distributed file other than itself. FILES.txt includes the manifest. Extra files
-other than root `.git` metadata cause verification failure deliberately.
+All current-study outcomes remain, including regressions, empty/dense controls,
+qualification failures and checker corrections. Older experimental campaigns
+not used by this manuscript are outside this release. The W12 historical quality
+record remains because the manuscript uses it as model context.
+
+## Provenance and files
+
+`release_manifest.json` hashes every distributed file except itself; `FILES.txt`
+lists the release. Original study export/acquisition manifests are unchanged.
+Byte-identical large archives share one stored payload via `payload_aliases.json`;
+the replay scripts resolve the original paths automatically. No Git LFS or
+manual decompression is required. `.gitattributes` preserves exact file bytes.
+
+The original region evidence is identified by snapshot `34c46d4`; the additional
+studies are bound by their export manifests and the current release manifest.
+The repository distributes offline replay and author RTL, not vendor IP,
+bitstreams or a complete vendor-tool build environment. It contains no manuscript
+or submission correspondence.
+
+Original code is Apache-2.0; original data/documentation is CC BY 4.0. See
+`LICENSE`, `LICENSE-CODE` and `THIRD_PARTY_NOTICES.md` for attribution and exceptions.

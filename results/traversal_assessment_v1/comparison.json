@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "cells": [
+    {
+      "skipping": 0,
+      "case": 0,
+      "regions": 1,
+      "reference_cycles": 2016084,
+      "suppressed_cycles": 1348156,
+      "reduction_percent": 33.129968790982915
+    },
+    {
+      "skipping": 0,
+      "case": 1,
+      "regions": 1,
+      "reference_cycles": 705198,
+      "suppressed_cycles": 691819,
+      "reduction_percent": 1.8971976664709733
+    },
+    {
+      "skipping": 0,
+      "case": 2,
+      "regions": 2,
+      "reference_cycles": 672246,
+      "suppressed_cycles": 669517,
+      "reduction_percent": 0.40595258283425695
+    },
+    {
+      "skipping": 0,
+      "case": 3,
+      "regions": 1,
+      "reference_cycles": 722980,
+      "suppressed_cycles": 710070,
+      "reduction_percent": 1.785664886995486
+    },
+    {
+      "skipping": 0,
+      "case": 4,
+      "regions": 2,
+      "reference_cycles": 689489,
+      "suppressed_cycles": 688020,
+      "reduction_percent": 0.2130563359241444
+    },
+    {
+      "skipping": 1,
+      "case": 0,
+      "regions": 1,
+      "reference_cycles": 1733354,
+      "suppressed_cycles": 1065463,
+      "reduction_percent": 38.53171366033713
+    },
+    {
+      "skipping": 1,
+      "case": 1,
+      "regions": 1,
+      "reference_cycles": 422253,
+      "suppressed_cycles": 409104,
+      "reduction_percent": 3.114009847176924
+    },
+    {
+      "skipping": 1,
+      "case": 2,
+      "regions": 2,
+      "reference_cycles": 390942,
+      "suppressed_cycles": 387980,
+      "reduction_percent": 0.757657146072821
+    },
+    {
+      "skipping": 1,
+      "case": 3,
+      "regions": 1,
+      "reference_cycles": 425015,
+      "suppressed_cycles": 412383,
+      "reduction_percent": 2.9721303953978095
+    },
+    {
+      "skipping": 1,
+      "case": 4,
+      "regions": 2,
+      "reference_cycles": 393353,
+      "suppressed_cycles": 391715,
+      "reduction_percent": 0.4164198569732491
+    }
+  ],
+  "scope": "RTL loop cycles, not physical complete service; existing development input"
+}

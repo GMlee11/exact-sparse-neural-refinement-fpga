@@ -1,0 +1,6 @@
+{
+  "passed": false,
+  "error": "AssertionError()",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_zero_region_20261022\\analyze.py\", line 90, in main\n    result=parse(data,archive,m,g,goldens)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_zero_region_20261022\\analyze.py\", line 40, in parse\n    assert int(raw[3])==0 and int(raw[4])==len(regs) and int(raw[5])==inputs\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "analyzer_sha256": "018f05c986ff5d88b670f87845efd28418ae00380575df67a90014da0a80d91b"
+}

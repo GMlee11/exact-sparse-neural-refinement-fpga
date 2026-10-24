@@ -1,0 +1,193 @@
+{
+  "scope": "Post-collection descriptive aggregation; equal sparse-cell weighting, not independent-session inference",
+  "primary_records": 648,
+  "diagnostic_records": 72,
+  "primary": {
+    "reference": {
+      "mean_service_ms": {
+        "raster": 118.60012987309624,
+        "bounding_box": 108.79628484490775,
+        "merged": 99.53082630110603
+      },
+      "raster_minus_merged_ms": 19.069303571990204,
+      "merged_saving_vs_raster_ratio_of_means_percent": 16.07865319573817
+    },
+    "skip_off": {
+      "mean_service_ms": {
+        "raster": 151.1099103053126,
+        "bounding_box": 141.35960808807135,
+        "merged": 132.52952209414386
+      },
+      "raster_minus_merged_ms": 18.580388211168753,
+      "merged_saving_vs_raster_ratio_of_means_percent": 12.295942849564057
+    },
+    "skip_on": {
+      "mean_service_ms": {
+        "raster": 97.14857849519123,
+        "bounding_box": 87.42279040223907,
+        "merged": 78.88305446239141
+      },
+      "raster_minus_merged_ms": 18.265524032799817,
+      "merged_saving_vs_raster_ratio_of_means_percent": 18.80163798145944
+    }
+  },
+  "diagnostic": {
+    "skip_off": {
+      "raster": {
+        "service_ms": 151.0939482432755,
+        "planning_ms": 0.00019874999423625018,
+        "packing_ms": 1.3640144604435807,
+        "dma_and_engine_ms": 143.90813507666408,
+        "scatter_ms": 4.190546878474141,
+        "other_ms": 1.6310530776994607,
+        "request_setup_ms": 0.014611874576255637,
+        "region_setup_ms": 0.009725249717967758,
+        "accelerator_kick_ms": 0.0016619999518020013,
+        "cache_flush_ms": 1.4889400818207377,
+        "dma_mmio_ms": 0.0024757499282032523,
+        "wait_ms": 142.41465411997504,
+        "validation_ms": 0.0054663748414751296,
+        "publication_ms": 1.6003349535902864,
+        "service_difference_from_primary_percent": -0.010563213229941582,
+        "wait_fraction_percent": 94.25569705192562
+      },
+      "bounding_box": {
+        "service_ms": 141.33641590124395,
+        "planning_ms": 0.002396624930497877,
+        "packing_ms": 1.2508578387251228,
+        "dma_and_engine_ms": 134.3031801052078,
+        "scatter_ms": 4.157420129434816,
+        "other_ms": 1.622561202945725,
+        "request_setup_ms": 0.014621624575972887,
+        "region_setup_ms": 0.009725999717946007,
+        "accelerator_kick_ms": 0.0016616249518128763,
+        "cache_flush_ms": 1.4874862068629,
+        "dma_mmio_ms": 0.002477249928159752,
+        "wait_ms": 132.81114739847672,
+        "validation_ms": 0.00544162484219288,
+        "publication_ms": 1.591843828836529,
+        "service_difference_from_primary_percent": -0.016406516077038802,
+        "wait_fraction_percent": 93.96810195843362
+      },
+      "merged": {
+        "service_ms": 132.51739040699567,
+        "planning_ms": 0.003580874896154628,
+        "packing_ms": 1.7220715750599245,
+        "dma_and_engine_ms": 124.74073213251877,
+        "scatter_ms": 4.307089750094398,
+        "other_ms": 1.743916074426434,
+        "request_setup_ms": 0.015364499554429513,
+        "region_setup_ms": 0.09456112225772745,
+        "accelerator_kick_ms": 0.016220999529591013,
+        "cache_flush_ms": 1.6635787017562178,
+        "dma_mmio_ms": 0.024141374299900143,
+        "wait_ms": 123.03291805704538,
+        "validation_ms": 0.026789624223100897,
+        "publication_ms": 1.6013380785611957,
+        "service_difference_from_primary_percent": -0.009153950724705151,
+        "wait_fraction_percent": 92.84284702496706
+      }
+    },
+    "skip_on": {
+      "raster": {
+        "service_ms": 97.12153030847561,
+        "planning_ms": 0.00019387499437762516,
+        "packing_ms": 1.368602210310536,
+        "dma_and_engine_ms": 89.95300201636294,
+        "scatter_ms": 4.180816753756314,
+        "other_ms": 1.6189154530514518,
+        "request_setup_ms": 0.014619374576038137,
+        "region_setup_ms": 0.009712874718326632,
+        "accelerator_kick_ms": 0.0016601249518563763,
+        "cache_flush_ms": 1.4868798318804848,
+        "dma_mmio_ms": 0.002476874928170627,
+        "wait_ms": 88.46158505961404,
+        "validation_ms": 0.005452499841877505,
+        "publication_ms": 1.5882153289417555,
+        "service_difference_from_primary_percent": -0.0278420818241365,
+        "wait_fraction_percent": 91.08339291879359
+      },
+      "bounding_box": {
+        "service_ms": 87.43665196433709,
+        "planning_ms": 0.002426624929627877,
+        "packing_ms": 1.2510235887203158,
+        "dma_and_engine_ms": 80.37523041911832,
+        "scatter_ms": 4.19264725341323,
+        "other_ms": 1.6153240781556018,
+        "request_setup_ms": 0.014618624576059887,
+        "region_setup_ms": 0.009727499717902509,
+        "accelerator_kick_ms": 0.0016608749518346264,
+        "cache_flush_ms": 1.488922831821238,
+        "dma_mmio_ms": 0.002476874928170627,
+        "wait_ms": 78.88176633742877,
+        "validation_ms": 0.005468249841420755,
+        "publication_ms": 1.5845242040487981,
+        "service_difference_from_primary_percent": 0.015855776319018133,
+        "wait_fraction_percent": 90.21590438938856
+      },
+      "merged": {
+        "service_ms": 78.8756928376049,
+        "planning_ms": 0.003716999892207003,
+        "packing_ms": 1.7226367000435356,
+        "dma_and_engine_ms": 71.08758093846015,
+        "scatter_ms": 4.30360450019547,
+        "other_ms": 1.7581536990135427,
+        "request_setup_ms": 0.015362624554483888,
+        "region_setup_ms": 0.09456862225750995,
+        "accelerator_kick_ms": 0.016234499529199514,
+        "cache_flush_ms": 1.6637253267519656,
+        "dma_mmio_ms": 0.024130874300204646,
+        "wait_ms": 69.37963223799066,
+        "validation_ms": 0.02681024922250277,
+        "publication_ms": 1.6156053281474456,
+        "service_difference_from_primary_percent": -0.009332327249089722,
+        "wait_fraction_percent": 87.96072622884539
+      }
+    }
+  },
+  "controls": {
+    "0": {
+      "reference": {
+        "raster": 0.13536099607453111,
+        "bounding_box": 0.13533699607522712,
+        "merged": 0.13535149607480662
+      },
+      "skip_off": {
+        "raster": 0.13542849607257362,
+        "bounding_box": 0.13542224607275485,
+        "merged": 0.13542199607276212
+      },
+      "skip_on": {
+        "raster": 0.1354184960728636,
+        "bounding_box": 0.1354249960726751,
+        "merged": 0.13540674607320435
+      }
+    },
+    "1": {
+      "reference": {
+        "raster": 309.757380017036,
+        "bounding_box": 309.75718551704165,
+        "merged": 309.7863732661952
+      },
+      "skip_off": {
+        "raster": 420.05371256844234,
+        "bounding_box": 420.0334935690287,
+        "merged": 420.07334306787305
+      },
+      "skip_on": {
+        "raster": 238.8866038222885,
+        "bounding_box": 238.88024682247283,
+        "merged": 238.88781232225344
+      }
+    }
+  },
+  "skip_on_merged_vs_reference_merged_ratio_of_means_percent": 20.745102402998107,
+  "source_sha256": {
+    "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_zero_region_20261022\\physical\\P001\\analysis.json": "9dd7b938c6700fc2848663108b8b976ee931ea3f6e93c24ba4ee0a3d5fbf8a9a",
+    "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_zero_region_20261022\\physical\\P002\\analysis.json": "925ae71767b427fbafc1aee5e2ea9d7487087b97fc059d8b5c04ace1f7636a30",
+    "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_zero_region_20261022\\physical\\P003\\analysis.json": "dbf42d106a3b2ee66461b700e90286edbfa0824bf7d6638ede6d2130d2a3789d",
+    "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_zero_region_20261022\\physical\\P004\\analysis.json": "849d6a33d0f87fc3ac30bf368199c0d5dff422c100fe471f75e68592e4850f08",
+    "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_zero_region_20261022\\physical\\R001\\analysis.json": "854e67a98f53568806de1e5538ba5dc87398f6971204ad5d4dce0bc3a87c04bd"
+  },
+  "script_sha256": "f7b79091d71189921f9678881e452fa10c2ba186c338d66cc102a9567b740e36"
+}

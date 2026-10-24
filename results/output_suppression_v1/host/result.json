@@ -1,0 +1,63 @@
+{
+  "compiled": true,
+  "board_access": false,
+  "record_words": 44,
+  "source_parent_sha256": "6518f31b88155797d730d81b872e962450775a5ffe3c3f61eec3975bbcb876d4",
+  "source_sha256": "acab8c18c1184643c938336bdca526f61f8ffd0ea1b207cf4712633b1677a69c",
+  "elf_sha256": "c3dd395791a0733bb9ec3892a1e360dffae7cb729669fbcdbdf80123f4ece965",
+  "ocm_segments": [
+    [
+      0,
+      73328
+    ]
+  ],
+  "stages": [
+    {
+      "command": [
+        "C:\\Xilinx\\Vitis\\2020.2\\gnu\\aarch32\\nt\\gcc-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-misleading-indentation",
+        "-mcpu=cortex-a9",
+        "-mfpu=vfpv3",
+        "-mfloat-abi=hard",
+        "-O2",
+        "-I",
+        "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\fpga\\build\\vitis_cli_workspace\\zybo_espcn_cli_platform\\zynq_fsbl\\zynq_fsbl_bsp\\ps7_cortexa9_0\\include",
+        "-I",
+        "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_output_suppression_20261023\\firmware\\F001",
+        "-c",
+        "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_output_suppression_20261023\\firmware\\F001\\board_campaign.c",
+        "-o",
+        "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_output_suppression_20261023\\firmware\\F001\\campaign.o"
+      ],
+      "exit": 0
+    },
+    {
+      "command": [
+        "C:\\Xilinx\\Vitis\\2020.2\\gnu\\aarch32\\nt\\gcc-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe",
+        "-nostartfiles",
+        "-mcpu=cortex-a9",
+        "-mfpu=vfpv3",
+        "-mfloat-abi=hard",
+        "-Wl,-T",
+        "-Wl,C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\fpga\\software\\zybo_spatial_shared_smoke_test\\lscript_ocm.ld",
+        "-L",
+        "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\fpga\\build\\vitis_cli_workspace\\zybo_espcn_cli_platform\\zynq_fsbl\\zynq_fsbl_bsp\\ps7_cortexa9_0\\lib",
+        "-o",
+        "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_output_suppression_20261023\\firmware\\F001\\campaign.elf",
+        "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_output_suppression_20261023\\firmware\\F001\\campaign.o",
+        "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\fpga\\build\\vitis_cli_workspace\\zybo_espcn_cli_platform\\zynq_fsbl\\zynq_fsbl_bsp\\ps7_cortexa9_0\\lib\\xil-crt0.o",
+        "-Wl,--start-group",
+        "-lxil",
+        "-lgcc",
+        "-lc",
+        "-Wl,--end-group"
+      ],
+      "exit": 0
+    }
+  ],
+  "header_sha256": "419ee3e57634895aae0950248a9b24178d6ed8ed01fa23c2921062846a6b1d33",
+  "protocol_sha256": "9a66d0a7a624c480a199b6b662e59ccf5fcbf2f8922e5d8755b051bfea2143c6"
+}

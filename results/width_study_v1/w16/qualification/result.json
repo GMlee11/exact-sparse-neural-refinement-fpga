@@ -1,0 +1,230 @@
+{
+  "passed": true,
+  "workload": {
+    "cases": [
+      {
+        "name": "top_left",
+        "indices": [
+          0
+        ],
+        "organization": "tiles",
+        "regions": 1
+      },
+      {
+        "name": "interior",
+        "indices": [
+          24
+        ],
+        "organization": "tiles",
+        "regions": 1
+      },
+      {
+        "name": "bottom_right",
+        "indices": [
+          59
+        ],
+        "organization": "tiles",
+        "regions": 1
+      },
+      {
+        "name": "four_corners",
+        "indices": [
+          0,
+          9,
+          50,
+          59
+        ],
+        "organization": "tiles",
+        "regions": 4
+      },
+      {
+        "name": "adjacent_split",
+        "indices": [
+          0,
+          1
+        ],
+        "organization": "tiles",
+        "regions": 2
+      },
+      {
+        "name": "adjacent_merged",
+        "indices": [
+          0,
+          1
+        ],
+        "organization": "merged_rectangles",
+        "regions": 1
+      },
+      {
+        "name": "raster_one_tile",
+        "indices": [
+          0
+        ],
+        "organization": "raster",
+        "regions": 1
+      }
+    ],
+    "checked_output_words": 184320,
+    "independent_int64_patches": [
+      [
+        0,
+        0,
+        3,
+        4
+      ],
+      [
+        0,
+        636,
+        3,
+        640
+      ],
+      [
+        357,
+        0,
+        360,
+        4
+      ],
+      [
+        357,
+        636,
+        360,
+        640
+      ],
+      [
+        120,
+        256,
+        124,
+        260
+      ],
+      [
+        59,
+        63,
+        63,
+        67
+      ]
+    ],
+    "input_sha256": "694f30b7bf059b0dcb2bc007fa45576dfbca3ad78f0fb7729998774fc6d09aae",
+    "oracle_sha256": "8bd35fd901779f205bb6f96a308a2de1a00ac099925ae624ee4126644cb10182"
+  },
+  "stages": [
+    {
+      "command": [
+        "C:\\Xilinx\\Vivado\\2020.2\\bin\\xvlog.bat",
+        "--sv",
+        "espcn_fpga_student_weights_pkg.sv",
+        "relu_clamp_pipelined.sv",
+        "mac_array_3x3_pipelined.sv",
+        "conv2d_3x3_multi_channel.sv",
+        "line_buffer_3x3_stallable.sv",
+        "espcn_streaming_grouped_conv_layer.sv",
+        "espcn_streaming_grouped_conv_layer_multicontext.sv",
+        "espcn_streaming_grouped_conv_layer_selectable.sv",
+        "espcn_streaming_pixel_shuffle_rgb.sv",
+        "sparse_hierarchical_mask_lookup.sv",
+        "espcn_streaming_linebuffer_core.sv",
+        "packed_bram_window.sv",
+        "bram_feature_window_buffer.sv",
+        "sparse_hierarchical_commit_controller.sv",
+        "roi_request_guard.sv",
+        "roi_stream.sv",
+        "roi_board_wrapper.sv",
+        "tb_roi_integration.sv",
+        "paper2_origin_core.sv"
+      ],
+      "exit": 0,
+      "seconds": 0.9839999999385327,
+      "log_sha256": "590f38193324f464e9ed318cb791204fd8ad774815b460470bd6bb6c6eeb5167"
+    },
+    {
+      "command": [
+        "C:\\Xilinx\\Vivado\\2020.2\\bin\\xelab.bat",
+        "tb_roi_integration",
+        "-s",
+        "integrated"
+      ],
+      "exit": 0,
+      "seconds": 6.094000000040978,
+      "log_sha256": "7f9b37b89ef891a70cbda77dd8d40a06937681b60db2e01c9abe2583ef452a5a"
+    },
+    {
+      "command": [
+        "C:\\Xilinx\\Vivado\\2020.2\\bin\\xsim.bat",
+        "integrated",
+        "-runall"
+      ],
+      "exit": 0,
+      "seconds": 236.48499999998603,
+      "log_sha256": "dd4392c48f4aaf7df75c1f050548a8eb8878c050024feba55e2b823baaf87fa2"
+    }
+  ],
+  "request_cycles": [
+    [
+      "0",
+      "1",
+      "179596",
+      "179557"
+    ],
+    [
+      "1",
+      "1",
+      "190964",
+      "190925"
+    ],
+    [
+      "2",
+      "1",
+      "188318",
+      "188279"
+    ],
+    [
+      "3",
+      "4",
+      "735730",
+      "735562"
+    ],
+    [
+      "4",
+      "2",
+      "365120",
+      "365038"
+    ],
+    [
+      "5",
+      "1",
+      "360053",
+      "360014"
+    ],
+    [
+      "6",
+      "1",
+      "1539653",
+      "1539614"
+    ]
+  ],
+  "fault_checks": [
+    [
+      "0",
+      "5"
+    ],
+    [
+      "1",
+      "5"
+    ],
+    [
+      "2",
+      "3"
+    ],
+    [
+      "3",
+      "5"
+    ],
+    [
+      "4",
+      "4"
+    ]
+  ],
+  "board_access": false,
+  "not_complete_host_service": true,
+  "freeze_sha256": "36f2bc42c5fc3751a1607379c0144bee99e55d4a68982962b7aa88f98fd8e465",
+  "frozen_files_unchanged": true
+}

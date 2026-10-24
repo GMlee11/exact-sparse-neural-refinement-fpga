@@ -1,0 +1,91 @@
+Organization x conventional zero skipping: completed Zybo pilot
+22 October 2026 local time
+
+BOTTOM LINE
+Region organization still matters on the zero-skipping engine. Its absolute
+time saving remains almost unchanged, while its percentage importance increases.
+There is no meaningful reversal of the preferred organization. This strengthens
+robustness modestly, not novelty through a new mechanism.
+
+DESIGN
+Existing routed W24 engines, one Zybo, 50 MHz, identical integer weights and
+requested outputs. A: original packed-BRAM reference, 2/12/6 lanes. B: C07,
+4/12/4 lanes, skipping off/on within one bitstream. Both use 180 DSPs.
+B-on versus A compares complete implementations, not zero skipping in isolation.
+Two archived development images; four sparse masks plus empty/dense controls per
+image. Three organizations, six repeats per case/arm, A/B/B/A order.
+648 primary records, separate 72-request physical qualification and 72-request
+diagnostic profile. All completed replays pass. 180 full selected-output archives
+verified across qualification and primary runs; remaining requests retain output
+checksum, ownership and status checks. One board sitting, not independent days.
+
+PRIMARY RESULTS
+Equal-weight means over eight sparse frame/mask cells, each six repetitions.
+Endpoint: complete residual publication, not reconstruction/display.
+
+                         Raster ms    Bounding-box ms    Merged ms
+Original reference        118.600          108.796          99.531
+C07 skipping off          151.110          141.360         132.530
+C07 skipping on            97.149           87.423          78.883
+
+Merged versus raster saves 18.580 ms with skipping off, 18.266 ms with skipping
+on. Ratios of aggregate means give 12.30% and 18.80%, respectively. Reference
+saving: 19.069 ms (16.08%). Near-constant absolute saving is the main finding.
+C07-on merged beats original-reference merged by 20.75% (ratio of means).
+C07-off is slower than the original reference: it cannot be the only baseline.
+
+The frozen paired mean-per-cell interaction is +7.45 percentage points versus
+raster and +3.65 versus bbox. These are means of cell-level percentage effects,
+not differences between ratios of aggregate means. First/second sequence legs:
+raster +7.42/+7.48 pp; bbox +3.61/+3.69 pp. This is within-sitting consistency.
+
+Scattered masks favor merged in all three configurations. Clustered masks use
+one common rectangle: bbox and merged effectively tie. Tiny sign changes are not
+policy reversals. The low-density clustered/scattered masks have different areas;
+only the 30-tile clustered/checkerboard pair is area-matched. Within-case outputs
+are always identical. Empty controls cost ~0.135 ms in every arm. Dense controls
+show effectively equal organization times per engine (~309.76 ms reference,
+420.05 ms C07-off, 238.88 ms C07-on), not a region-organization gain.
+
+SEPARATE DIAGNOSTIC PROFILE
+C07-on merged mean service: 78.876 ms. Wait: 69.380 ms (87.96%); packing: 1.723 ms;
+scatter: 4.304 ms; cache flush: 1.664 ms; publication: 1.616 ms. Region setup:
+0.095 ms; accelerator kick: 0.016 ms; DMA MMIO: 0.024 ms.
+Wait includes accelerator/DMA progress; it is neither removable CPU scheduling
+overhead nor pure arithmetic time. The data do not identify a large descriptor-
+launch bottleneck. Copy/scatter costs exist, but fractions are not automatically
+achievable speedups. Diagnostic service means differ from primary means by less
+than 0.03% across six arms; one profiled repetition is not an overhead-equivalence
+study. Primary measurements remain separate and unchanged.
+
+The hardware scanner still visits unused positions. This profile does not
+separate scanner, arithmetic, DMA and stalls, so does not validate a jump-engine
+opportunity. Do not infer additive traversal cycles from geometric counts.
+
+RESEARCH DECISION
+Keep this as supporting evidence for the empirical design study: the region
+finding survives conventional skipping on these cases. The existing width study
+already found nearly fixed absolute organization savings as compute cost changes.
+This adds another way to vary that cost but mostly reinforces that explanation.
+It does not establish a new scheduler/architecture or an acceptance probability.
+Do not automatically start another parallelism/depth/jump-engine campaign. A new
+build needs a distinct hypothesis and a cheap opportunity estimate first.
+
+PROVENANCE
+PROTOCOL.txt predates evaluation. pilot_summary.json is the frozen per-case and
+per-leg analysis. describe.py/descriptive_summary.json provide explicitly post-
+collection descriptive means, diagnostic breakdowns and source hashes. Raw UART,
+launch manifests, records and output archives remain under physical/.
+Q001 originally failed a new checker expectation (tiles rather than merged
+rectangles), not board output correctness. Failed analysis and original checker
+sources were preserved; corrected replay verifies unchanged data. This correction
+preceded all primary runs. Sandbox compiler failures are also retained.
+
+LIMITS AND HANDOFF
+One sitting, two previously inspected development images, one W24 network, four
+sparse masks per image. Exploratory, not held-out or cross-family validation.
+No novel prior-art claim is made. Official manuscript/public artifact unchanged.
+Expected official PDF SHA256:
+9734e864fb4680e48fcd873eb1dd5d287fcb043abd45b6b5022d8ff73b26eee2
+No commits/pushes. Board test ended, UART closed, C07 in volatile configuration,
+CPU 0 halted after capture, flash untouched; normal boot state not restored.

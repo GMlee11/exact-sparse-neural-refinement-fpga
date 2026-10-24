@@ -1,0 +1,29 @@
+CURRENT PAPER ARTIFACT
+
+Start: README.md -> EVIDENCE_GUIDE.md -> python -B reproduce.py
+
+results/paper2_conventional_comparison_v1  Original region/safety evidence
+results/design_study_v1                   BRAM buffering and merged-only skipping
+results/width_study_v1                    W24 controls, W16 and W12 comparisons
+results/organization_skipping_v1          Three-width organization/skipping study
+results/traversal_assessment_v1           Output-traversal RTL probe
+results/output_suppression_v1             Stronger W24 physical baseline
+
+scripts/              Current studies' replay and summary tools
+src/                  Shared geometry, integer oracle and table-generation code
+fpga/                 Shared author RTL and W24 trained integer weights
+configs/              Controlled request masks
+tests/                Current region/output replay and table regression tests
+docs/                 Region safety protocol and generated table fragment
+artifact/paper2_arc/  Compatibility entry point and region replay guide
+
+FILE INTEGRITY
+release_manifest.json + FILES.txt cover the distributed files.
+payload_aliases.json + payloads.py resolve byte-identical shared archives.
+requirements.txt lists the offline replay dependencies.
+
+Build-specific sources and reports are kept with their experiment. Matching
+filenames across builds can represent different implementations; do not collapse
+them by filename. Current-study failures, controls and losses are retained.
+
+Unrelated historical experiments and their analysis tools are not distributed.

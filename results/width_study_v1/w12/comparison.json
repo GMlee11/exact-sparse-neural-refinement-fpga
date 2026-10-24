@@ -1,0 +1,855 @@
+{
+  "runs": [
+    {
+      "run": "P001",
+      "network": "w24",
+      "session": 1,
+      "cells": [
+        {
+          "case": "empty_control_0",
+          "selected_tiles": 0,
+          "service_means_ms": {
+            "full_raster": 0.16146949531738464,
+            "outer_bbox": 0.1614374953183126,
+            "merged_rectangles": 0.16143599531835615
+          },
+          "merged_reduction_vs_raster_percent": 0.02074695221078171,
+          "merged_reduction_vs_bbox_percent": 0.0009291521486431975
+        },
+        {
+          "case": "dense_control_0",
+          "selected_tiles": 60,
+          "service_means_ms": {
+            "full_raster": 310.1159545066373,
+            "outer_bbox": 310.06456800812754,
+            "merged_rectangles": 310.16757500514035
+          },
+          "merged_reduction_vs_raster_percent": -0.016645547496962898,
+          "merged_reduction_vs_bbox_percent": -0.03322114412316335
+        },
+        {
+          "case": "clustered_rectangles_10",
+          "selected_tiles": 6,
+          "service_means_ms": {
+            "full_raster": 57.49375883268099,
+            "outer_bbox": 32.44211705917861,
+            "merged_rectangles": 32.421812059767454
+          },
+          "merged_reduction_vs_raster_percent": 43.608119006235455,
+          "merged_reduction_vs_bbox_percent": 0.06258839204024147
+        },
+        {
+          "case": "clustered_rectangles_50",
+          "selected_tiles": 15,
+          "service_means_ms": {
+            "full_raster": 99.56228511269371,
+            "outer_bbox": 79.30234620023195,
+            "merged_rectangles": 79.3041447001798
+          },
+          "merged_reduction_vs_raster_percent": 20.347203149851268,
+          "merged_reduction_vs_bbox_percent": -0.0022679025703853384
+        },
+        {
+          "case": "clustered_rectangles_90",
+          "selected_tiles": 30,
+          "service_means_ms": {
+            "full_raster": 167.5827621400999,
+            "outer_bbox": 156.35292346576523,
+            "merged_rectangles": 156.33305896634127
+          },
+          "merged_reduction_vs_raster_percent": 6.712923829453199,
+          "merged_reduction_vs_bbox_percent": 0.012704910777261436
+        },
+        {
+          "case": "scattered_random_10",
+          "selected_tiles": 7,
+          "service_means_ms": {
+            "full_raster": 65.40129410336247,
+            "outer_bbox": 62.50639268731461,
+            "merged_rectangles": 39.77449284653971
+          },
+          "merged_reduction_vs_raster_percent": 39.183936049218346,
+          "merged_reduction_vs_bbox_percent": 36.36731998675751
+        },
+        {
+          "case": "scattered_random_50",
+          "selected_tiles": 17,
+          "service_means_ms": {
+            "full_raster": 116.29168412754116,
+            "outer_bbox": 116.2567036285556,
+            "merged_rectangles": 95.06438074313296
+          },
+          "merged_reduction_vs_raster_percent": 18.253500707004534,
+          "merged_reduction_vs_bbox_percent": 18.22890398916942
+        },
+        {
+          "case": "scattered_random_90",
+          "selected_tiles": 31,
+          "service_means_ms": {
+            "full_raster": 184.9841346354601,
+            "outer_bbox": 184.9758141357014,
+            "merged_rectangles": 171.74689501934006
+          },
+          "merged_reduction_vs_raster_percent": 7.155878336380617,
+          "merged_reduction_vs_bbox_percent": 7.151702063414833
+        },
+        {
+          "case": "adversarial_checkerboard_10",
+          "selected_tiles": 8,
+          "service_means_ms": {
+            "full_raster": 70.2687519622062,
+            "outer_bbox": 67.65045553813678,
+            "merged_rectangles": 45.33055918541378
+          },
+          "merged_reduction_vs_raster_percent": 35.489733459625604,
+          "merged_reduction_vs_bbox_percent": 32.99297273784142
+        },
+        {
+          "case": "adversarial_checkerboard_50",
+          "selected_tiles": 20,
+          "service_means_ms": {
+            "full_raster": 132.16922866709234,
+            "outer_bbox": 123.05456693141757,
+            "merged_rectangles": 112.9218892252652
+          },
+          "merged_reduction_vs_raster_percent": 14.562647929426376,
+          "merged_reduction_vs_bbox_percent": 8.234296344157343
+        },
+        {
+          "case": "adversarial_checkerboard_90",
+          "selected_tiles": 30,
+          "service_means_ms": {
+            "full_raster": 183.99075166426817,
+            "outer_bbox": 183.99311366419974,
+            "merged_rectangles": 169.4264420866332
+          },
+          "merged_reduction_vs_raster_percent": 7.915783508624818,
+          "merged_reduction_vs_bbox_percent": 7.916965633915918
+        },
+        {
+          "case": "deadline_truncated_prefix_10",
+          "selected_tiles": 5,
+          "service_means_ms": {
+            "full_raster": 52.93414146490991,
+            "outer_bbox": 27.796070193913966,
+            "merged_rectangles": 28.0053241878456
+          },
+          "merged_reduction_vs_raster_percent": 47.09402398372635,
+          "merged_reduction_vs_bbox_percent": -0.7528186267764081
+        },
+        {
+          "case": "deadline_truncated_prefix_50",
+          "selected_tiles": 17,
+          "service_means_ms": {
+            "full_raster": 109.55842182280577,
+            "outer_bbox": 96.23971620904824,
+            "merged_rectangles": 93.77678028047337
+          },
+          "merged_reduction_vs_raster_percent": 14.404772613333938,
+          "merged_reduction_vs_bbox_percent": 2.5591679044698834
+        },
+        {
+          "case": "deadline_truncated_prefix_90",
+          "selected_tiles": 24,
+          "service_means_ms": {
+            "full_raster": 143.64372183433207,
+            "outer_bbox": 135.05532258339562,
+            "merged_rectangles": 129.74749123732275
+          },
+          "merged_reduction_vs_raster_percent": 9.674095337794297,
+          "merged_reduction_vs_bbox_percent": 3.9301163734552724
+        },
+        {
+          "case": "moving_disocclusion_band_10",
+          "selected_tiles": 8,
+          "service_means_ms": {
+            "full_raster": 67.58576404001285,
+            "outer_bbox": 44.05241872247985,
+            "merged_rectangles": 44.05691522234945
+          },
+          "merged_reduction_vs_raster_percent": 34.813320751591405,
+          "merged_reduction_vs_bbox_percent": -0.01020715774524561
+        },
+        {
+          "case": "moving_disocclusion_band_50",
+          "selected_tiles": 18,
+          "service_means_ms": {
+            "full_raster": 112.97037822385903,
+            "outer_bbox": 95.20135323916077,
+            "merged_rectangles": 95.20767973897729
+          },
+          "merged_reduction_vs_raster_percent": 15.723323905036112,
+          "merged_reduction_vs_bbox_percent": -0.0066453885383621625
+        },
+        {
+          "case": "moving_disocclusion_band_90",
+          "selected_tiles": 28,
+          "service_means_ms": {
+            "full_raster": 158.9741818897487,
+            "outer_bbox": 147.5486967210878,
+            "merged_rectangles": 149.12305567543137
+          },
+          "merged_reduction_vs_raster_percent": 6.19668306967559,
+          "merged_reduction_vs_bbox_percent": -1.0670097326034744
+        }
+      ],
+      "sparse_equal_mask_means_ms": {
+        "full_raster": 114.89408403473823,
+        "outer_bbox": 103.49520073197252,
+        "merged_rectangles": 96.14939474500089
+      },
+      "merged_reduction_vs_raster_percent": 16.314755844234664,
+      "merged_reduction_vs_bbox_percent": 7.097726208576072,
+      "merged_losses_vs_bbox": [
+        "clustered_rectangles_50",
+        "deadline_truncated_prefix_10",
+        "moving_disocclusion_band_10",
+        "moving_disocclusion_band_50",
+        "moving_disocclusion_band_90"
+      ],
+      "capture_started_utc": "2026-10-22T23:16:10.1430254Z",
+      "evidence_sha256": "187dd1fd389d117df3ca56e5704f203d7196cc24047a07008cb1f489adf3369a"
+    },
+    {
+      "run": "P002",
+      "network": "w12",
+      "session": 1,
+      "cells": [
+        {
+          "case": "empty_control_0",
+          "selected_tiles": 0,
+          "service_means_ms": {
+            "full_raster": 0.16364849525419364,
+            "outer_bbox": 0.16360949525532464,
+            "merged_rectangles": 0.16358549525602065
+          },
+          "merged_reduction_vs_raster_percent": 0.03849714479509103,
+          "merged_reduction_vs_bbox_percent": 0.014669074839779306
+        },
+        {
+          "case": "dense_control_0",
+          "selected_tiles": 60,
+          "service_means_ms": {
+            "full_raster": 198.84288323355636,
+            "outer_bbox": 198.80451173466918,
+            "merged_rectangles": 198.87563973260646
+          },
+          "merged_reduction_vs_raster_percent": -0.01647355867979705,
+          "merged_reduction_vs_bbox_percent": -0.035777859021735026
+        },
+        {
+          "case": "clustered_rectangles_10",
+          "selected_tiles": 6,
+          "service_means_ms": {
+            "full_raster": 45.70094267467266,
+            "outer_bbox": 20.925850893150322,
+            "merged_rectangles": 20.91496139346612
+          },
+          "merged_reduction_vs_raster_percent": 54.23516415765941,
+          "merged_reduction_vs_bbox_percent": 0.05203850366614082
+        },
+        {
+          "case": "clustered_rectangles_50",
+          "selected_tiles": 15,
+          "service_means_ms": {
+            "full_raster": 70.73356294872667,
+            "outer_bbox": 50.90708052369467,
+            "merged_rectangles": 50.905455523741786
+          },
+          "merged_reduction_vs_raster_percent": 28.03210611539232,
+          "merged_reduction_vs_bbox_percent": 0.0031920902478832502
+        },
+        {
+          "case": "clustered_rectangles_90",
+          "selected_tiles": 30,
+          "service_means_ms": {
+            "full_raster": 111.14252827686668,
+            "outer_bbox": 99.92843810207529,
+            "merged_rectangles": 99.93686060183104
+          },
+          "merged_reduction_vs_raster_percent": 10.082250106027146,
+          "merged_reduction_vs_bbox_percent": -0.008428531372772774
+        },
+        {
+          "case": "scattered_random_10",
+          "selected_tiles": 7,
+          "service_means_ms": {
+            "full_raster": 50.46563953649645,
+            "outer_bbox": 47.716031116235094,
+            "merged_rectangles": 25.808389251556708
+          },
+          "merged_reduction_vs_raster_percent": 48.85948243479162,
+          "merged_reduction_vs_bbox_percent": 45.91253998328549
+        },
+        {
+          "case": "scattered_random_50",
+          "selected_tiles": 17,
+          "service_means_ms": {
+            "full_raster": 80.79619015691048,
+            "outer_bbox": 80.7550276581042,
+            "merged_rectangles": 61.54168071529126
+          },
+          "merged_reduction_vs_raster_percent": 23.830962084011574,
+          "merged_reduction_vs_bbox_percent": 23.792137158515082
+        },
+        {
+          "case": "scattered_random_90",
+          "selected_tiles": 31,
+          "service_means_ms": {
+            "full_raster": 121.7312899697926,
+            "outer_bbox": 121.7355139696701,
+            "merged_rectangles": 110.96066078214083
+          },
+          "merged_reduction_vs_raster_percent": 8.847872383776167,
+          "merged_reduction_vs_bbox_percent": 8.851035196034719
+        },
+        {
+          "case": "adversarial_checkerboard_10",
+          "selected_tiles": 8,
+          "service_means_ms": {
+            "full_raster": 53.38114645194674,
+            "outer_bbox": 50.77713402746311,
+            "merged_rectangles": 29.41544764695202
+          },
+          "merged_reduction_vs_raster_percent": 44.89543668112943,
+          "merged_reduction_vs_bbox_percent": 42.06949996224186
+        },
+        {
+          "case": "adversarial_checkerboard_50",
+          "selected_tiles": 20,
+          "service_means_ms": {
+            "full_raster": 90.08862338742993,
+            "outer_bbox": 80.94814665250375,
+            "merged_rectangles": 73.11029887980133
+          },
+          "merged_reduction_vs_raster_percent": 18.846247027898954,
+          "merged_reduction_vs_bbox_percent": 9.682553704841357
+        },
+        {
+          "case": "adversarial_checkerboard_90",
+          "selected_tiles": 30,
+          "service_means_ms": {
+            "full_raster": 120.73866949857859,
+            "outer_bbox": 120.75676049805395,
+            "merged_rectangles": 109.57901832220848
+          },
+          "merged_reduction_vs_raster_percent": 9.242814437756818,
+          "merged_reduction_vs_bbox_percent": 9.256411094288675
+        },
+        {
+          "case": "deadline_truncated_prefix_10",
+          "selected_tiles": 5,
+          "service_means_ms": {
+            "full_raster": 42.98666375338675,
+            "outer_bbox": 18.107045974895666,
+            "merged_rectangles": 18.097023975186303
+          },
+          "merged_reduction_vs_raster_percent": 57.90084087704873,
+          "merged_reduction_vs_bbox_percent": 0.055348618009021244
+        },
+        {
+          "case": "deadline_truncated_prefix_50",
+          "selected_tiles": 17,
+          "service_means_ms": {
+            "full_raster": 76.6445692773075,
+            "outer_bbox": 63.444146160119764,
+            "merged_rectangles": 60.15534375549503
+          },
+          "merged_reduction_vs_raster_percent": 21.513886342231036,
+          "merged_reduction_vs_bbox_percent": 5.183775972529414
+        },
+        {
+          "case": "deadline_truncated_prefix_90",
+          "selected_tiles": 24,
+          "service_means_ms": {
+            "full_raster": 97.67769966734672,
+            "outer_bbox": 89.35544340869215,
+            "merged_rectangles": 83.22952308634383
+          },
+          "merged_reduction_vs_raster_percent": 14.791683905546405,
+          "merged_reduction_vs_bbox_percent": 6.855676709397218
+        },
+        {
+          "case": "moving_disocclusion_band_10",
+          "selected_tiles": 8,
+          "service_means_ms": {
+            "full_raster": 51.64489300229811,
+            "outer_bbox": 28.25711618054363,
+            "merged_rectangles": 28.279681679889233
+          },
+          "merged_reduction_vs_raster_percent": 45.242055824124115,
+          "merged_reduction_vs_bbox_percent": -0.07985775760492864
+        },
+        {
+          "case": "moving_disocclusion_band_50",
+          "selected_tiles": 18,
+          "service_means_ms": {
+            "full_raster": 78.7126997173317,
+            "outer_bbox": 60.99460923115634,
+            "merged_rectangles": 60.99790173106086
+          },
+          "merged_reduction_vs_raster_percent": 22.505641465592163,
+          "merged_reduction_vs_bbox_percent": -0.005398017867519478
+        },
+        {
+          "case": "moving_disocclusion_band_90",
+          "selected_tiles": 28,
+          "service_means_ms": {
+            "full_raster": 106.0314724250873,
+            "outer_bbox": 94.63401525561356,
+            "merged_rectangles": 95.3020447362407
+          },
+          "merged_reduction_vs_raster_percent": 10.119097135453902,
+          "merged_reduction_vs_bbox_percent": -0.70590841868301
+        }
+      ],
+      "sparse_equal_mask_means_ms": {
+        "full_raster": 79.89843938294526,
+        "outer_bbox": 68.61615731013144,
+        "merged_rectangles": 61.882286138747034
+      },
+      "merged_reduction_vs_raster_percent": 22.54881745292745,
+      "merged_reduction_vs_bbox_percent": 9.813827289902932,
+      "merged_losses_vs_bbox": [
+        "clustered_rectangles_90",
+        "moving_disocclusion_band_10",
+        "moving_disocclusion_band_50",
+        "moving_disocclusion_band_90"
+      ],
+      "capture_started_utc": "2026-10-22T23:18:58.1831226Z",
+      "evidence_sha256": "93d33cb389de0c0cdf3c88c00ade130c35075b531bacefe8766f9f7064dde346"
+    },
+    {
+      "run": "P003",
+      "network": "w12",
+      "session": 2,
+      "cells": [
+        {
+          "case": "empty_control_0",
+          "selected_tiles": 0,
+          "service_means_ms": {
+            "full_raster": 0.16360499525545513,
+            "outer_bbox": 0.16366849525361366,
+            "merged_rectangles": 0.16362299525493315
+          },
+          "merged_reduction_vs_raster_percent": -0.011002108737523386,
+          "merged_reduction_vs_bbox_percent": 0.027800095925611945
+        },
+        {
+          "case": "dense_control_0",
+          "selected_tiles": 60,
+          "service_means_ms": {
+            "full_raster": 199.0683902270167,
+            "outer_bbox": 199.05213122748822,
+            "merged_rectangles": 199.137034225026
+          },
+          "merged_reduction_vs_raster_percent": -0.03448262073704189,
+          "merged_reduction_vs_bbox_percent": -0.042653649078872036
+        },
+        {
+          "case": "clustered_rectangles_10",
+          "selected_tiles": 6,
+          "service_means_ms": {
+            "full_raster": 45.70426817457622,
+            "outer_bbox": 20.92262239324395,
+            "merged_rectangles": 20.907454393683825
+          },
+          "merged_reduction_vs_raster_percent": 54.254919225872314,
+          "merged_reduction_vs_bbox_percent": 0.07249569043039639
+        },
+        {
+          "case": "clustered_rectangles_50",
+          "selected_tiles": 15,
+          "service_means_ms": {
+            "full_raster": 70.73574044866352,
+            "outer_bbox": 50.89644502400309,
+            "merged_rectangles": 50.89544502403209
+          },
+          "merged_reduction_vs_raster_percent": 28.048473513938156,
+          "merged_reduction_vs_bbox_percent": 0.0019647737096950557
+        },
+        {
+          "case": "clustered_rectangles_90",
+          "selected_tiles": 30,
+          "service_means_ms": {
+            "full_raster": 111.11644427762309,
+            "outer_bbox": 99.92996760203096,
+            "merged_rectangles": 99.9508866014243
+          },
+          "merged_reduction_vs_raster_percent": 10.048519594725136,
+          "merged_reduction_vs_bbox_percent": -0.02093365973723227
+        },
+        {
+          "case": "scattered_random_10",
+          "selected_tiles": 7,
+          "service_means_ms": {
+            "full_raster": 50.46261453658418,
+            "outer_bbox": 47.682351117211816,
+            "merged_rectangles": 25.79785825186211
+          },
+          "merged_reduction_vs_raster_percent": 48.87728571186242,
+          "merged_reduction_vs_bbox_percent": 45.896421532473674
+        },
+        {
+          "case": "scattered_random_50",
+          "selected_tiles": 17,
+          "service_means_ms": {
+            "full_raster": 80.76639215777463,
+            "outer_bbox": 80.75564065808642,
+            "merged_rectangles": 61.55339921495142
+          },
+          "merged_reduction_vs_raster_percent": 23.78835110684556,
+          "merged_reduction_vs_bbox_percent": 23.778204576985416
+        },
+        {
+          "case": "scattered_random_90",
+          "selected_tiles": 31,
+          "service_means_ms": {
+            "full_raster": 121.70728747048867,
+            "outer_bbox": 121.71729147019856,
+            "merged_rectangles": 110.9686342819096
+          },
+          "merged_reduction_vs_raster_percent": 8.823344445321691,
+          "merged_reduction_vs_bbox_percent": 8.830838296233923
+        },
+        {
+          "case": "adversarial_checkerboard_10",
+          "selected_tiles": 8,
+          "service_means_ms": {
+            "full_raster": 53.392542451616265,
+            "outer_bbox": 50.76784202773258,
+            "merged_rectangles": 29.411734647059692
+          },
+          "merged_reduction_vs_raster_percent": 44.91415224567685,
+          "merged_reduction_vs_bbox_percent": 42.06621067132781
+        },
+        {
+          "case": "adversarial_checkerboard_50",
+          "selected_tiles": 20,
+          "service_means_ms": {
+            "full_raster": 90.06616838808111,
+            "outer_bbox": 80.96025765215252,
+            "merged_rectangles": 73.1112448797739
+          },
+          "merged_reduction_vs_raster_percent": 18.824963703630726,
+          "merged_reduction_vs_bbox_percent": 9.694895989711483
+        },
+        {
+          "case": "adversarial_checkerboard_90",
+          "selected_tiles": 30,
+          "service_means_ms": {
+            "full_raster": 120.7360964986532,
+            "outer_bbox": 120.76126649792326,
+            "merged_rectangles": 109.57947982219508
+          },
+          "merged_reduction_vs_raster_percent": 9.240498078039627,
+          "merged_reduction_vs_bbox_percent": 9.259414876971729
+        },
+        {
+          "case": "deadline_truncated_prefix_10",
+          "selected_tiles": 5,
+          "service_means_ms": {
+            "full_raster": 42.98232975351244,
+            "outer_bbox": 18.101091975068332,
+            "merged_rectangles": 18.09678397519326
+          },
+          "merged_reduction_vs_raster_percent": 57.89715429812312,
+          "merged_reduction_vs_bbox_percent": 0.023799668445445565
+        },
+        {
+          "case": "deadline_truncated_prefix_50",
+          "selected_tiles": 17,
+          "service_means_ms": {
+            "full_raster": 76.61879177805504,
+            "outer_bbox": 63.41804216087678,
+            "merged_rectangles": 60.148682255688215
+          },
+          "merged_reduction_vs_raster_percent": 21.496174946319314,
+          "merged_reduction_vs_bbox_percent": 5.155252028902058
+        },
+        {
+          "case": "deadline_truncated_prefix_90",
+          "selected_tiles": 24,
+          "service_means_ms": {
+            "full_raster": 97.67041266755803,
+            "outer_bbox": 89.35346640874947,
+            "merged_rectangles": 83.25076308572788
+          },
+          "merged_reduction_vs_raster_percent": 14.763580073026294,
+          "merged_reduction_vs_bbox_percent": 6.829845072942808
+        },
+        {
+          "case": "moving_disocclusion_band_10",
+          "selected_tiles": 8,
+          "service_means_ms": {
+            "full_raster": 51.655804001981686,
+            "outer_bbox": 28.274015680053548,
+            "merged_rectangles": 28.28364767977422
+          },
+          "merged_reduction_vs_raster_percent": 45.245944330497366,
+          "merged_reduction_vs_bbox_percent": -0.034066613775940446
+        },
+        {
+          "case": "moving_disocclusion_band_50",
+          "selected_tiles": 18,
+          "service_means_ms": {
+            "full_raster": 78.72623671693914,
+            "outer_bbox": 60.99793473105989,
+            "merged_rectangles": 60.97980523158565
+          },
+          "merged_reduction_vs_raster_percent": 22.541953261605705,
+          "merged_reduction_vs_bbox_percent": 0.029721497218182513
+        },
+        {
+          "case": "moving_disocclusion_band_90",
+          "selected_tiles": 28,
+          "service_means_ms": {
+            "full_raster": 106.0156039255475,
+            "outer_bbox": 94.65014075514591,
+            "merged_rectangles": 95.2904792365761
+          },
+          "merged_reduction_vs_raster_percent": 10.116552933569489,
+          "merged_reduction_vs_bbox_percent": -0.6765319906778755
+        }
+      ],
+      "sparse_equal_mask_means_ms": {
+        "full_raster": 79.89044888317699,
+        "outer_bbox": 68.6125584102358,
+        "merged_rectangles": 61.88175323876249
+      },
+      "merged_reduction_vs_raster_percent": 22.54173796262984,
+      "merged_reduction_vs_bbox_percent": 9.809873480055497,
+      "merged_losses_vs_bbox": [
+        "clustered_rectangles_90",
+        "moving_disocclusion_band_10",
+        "moving_disocclusion_band_90"
+      ],
+      "capture_started_utc": "2026-10-22T23:21:26.5798672Z",
+      "evidence_sha256": "879e799e83434be4eea8f831255913ace4c9648b0fecea8b1de2108e01f4c3a7"
+    },
+    {
+      "run": "P004",
+      "network": "w24",
+      "session": 2,
+      "cells": [
+        {
+          "case": "empty_control_0",
+          "selected_tiles": 0,
+          "service_means_ms": {
+            "full_raster": 0.16357549525631063,
+            "outer_bbox": 0.16356149525671662,
+            "merged_rectangles": 0.16354349525723863
+          },
+          "merged_reduction_vs_raster_percent": 0.019562831842179218,
+          "merged_reduction_vs_bbox_percent": 0.011005034803412972
+        },
+        {
+          "case": "dense_control_0",
+          "selected_tiles": 60,
+          "service_means_ms": {
+            "full_raster": 310.12142900647854,
+            "outer_bbox": 310.09455100725796,
+            "merged_rectangles": 310.14456000580776
+          },
+          "merged_reduction_vs_raster_percent": -0.007458691069284207,
+          "merged_reduction_vs_bbox_percent": -0.016127016223710378
+        },
+        {
+          "case": "clustered_rectangles_10",
+          "selected_tiles": 6,
+          "service_means_ms": {
+            "full_raster": 57.49741233257504,
+            "outer_bbox": 32.42795005958945,
+            "merged_rectangles": 32.42191155976457
+          },
+          "merged_reduction_vs_raster_percent": 43.61152920720921,
+          "merged_reduction_vs_bbox_percent": 0.018621281375441612
+        },
+        {
+          "case": "clustered_rectangles_50",
+          "selected_tiles": 15,
+          "service_means_ms": {
+            "full_raster": 99.56851411251309,
+            "outer_bbox": 79.26655720126985,
+            "merged_rectangles": 79.2818517008263
+          },
+          "merged_reduction_vs_raster_percent": 20.374575831033013,
+          "merged_reduction_vs_bbox_percent": -0.019295021881182706
+        },
+        {
+          "case": "clustered_rectangles_90",
+          "selected_tiles": 30,
+          "service_means_ms": {
+            "full_raster": 167.58991463989247,
+            "outer_bbox": 156.3629104654756,
+            "merged_rectangles": 156.37953796499343
+          },
+          "merged_reduction_vs_raster_percent": 6.689171421196349,
+          "merged_reduction_vs_bbox_percent": -0.01063391533728808
+        },
+        {
+          "case": "scattered_random_10",
+          "selected_tiles": 7,
+          "service_means_ms": {
+            "full_raster": 65.41036660309938,
+            "outer_bbox": 62.513887187097275,
+            "merged_rectangles": 39.78567884621531
+          },
+          "merged_reduction_vs_raster_percent": 39.17527004912073,
+          "merged_reduction_vs_bbox_percent": 36.35705498981196
+        },
+        {
+          "case": "scattered_random_50",
+          "selected_tiles": 17,
+          "service_means_ms": {
+            "full_raster": 116.26320362836708,
+            "outer_bbox": 116.25975462846712,
+            "merged_rectangles": 95.08340724258119
+          },
+          "merged_reduction_vs_raster_percent": 18.217110594583886,
+          "merged_reduction_vs_bbox_percent": 18.214684396642223
+        },
+        {
+          "case": "scattered_random_90",
+          "selected_tiles": 31,
+          "service_means_ms": {
+            "full_raster": 184.9986356350396,
+            "outer_bbox": 185.0056696348356,
+            "merged_rectangles": 171.77992351838222
+          },
+          "merged_reduction_vs_raster_percent": 7.145302489005867,
+          "merged_reduction_vs_bbox_percent": 7.1488328668836925
+        },
+        {
+          "case": "adversarial_checkerboard_10",
+          "selected_tiles": 8,
+          "service_means_ms": {
+            "full_raster": 70.2794444618961,
+            "outer_bbox": 67.65607103797394,
+            "merged_rectangles": 45.35730868463804
+          },
+          "merged_reduction_vs_raster_percent": 35.461486595515524,
+          "merged_reduction_vs_bbox_percent": 32.958996895962336
+        },
+        {
+          "case": "adversarial_checkerboard_50",
+          "selected_tiles": 20,
+          "service_means_ms": {
+            "full_raster": 132.1628491672774,
+            "outer_bbox": 123.03316393203825,
+            "merged_rectangles": 112.9844347234514
+          },
+          "merged_reduction_vs_raster_percent": 14.51119930045699,
+          "merged_reduction_vs_bbox_percent": 8.167496378567996
+        },
+        {
+          "case": "adversarial_checkerboard_90",
+          "selected_tiles": 30,
+          "service_means_ms": {
+            "full_raster": 183.9935426641873,
+            "outer_bbox": 183.99074666426836,
+            "merged_rectangles": 169.47000208536994
+          },
+          "merged_reduction_vs_raster_percent": 7.893505591837391,
+          "merged_reduction_vs_bbox_percent": 7.892105903235835
+        },
+        {
+          "case": "deadline_truncated_prefix_10",
+          "selected_tiles": 5,
+          "service_means_ms": {
+            "full_raster": 52.95266946437258,
+            "outer_bbox": 27.78536319422447,
+            "merged_rectangles": 28.015063687563156
+          },
+          "merged_reduction_vs_raster_percent": 47.09414280537425,
+          "merged_reduction_vs_bbox_percent": -0.826696026008511
+        },
+        {
+          "case": "deadline_truncated_prefix_50",
+          "selected_tiles": 17,
+          "service_means_ms": {
+            "full_raster": 109.5676928225369,
+            "outer_bbox": 96.19442171036178,
+            "merged_rectangles": 93.76707128075493
+          },
+          "merged_reduction_vs_raster_percent": 14.420876386777348,
+          "merged_reduction_vs_bbox_percent": 2.5233796164558453
+        },
+        {
+          "case": "deadline_truncated_prefix_90",
+          "selected_tiles": 24,
+          "service_means_ms": {
+            "full_raster": 143.65414383402984,
+            "outer_bbox": 135.06875758300603,
+            "merged_rectangles": 129.7398857375433
+          },
+          "merged_reduction_vs_raster_percent": 9.685942726833085,
+          "merged_reduction_vs_bbox_percent": 3.9453030743900164
+        },
+        {
+          "case": "moving_disocclusion_band_10",
+          "selected_tiles": 8,
+          "service_means_ms": {
+            "full_raster": 67.57250554039734,
+            "outer_bbox": 44.04235572277168,
+            "merged_rectangles": 44.062701222181666
+          },
+          "merged_reduction_vs_raster_percent": 34.7919677244477,
+          "merged_reduction_vs_bbox_percent": -0.046195302399465454
+        },
+        {
+          "case": "moving_disocclusion_band_50",
+          "selected_tiles": 18,
+          "service_means_ms": {
+            "full_raster": 112.94241122467008,
+            "outer_bbox": 95.24990623775273,
+            "merged_rectangles": 95.22903723835793
+          },
+          "merged_reduction_vs_raster_percent": 15.683545086598084,
+          "merged_reduction_vs_bbox_percent": 0.021909732218217126
+        },
+        {
+          "case": "moving_disocclusion_band_90",
+          "selected_tiles": 28,
+          "service_means_ms": {
+            "full_raster": 158.9627828900793,
+            "outer_bbox": 147.53587072145976,
+            "merged_rectangles": 149.1200411755188
+          },
+          "merged_reduction_vs_raster_percent": 6.191852920294327,
+          "merged_reduction_vs_bbox_percent": -1.0737527397997049
+        }
+      ],
+      "sparse_equal_mask_means_ms": {
+        "full_raster": 114.8944059347289,
+        "outer_bbox": 103.49289239870613,
+        "merged_rectangles": 96.16519044454282
+      },
+      "merged_reduction_vs_raster_percent": 16.301242290965913,
+      "merged_reduction_vs_bbox_percent": 7.080391497740113,
+      "merged_losses_vs_bbox": [
+        "clustered_rectangles_50",
+        "clustered_rectangles_90",
+        "deadline_truncated_prefix_10",
+        "moving_disocclusion_band_10",
+        "moving_disocclusion_band_90"
+      ],
+      "capture_started_utc": "2026-10-22T23:23:55.3970146Z",
+      "evidence_sha256": "6c43b4fbbd065b409ea2ef0c49a44e2d4f419eaeb882f164abae5fa73e465471"
+    }
+  ],
+  "within_session_width_interactions": [
+    {
+      "session": 1,
+      "merged_vs_raster_effect_change_percentage_points": 6.234061608692787,
+      "merged_vs_bbox_effect_change_percentage_points": 2.71610108132686
+    },
+    {
+      "session": 2,
+      "merged_vs_raster_effect_change_percentage_points": 6.2404956716639255,
+      "merged_vs_bbox_effect_change_percentage_points": 2.7294819823153844
+    }
+  ],
+  "inference_scope": "Fixed implementation, same-family width transfer on previously used synthetic masks",
+  "analysis": "Descriptive session results; repetitions are not independent sessions; no quality-matched cross-model speed claim"
+}

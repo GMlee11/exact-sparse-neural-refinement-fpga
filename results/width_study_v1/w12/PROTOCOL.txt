@@ -1,0 +1,39 @@
+Paper 2: W12 fixed-engine width comparison, frozen before board timings
+
+Question: do the within-network region-organization findings persist when
+Conv2's 12 output lanes cover all feature channels in one group, rather than
+two groups for W16/W24? This is a width/configuration study, not a new mechanism.
+
+Candidate: exp061_fpga_qat_structured_w12_int8/checkpoints/best_model.pth,
+SHA256 3f38fa86739ec2ac66e560ccbb04b3582e838b651c9d02cfe01cc7f32b1d79fc.
+Use its existing per-output-channel integer shifts, not forced global Q8.
+W12's prior INT8 quality qualification failed the all-scenes Lanczos guardrail
+(worst scene about -0.252 dB). No quality-equivalent acceleration claim.
+Different weights and quantization prevent attributing every difference solely
+to width, though this engine performs no data-dependent zero skipping.
+
+Reuse the qualified packed-BRAM RTL, 2/12/6 output lanes, one context, 50 MHz,
+F006 firmware, synthetic input, 17 masks and three organizations. Change only
+the generated network package. No training, lane search, board port or new RTL.
+First check the per-channel full-frame oracle against INT64 halo patches and
+run the existing seven integrated requests and five failure/reuse checks.
+Route an isolated fresh image; require resource fit and setup/hold closure.
+
+Physical order: P001 W24, P002 W12, P003 W12, P004 W24. Each acquisition uses
+17 masks x three organizations x six measured repetitions, existing warmups,
+Latin-square organization order and private-bank balancing. Archive and compare
+outputs with each network's own integer reference. Preserve all failures/losses.
+These are two reversed-order blocks in one campaign, not independent-day data.
+
+Primary endpoint: complete request-to-residual-publication service time,
+including host planning/packing/scatter/publication, not reconstructed display.
+Primary comparisons: ratio of equal-mask mean times over the 15 sparse masks,
+merged versus raster and bounding box, separately for each network and block.
+Report absolute savings, per-mask losses, stage times and hardware resources.
+Use the completed W16 campaign only as separately acquired supporting context.
+Do not treat historical W16 runs as contemporaneously randomized W12 controls.
+
+Stop on numerical or timing failure for diagnosis; no performance-driven
+retuning, architecture redesign or automatic checkpoint replacement. Leave
+the manuscript, submitted documents and public artifact unchanged until the
+experiment is complete. No commits or pushes.

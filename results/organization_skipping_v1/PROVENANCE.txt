@@ -1,0 +1,28 @@
+Provenance interpretation for width-only derived fixtures and helpers
+
+prepare.py imports the original W24 fixture manifest to preserve image identity,
+input-bank checksums, case indexing and masks. It replaces every network output,
+output checksum and trained-package identity using the appropriate W16 or W12
+checkpoint. Dense computation uses per-channel shifts, checked with independent
+INT64 halo patches in paper2_third_network_20261022/prepare.py. The imported
+manifest's legacy source_sha256 and n001_manifest_sha256 identify the original
+fixture preparation, not the new width-specific generator. The actual new
+generator is this folder's prepare.py. source_w24_manifest_sha256 records the
+complete imported manifest. No captured manifest is rewritten after collection.
+
+Qualification freeze source_pins identify the parent C07 sources. The trained
+package is deliberately replaced before freeze.files is calculated; freeze.files
+is the identity of the actual simulated sources and stimuli. build.py and the
+clone archive check those sources. Binding manifests record the parent and
+derived helper identities. Later protocol amendments are explicitly documented;
+each physical launch pins the protocol version used at capture.
+
+W16 B004 reads unchanged non-weight RTL from the successful W12 build and the
+qualified W16 package. active_files.txt and build_manifest.json record actual
+source paths and hashes. This is a new synthesis/route, not reuse of W12 neural
+logic. The saved project excludes run results; source equality and exact board
+output replay remain required.
+
+available_results.json is an interim snapshot taken when W12 was complete and
+W16 was blocked. comparison.json and verification.json, once generated after
+both campaigns, supersede that interim status without deleting its history.

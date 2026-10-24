@@ -1,0 +1,87 @@
+{
+  "pass": true,
+  "selection": "first predeclared C002 frame per stratum; fixed tile0",
+  "oracle": "original fused_region + original conv3x3 INT64 ties-away Q8",
+  "frames": [
+    {
+      "stratum": "blender_kenney_mixed_v1",
+      "scene": "scene_08_forest_c",
+      "path": "data/teacher_development/train/lr/blender_kenney_mixed_v1/scene_08_forest_c/scene_08_forest_c_0123.png",
+      "sha256": "354f494ef18f219562398d5f0c9981a4a9070565e0de8a2f2d1956e4d92cc974",
+      "native_size": [
+        640,
+        360
+      ],
+      "crop_xyxy": [
+        0,
+        0,
+        640,
+        360
+      ],
+      "crop_sha256": "5fe897b69e9a8c6a33a952435b84296c20db0f7686845a54e130fc4968939605",
+      "integer_residual_sha256": "adea703d478083f4978b5d3ca87375cc21812da78a8b2e0d5746893f05b89433"
+    },
+    {
+      "stratum": "blender_kenney_native_v1",
+      "scene": "scene_08_forest_c",
+      "path": "data/teacher_development/train/lr/blender_kenney_native_v1/scene_08_forest_c/scene_08_forest_c_0163.png",
+      "sha256": "c36c1a3fd656325ba810ab12556f5aabd49c507f27f0800e5084978db99e5d27",
+      "native_size": [
+        640,
+        360
+      ],
+      "crop_xyxy": [
+        0,
+        0,
+        640,
+        360
+      ],
+      "crop_sha256": "9a8c289b6fea0b194709e210809e9420079741afd2712f407f63c8bd57433a0e",
+      "integer_residual_sha256": "8d0ef2c99ebb85a0f8c852e943ec045b40ae37a312be9d04869cafa2eb913401"
+    },
+    {
+      "stratum": "gameir_development_v1",
+      "scene": "dynamic_town07",
+      "path": "data/teacher_development/train/lr/gameir_development_v1/gameir_development_v1/dynamic_town07/16/00000050.png",
+      "sha256": "b19ef8f7accd5a7a386cf1c4ae4b3a37b38efff1ac56d604b65bed71f12345d6",
+      "native_size": [
+        960,
+        720
+      ],
+      "crop_xyxy": [
+        160,
+        180,
+        800,
+        540
+      ],
+      "crop_sha256": "f16962db66ab64fbb6a2955a15f09d04d5f14d97b19399ff4cfbf442d2e327ed",
+      "integer_residual_sha256": "9b80a67b0e843cebdf239e11928c129289bbd1026423fd3a00651654a70d2b17"
+    },
+    {
+      "stratum": "procedural_native_v1",
+      "scene": "proc_22_robot_vision_e",
+      "path": "data/teacher_development/train/lr/procedural_native_v1/procedural_native_v1/proc_22_robot_vision_e/proc_22_robot_vision_e_0042.png",
+      "sha256": "14272affdd22d6a29fde2697c357e121cbe925f6073f6ca6b74cbfbea9d5c509",
+      "native_size": [
+        640,
+        360
+      ],
+      "crop_xyxy": [
+        0,
+        0,
+        640,
+        360
+      ],
+      "crop_sha256": "fbd51223a6ad09a19d9369e055bf03962fa1635446449dc326129d93dc53eecc",
+      "integer_residual_sha256": "4a0d7704a54cfec59ae0dda6b25fc9007f4b5b4200fec6368b3018190f1a689f"
+    }
+  ],
+  "zero_protocol_sha256": "09b643019bed4dbd144de5169ca12a96668a637015a35519599efc34dafdc78c",
+  "source_sha256": "50f0f14e1d0e676cd5c9bd038268c6110ff0e05670ba8faa6c6224a48443b62f",
+  "weights_sha256": "cc1a67ee659447a80252c97064ed7bc50826b40649ebf3c8399ef189ba692029",
+  "files": {
+    "integration_descriptors.mem": "3be87cc661292a9c17fcff9b03f4ff7decf296d23c5cff91dcf214a9772cd250",
+    "integration_inputs.mem": "8b6ec2286fd92bd7c6149a655a4f88393c296de7f4319de69e871623e19c7e48",
+    "integration_outputs.mem": "5d2c5f4ced23710293ed8cd5a7489457e143de826663edd08da51611982626aa"
+  }
+}

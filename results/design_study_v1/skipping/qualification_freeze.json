@@ -1,0 +1,39 @@
+{
+  "purpose": "untimed Q001 dense and Q002 faults only; ABBA remains gated on their replay and root review",
+  "no_board_access": true,
+  "pins": [
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_architecture_search_20261021\\implementation\\c07\\physical\\Q001\\launch_manifest.json",
+      "sha256": "8de720f5512fc5f3d4623295a9d38201250f403f670f0bd56f6932e7080e607d"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_architecture_search_20261021\\implementation\\c07\\physical\\Q002\\launch_manifest.json",
+      "sha256": "96cba9f85f1dee8779c68c35ef325e4ca91b2f299b28cac71dcc6d59cab3dc4f"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_architecture_search_20261021\\implementation\\c07\\runs\\B001\\record.json",
+      "sha256": "6733c3f0827638af89a91eabe8a88f5ec0fdec57f7c761bf862907042d9734e6"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_architecture_search_20261021\\implementation\\c07\\runs\\BREF001\\result.json",
+      "sha256": "d9dc1fdeaa75449052be0eb423ccda1080f9d605b5737f7547cc4e5abd8487d8"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_architecture_search_20261021\\implementation\\c07\\firmware\\F002\\result.json",
+      "sha256": "f3041a4c81b6760f59a6886b4374d51da63d56be2288a5306c6ba25953e30f36"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_architecture_search_20261021\\implementation\\c07\\firmware\\F003\\result.json",
+      "sha256": "69e95c81fcbb338cf5c3ae75d0d5ca28ea81184c23201682c42215cb6d958eed"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_architecture_search_20261021\\implementation\\c07\\runs\\H001\\result.json",
+      "sha256": "75870afc5a76795dbb0c9b94465511cb7f4e334298c2979449510caef54d493f"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_architecture_search_20261021\\implementation\\c07\\PHYSICAL_PROTOCOL.md",
+      "sha256": "4a0b36a1f25761d79531cd2bcd5b17c5de0b26de47a89116b14572020397fa3e"
+    }
+  ],
+  "timed_run_authorization": false
+}

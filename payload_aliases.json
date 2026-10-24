@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "description": "Original logical capture paths mapped to identical stored compressed bytes; acquisition metadata and original manifests are unchanged.",
+  "aliases": {
+    "results/design_study_v1/buffer/P003/archive.bin.gz": {
+      "stored_path": "results/design_study_v1/buffer/P002/archive.bin.gz",
+      "sha256": "d8bbab156370a62d00c3dc1c7d6b162861a5c64b38fa0ead9b2d9229d71e448e",
+      "size_bytes": 1332343
+    },
+    "results/design_study_v1/buffer/P004/archive.bin.gz": {
+      "stored_path": "results/design_study_v1/buffer/P002/archive.bin.gz",
+      "sha256": "d8bbab156370a62d00c3dc1c7d6b162861a5c64b38fa0ead9b2d9229d71e448e",
+      "size_bytes": 1332343
+    },
+    "results/design_study_v1/buffer/P005/archive.bin.gz": {
+      "stored_path": "results/design_study_v1/buffer/P002/archive.bin.gz",
+      "sha256": "d8bbab156370a62d00c3dc1c7d6b162861a5c64b38fa0ead9b2d9229d71e448e",
+      "size_bytes": 1332343
+    },
+    "results/organization_skipping_v1/w12/Q001/archive.bin.gz": {
+      "stored_path": "results/organization_skipping_v1/w12/P002/archive.bin.gz",
+      "sha256": "9c65a2d54e65d4263fb1350eb754a8e18e23ce97a9b49cdc689186589ad09572",
+      "size_bytes": 19366345
+    },
+    "results/organization_skipping_v1/w16/Q001/archive.bin.gz": {
+      "stored_path": "results/organization_skipping_v1/w16/P002/archive.bin.gz",
+      "sha256": "3bec4aa0480a3c813aa6bdc23e23524009c13fda4403155a414596a844387e98",
+      "size_bytes": 28461510
+    },
+    "results/organization_skipping_v1/w24/Q001/archive.bin.gz": {
+      "stored_path": "results/organization_skipping_v1/w24/P002/archive.bin.gz",
+      "sha256": "d54e7950421adf51fffcc5659ced3d9ccb2540f83e97351da72304d70ddbbb8c",
+      "size_bytes": 34601760
+    },
+    "results/output_suppression_v1/shared/archive_30af053eb410d427.bin.gz": {
+      "stored_path": "results/organization_skipping_v1/w24/P002/archive.bin.gz",
+      "sha256": "d54e7950421adf51fffcc5659ced3d9ccb2540f83e97351da72304d70ddbbb8c",
+      "size_bytes": 34601760
+    },
+    "results/width_study_v1/w12/P001/archive.bin.gz": {
+      "stored_path": "results/design_study_v1/buffer/P002/archive.bin.gz",
+      "sha256": "d8bbab156370a62d00c3dc1c7d6b162861a5c64b38fa0ead9b2d9229d71e448e",
+      "size_bytes": 1332343
+    },
+    "results/width_study_v1/w12/P003/archive.bin.gz": {
+      "stored_path": "results/width_study_v1/w12/P002/archive.bin.gz",
+      "sha256": "3872c43f6e45a119843aac5166a77b8397fef227a627314f32a290165ced16f1",
+      "size_bytes": 1262635
+    },
+    "results/width_study_v1/w12/P004/archive.bin.gz": {
+      "stored_path": "results/design_study_v1/buffer/P002/archive.bin.gz",
+      "sha256": "d8bbab156370a62d00c3dc1c7d6b162861a5c64b38fa0ead9b2d9229d71e448e",
+      "size_bytes": 1332343
+    },
+    "results/width_study_v1/w16/P001/archive.bin.gz": {
+      "stored_path": "results/design_study_v1/buffer/P002/archive.bin.gz",
+      "sha256": "d8bbab156370a62d00c3dc1c7d6b162861a5c64b38fa0ead9b2d9229d71e448e",
+      "size_bytes": 1332343
+    },
+    "results/width_study_v1/w16/P003/archive.bin.gz": {
+      "stored_path": "results/width_study_v1/w16/P002/archive.bin.gz",
+      "sha256": "f39895f3692a03cc6bff5d176ecaa13b46e9f845462310d6d61b5c438628549e",
+      "size_bytes": 1315532
+    },
+    "results/width_study_v1/w16/P004/archive.bin.gz": {
+      "stored_path": "results/design_study_v1/buffer/P002/archive.bin.gz",
+      "sha256": "d8bbab156370a62d00c3dc1c7d6b162861a5c64b38fa0ead9b2d9229d71e448e",
+      "size_bytes": 1332343
+    }
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "workload": {
+    "cases": [
+      {
+        "name": "top_left",
+        "indices": [
+          0
+        ],
+        "organization": "tiles",
+        "regions": 1
+      },
+      {
+        "name": "interior",
+        "indices": [
+          24
+        ],
+        "organization": "tiles",
+        "regions": 1
+      },
+      {
+        "name": "bottom_right",
+        "indices": [
+          59
+        ],
+        "organization": "tiles",
+        "regions": 1
+      },
+      {
+        "name": "four_corners",
+        "indices": [
+          0,
+          9,
+          50,
+          59
+        ],
+        "organization": "tiles",
+        "regions": 4
+      },
+      {
+        "name": "adjacent_split",
+        "indices": [
+          0,
+          1
+        ],
+        "organization": "tiles",
+        "regions": 2
+      },
+      {
+        "name": "adjacent_merged",
+        "indices": [
+          0,
+          1
+        ],
+        "organization": "merged_rectangles",
+        "regions": 1
+      },
+      {
+        "name": "raster_one_tile",
+        "indices": [
+          0
+        ],
+        "organization": "raster",
+        "regions": 1
+      }
+    ],
+    "checked_output_words": 184320,
+    "independent_int64_patches": [
+      [
+        0,
+        0,
+        3,
+        4
+      ],
+      [
+        0,
+        636,
+        3,
+        640
+      ],
+      [
+        357,
+        0,
+        360,
+        4
+      ],
+      [
+        357,
+        636,
+        360,
+        640
+      ],
+      [
+        120,
+        256,
+        124,
+        260
+      ],
+      [
+        59,
+        63,
+        63,
+        67
+      ]
+    ],
+    "input_sha256": "694f30b7bf059b0dcb2bc007fa45576dfbca3ad78f0fb7729998774fc6d09aae",
+    "oracle_sha256": "35157c754a9176d0cc72aed7eb5f34e01bdfc1e2ceda0bb4292299cf3960913f"
+  },
+  "sources": {
+    "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\exp061_fpga_qat_structured_w12_int8\\checkpoints\\best_model.pth": "3f38fa86739ec2ac66e560ccbb04b3582e838b651c9d02cfe01cc7f32b1d79fc",
+    "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_third_network_20261022\\PROTOCOL.txt": "40593d874314f153318ce16fc1306dd6a432d04c17ba0a0d61d0f8dcf95c66d7",
+    "fpga\\rtl\\relu_clamp_pipelined.sv": "3091738ee18582c50854388cbffa58acefb741442c85d5011b9a169eabece1cb",
+    "fpga\\rtl\\mac_array_3x3_pipelined.sv": "0cd16c1016ab366630420a4b055fbeee6161c477ea0378f171bef79c84f30f9c",
+    "fpga\\rtl\\conv2d_3x3_multi_channel.sv": "73ab31e9e00f33b01fe6ef451b10fcf29137749894a133c2cf3cbb21b0353ef6",
+    "fpga\\rtl\\line_buffer_3x3_stallable.sv": "c1a0dbaadc21330ee694cae5fb61d6f42c6efbdf9cdf26c41c8e63b20ac3c6cf",
+    "fpga\\rtl\\espcn_streaming_grouped_conv_layer.sv": "6b8c323b0dd558d80ea285f35a853b560dea8955c6c1b78469ed4bf71bfd416a",
+    "fpga\\rtl\\espcn_streaming_grouped_conv_layer_multicontext.sv": "75d7d0c7c6ebb39bb09c22c26bd7007b472ca0dc54ece94de988891145bbc4c6",
+    "fpga\\rtl\\espcn_streaming_grouped_conv_layer_selectable.sv": "27519c47194c4df0d766f1674a70e1392a43a96b05ac3975a46b02a3b7792c0e",
+    "fpga\\rtl\\espcn_streaming_pixel_shuffle_rgb.sv": "b7ae2e961fd1f4546c31a861c3f94fcfd2dd405fd8a5888614b4a6787e690438",
+    "fpga\\rtl\\sparse_hierarchical_mask_lookup.sv": "2a20d0923456ddff8c9b8a8f637d820a5cea2b2441d000c78ff2c3ab45e0b025",
+    "fpga\\rtl\\espcn_streaming_linebuffer_core.sv": "864a3c2106e08617833db6d34bad6758ca0571779abadfaba8f09fef7ff30842",
+    "experiments\\paper2_bounded_salvage_20261021\\implementation\\packed_bram_window.sv": "1f38b7fa4158967dbc225a5598df5d2e2ec9952a3ebea77b69624fc4a33799d7",
+    "experiments\\paper2_bounded_salvage_20261021\\implementation\\bram_feature_window_buffer.sv": "4e9913f92f23c56c914aaf9485e1066d577a30321fe6172e565516ebdd7f2815",
+    "fpga\\rtl\\sparse_hierarchical_commit_controller.sv": "71bfc954591410f1462a0c79a819e04610eddd5cfc30c170af0466d5f519b808",
+    "src\\experiments\\paper2_conventional_comparison_v1\\roi_request_guard.sv": "0398355e122c8958726b0f6dcc4116e2384c673e1e2cc50fc527d5907a54dd71",
+    "src\\experiments\\paper2_conventional_comparison_v1\\roi_stream.sv": "bbe161647a3373ad4f4598c7285506a0e676bb2b4cbd8dfa9e7ea0f9056df9f3",
+    "src\\experiments\\paper2_conventional_comparison_v1\\roi_board_wrapper.sv": "f6891ffee861e44a9496fefceb2ecf96538056f9bc520e16d2a14582da09a59c",
+    "src\\experiments\\paper2_conventional_comparison_v1\\tb_roi_integration.sv": "3a5a5bdee4bd7856815486d27ff49eef4da3f069c63a9057e4d5fe64a0a54031"
+  },
+  "generated_files": {
+    "bram_feature_window_buffer.sv": "4e9913f92f23c56c914aaf9485e1066d577a30321fe6172e565516ebdd7f2815",
+    "conv2d_3x3_multi_channel.sv": "73ab31e9e00f33b01fe6ef451b10fcf29137749894a133c2cf3cbb21b0353ef6",
+    "espcn_fpga_student_weights_pkg.sv": "5982ef40883ad44e8be58eae086a8ee2deaaf3eadb35662d0575c3955b967c6d",
+    "espcn_streaming_grouped_conv_layer.sv": "6b8c323b0dd558d80ea285f35a853b560dea8955c6c1b78469ed4bf71bfd416a",
+    "espcn_streaming_grouped_conv_layer_multicontext.sv": "75d7d0c7c6ebb39bb09c22c26bd7007b472ca0dc54ece94de988891145bbc4c6",
+    "espcn_streaming_grouped_conv_layer_selectable.sv": "27519c47194c4df0d766f1674a70e1392a43a96b05ac3975a46b02a3b7792c0e",
+    "espcn_streaming_linebuffer_core.sv": "864a3c2106e08617833db6d34bad6758ca0571779abadfaba8f09fef7ff30842",
+    "espcn_streaming_pixel_shuffle_rgb.sv": "b7ae2e961fd1f4546c31a861c3f94fcfd2dd405fd8a5888614b4a6787e690438",
+    "integration_descriptors.mem": "05052c16fadac38f0817afc7a7edd8a3955428cfe88a95587bcf23d97374e424",
+    "integration_inputs.mem": "3c698a87bf42c9866eae929f59c4be273b0d80f8f5121b8eab96c787d96284cb",
+    "integration_outputs.mem": "dc61889fb714f29517bf9dd0a92b39f1e32666ed21abde6820817c9650cb1185",
+    "line_buffer_3x3_stallable.sv": "c1a0dbaadc21330ee694cae5fb61d6f42c6efbdf9cdf26c41c8e63b20ac3c6cf",
+    "mac_array_3x3_pipelined.sv": "0cd16c1016ab366630420a4b055fbeee6161c477ea0378f171bef79c84f30f9c",
+    "packed_bram_window.sv": "1f38b7fa4158967dbc225a5598df5d2e2ec9952a3ebea77b69624fc4a33799d7",
+    "paper2_origin_core.sv": "01f93b0e554a4edc6fde471b4b234242568ef2737054983c621bf5553a5160d9",
+    "relu_clamp_pipelined.sv": "3091738ee18582c50854388cbffa58acefb741442c85d5011b9a169eabece1cb",
+    "roi_board_wrapper.sv": "f6891ffee861e44a9496fefceb2ecf96538056f9bc520e16d2a14582da09a59c",
+    "roi_request_guard.sv": "0398355e122c8958726b0f6dcc4116e2384c673e1e2cc50fc527d5907a54dd71",
+    "roi_stream.sv": "bbe161647a3373ad4f4598c7285506a0e676bb2b4cbd8dfa9e7ea0f9056df9f3",
+    "runner_snapshot.py": "05799bca791c2a3dd8e08a0c8c505ef3391118a78f5a74eb6706854a2ae62abb",
+    "sparse_hierarchical_commit_controller.sv": "71bfc954591410f1462a0c79a819e04610eddd5cfc30c170af0466d5f519b808",
+    "sparse_hierarchical_mask_lookup.sv": "2a20d0923456ddff8c9b8a8f637d820a5cea2b2441d000c78ff2c3ab45e0b025",
+    "tb_roi_integration.sv": "3a5a5bdee4bd7856815486d27ff49eef4da3f069c63a9057e4d5fe64a0a54031"
+  },
+  "suite": "full",
+  "board_access": false
+}

@@ -1,0 +1,27 @@
+Bounded stronger-baseline assessment
+
+Question: how much of the measured organization advantage depends on serially
+materializing unselected PixelShuffle outputs before the wrapper discards them?
+
+Compare qualified W24 C07 RTL with one conventional output-suppression change.
+Keep input scans, convolution operations, trained weights, mask semantics,
+selected output order and all selected output bytes unchanged. Suppress the
+two top output states and bottom-pair read/emit states for unselected positions.
+The bottom scanner still advances one column per cycle: this is a feasible
+partial baseline challenge, not an ideal zero-cost event-driven accelerator.
+
+Use archived development frame 0 and masks [0,2] and [57,59], raster/box/merged
+for the first and box/merged for the second. Both skipping states; fixed input
+and output backpressure from the existing integration test. Retain its five
+fault/reuse checks per mode. Compare loop cycles under identical simulated
+traffic; these exclude ARM planning, packing, DMA and publication overhead.
+No board programming, implementation timing, physical speedup or held-out claim.
+
+Fail if any selected output, word order, length, checksum, last marker,
+request identity, terminal state or fault/reuse check differs from its reference.
+Do not retune workload after seeing results. Original sources/captures untouched.
+Record all failures. A successful reduction challenges baseline strength; it
+does not prove all traversal cost removable or justify a novel mechanism claim.
+
+Arithmetic-lane experiment stays on hold. Advance it only if this assessment
+leaves a concrete unresolved question rather than repeating width/skip scaling.

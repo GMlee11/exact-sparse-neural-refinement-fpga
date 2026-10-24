@@ -1,0 +1,366 @@
+{
+  "scope": "Exploratory, two development images per width; separate acquisitions, no independent-session inference; W24 data predate extension",
+  "widths": {
+    "24": {
+      "all": {
+        "engines": {
+          "reference": {
+            "mean_service_ms": {
+              "raster": 118.60012987309624,
+              "bounding_box": 108.79628484490775,
+              "merged": 99.53082630110603
+            },
+            "raster_minus_merged_ms": 19.069303571990204,
+            "merged_vs_raster_ratio_of_means_percent": 16.07865319573817,
+            "merged_vs_bbox_ratio_of_means_percent": 8.516337260054318
+          },
+          "skip_off": {
+            "mean_service_ms": {
+              "raster": 151.1099103053126,
+              "bounding_box": 141.35960808807135,
+              "merged": 132.52952209414386
+            },
+            "raster_minus_merged_ms": 18.580388211168753,
+            "merged_vs_raster_ratio_of_means_percent": 12.295942849564057,
+            "merged_vs_bbox_ratio_of_means_percent": 6.2465410829563695
+          },
+          "skip_on": {
+            "mean_service_ms": {
+              "raster": 97.14857849519123,
+              "bounding_box": 87.42279040223907,
+              "merged": 78.88305446239141
+            },
+            "raster_minus_merged_ms": 18.265524032799817,
+            "merged_vs_raster_ratio_of_means_percent": 18.80163798145944,
+            "merged_vs_bbox_ratio_of_means_percent": 9.768317735633547
+          }
+        },
+        "mean_paired_interaction_pp": {
+          "raster": 7.45148195029958,
+          "bounding_box": 3.649160399539157
+        },
+        "on_merged_vs_reference_merged_ratio_of_means_percent": 20.745102402998107
+      },
+      "first_leg": {
+        "engines": {
+          "reference": {
+            "mean_service_ms": {
+              "raster": 118.61668118511625,
+              "bounding_box": 108.81369271940291,
+              "merged": 99.55032898804046
+            },
+            "raster_minus_merged_ms": 19.066352197075787,
+            "merged_vs_raster_ratio_of_means_percent": 16.0739214810102,
+            "merged_vs_bbox_ratio_of_means_percent": 8.513049690584273
+          },
+          "skip_off": {
+            "mean_service_ms": {
+              "raster": 151.14377524183053,
+              "bounding_box": 141.3817896499281,
+              "merged": 132.54993990605175
+            },
+            "raster_minus_merged_ms": 18.593835335778778,
+            "merged_vs_raster_ratio_of_means_percent": 12.302084757396447,
+            "merged_vs_bbox_ratio_of_means_percent": 6.246808564062367
+          },
+          "skip_on": {
+            "mean_service_ms": {
+              "raster": 97.16263430728361,
+              "bounding_box": 87.4437864641302,
+              "merged": 78.91463908647546
+            },
+            "raster_minus_merged_ms": 18.24799522080815,
+            "merged_vs_raster_ratio_of_means_percent": 18.780877392740912,
+            "merged_vs_bbox_ratio_of_means_percent": 9.75386327895742
+          }
+        },
+        "mean_paired_interaction_pp": {
+          "raster": 7.424740266015103,
+          "bounding_box": 3.6106771541693674
+        },
+        "on_merged_vs_reference_merged_ratio_of_means_percent": 20.728901763894804
+      },
+      "second_leg": {
+        "engines": {
+          "reference": {
+            "mean_service_ms": {
+              "raster": 118.58357856107622,
+              "bounding_box": 108.77887697041257,
+              "merged": 99.51132361417162
+            },
+            "raster_minus_merged_ms": 19.072254946904607,
+            "merged_vs_raster_ratio_of_means_percent": 16.083386231325004,
+            "merged_vs_bbox_ratio_of_means_percent": 8.519625881743288
+          },
+          "skip_off": {
+            "mean_service_ms": {
+              "raster": 151.0760453687947,
+              "bounding_box": 141.33742652621464,
+              "merged": 132.50910428223597
+            },
+            "raster_minus_merged_ms": 18.566941086558728,
+            "merged_vs_raster_ratio_of_means_percent": 12.289798188213496,
+            "merged_vs_bbox_ratio_of_means_percent": 6.246273517893175
+          },
+          "skip_on": {
+            "mean_service_ms": {
+              "raster": 97.13452268309884,
+              "bounding_box": 87.40179434034796,
+              "merged": 78.85146983830738
+            },
+            "raster_minus_merged_ms": 18.283052844791456,
+            "merged_vs_raster_ratio_of_means_percent": 18.822404578483265,
+            "merged_vs_bbox_ratio_of_means_percent": 9.782779136942077
+          }
+        },
+        "mean_paired_interaction_pp": {
+          "raster": 7.478228007962882,
+          "bounding_box": 3.6876804544761863
+        },
+        "on_merged_vs_reference_merged_ratio_of_means_percent": 20.761309392252947
+      },
+      "source_sha256": "0375114b4e7fcafa53a3b3825a2a461d01c26013f6fa89b0753b32294fe6f6e9"
+    },
+    "16": {
+      "all": {
+        "engines": {
+          "reference": {
+            "mean_service_ms": {
+              "raster": 94.50494582185658,
+              "bounding_box": 84.76890797920167,
+              "merged": 76.08777773095444
+            },
+            "raster_minus_merged_ms": 18.417168090902138,
+            "merged_vs_raster_ratio_of_means_percent": 19.48804682203491,
+            "merged_vs_bbox_ratio_of_means_percent": 10.240936748149654
+          },
+          "skip_off": {
+            "mean_service_ms": {
+              "raster": 116.18400831816376,
+              "bounding_box": 106.47548478721095,
+              "merged": 98.09968365510917
+            },
+            "raster_minus_merged_ms": 18.084324663054588,
+            "merged_vs_raster_ratio_of_means_percent": 15.56524424043937,
+            "merged_vs_bbox_ratio_of_means_percent": 7.866412769888431
+          },
+          "skip_on": {
+            "mean_service_ms": {
+              "raster": 80.48368022847328,
+              "bounding_box": 70.7951896344395,
+              "merged": 62.57910899770584
+            },
+            "raster_minus_merged_ms": 17.904571230767438,
+            "merged_vs_raster_ratio_of_means_percent": 22.246213368897628,
+            "merged_vs_bbox_ratio_of_means_percent": 11.605422175091974
+          }
+        },
+        "mean_paired_interaction_pp": {
+          "raster": 6.9444949267401626,
+          "bounding_box": 3.4947939502701426
+        },
+        "on_merged_vs_reference_merged_ratio_of_means_percent": 17.75405871494251
+      },
+      "first_leg": {
+        "engines": {
+          "reference": {
+            "mean_service_ms": {
+              "raster": 94.53303000854213,
+              "bounding_box": 84.77884929141337,
+              "merged": 76.10516416795024
+            },
+            "raster_minus_merged_ms": 18.427865840591892,
+            "merged_vs_raster_ratio_of_means_percent": 19.493573663011464,
+            "merged_vs_bbox_ratio_of_means_percent": 10.230954059837217
+          },
+          "skip_off": {
+            "mean_service_ms": {
+              "raster": 116.21828162966983,
+              "bounding_box": 106.49375753668103,
+              "merged": 98.1171582796024
+            },
+            "raster_minus_merged_ms": 18.101123350067425,
+            "merged_vs_raster_ratio_of_means_percent": 15.57510840484353,
+            "merged_vs_bbox_ratio_of_means_percent": 7.8658124671705405
+          },
+          "skip_on": {
+            "mean_service_ms": {
+              "raster": 80.4970620405852,
+              "bounding_box": 70.81273894643057,
+              "merged": 62.60231705953281
+            },
+            "raster_minus_merged_ms": 17.894744981052398,
+            "merged_vs_raster_ratio_of_means_percent": 22.230308196875782,
+            "merged_vs_bbox_ratio_of_means_percent": 11.594554890905862
+          }
+        },
+        "mean_paired_interaction_pp": {
+          "raster": 6.919642293436754,
+          "bounding_box": 3.4582381212201576
+        },
+        "on_merged_vs_reference_merged_ratio_of_means_percent": 17.742353302883764
+      },
+      "second_leg": {
+        "engines": {
+          "reference": {
+            "mean_service_ms": {
+              "raster": 94.47686163517102,
+              "bounding_box": 84.75896666698996,
+              "merged": 76.07039129395865
+            },
+            "raster_minus_merged_ms": 18.40647034121237,
+            "merged_vs_raster_ratio_of_means_percent": 19.482516695241458,
+            "merged_vs_bbox_ratio_of_means_percent": 10.250921778185319
+          },
+          "skip_off": {
+            "mean_service_ms": {
+              "raster": 116.14973500665768,
+              "bounding_box": 106.45721203774085,
+              "merged": 98.08220903061594
+            },
+            "raster_minus_merged_ms": 18.067525976041736,
+            "merged_vs_raster_ratio_of_means_percent": 15.55537425462582,
+            "merged_vs_bbox_ratio_of_means_percent": 7.86701327868311
+          },
+          "skip_on": {
+            "mean_service_ms": {
+              "raster": 80.47029841636135,
+              "bounding_box": 70.77764032244843,
+              "merged": 62.555900935878874
+            },
+            "raster_minus_merged_ms": 17.91439748048247,
+            "merged_vs_raster_ratio_of_means_percent": 22.262123830822144,
+            "merged_vs_bbox_ratio_of_means_percent": 11.616294848363129
+          }
+        },
+        "mean_paired_interaction_pp": {
+          "raster": 6.969354448912236,
+          "bounding_box": 3.5314015502991745
+        },
+        "on_merged_vs_reference_merged_ratio_of_means_percent": 17.765769477714077
+      },
+      "source_sha256": "0033c3199c584af71934ea2446726b4f757ae472595a40cd0960e3144261ce9c"
+    },
+    "12": {
+      "all": {
+        "engines": {
+          "reference": {
+            "mean_service_ms": {
+              "raster": 82.0043171843748,
+              "bounding_box": 72.30579496563195,
+              "merged": 64.05466057991484
+            },
+            "raster_minus_merged_ms": 17.94965660445996,
+            "merged_vs_raster_ratio_of_means_percent": 21.888672719635927,
+            "merged_vs_bbox_ratio_of_means_percent": 11.411442733793331
+          },
+          "skip_off": {
+            "mean_service_ms": {
+              "raster": 97.97436997124328,
+              "bounding_box": 88.32052612620474,
+              "merged": 80.39410891857085
+            },
+            "raster_minus_merged_ms": 17.580261052672427,
+            "merged_vs_raster_ratio_of_means_percent": 17.94373473167774,
+            "merged_vs_bbox_ratio_of_means_percent": 8.974603702323414
+          },
+          "skip_on": {
+            "mean_service_ms": {
+              "raster": 63.1698206680752,
+              "bounding_box": 53.50826626076028,
+              "merged": 45.61262355223392
+            },
+            "raster_minus_merged_ms": 17.557197115841277,
+            "merged_vs_raster_ratio_of_means_percent": 27.793647235592587,
+            "merged_vs_bbox_ratio_of_means_percent": 14.755930737970003
+          }
+        },
+        "mean_paired_interaction_pp": {
+          "raster": 9.291126015612043,
+          "bounding_box": 4.490790323130023
+        },
+        "on_merged_vs_reference_merged_ratio_of_means_percent": 28.791093201832773
+      },
+      "first_leg": {
+        "engines": {
+          "reference": {
+            "mean_service_ms": {
+              "raster": 82.02378812131015,
+              "bounding_box": 72.31889390275208,
+              "merged": 64.07568864180503
+            },
+            "raster_minus_merged_ms": 17.948099479505117,
+            "merged_vs_raster_ratio_of_means_percent": 21.881578369631672,
+            "merged_vs_bbox_ratio_of_means_percent": 11.398411695886512
+          },
+          "skip_off": {
+            "mean_service_ms": {
+              "raster": 98.00362303289492,
+              "bounding_box": 88.34629156295755,
+              "merged": 80.40280204331874
+            },
+            "raster_minus_merged_ms": 17.600820989576178,
+            "merged_vs_raster_ratio_of_means_percent": 17.959357465456616,
+            "merged_vs_bbox_ratio_of_means_percent": 8.991310647123306
+          },
+          "skip_on": {
+            "mean_service_ms": {
+              "raster": 63.17883979281365,
+              "bounding_box": 53.52166932287159,
+              "merged": 45.6367343015347
+            },
+            "raster_minus_merged_ms": 17.542105491278946,
+            "merged_vs_raster_ratio_of_means_percent": 27.765792389993038,
+            "merged_vs_bbox_ratio_of_means_percent": 14.732229246757434
+          }
+        },
+        "mean_paired_interaction_pp": {
+          "raster": 9.2507487328577,
+          "bounding_box": 4.4152867520614505
+        },
+        "on_merged_vs_reference_merged_ratio_of_means_percent": 28.776833665179158
+      },
+      "second_leg": {
+        "engines": {
+          "reference": {
+            "mean_service_ms": {
+              "raster": 81.98484624743946,
+              "bounding_box": 72.29269602851181,
+              "merged": 64.03363251802466
+            },
+            "raster_minus_merged_ms": 17.951213729414803,
+            "merged_vs_raster_ratio_of_means_percent": 21.895770439376104,
+            "merged_vs_bbox_ratio_of_means_percent": 11.424478493968227
+          },
+          "skip_off": {
+            "mean_service_ms": {
+              "raster": 97.9451169095916,
+              "bounding_box": 88.29476068945195,
+              "merged": 80.38541579382294
+            },
+            "raster_minus_merged_ms": 17.55970111576866,
+            "merged_vs_raster_ratio_of_means_percent": 17.928102665880907,
+            "merged_vs_bbox_ratio_of_means_percent": 8.957887006962451
+          },
+          "skip_on": {
+            "mean_service_ms": {
+              "raster": 63.16080154333676,
+              "bounding_box": 53.494863198648964,
+              "merged": 45.58851280293313
+            },
+            "raster_minus_merged_ms": 17.57228874040363,
+            "merged_vs_raster_ratio_of_means_percent": 27.82151003632639,
+            "merged_vs_bbox_ratio_of_means_percent": 14.77964410593261
+          }
+        },
+        "mean_paired_interaction_pp": {
+          "raster": 9.331513554897382,
+          "bounding_box": 4.566397597363259
+        },
+        "on_merged_vs_reference_merged_ratio_of_means_percent": 28.80536210389042
+      },
+      "source_sha256": "d5bb83a1d5c15364f3cf62dd70f5662211dbbb9fc0ccba95d061800fb1582428"
+    }
+  },
+  "script_sha256": "715d2a496ba07464985de5daa8120920499e4d01fbbe023fed0e716de1a3bc16"
+}

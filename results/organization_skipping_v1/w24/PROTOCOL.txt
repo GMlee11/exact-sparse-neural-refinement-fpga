@@ -1,0 +1,60 @@
+Paper 2: organization x zero skipping exploratory pilot, 22 October 2026
+
+Question: does conventional zero skipping change the relative benefit of raster,
+bounding-box and merged-region execution, and do traversal and host costs explain it?
+This is a development pilot, not held-out publication evidence or a new mechanism.
+
+Reuse unchanged routed W24 images: original packed-BRAM 2/12/6 lanes (A), and
+C07 4/12/4 lanes with runtime skipping off/on (B0/B1). 50 MHz, same board, same
+integer weights, same requested output and residual-publication endpoint. Keep A:
+the C07-disabled arm is known to be slower, so B1-vs-B0 alone is not sufficient.
+
+Fixed development frames: archived G001 frame indices 0 and 2. No selection by
+new timing or activation-density results. Fixed mask indices 0,1,2,5,4,10:
+empty, dense, clustered-low, scattered-low, clustered-30tiles, checkerboard-30tiles.
+The latter pair holds selected area equal; the low-density pair does not.
+Within-mask comparisons hold requested pixels identical. 12 frame/mask cases.
+
+First physical step: qualification on C07, all six organization/skipping arms,
+one repetition, every selected output archived and compared byte-for-byte with
+existing full dense goldens. These timings do not enter the performance pilot.
+Offline new RTL qualification covers disjoint regions at top-left/bottom-right,
+bbox vs merged, both skip modes, backpressure and the existing five fault cases.
+Historical unchanged-source full-raster qualification remains separately pinned.
+
+After qualification passes: primary ABBA runs A/B/B/A, three repetitions each.
+Six measured repetitions per frame/mask/arm across two legs. C07's six arms use
+six cyclic rotations across the six repetitions; A's three arms use three.
+Warm each arm once per launch. Full byte archives for the first global repetition;
+per-request output checksum, ownership and terminal status checks on every run.
+Keep all failures and losses. Do not restart a failed attempt under the same ID.
+Do not call the two ABBA legs independent-day replication.
+
+Primary timing retains the historical stage boundaries. Separate profiling runs
+after primary collection subdivide request setup, descriptor setup, accelerator
+kick, cache flush, DMA MMIO, wait, validation and publication. Extra timestamp
+calls are disabled in primary runs. Profiling is diagnostic, not substituted into
+primary results; its instrumentation may perturb the execution. No UART or JTAG
+inside timed requests. Input/condition selection remains outside the timer.
+
+Analysis: show paired within-case organization savings for A, B0 and B1; report
+absolute milliseconds and relative effects, wins/losses, both ABBA legs, and the
+interaction (organization effect with skip on minus that with skip off). Separate
+empty/dense controls. Compare B1 against A, not only B0. Do not aggregate requests
+into fictitious independent sessions. Profile fractions are not automatic
+removable-overhead bounds; stalls and pipeline traversal overlap with arithmetic.
+
+Baseline challenge: the CPU packer already merges halo intervals; do not create
+a naive full-image copy baseline. The hardware scanner still visits unused
+positions, so any finding is conditional on this implementation unless a more
+efficient conventional traversal is addressed. Audit its measured opportunity
+before authorizing a jump engine. Do not infer traversal time by subtracting
+geometric positions as though each were an additive cycle.
+
+Advance only for a repeatable organization-by-skipping effect or a specific,
+substantial baseline issue. A repeated existing result is robustness, not a
+novelty rescue. Select any numerical advancement threshold before primary board
+timings are opened; current pilot reports effect sizes without an acceptance claim.
+Do not start lane/depth/buffer/precision campaigns automatically. Do not modify the
+manuscript or public artifact until there is a completed interpretable result.
+No commits or pushes. Prepare locally; ask the user for Zybo access when ready.

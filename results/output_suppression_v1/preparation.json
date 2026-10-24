@@ -1,0 +1,15 @@
+{
+  "simulation_sha256": "874efffaf167e299bb67348b870b61d77663d51b5cd3ef4f543ec6fba7a83949",
+  "protocol_sha256": "9a66d0a7a624c480a199b6b662e59ccf5fcbf2f8922e5d8755b051bfea2143c6",
+  "sources": {
+    "espcn_streaming_pixel_shuffle_rgb.sv": "5e539c8dae14dd2ea4df16513d8fab689a99f32ef031590a5362c79948925832",
+    "paper2_origin_core.sv": "887c22b9486ca4fda61b1187264c0f9f5994f8e99938f576cb9943d45c869c7d"
+  },
+  "scripts": {
+    "common.py": "2771bd064a818ba74e460930d9c4152d7cd91eb8357cbed731e119dca90bd982",
+    "build_firmware.py": "bc3fa1332df1534f6412ec38f7f981d87c41ce146776bb2743769de9d52508e2",
+    "analyze.py": "018f05c986ff5d88b670f87845efd28418ae00380575df67a90014da0a80d91b",
+    "physical.py": "7102851fadae7e4582c3b474831165f2b7e90151e4cc9dd69f2578c248c16fbd",
+    "build.tcl": "73f6f9c36e80f04449e2a93099ca28c62ec06d5c49467f6a6c8275b58dbfbe5d"
+  }
+}

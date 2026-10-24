@@ -1,0 +1,31 @@
+{
+  "frozen_utc": "2026-10-21T20:39:30.387028+00:00",
+  "order": [
+    "reference",
+    "candidate",
+    "candidate",
+    "reference"
+  ],
+  "runs": [
+    {
+      "run": "P002",
+      "manifest_sha256": "c9acccf2984d0bf330b23191d80ae80fec21698ee1192608c95fe241a8106ca2"
+    },
+    {
+      "run": "P003",
+      "manifest_sha256": "c9be191f4d6ea08a21e881703cbd9ee5d3f6838dc9996ba1861dcc9686bdd057"
+    },
+    {
+      "run": "P004",
+      "manifest_sha256": "dbb2d0c0893cb5a4661447663d6a62fe8aa68cd36d58d7ca041bfa52c929c783"
+    },
+    {
+      "run": "P005",
+      "manifest_sha256": "2bc983f1817b64c747699e0b6a0e0326f3bf5cfe6bf2ebfea3ad85c3944c6a0c"
+    }
+  ],
+  "protocol_sha256": "12ed5fc71f4c70654712d439789dfb8d4c966a133caf8b7f1a3831c3928d8505",
+  "paired_analysis_sha256": "5a4e66fa3a9fec04004361736d5464e34f4939da1f62ee88dd7a1a7df97154b8",
+  "physical_access": false,
+  "deployment_still_requires_dense_qualification_and_physical_safety": true
+}

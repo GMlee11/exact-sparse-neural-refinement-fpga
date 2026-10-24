@@ -1,0 +1,103 @@
+Completed W24/W16/W12 organization x conventional zero-skipping comparison
+22 October 2026 local time; W24 results precede this extension.
+
+OUTCOME
+All three widths now have actual FPGA measurements of raster, bounding-box and
+merged execution with C07 skipping off/on, plus the stronger original reference
+engine. W16 and W12 required new bitstreams; they were not merely reruns of the
+previous width study. Both new physical campaigns completed successfully.
+
+RESULTS
+Means over the same eight sparse frame/mask cells per width, six repeats per
+cell/arm. Empty/dense controls excluded from these aggregates but retained in
+the per-case summaries. Lower service time is better. Ratios are ratios of
+aggregate means, not means of per-cell percentage effects.
+
+Width   Original merged   C07 off merged   C07 on merged   On vs original
+W24       99.531 ms          132.530 ms        78.883 ms       20.75% lower
+W16       76.088 ms           98.100 ms        62.579 ms       17.75% lower
+W12       64.055 ms           80.394 ms        45.613 ms       28.79% lower
+
+The original engine uses 2/12/6 lanes; C07 uses 4/12/4. On versus original is a
+combined implementation comparison, not the causal effect of skipping alone.
+Same-bitstream C07 on/off comparisons isolate the runtime skipping setting.
+Skipping disabled loses to the original reference at every width in this table;
+retaining that reference prevents an exaggerated gain against a weak baseline.
+
+Absolute merged-versus-raster saving:
+Width    Original       C07 off       C07 on
+W24      19.069 ms       18.580 ms     18.266 ms
+W16      18.417 ms       18.084 ms     17.905 ms
+W12      17.950 ms       17.580 ms     17.557 ms
+
+With skipping on, merged-versus-raster relative savings are 18.80%, 22.25% and
+27.79% for W24/W16/W12. The saving in milliseconds changes little within each
+width when skipping is enabled; its percentage importance rises as service time
+falls. This corroborates the nearly-fixed organization saving seen previously.
+
+For W16, C07-on merged versus original merged is 17.742% and 17.766% lower in
+the first/second acquisition legs; for W12, 28.777% and 28.805%. These are
+within-sitting repeated measurements, not independent-day confidence intervals.
+Per-cell organization interactions and losses remain in each pilot_summary.json.
+Compact masks that yield one identical rectangle remain essentially tied between
+bbox and merged; scattered masks retain a material merged advantage. No meaningful
+new organization-policy reversal was observed in this pilot.
+
+The gain versus the original engine is not monotonic with width: W16's percentage
+gain is smaller than W24's despite being narrower. Width alone therefore does not
+summarize the observed optimization benefit. Different trained weights/activation
+patterns and lane utilization also vary; this experiment does not causally isolate
+which of those explains that difference. Do not attribute it solely to W16's
+partly filled output-channel group.
+
+WHAT THIS ADDS TO PAPER 2
+The missing cross-factor comparison is now complete across the three existing
+widths. The region finding survives conventional skipping and remains useful
+against each width's original implementation, not only the slower disabled arm.
+This is worthwhile robustness and explanatory evidence for the design study.
+It is not a new sparse-execution mechanism or a novelty/acceptance guarantee.
+The central explanation remains consistent with the existing study: reducing
+arithmetic does not make region-organization costs disappear.
+
+DESIGN AND VALIDATION
+One Zybo, fixed 50 MHz fabric and common output semantics within each network.
+Same archived input banks, frames 0/2, mask indices 0/1/2/5/4/10 as the W24 pilot.
+These are development/qualification images, not a new natural-video application.
+Each width: 72 exact-byte qualification requests followed by 648 primary records
+in original/C07/C07/original order, three repeats per leg. All checks passed.
+New W16+W12 total: 1,296 primary records, 144 qualification records and 360 full
+selected-output archives. Twenty local tests pass. RTL qualification adds twelve
+requests per width across both skip modes, boundaries, disjoint/adjacent regions,
+full-raster traversal, backpressure and reused fault/reuse cases.
+
+W12 routed resources: 17,536 LUT, 19,501 FF, 17.5 BRAM36-equivalent, 180 DSP;
+setup +3.328 ns, hold +0.008 ns.
+W16 routed resources: 16,876 LUT, 20,988 FF, 21.5 BRAM36-equivalent, 180 DSP;
+setup +2.654 ns, hold +0.050 ns.
+No lane retuning or retraining was used to chase results. W12's historical image-
+quality limitation remains; exact numerical replay is not perceptual equivalence.
+The endpoint is complete residual publication, not reconstructed/displayed frames.
+
+BUILD RECOVERY AND ORDER
+W16 B001-B003 failed during Vivado full-project startup before synthesis. Minimal
+startup probes passed; the underlying installed-script/automation cause remains
+unresolved. A bounded alternative succeeded: open the working W12 platform
+read-only, save a new project excluding run results, substitute the qualified W16
+package, then synthesize and route afresh. Source hashes match the qualified RTL.
+No installed-tool modifications or accelerator redesign were needed.
+
+Because of the tool failure, acquisition order changed to W12 then W16. The
+amendment was saved before any new-width board data were collected. W16 retained
+its predefined inputs, masks, repetitions, hardware and analysis after W12 results
+were seen. All failed build attempts remain; no hardware evaluation failure was
+discarded. The temporary available_results.json snapshot is superseded by the
+complete comparison.json and verification.json, not silently overwritten.
+
+HANDOFF
+comparison.json: final three-width aggregates, per-leg effects and source hashes.
+verification.json: completion and capture-pin checks; official PDF unchanged.
+w12/physical and w16/physical: raw captures, archives, launch manifests and replays.
+PROVENANCE.txt: exact interpretation of inherited fixture and source identifiers.
+No manuscript/public artifact updates or commits/pushes were made in this task.
+The board is idle after readback: W16 reference image loaded, CPU 0 halted, serial
+closed, flash untouched. No further physical work is needed for this comparison.

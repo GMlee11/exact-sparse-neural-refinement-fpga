@@ -1,0 +1,31 @@
+{
+  "scope": "Five request geometries, W24 development frame 0, both skip states; RTL loop cycles only",
+  "primary_top_mask_results": [
+    {
+      "skipping": 0,
+      "raster_reference_cycles": 2016084,
+      "raster_suppressed_cycles": 1348156,
+      "merged_reference_cycles": 672246,
+      "merged_suppressed_cycles": 669517,
+      "reference_gap_cycles": 1343838,
+      "suppressed_gap_cycles": 678639,
+      "gap_reduction_percent": 49.49993972487755,
+      "raster_reduction_percent": 33.129968790982915,
+      "merged_reduction_percent": 0.40595258283425695
+    },
+    {
+      "skipping": 1,
+      "raster_reference_cycles": 1733354,
+      "raster_suppressed_cycles": 1065463,
+      "merged_reference_cycles": 390942,
+      "merged_suppressed_cycles": 387980,
+      "reference_gap_cycles": 1342412,
+      "suppressed_gap_cycles": 677483,
+      "gap_reduction_percent": 49.53240882828819,
+      "raster_reduction_percent": 38.53171366033713,
+      "merged_reduction_percent": 0.757657146072821
+    }
+  ],
+  "conclusion": "Output suppression materially weakens the raster baseline; residual scanner cost remains. No independent optimized accelerator or physical service claim.",
+  "arithmetic_parallelism": "HOLD: baseline output/traversal handling precedes another lane sweep"
+}

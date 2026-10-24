@@ -1,0 +1,49 @@
+Paper 2: bounded second-network feasibility and qualification
+
+Purpose: test whether region-organization findings transfer from the current
+3->24->24->12 graph to the existing trained 3->16->16->12 graph. This is a width
+transfer test within one network family, not evidence of generality across
+depths, receptive fields, or arbitrary neural architectures.
+
+Candidate selected before new performance results: exp049_qat_student_g1_w16,
+checkpoint SHA256 1ee9cfd12730ab43d2506dc4dc537c2bfd95cbd70dd10831ebb77dcc45faedda.
+Reasons: trained checkpoint already exists; same global Q8 weight shifts and
+signed Q7 activations; same RGB residual output, three 3x3 convolutions and 2x
+PixelShuffle; exporter and engine already support width parameters. No new
+training, pruning, network selection based on measured speed, or lane sweep.
+
+Use the accepted conventional packed-BRAM implementation and fixed 2/12/6
+output lanes, one context, 50 MHz target. A partly filled final channel group
+at width 16 is deliberate: this tests the fixed implementation policy rather
+than claiming each network has independently optimized hardware. Record actual
+mapped resources; identical lane parameters do not imply equal mapped area.
+No early prediction, new accelerator mechanism, or zero-skipping integration
+is part of this first bounded experiment.
+
+Offline gates:
+1. Verify checkpoints, generated weights, arithmetic and preserved manuscript.
+2. Check the dense numerical oracle against independent INT64 halo execution.
+3. Qualify actual integrated RTL for edge/corner/interior/adjacent regions,
+   full-raster versus cropped traversal, duplicated halos and merged ownership,
+   existing malformed packet, cancellation, deadline and slot-reuse checks.
+4. Build a fresh isolated whole-device image; check resource fit, setup, hold,
+   and DRC. Never overwrite the accepted build or program a board at this stage.
+
+Physical design to finalize before observing new board timings:
+Same 17-mask suite, raster/bounding-box/merged modes, six measured repetitions
+per cell; retain empty and dense controls and every loss. The reference W24
+packed-BRAM image and W16 candidate use the same board, firmware, clock target,
+request geometry, arithmetic convention and complete residual-publication
+endpoint. Correctness is relative to each network's own dense integer outputs;
+outputs from different networks are not asserted to be equal.
+Use two fresh physical sessions, reverse model order between sessions, and
+counterbalance the three mode orders. Archive outputs and verify before using
+timings. Start with existing deterministic input to isolate width transfer;
+do not label this application-generated or held-out workload validation.
+Compare organization effects within each network and their interaction; do not
+advertise the smaller network's raw speed as a quality-matched acceleration.
+
+Stop if this requires major datapath redesign, new training, or repeated
+architecture searches. Preserve the current submission package and artifact.
+No paper change until physical evidence is complete. No commits or pushes.
+Ask the user to connect the Zybo only once offline qualification/build is ready.

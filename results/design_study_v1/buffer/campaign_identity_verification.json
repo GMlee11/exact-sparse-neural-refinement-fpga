@@ -1,0 +1,31 @@
+{
+  "physical_identities_pass": true,
+  "runs": [
+    {
+      "run": "P002",
+      "manifest_sha256": "c9acccf2984d0bf330b23191d80ae80fec21698ee1192608c95fe241a8106ca2",
+      "capture_sha256": "509d6b6b67210fab3284e3031305847c994d14264f02c58795b31ae9854f5147",
+      "analysis_sha256": "85bf0c678486c2b3f999ce728720e07861cb0f677179387b233dbaca7a44367a"
+    },
+    {
+      "run": "P003",
+      "manifest_sha256": "c9be191f4d6ea08a21e881703cbd9ee5d3f6838dc9996ba1861dcc9686bdd057",
+      "capture_sha256": "57450f3a1d652de72e1a8b9217c143bc2bf869e1160b9b43b26bc8e804e6b7c3",
+      "analysis_sha256": "fa0b3ece9a93f0a0a02d518f42847d6f4dc8804b8eec3e7172c99dc99a9de448"
+    },
+    {
+      "run": "P004",
+      "manifest_sha256": "dbb2d0c0893cb5a4661447663d6a62fe8aa68cd36d58d7ca041bfa52c929c783",
+      "capture_sha256": "aa55104fa4e82e6ddac5c9ba56c79d0be28eb3a9296cfbcad060ec497d96c24e",
+      "analysis_sha256": "d37195874505966858589fb05181c11122931090b0c55c17e24a35882ad76137"
+    },
+    {
+      "run": "P005",
+      "manifest_sha256": "2bc983f1817b64c747699e0b6a0e0326f3bf5cfe6bf2ebfea3ad85c3944c6a0c",
+      "capture_sha256": "b330846909de9d05f8a9cc019a0d9bf9e83c1960843da19358b6e730e1f009fa",
+      "analysis_sha256": "cfb5344d1362c0d258d49e0f72105ee5f7e8e8bc8b35b3d6163ce8117b410be2"
+    }
+  ],
+  "does_not_replace_numerical_replay": true,
+  "source_sha256": "9f2c95fa0a286356b68b770c9bf19d785549bb0d66c093e2b8a333c1a2ed062c"
+}

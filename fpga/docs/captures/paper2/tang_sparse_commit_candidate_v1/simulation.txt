@@ -1,8 +1,0 @@
-Tang sparse-commit candidate simulation
-PASS: Tang sparse contract mask_checks=576 outcomes=4
-C:\Research\Thesis\Visual_Upscaling\neural-upscaling-hw-sw-codesign\fpga\tb\tb_tang_sparse_commit_contract_core.sv:55: $finish called at 5845000 (1ps)
-PASS: Tang sparse-control top checks=576 outcomes=4
-C:\Research\Thesis\Visual_Upscaling\neural-upscaling-hw-sw-codesign\fpga\tb\tb_tang_primer20k_sparse_control_top.sv:36: $finish called at 5845000 (1ps)
-PASS: Tang combined neural and sparse-commit contract checks=576
-C:\Research\Thesis\Visual_Upscaling\neural-upscaling-hw-sw-codesign\fpga\tb\tb_tang_primer20k_sparse_commit_top.sv:41: $finish called at 301205000 (1ps)
-TANG_SPARSE_COMMIT_SIM_PASS mask_checks=576 outcomes=4 neural_modes=4 packaging=two_image

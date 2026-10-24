@@ -1,0 +1,45 @@
+W24 conventional output-suppression physical comparison
+
+Fixed before new board measurements. Original C07 versus the selected-output
+suppression RTL qualified in paper2_traversal_assessment_20261022. Only the
+PixelShuffle module and its two mask/origin connections change. Same trained
+W24 parameters, 4/12/4 lanes, clocks, interfaces and complete host service.
+No novel primitive claimed. Output/feature scanners still advance positions.
+
+Build: copy the working original platform read-only into a new D: build, without
+run results. Replace the two qualified modules; freshly synthesize/route.
+Require nonnegative setup/hold slack, no DRC errors, and exact source bindings.
+Use the previously routed original C07 image as the reference. Separate builds,
+not a same-bitstream isolation; report all resource changes.
+
+Workload: identical existing development frames 0 and 2, four sparse masks
+(clustered six, scattered seven, clustered thirty, checkerboard thirty), plus
+empty and dense controls. Both zero-skipping settings, all three organizations.
+The low-density cluster/scatter pair is not area matched; thirty-tile pair is.
+Keep all outcomes. No held-out, perceptual-quality or independent-session claim.
+
+Qualification Q001 original, Q002 suppressed: one repeat per 72 cells, all
+selected outputs archived. Primary P001 original, P002 suppressed, P003
+suppressed, P004 original: three repeats per launch, cyclic arm ordering,
+same per-arm warmup and balanced private banks; six repeats per condition/cell.
+864 primary records; 144 primary full-output archives. Qualifications are
+separate 144 records/archives. Reuse the validated dense W24 references.
+
+Primary analysis: within each skipping state and organization compare original
+versus suppressed complete service, equally weighting eight sparse frame/mask
+cells. Also compare raster-minus-merged absolute service and its change between
+images. Report both reversed-order acquisition legs, cell effects/regressions,
+empty/dense controls, and resource/timing changes. Do not pool earlier captures.
+Same firmware binary for every launch; skip state and organization are runtime
+controls. Same continuous board session; no significance inference from six
+within-session repetitions. No optional stopping based on speedup.
+
+Timing includes request planning, packing, cache maintenance, transfers, FPGA,
+private scatter and CPU residual-token publication. Excludes reference checking
+and archival. Verify counts/status/identity/checksums for every request and
+full selected bytes for archived samples. Stop on failed correctness/replay;
+retain the attempt without silently rerunning it. No flash writes or clock
+changes. CPU halted after capture and UART closed, as in the existing workflow.
+
+Arithmetic-parallelism work remains on hold. This experiment evaluates a
+stronger conventional baseline, regardless of whether organization gains shrink.

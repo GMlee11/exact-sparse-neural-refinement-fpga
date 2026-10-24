@@ -1,0 +1,555 @@
+{
+  "prepared_only": true,
+  "board_access": false,
+  "launch_id": "Q001",
+  "operation": 1,
+  "kind": 1,
+  "base": 0,
+  "ordinal": 99,
+  "initial_bank": 0,
+  "expected_records": 72,
+  "expected_archive_words": 24514560,
+  "schedule": [
+    {
+      "case": 0,
+      "mode": 0,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 0,
+      "mode": 1,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 0,
+      "mode": 2,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 0,
+      "mode": 0,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 0,
+      "mode": 1,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 0,
+      "mode": 2,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 1,
+      "mode": 1,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 1,
+      "mode": 2,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 1,
+      "mode": 0,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 1,
+      "mode": 1,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 1,
+      "mode": 2,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 1,
+      "mode": 0,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 2,
+      "mode": 2,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 2,
+      "mode": 0,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 2,
+      "mode": 1,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 2,
+      "mode": 2,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 2,
+      "mode": 0,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 2,
+      "mode": 1,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 5,
+      "mode": 0,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 5,
+      "mode": 1,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 5,
+      "mode": 2,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 5,
+      "mode": 0,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 5,
+      "mode": 1,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 5,
+      "mode": 2,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 4,
+      "mode": 1,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 4,
+      "mode": 2,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 4,
+      "mode": 0,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 4,
+      "mode": 1,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 4,
+      "mode": 2,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 4,
+      "mode": 0,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 10,
+      "mode": 2,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 10,
+      "mode": 0,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 10,
+      "mode": 1,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 10,
+      "mode": 2,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 10,
+      "mode": 0,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 10,
+      "mode": 1,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 34,
+      "mode": 0,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 34,
+      "mode": 1,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 34,
+      "mode": 2,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 34,
+      "mode": 0,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 34,
+      "mode": 1,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 34,
+      "mode": 2,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 35,
+      "mode": 1,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 35,
+      "mode": 2,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 35,
+      "mode": 0,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 35,
+      "mode": 1,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 35,
+      "mode": 2,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 35,
+      "mode": 0,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 36,
+      "mode": 2,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 36,
+      "mode": 0,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 36,
+      "mode": 1,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 36,
+      "mode": 2,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 36,
+      "mode": 0,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 36,
+      "mode": 1,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 39,
+      "mode": 0,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 39,
+      "mode": 1,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 39,
+      "mode": 2,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 39,
+      "mode": 0,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 39,
+      "mode": 1,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 39,
+      "mode": 2,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 38,
+      "mode": 1,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 38,
+      "mode": 2,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 38,
+      "mode": 0,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 38,
+      "mode": 1,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 38,
+      "mode": 2,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 38,
+      "mode": 0,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 44,
+      "mode": 2,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 44,
+      "mode": 0,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 44,
+      "mode": 1,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 44,
+      "mode": 2,
+      "repeat": 0,
+      "condition": 1
+    },
+    {
+      "case": 44,
+      "mode": 0,
+      "repeat": 0,
+      "condition": 2
+    },
+    {
+      "case": 44,
+      "mode": 1,
+      "repeat": 0,
+      "condition": 2
+    }
+  ],
+  "image": {
+    "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_skip_width_20261022\\w16\\build\\paper2_roi_v1.bit",
+    "bytes": 4045678,
+    "sha256": "159287359a53cea42b232cebc1716b23e5c432149e3047f773459b1f0c600f9b"
+  },
+  "xsa": {
+    "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_skip_width_20261022\\w16\\build\\paper2_roi_v1.xsa",
+    "bytes": 985529,
+    "sha256": "a7cc35bb905c3b52bfa95b3b80d49f31b5e15c92097652e099adc6a0833f2037"
+  },
+  "firmware": {
+    "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_skip_width_20261022\\w16\\firmware\\F001\\campaign.elf",
+    "bytes": 238768,
+    "sha256": "91f23f9dc23e24a3ed320722afbc8f0c10875cb4a52e2a66e4dc4ad32bf0baa2"
+  },
+  "scripts": [
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_skip_width_20261022\\w16\\physical\\Q001\\program.tcl",
+      "bytes": 1279,
+      "sha256": "d48648b65896ea2c505a6639b40ce9cd5a849d830ebafcd42b0f30505dba49d5"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_skip_width_20261022\\w16\\physical\\Q001\\dump.tcl",
+      "bytes": 801,
+      "sha256": "9f24fe8b48e7cd68a1e64b886e47b90a26c1f21284169ce9426bf2bae591fcec"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_skip_width_20261022\\w16\\physical\\Q001\\ps7_init.tcl",
+      "bytes": 35774,
+      "sha256": "49af037f2b6bbe883c2499969da844119dc1cb85a26f404be7ca85d87c54284e"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_skip_width_20261022\\w16\\physical\\Q001\\capture.ps1",
+      "bytes": 3761,
+      "sha256": "d39a231d94fd59893d0ca4288d74e56080735902a09fa7960b332078821554dc"
+    }
+  ],
+  "pins": [
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_skip_width_20261022\\w16\\PROTOCOL.txt",
+      "bytes": 2786,
+      "sha256": "48fd5322746b52e58052d6ff7031cafa5e8ce151ac62e8649fb55360d1e3f6b6"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_skip_width_20261022\\w16\\common.py",
+      "bytes": 2308,
+      "sha256": "24b41fd394c3d36f5d46a6df3599ea2e8f6b84b837bebeb043c67cebec293ad9"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_skip_width_20261022\\w16\\build_firmware.py",
+      "bytes": 8813,
+      "sha256": "a0b0d82e939f021425f3315ea9bb39fac03d8c5083168f9616e3afee0ba4a1d9"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_skip_width_20261022\\w16\\analyze.py",
+      "bytes": 5617,
+      "sha256": "10dcb9007b2dace02f4ca4b4b09f8371f53e1cffcfb555af68e7969ad134b020"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_skip_width_20261022\\w16\\physical.py",
+      "bytes": 6425,
+      "sha256": "4500f6998ac739d877a0687bb9cf91a8d81c9fdc4f9822915efd160b2cf515e4"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_skip_width_20261022\\w16\\summarize.py",
+      "bytes": 2383,
+      "sha256": "8620fc555c590228b6e88031f4e7ef44389af6c68e633da98902ac3945b9617b"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_skip_width_20261022\\w16\\test_pilot.py",
+      "bytes": 6189,
+      "sha256": "9fce68015fefbd947e27b2dbe2bb1b9eb8abca58a40d216d1c18666330ed56d8"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_skip_width_20261022\\w16\\qualification\\Q001\\result.json",
+      "bytes": 2740,
+      "sha256": "61df9cdd2cd93feffbb7280eb37669df56bf0769030783cd29d18330c0409551"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_skip_width_20261022\\w16\\firmware\\F001\\result.json",
+      "bytes": 2978,
+      "sha256": "8c783cf39d76d79885fb40bf59f5a437fff02ab404f7865797be236bed3db931"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_skip_width_20261022\\w16\\goldens\\G001\\manifest.json",
+      "bytes": 41652,
+      "sha256": "00f9c97432fb1fdfa13e047c78650161f30b530d3c639e3c5a37c4b3caf4de42"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_skip_width_20261022\\w16\\goldens\\G001\\input_banks.bin",
+      "bytes": 3686400,
+      "sha256": "92cab7a2267e2cceebbcf87dd31b33569f27bb293d8de7ef0d7bfdc879e32598"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_skip_width_20261022\\w16\\physical\\Q001\\launch_config.bin",
+      "bytes": 32,
+      "sha256": "82c99da1e5dcfe74ab01946d87f29d37f5ed77a5fc5e2ca7eb9b6f950bf3a3e6"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_skip_width_20261022\\w16\\goldens\\G001\\frame_0.npy",
+      "bytes": 3686528,
+      "sha256": "2387e7fd17ab84f3a33c6796040ed1f1edcf0d0d3d09e509212477686a880223"
+    },
+    {
+      "path": "C:\\Research\\Thesis\\Visual_Upscaling\\neural-upscaling-hw-sw-codesign\\experiments\\paper2_skip_width_20261022\\w16\\goldens\\G001\\frame_2.npy",
+      "bytes": 3686528,
+      "sha256": "0466cb04c78ded0c335154c75c566e001cc15a1b0b8e80fc9d0b7e0c185cd63c"
+    }
+  ]
+}

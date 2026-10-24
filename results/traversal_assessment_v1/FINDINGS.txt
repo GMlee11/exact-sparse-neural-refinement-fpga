@@ -1,0 +1,37 @@
+STRONGER TRAVERSAL-BASELINE ASSESSMENT
+
+Two matched W24 RTL simulations completed: original C07 and conventional early
+suppression of unselected PixelShuffle outputs. No FPGA programming, synthesis
+or route was performed. All 20 integrated requests passed, including 614,400
+selected output-word comparisons and twenty total fault/reuse checks.
+The frozen cases use one archived development image, masks [0,2] and [57,59],
+both skipping states and identical input/output backpressure.
+
+The original formatter expands unselected positions before discarding pixels.
+The candidate keeps positional input/feature scanning unchanged but bypasses
+top-pixel emission and bottom-pair read/emission for unselected positions.
+It still advances the bottom scanner one column per cycle. This is a partial
+conventional baseline challenge, not an ideal free gap-jumping accelerator.
+
+For [0,2] with skipping enabled, raster loop cycles fall from 1,733,354 to
+1,065,463 (38.53%); merged cycles fall from 390,942 to 387,980 (0.76%). Without
+skipping, raster falls 33.13% and merged 0.41%. The raster-minus-merged cycle
+gap falls 49.53% with skipping and 49.50% without it. Box reductions range
+1.79--3.11% and merged reductions range 0.21--0.76% on the two tested masks.
+
+The physical region advantage remains valid for the measured engine, but is
+not all unavoidable input-gap or neural arithmetic cost. Unnecessary output
+formatting contributes substantially in this sparse probe. Residual scanner
+cost remains. No physical complete-service gain or routed feasibility follows
+from this RTL comparison alone. Selected pixels and arithmetic are unchanged.
+
+Decision: HOLD arithmetic parallelism. Another lane count does not resolve the
+demonstrated baseline weakness. If further hardware is pursued, validating this
+conventional output-suppression control has priority. The current contribution
+is stronger explanation and competitive framing, not a new sparse mechanism.
+
+Artifact: run python -B results/traversal_assessment_v1/simulate.py to verify
+retained evidence. Add --xilinx-bin with the Vivado 2020.2 bin directory to rerun
+both simulations in temporary external folders. Original run.py documents
+fixture generation in the research workspace; simulate.py is the portable
+archived-fixture entry point. Hashes bind both source variants and fixtures.
